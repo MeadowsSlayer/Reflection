@@ -1,0 +1,15 @@
+[gd_resource type="Resource" load_steps=2 format=2]
+
+[ext_resource path="res://Scripts/Skills/SkillResource.gd" type="Script" id=1]
+
+[resource]
+script = ExtResource( 1 )
+color = "Yellow"
+CD = 5
+actions = 1
+description = "YELLOW_ZIG_ZAG"
+skill_name = "Zig-Zag"
+type = "enemy"
+icon = "res://Sprites/UI/Skills/Yellow/Yellow_Zig_Zag.png"
+en = 3
+skill_code = "Yellow_Zig_Zag"

@@ -1,0 +1,15 @@
+[gd_resource type="Resource" load_steps=2 format=2]
+
+[ext_resource path="res://Scripts/Skills/SkillResource.gd" type="Script" id=1]
+
+[resource]
+script = ExtResource( 1 )
+color = "Purple"
+CD = 9
+actions = 0
+description = "PURPLE_GROWING_FRACTURE"
+skill_name = "Growing Fracture"
+type = "enemy"
+icon = "res://Sprites/UI/Skills/Purple/Purple_Growing_Fracture.png"
+en = 35
+skill_code = "Purple_Growing_Fracture"

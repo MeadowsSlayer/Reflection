@@ -1,0 +1,1857 @@
+[gd_scene load_steps=41 format=2]
+
+[ext_resource path="res://Prefabs/UI/TV.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Resources/Fonts/EncounterText.tres" type="DynamicFont" id=2]
+[ext_resource path="res://Resources/Fonts/EncounterSmallText.tres" type="DynamicFont" id=3]
+[ext_resource path="res://Resources/Fonts/EncounterTextMedium.tres" type="DynamicFont" id=4]
+[ext_resource path="res://Resources/Fonts/PixelText.tres" type="DynamicFont" id=5]
+[ext_resource path="res://Sprites/UI/Skills/Green/Green_Life_Circulation.png" type="Texture" id=7]
+[ext_resource path="res://Sprites/UI/Skills/NoSkill.png" type="Texture" id=8]
+[ext_resource path="res://Scenes/Longe/Waiting Room/WaitingRoom.gd" type="Script" id=9]
+[ext_resource path="res://Sprites/UI/Skills/Purple/Purple_Octopus_Ink.png" type="Texture" id=10]
+[ext_resource path="res://Sprites/UI/Skills/Red/Red_Dirty_Trick.png" type="Texture" id=11]
+[ext_resource path="res://Sprites/UI/Skills/Orange/Orange_Spiked_Shield.png" type="Texture" id=12]
+[ext_resource path="res://Sprites/UI/Skills/Yellow/Yellow_Thunderstorm.png" type="Texture" id=13]
+[ext_resource path="res://Sprites/UI/Skills/Yellow/Yellow_Lightning_Strike.png" type="Texture" id=14]
+[ext_resource path="res://Sprites/UI/Skills/Yellow/Yellow_Zig_Zag.png" type="Texture" id=15]
+[ext_resource path="res://Sprites/UI/Skills/Green/Green_Healing.png" type="Texture" id=16]
+[ext_resource path="res://Sprites/UI/Skills/Green/Green_Spread.png" type="Texture" id=17]
+[ext_resource path="res://Sprites/UI/Skills/Orange/Orange_Cleansing.png" type="Texture" id=18]
+[ext_resource path="res://Sprites/UI/Skills/Yellow/Yellow_Thunder_Pulse.png" type="Texture" id=19]
+[ext_resource path="res://Sprites/UI/Skills/Yellow/Yellow_Flash_Of_Light.png" type="Texture" id=20]
+[ext_resource path="res://Sprites/UI/Skills/Blue/Blue_Comatosis.png" type="Texture" id=21]
+[ext_resource path="res://Sprites/UI/Skills/Red/Red_Warning_Strike.png" type="Texture" id=22]
+[ext_resource path="res://Sprites/UI/Skills/Green/Green_Bloom.png" type="Texture" id=23]
+[ext_resource path="res://Sprites/UI/Skills/Blue/Blue_Soundproofing.png" type="Texture" id=24]
+[ext_resource path="res://Sprites/UI/Skills/Green/Green_Studying.png" type="Texture" id=25]
+[ext_resource path="res://Sprites/UI/Skills/Blue/Blue_Energy_Vampire.png" type="Texture" id=26]
+[ext_resource path="res://Sprites/UI/Skills/Red/Red_Crimson_Whirl.png" type="Texture" id=27]
+[ext_resource path="res://Sprites/UI/Skills/Orange/Orange_Stun.png" type="Texture" id=28]
+[ext_resource path="res://Scenes/Longe/Waiting Room/SkillsStartRun.gd" type="Script" id=29]
+[ext_resource path="res://Sprites/UI/Skills/Purple/Purple_Miasma.png" type="Texture" id=30]
+[ext_resource path="res://Sprites/UI/Skills/Blue/Blue_Nervous_Exhaustion.png" type="Texture" id=31]
+[ext_resource path="res://Sprites/UI/Skills/Blue/Blue_Mental_Shield.png" type="Texture" id=32]
+[ext_resource path="res://Sprites/UI/Skills/Purple/Purple_Curse.png" type="Texture" id=33]
+[ext_resource path="res://Sprites/UI/Skills/Purple/Purple_Weak_Body.png" type="Texture" id=34]
+[ext_resource path="res://Scenes/Longe/Waiting Room/Resistances.gd" type="Script" id=35]
+[ext_resource path="res://Sprites/UI/Skills/Red/Red_Blood_Exchange.png" type="Texture" id=36]
+[ext_resource path="res://Sprites/UI/Skills/Red/Red_Adrenalin_Rush.png" type="Texture" id=37]
+[ext_resource path="res://Sprites/UI/Skills/Purple/Purple_Sweet_Dreams.png" type="Texture" id=38]
+
+[sub_resource type="StreamTexture" id=3]
+load_path = "res://.import/Orange_Break_In_Defense.png-e618e16fe21b89cff4c5645c0269689e.stex"
+
+[sub_resource type="StreamTexture" id=4]
+load_path = "res://.import/Orange_Stone_Shield.png-72cf7758159fb585b3464e3e46faef62.stex"
+
+[sub_resource type="ShaderMaterial" id=1]
+resource_local_to_scene = true
+
+[node name="WaitingRoom" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 9 )
+
+[node name="ColorRect" type="ColorRect" parent="."]
+margin_right = 1920.0
+margin_bottom = 1080.0
+color = Color( 0.0196078, 0.160784, 0.266667, 1 )
+
+[node name="SkillChoosing" type="Control" parent="."]
+margin_right = 1920.0
+margin_bottom = 1080.0
+
+[node name="Resistances" type="Control" parent="SkillChoosing"]
+margin_top = 136.0
+margin_right = 40.0
+margin_bottom = 176.0
+script = ExtResource( 35 )
+
+[node name="HBoxContainer" type="HBoxContainer" parent="SkillChoosing/Resistances"]
+margin_top = 32.0
+margin_right = 1920.0
+margin_bottom = 126.0
+custom_constants/separation = 16
+alignment = 1
+
+[node name="RES1" type="Label" parent="SkillChoosing/Resistances/HBoxContainer"]
+margin_left = 496.0
+margin_top = 18.0
+margin_right = 700.0
+margin_bottom = 82.0
+text = " Resistance:"
+
+[node name="Resistance1" type="OptionButton" parent="SkillChoosing/Resistances/HBoxContainer"]
+margin_left = 716.0
+margin_right = 952.0
+margin_bottom = 100.0
+rect_min_size = Vector2( 236, 100 )
+text = "Red"
+items = [ "Red", null, false, 0, null, "Orange", null, false, 1, null, "Yellow", null, false, 2, null, "Green", null, false, 3, null, "Blue", null, false, 4, null, "Purple", null, false, 5, null ]
+selected = 0
+
+[node name="RES2" type="Label" parent="SkillChoosing/Resistances/HBoxContainer"]
+visible = false
+margin_left = 862.0
+margin_top = 18.0
+margin_right = 1058.0
+margin_bottom = 82.0
+text = "Resistance:"
+
+[node name="Resistance2" type="OptionButton" parent="SkillChoosing/Resistances/HBoxContainer"]
+visible = false
+margin_left = 948.0
+margin_right = 1184.0
+margin_bottom = 100.0
+rect_min_size = Vector2( 236, 100 )
+text = "Red"
+items = [ "Red", null, false, 0, null, "Orange", null, false, 1, null, "Yellow", null, false, 2, null, "Green", null, false, 3, null, "Blue", null, false, 4, null, "Purple", null, false, 5, null ]
+selected = 0
+
+[node name="RES3" type="Label" parent="SkillChoosing/Resistances/HBoxContainer"]
+visible = false
+margin_left = 862.0
+margin_top = 18.0
+margin_right = 1058.0
+margin_bottom = 82.0
+text = "Resistance:"
+
+[node name="Resistance3" type="OptionButton" parent="SkillChoosing/Resistances/HBoxContainer"]
+visible = false
+margin_left = 948.0
+margin_right = 1184.0
+margin_bottom = 100.0
+rect_min_size = Vector2( 236, 100 )
+text = "Red"
+items = [ "Red", null, false, 0, null, "Orange", null, false, 1, null, "Yellow", null, false, 2, null, "Green", null, false, 3, null, "Blue", null, false, 4, null, "Purple", null, false, 5, null ]
+selected = 0
+
+[node name="WEK1" type="Label" parent="SkillChoosing/Resistances/HBoxContainer"]
+margin_left = 968.0
+margin_top = 18.0
+margin_right = 1172.0
+margin_bottom = 82.0
+text = "  Weakness:"
+
+[node name="Weakness" type="OptionButton" parent="SkillChoosing/Resistances/HBoxContainer"]
+margin_left = 1188.0
+margin_right = 1424.0
+margin_bottom = 100.0
+rect_min_size = Vector2( 236, 100 )
+text = "Red"
+items = [ "Red", null, false, 0, null, "Orange", null, false, 1, null, "Yellow", null, false, 2, null, "Green", null, false, 3, null, "Blue", null, false, 4, null, "Purple", null, false, 5, null ]
+selected = 0
+
+[node name="WEK2" type="Label" parent="SkillChoosing/Resistances/HBoxContainer"]
+visible = false
+margin_left = 1570.0
+margin_top = 18.0
+margin_right = 1758.0
+margin_bottom = 82.0
+text = "Weakness:"
+
+[node name="Weakness2" type="OptionButton" parent="SkillChoosing/Resistances/HBoxContainer"]
+visible = false
+margin_left = 1648.0
+margin_right = 1884.0
+margin_bottom = 100.0
+rect_min_size = Vector2( 236, 100 )
+text = "Red"
+items = [ "Red", null, false, 0, null, "Orange", null, false, 1, null, "Yellow", null, false, 2, null, "Green", null, false, 3, null, "Blue", null, false, 4, null, "Purple", null, false, 5, null ]
+selected = 0
+
+[node name="CenterContainer" type="CenterContainer" parent="SkillChoosing"]
+margin_top = 312.0
+margin_right = 1920.0
+margin_bottom = 962.0
+
+[node name="HBoxContainer" type="HBoxContainer" parent="SkillChoosing/CenterContainer"]
+margin_left = 117.0
+margin_top = 5.0
+margin_right = 1803.0
+margin_bottom = 645.0
+custom_constants/separation = 75
+
+[node name="Skill1" type="Button" parent="SkillChoosing/CenterContainer/HBoxContainer"]
+margin_right = 512.0
+margin_bottom = 640.0
+rect_min_size = Vector2( 512, 640 )
+
+[node name="TextureRect" type="TextureRect" parent="SkillChoosing/CenterContainer/HBoxContainer/Skill1"]
+margin_left = 158.0
+margin_top = 19.0
+margin_right = 342.0
+margin_bottom = 203.0
+mouse_filter = 2
+texture = ExtResource( 8 )
+expand = true
+
+[node name="Label" type="Label" parent="SkillChoosing/CenterContainer/HBoxContainer/Skill1"]
+margin_left = 40.0
+margin_top = 232.0
+margin_right = 473.0
+margin_bottom = 295.0
+custom_fonts/font = ExtResource( 2 )
+text = "Skill Name"
+align = 1
+autowrap = true
+clip_text = true
+
+[node name="Label2" type="Label" parent="SkillChoosing/CenterContainer/HBoxContainer/Skill1"]
+margin_left = 40.0
+margin_top = 296.0
+margin_right = 473.0
+margin_bottom = 603.0
+custom_fonts/font = ExtResource( 4 )
+text = "Skill Description"
+align = 1
+autowrap = true
+clip_text = true
+
+[node name="Skill2" type="Button" parent="SkillChoosing/CenterContainer/HBoxContainer"]
+margin_left = 587.0
+margin_right = 1099.0
+margin_bottom = 640.0
+rect_min_size = Vector2( 512, 640 )
+
+[node name="TextureRect" type="TextureRect" parent="SkillChoosing/CenterContainer/HBoxContainer/Skill2"]
+margin_left = 158.0
+margin_top = 19.0
+margin_right = 342.0
+margin_bottom = 203.0
+mouse_filter = 2
+texture = ExtResource( 8 )
+expand = true
+
+[node name="Label" type="Label" parent="SkillChoosing/CenterContainer/HBoxContainer/Skill2"]
+margin_left = 40.0
+margin_top = 232.0
+margin_right = 473.0
+margin_bottom = 295.0
+custom_fonts/font = ExtResource( 2 )
+text = "Skill Name"
+align = 1
+autowrap = true
+clip_text = true
+
+[node name="Label2" type="Label" parent="SkillChoosing/CenterContainer/HBoxContainer/Skill2"]
+margin_left = 40.0
+margin_top = 296.0
+margin_right = 473.0
+margin_bottom = 603.0
+custom_fonts/font = ExtResource( 4 )
+text = "Skill Description"
+align = 1
+autowrap = true
+clip_text = true
+
+[node name="Skill3" type="Button" parent="SkillChoosing/CenterContainer/HBoxContainer"]
+margin_left = 1174.0
+margin_right = 1686.0
+margin_bottom = 640.0
+rect_min_size = Vector2( 512, 640 )
+
+[node name="TextureRect" type="TextureRect" parent="SkillChoosing/CenterContainer/HBoxContainer/Skill3"]
+margin_left = 158.0
+margin_top = 19.0
+margin_right = 342.0
+margin_bottom = 203.0
+mouse_filter = 2
+texture = ExtResource( 8 )
+expand = true
+
+[node name="Label" type="Label" parent="SkillChoosing/CenterContainer/HBoxContainer/Skill3"]
+margin_left = 40.0
+margin_top = 232.0
+margin_right = 473.0
+margin_bottom = 295.0
+custom_fonts/font = ExtResource( 2 )
+text = "Skill Name"
+align = 1
+autowrap = true
+clip_text = true
+
+[node name="Label2" type="Label" parent="SkillChoosing/CenterContainer/HBoxContainer/Skill3"]
+margin_left = 40.0
+margin_top = 296.0
+margin_right = 473.0
+margin_bottom = 603.0
+custom_fonts/font = ExtResource( 4 )
+text = "Skill Description"
+align = 1
+autowrap = true
+clip_text = true
+
+[node name="Go" type="Button" parent="SkillChoosing"]
+margin_left = 1632.0
+margin_top = 968.0
+margin_right = 1898.0
+margin_bottom = 1063.0
+text = "Start Run"
+
+[node name="Label" type="Label" parent="SkillChoosing"]
+margin_top = 32.0
+margin_right = 1920.0
+margin_bottom = 152.0
+custom_fonts/font = ExtResource( 5 )
+text = "Get Prepared"
+align = 1
+valign = 1
+
+[node name="Skills" type="Control" parent="."]
+visible = false
+margin_right = 1920.0
+margin_bottom = 1080.0
+
+[node name="ColorRect" type="ColorRect" parent="Skills"]
+margin_left = 64.0
+margin_top = 24.0
+margin_right = 1624.0
+margin_bottom = 1064.0
+color = Color( 0.101961, 0.101961, 0.105882, 1 )
+
+[node name="ScrollContainer" type="ScrollContainer" parent="Skills"]
+margin_left = 80.0
+margin_top = 40.0
+margin_right = 1614.0
+margin_bottom = 1040.0
+follow_focus = true
+scroll_horizontal_enabled = false
+
+[node name="GridContainer" type="GridContainer" parent="Skills/ScrollContainer"]
+margin_right = 1506.0
+margin_bottom = 4064.0
+custom_constants/vseparation = 16
+custom_constants/hseparation = 16
+columns = 2
+
+[node name="Red_Warning_Strike" type="Button" parent="Skills/ScrollContainer/GridContainer" groups=["Red"]]
+margin_right = 745.0
+margin_bottom = 256.0
+rect_min_size = Vector2( 745, 256 )
+script = ExtResource( 29 )
+
+[node name="SkillName" type="Label" parent="Skills/ScrollContainer/GridContainer/Red_Warning_Strike"]
+margin_left = 136.0
+margin_top = 16.0
+margin_right = 675.0
+margin_bottom = 62.0
+custom_fonts/font = ExtResource( 4 )
+text = "Warning Strike"
+valign = 1
+
+[node name="SkillName2" type="Label" parent="Skills/ScrollContainer/GridContainer/Red_Warning_Strike"]
+margin_left = 136.0
+margin_top = 64.0
+margin_right = 728.0
+margin_bottom = 240.0
+custom_fonts/font = ExtResource( 3 )
+text = "RED_WARNING_STRIKE"
+autowrap = true
+clip_text = true
+
+[node name="TextureRect" type="TextureRect" parent="Skills/ScrollContainer/GridContainer/Red_Warning_Strike"]
+margin_left = 16.0
+margin_top = 16.0
+margin_right = 123.0
+margin_bottom = 123.0
+texture = ExtResource( 22 )
+expand = true
+
+[node name="Info" type="Label" parent="Skills/ScrollContainer/GridContainer/Red_Warning_Strike"]
+margin_left = 16.0
+margin_top = 128.0
+margin_right = 120.0
+margin_bottom = 232.0
+custom_fonts/font = ExtResource( 3 )
+text = "EN: 2
+COST: 1
+CD: 1"
+autowrap = true
+
+[node name="Red_Dirty_Trick" type="Button" parent="Skills/ScrollContainer/GridContainer" groups=["Red"]]
+margin_left = 761.0
+margin_right = 1506.0
+margin_bottom = 256.0
+rect_min_size = Vector2( 745, 256 )
+script = ExtResource( 29 )
+
+[node name="SkillName" type="Label" parent="Skills/ScrollContainer/GridContainer/Red_Dirty_Trick"]
+margin_left = 136.0
+margin_top = 16.0
+margin_right = 675.0
+margin_bottom = 62.0
+custom_fonts/font = ExtResource( 4 )
+text = "Dirty Trick"
+valign = 1
+
+[node name="SkillName2" type="Label" parent="Skills/ScrollContainer/GridContainer/Red_Dirty_Trick"]
+margin_left = 136.0
+margin_top = 64.0
+margin_right = 728.0
+margin_bottom = 240.0
+custom_fonts/font = ExtResource( 3 )
+text = "RED_DIRTY_TRICK"
+autowrap = true
+clip_text = true
+
+[node name="TextureRect" type="TextureRect" parent="Skills/ScrollContainer/GridContainer/Red_Dirty_Trick"]
+margin_left = 16.0
+margin_top = 16.0
+margin_right = 123.0
+margin_bottom = 123.0
+texture = ExtResource( 11 )
+expand = true
+
+[node name="Info" type="Label" parent="Skills/ScrollContainer/GridContainer/Red_Dirty_Trick"]
+margin_left = 16.0
+margin_top = 128.0
+margin_right = 120.0
+margin_bottom = 232.0
+custom_fonts/font = ExtResource( 3 )
+text = "EN: 2
+COST: 1
+CD: 3"
+autowrap = true
+
+[node name="Red_Blood_Exchange" type="Button" parent="Skills/ScrollContainer/GridContainer" groups=["Red"]]
+margin_top = 272.0
+margin_right = 745.0
+margin_bottom = 528.0
+rect_min_size = Vector2( 745, 256 )
+script = ExtResource( 29 )
+
+[node name="SkillName" type="Label" parent="Skills/ScrollContainer/GridContainer/Red_Blood_Exchange"]
+margin_left = 136.0
+margin_top = 16.0
+margin_right = 675.0
+margin_bottom = 62.0
+custom_fonts/font = ExtResource( 4 )
+text = "Blood Exchange"
+valign = 1
+
+[node name="SkillName2" type="Label" parent="Skills/ScrollContainer/GridContainer/Red_Blood_Exchange"]
+margin_left = 136.0
+margin_top = 64.0
+margin_right = 728.0
+margin_bottom = 240.0
+custom_fonts/font = ExtResource( 3 )
+text = "RED_BLOOD_EXCHANGE"
+autowrap = true
+clip_text = true
+
+[node name="TextureRect" type="TextureRect" parent="Skills/ScrollContainer/GridContainer/Red_Blood_Exchange"]
+margin_left = 16.0
+margin_top = 16.0
+margin_right = 123.0
+margin_bottom = 123.0
+texture = ExtResource( 36 )
+expand = true
+
+[node name="Info" type="Label" parent="Skills/ScrollContainer/GridContainer/Red_Blood_Exchange"]
+margin_left = 16.0
+margin_top = 128.0
+margin_right = 120.0
+margin_bottom = 232.0
+custom_fonts/font = ExtResource( 3 )
+text = "EN: 4
+COST: 2
+CD: 6"
+autowrap = true
+
+[node name="Red_Crimson_Whirl" type="Button" parent="Skills/ScrollContainer/GridContainer" groups=["Red"]]
+margin_left = 761.0
+margin_top = 272.0
+margin_right = 1506.0
+margin_bottom = 528.0
+rect_min_size = Vector2( 745, 256 )
+script = ExtResource( 29 )
+
+[node name="SkillName" type="Label" parent="Skills/ScrollContainer/GridContainer/Red_Crimson_Whirl"]
+margin_left = 136.0
+margin_top = 16.0
+margin_right = 675.0
+margin_bottom = 62.0
+custom_fonts/font = ExtResource( 4 )
+text = "Crimson Whirl"
+valign = 1
+
+[node name="SkillName2" type="Label" parent="Skills/ScrollContainer/GridContainer/Red_Crimson_Whirl"]
+margin_left = 136.0
+margin_top = 64.0
+margin_right = 728.0
+margin_bottom = 240.0
+custom_fonts/font = ExtResource( 3 )
+text = "RED_CRIMSON_WHIRL"
+autowrap = true
+clip_text = true
+
+[node name="TextureRect" type="TextureRect" parent="Skills/ScrollContainer/GridContainer/Red_Crimson_Whirl"]
+margin_left = 16.0
+margin_top = 16.0
+margin_right = 123.0
+margin_bottom = 123.0
+texture = ExtResource( 27 )
+expand = true
+
+[node name="Info" type="Label" parent="Skills/ScrollContainer/GridContainer/Red_Crimson_Whirl"]
+margin_left = 16.0
+margin_top = 128.0
+margin_right = 120.0
+margin_bottom = 232.0
+custom_fonts/font = ExtResource( 3 )
+text = "EN: 4
+COST: 2
+CD: 6"
+autowrap = true
+
+[node name="Red_Adrenalin_Rush" type="Button" parent="Skills/ScrollContainer/GridContainer" groups=["Red"]]
+margin_top = 544.0
+margin_right = 745.0
+margin_bottom = 800.0
+rect_min_size = Vector2( 745, 256 )
+script = ExtResource( 29 )
+
+[node name="SkillName" type="Label" parent="Skills/ScrollContainer/GridContainer/Red_Adrenalin_Rush"]
+margin_left = 136.0
+margin_top = 16.0
+margin_right = 675.0
+margin_bottom = 62.0
+custom_fonts/font = ExtResource( 4 )
+text = "Adrenalin Rush"
+valign = 1
+
+[node name="SkillName2" type="Label" parent="Skills/ScrollContainer/GridContainer/Red_Adrenalin_Rush"]
+margin_left = 136.0
+margin_top = 64.0
+margin_right = 728.0
+margin_bottom = 240.0
+custom_fonts/font = ExtResource( 3 )
+text = "RED_ADRENALIN_RUSH"
+autowrap = true
+clip_text = true
+
+[node name="TextureRect" type="TextureRect" parent="Skills/ScrollContainer/GridContainer/Red_Adrenalin_Rush"]
+margin_left = 16.0
+margin_top = 16.0
+margin_right = 123.0
+margin_bottom = 123.0
+texture = ExtResource( 37 )
+expand = true
+
+[node name="Info" type="Label" parent="Skills/ScrollContainer/GridContainer/Red_Adrenalin_Rush"]
+margin_left = 16.0
+margin_top = 128.0
+margin_right = 120.0
+margin_bottom = 232.0
+custom_fonts/font = ExtResource( 3 )
+text = "EN: 5
+COST: 3
+CD: 6"
+autowrap = true
+
+[node name="Orange_Break_In_Defense" type="Button" parent="Skills/ScrollContainer/GridContainer" groups=["Orange"]]
+margin_left = 761.0
+margin_top = 544.0
+margin_right = 1506.0
+margin_bottom = 800.0
+rect_min_size = Vector2( 745, 256 )
+script = ExtResource( 29 )
+color = "Orange"
+color_small = "orange"
+
+[node name="SkillName" type="Label" parent="Skills/ScrollContainer/GridContainer/Orange_Break_In_Defense"]
+margin_left = 136.0
+margin_top = 16.0
+margin_right = 675.0
+margin_bottom = 62.0
+custom_fonts/font = ExtResource( 4 )
+text = "Break In Defense"
+valign = 1
+
+[node name="SkillName2" type="Label" parent="Skills/ScrollContainer/GridContainer/Orange_Break_In_Defense"]
+margin_left = 136.0
+margin_top = 64.0
+margin_right = 728.0
+margin_bottom = 240.0
+custom_fonts/font = ExtResource( 3 )
+text = "ORANGE_BREAK_IN_DEFENSE"
+autowrap = true
+clip_text = true
+
+[node name="TextureRect" type="TextureRect" parent="Skills/ScrollContainer/GridContainer/Orange_Break_In_Defense"]
+margin_left = 16.0
+margin_top = 16.0
+margin_right = 123.0
+margin_bottom = 123.0
+texture = SubResource( 3 )
+expand = true
+
+[node name="Info" type="Label" parent="Skills/ScrollContainer/GridContainer/Orange_Break_In_Defense"]
+margin_left = 16.0
+margin_top = 128.0
+margin_right = 120.0
+margin_bottom = 232.0
+custom_fonts/font = ExtResource( 3 )
+text = "EN: 2
+COST: 1
+CD: 1"
+autowrap = true
+
+[node name="Orange_Spiked_Shield" type="Button" parent="Skills/ScrollContainer/GridContainer" groups=["Orange"]]
+margin_top = 816.0
+margin_right = 745.0
+margin_bottom = 1072.0
+rect_min_size = Vector2( 745, 256 )
+script = ExtResource( 29 )
+color = "Orange"
+color_small = "orange"
+
+[node name="SkillName" type="Label" parent="Skills/ScrollContainer/GridContainer/Orange_Spiked_Shield"]
+margin_left = 136.0
+margin_top = 16.0
+margin_right = 675.0
+margin_bottom = 62.0
+custom_fonts/font = ExtResource( 4 )
+text = "Spiked Shield"
+valign = 1
+
+[node name="SkillName2" type="Label" parent="Skills/ScrollContainer/GridContainer/Orange_Spiked_Shield"]
+margin_left = 136.0
+margin_top = 64.0
+margin_right = 728.0
+margin_bottom = 240.0
+custom_fonts/font = ExtResource( 3 )
+text = "ORANGE_SPIKED_SHIELD"
+autowrap = true
+clip_text = true
+
+[node name="TextureRect" type="TextureRect" parent="Skills/ScrollContainer/GridContainer/Orange_Spiked_Shield"]
+margin_left = 16.0
+margin_top = 16.0
+margin_right = 123.0
+margin_bottom = 123.0
+texture = ExtResource( 12 )
+expand = true
+
+[node name="Info" type="Label" parent="Skills/ScrollContainer/GridContainer/Orange_Spiked_Shield"]
+margin_left = 16.0
+margin_top = 128.0
+margin_right = 120.0
+margin_bottom = 232.0
+custom_fonts/font = ExtResource( 3 )
+text = "EN: 3
+COST: 1
+CD: 5"
+autowrap = true
+
+[node name="Orange_Stone_Shield" type="Button" parent="Skills/ScrollContainer/GridContainer" groups=["Orange"]]
+margin_left = 761.0
+margin_top = 816.0
+margin_right = 1506.0
+margin_bottom = 1072.0
+rect_min_size = Vector2( 745, 256 )
+rect_pivot_offset = Vector2( 104, 40 )
+script = ExtResource( 29 )
+color = "Orange"
+color_small = "orange"
+
+[node name="SkillName" type="Label" parent="Skills/ScrollContainer/GridContainer/Orange_Stone_Shield"]
+margin_left = 136.0
+margin_top = 16.0
+margin_right = 675.0
+margin_bottom = 62.0
+custom_fonts/font = ExtResource( 4 )
+text = "Stone Shield"
+valign = 1
+
+[node name="SkillName2" type="Label" parent="Skills/ScrollContainer/GridContainer/Orange_Stone_Shield"]
+margin_left = 136.0
+margin_top = 64.0
+margin_right = 728.0
+margin_bottom = 240.0
+custom_fonts/font = ExtResource( 3 )
+text = "ORANGE_STONE_SHIELD"
+autowrap = true
+clip_text = true
+
+[node name="TextureRect" type="TextureRect" parent="Skills/ScrollContainer/GridContainer/Orange_Stone_Shield"]
+margin_left = 16.0
+margin_top = 16.0
+margin_right = 123.0
+margin_bottom = 123.0
+texture = SubResource( 4 )
+expand = true
+
+[node name="Info" type="Label" parent="Skills/ScrollContainer/GridContainer/Orange_Stone_Shield"]
+margin_left = 16.0
+margin_top = 128.0
+margin_right = 120.0
+margin_bottom = 232.0
+custom_fonts/font = ExtResource( 3 )
+text = "EN: 3
+COST: 2
+CD: 6"
+autowrap = true
+
+[node name="Orange_Cleansing" type="Button" parent="Skills/ScrollContainer/GridContainer" groups=["Orange"]]
+margin_top = 1088.0
+margin_right = 745.0
+margin_bottom = 1344.0
+rect_min_size = Vector2( 745, 256 )
+rect_pivot_offset = Vector2( 104, 40 )
+script = ExtResource( 29 )
+color = "Orange"
+color_small = "orange"
+
+[node name="SkillName" type="Label" parent="Skills/ScrollContainer/GridContainer/Orange_Cleansing"]
+margin_left = 136.0
+margin_top = 16.0
+margin_right = 675.0
+margin_bottom = 62.0
+custom_fonts/font = ExtResource( 4 )
+text = "Cleansing"
+valign = 1
+
+[node name="SkillName2" type="Label" parent="Skills/ScrollContainer/GridContainer/Orange_Cleansing"]
+margin_left = 136.0
+margin_top = 64.0
+margin_right = 728.0
+margin_bottom = 240.0
+custom_fonts/font = ExtResource( 3 )
+text = "ORANGE_CLEANSING"
+autowrap = true
+clip_text = true
+
+[node name="TextureRect" type="TextureRect" parent="Skills/ScrollContainer/GridContainer/Orange_Cleansing"]
+margin_left = 16.0
+margin_top = 16.0
+margin_right = 123.0
+margin_bottom = 123.0
+texture = ExtResource( 18 )
+expand = true
+
+[node name="Info" type="Label" parent="Skills/ScrollContainer/GridContainer/Orange_Cleansing"]
+margin_left = 16.0
+margin_top = 128.0
+margin_right = 120.0
+margin_bottom = 232.0
+custom_fonts/font = ExtResource( 3 )
+text = "EN: 3
+COST: 2
+CD: 4"
+autowrap = true
+
+[node name="Orange_Stun" type="Button" parent="Skills/ScrollContainer/GridContainer" groups=["Orange"]]
+margin_left = 761.0
+margin_top = 1088.0
+margin_right = 1506.0
+margin_bottom = 1344.0
+rect_min_size = Vector2( 745, 256 )
+rect_pivot_offset = Vector2( 104, 40 )
+script = ExtResource( 29 )
+color = "Orange"
+color_small = "orange"
+
+[node name="SkillName" type="Label" parent="Skills/ScrollContainer/GridContainer/Orange_Stun"]
+margin_left = 136.0
+margin_top = 16.0
+margin_right = 675.0
+margin_bottom = 62.0
+custom_fonts/font = ExtResource( 4 )
+text = "Stun"
+valign = 1
+
+[node name="SkillName2" type="Label" parent="Skills/ScrollContainer/GridContainer/Orange_Stun"]
+margin_left = 136.0
+margin_top = 64.0
+margin_right = 728.0
+margin_bottom = 240.0
+custom_fonts/font = ExtResource( 3 )
+text = "ORANGE_STUN"
+autowrap = true
+clip_text = true
+
+[node name="TextureRect" type="TextureRect" parent="Skills/ScrollContainer/GridContainer/Orange_Stun"]
+margin_left = 16.0
+margin_top = 16.0
+margin_right = 123.0
+margin_bottom = 123.0
+texture = ExtResource( 28 )
+expand = true
+
+[node name="Info" type="Label" parent="Skills/ScrollContainer/GridContainer/Orange_Stun"]
+margin_left = 16.0
+margin_top = 128.0
+margin_right = 120.0
+margin_bottom = 232.0
+custom_fonts/font = ExtResource( 3 )
+text = "EN: 4
+COST: 3
+CD: 6"
+autowrap = true
+
+[node name="Yellow_Lightning_Strike" type="Button" parent="Skills/ScrollContainer/GridContainer" groups=["Yellow"]]
+margin_top = 1360.0
+margin_right = 745.0
+margin_bottom = 1616.0
+rect_min_size = Vector2( 745, 256 )
+rect_pivot_offset = Vector2( 104, 40 )
+script = ExtResource( 29 )
+color = "Yellow"
+color_small = "yellow"
+
+[node name="SkillName" type="Label" parent="Skills/ScrollContainer/GridContainer/Yellow_Lightning_Strike"]
+margin_left = 136.0
+margin_top = 16.0
+margin_right = 675.0
+margin_bottom = 62.0
+custom_fonts/font = ExtResource( 4 )
+text = "Lightning Strike"
+valign = 1
+
+[node name="SkillName2" type="Label" parent="Skills/ScrollContainer/GridContainer/Yellow_Lightning_Strike"]
+margin_left = 136.0
+margin_top = 64.0
+margin_right = 728.0
+margin_bottom = 240.0
+custom_fonts/font = ExtResource( 3 )
+text = "YELLOW_LIGHTNING_STRIKE"
+autowrap = true
+clip_text = true
+
+[node name="TextureRect" type="TextureRect" parent="Skills/ScrollContainer/GridContainer/Yellow_Lightning_Strike"]
+margin_left = 16.0
+margin_top = 16.0
+margin_right = 123.0
+margin_bottom = 123.0
+texture = ExtResource( 14 )
+expand = true
+
+[node name="Info" type="Label" parent="Skills/ScrollContainer/GridContainer/Yellow_Lightning_Strike"]
+margin_left = 16.0
+margin_top = 128.0
+margin_right = 120.0
+margin_bottom = 232.0
+custom_fonts/font = ExtResource( 3 )
+text = "EN: 2
+COST: 1
+CD: 1"
+autowrap = true
+
+[node name="Yellow_Zig_Zag" type="Button" parent="Skills/ScrollContainer/GridContainer" groups=["Yellow"]]
+margin_left = 761.0
+margin_top = 1360.0
+margin_right = 1506.0
+margin_bottom = 1616.0
+rect_min_size = Vector2( 745, 256 )
+rect_pivot_offset = Vector2( 104, 40 )
+script = ExtResource( 29 )
+color = "Yellow"
+color_small = "yellow"
+
+[node name="SkillName" type="Label" parent="Skills/ScrollContainer/GridContainer/Yellow_Zig_Zag"]
+margin_left = 136.0
+margin_top = 16.0
+margin_right = 675.0
+margin_bottom = 62.0
+custom_fonts/font = ExtResource( 4 )
+text = "Zig-Zag"
+valign = 1
+
+[node name="SkillName2" type="Label" parent="Skills/ScrollContainer/GridContainer/Yellow_Zig_Zag"]
+margin_left = 136.0
+margin_top = 64.0
+margin_right = 728.0
+margin_bottom = 240.0
+custom_fonts/font = ExtResource( 3 )
+text = "YELLOW_ZIG_ZAG"
+autowrap = true
+clip_text = true
+
+[node name="TextureRect" type="TextureRect" parent="Skills/ScrollContainer/GridContainer/Yellow_Zig_Zag"]
+margin_left = 16.0
+margin_top = 16.0
+margin_right = 123.0
+margin_bottom = 123.0
+texture = ExtResource( 15 )
+expand = true
+
+[node name="Info" type="Label" parent="Skills/ScrollContainer/GridContainer/Yellow_Zig_Zag"]
+margin_left = 16.0
+margin_top = 128.0
+margin_right = 120.0
+margin_bottom = 232.0
+custom_fonts/font = ExtResource( 3 )
+text = "EN: 3
+COST: 1
+CD: 4"
+autowrap = true
+
+[node name="Yellow_Thunder_Pulse" type="Button" parent="Skills/ScrollContainer/GridContainer" groups=["Yellow"]]
+margin_top = 1632.0
+margin_right = 745.0
+margin_bottom = 1888.0
+rect_min_size = Vector2( 745, 256 )
+rect_pivot_offset = Vector2( 104, 40 )
+script = ExtResource( 29 )
+color = "Yellow"
+color_small = "yellow"
+
+[node name="SkillName" type="Label" parent="Skills/ScrollContainer/GridContainer/Yellow_Thunder_Pulse"]
+margin_left = 136.0
+margin_top = 16.0
+margin_right = 675.0
+margin_bottom = 62.0
+custom_fonts/font = ExtResource( 4 )
+text = "Thunder Pulse"
+valign = 1
+
+[node name="SkillName2" type="Label" parent="Skills/ScrollContainer/GridContainer/Yellow_Thunder_Pulse"]
+margin_left = 136.0
+margin_top = 64.0
+margin_right = 728.0
+margin_bottom = 240.0
+custom_fonts/font = ExtResource( 3 )
+text = "YELLOW_THUNDER_PULSE"
+autowrap = true
+clip_text = true
+
+[node name="TextureRect" type="TextureRect" parent="Skills/ScrollContainer/GridContainer/Yellow_Thunder_Pulse"]
+margin_left = 16.0
+margin_top = 16.0
+margin_right = 123.0
+margin_bottom = 123.0
+texture = ExtResource( 19 )
+expand = true
+
+[node name="Info" type="Label" parent="Skills/ScrollContainer/GridContainer/Yellow_Thunder_Pulse"]
+margin_left = 16.0
+margin_top = 128.0
+margin_right = 120.0
+margin_bottom = 232.0
+custom_fonts/font = ExtResource( 3 )
+text = "EN: 4
+COST: 2
+CD: 4"
+autowrap = true
+
+[node name="Yellow_Flash_Of_Light" type="Button" parent="Skills/ScrollContainer/GridContainer" groups=["Yellow"]]
+margin_left = 761.0
+margin_top = 1632.0
+margin_right = 1506.0
+margin_bottom = 1888.0
+rect_min_size = Vector2( 745, 256 )
+rect_pivot_offset = Vector2( 104, 40 )
+script = ExtResource( 29 )
+color = "Yellow"
+color_small = "yellow"
+
+[node name="SkillName" type="Label" parent="Skills/ScrollContainer/GridContainer/Yellow_Flash_Of_Light"]
+margin_left = 136.0
+margin_top = 16.0
+margin_right = 675.0
+margin_bottom = 62.0
+custom_fonts/font = ExtResource( 4 )
+text = "Flash of Light"
+valign = 1
+
+[node name="SkillName2" type="Label" parent="Skills/ScrollContainer/GridContainer/Yellow_Flash_Of_Light"]
+margin_left = 136.0
+margin_top = 64.0
+margin_right = 728.0
+margin_bottom = 240.0
+custom_fonts/font = ExtResource( 3 )
+text = "YELLOW_FLASH_OF_LIGHT"
+autowrap = true
+clip_text = true
+
+[node name="TextureRect" type="TextureRect" parent="Skills/ScrollContainer/GridContainer/Yellow_Flash_Of_Light"]
+margin_left = 16.0
+margin_top = 16.0
+margin_right = 123.0
+margin_bottom = 123.0
+texture = ExtResource( 20 )
+expand = true
+
+[node name="Info" type="Label" parent="Skills/ScrollContainer/GridContainer/Yellow_Flash_Of_Light"]
+margin_left = 16.0
+margin_top = 128.0
+margin_right = 120.0
+margin_bottom = 232.0
+custom_fonts/font = ExtResource( 3 )
+text = "EN: 4
+COST: 2
+CD: 4"
+autowrap = true
+
+[node name="Yellow_Thunderstorm" type="Button" parent="Skills/ScrollContainer/GridContainer" groups=["Yellow"]]
+margin_top = 1904.0
+margin_right = 745.0
+margin_bottom = 2160.0
+rect_min_size = Vector2( 745, 256 )
+rect_pivot_offset = Vector2( 104, 40 )
+script = ExtResource( 29 )
+color = "Yellow"
+color_small = "yellow"
+
+[node name="SkillName" type="Label" parent="Skills/ScrollContainer/GridContainer/Yellow_Thunderstorm"]
+margin_left = 136.0
+margin_top = 16.0
+margin_right = 675.0
+margin_bottom = 62.0
+custom_fonts/font = ExtResource( 4 )
+text = "Thunderstorm"
+valign = 1
+
+[node name="SkillName2" type="Label" parent="Skills/ScrollContainer/GridContainer/Yellow_Thunderstorm"]
+margin_left = 136.0
+margin_top = 64.0
+margin_right = 728.0
+margin_bottom = 240.0
+custom_fonts/font = ExtResource( 3 )
+text = "YELLOW_THUNDERSTORM"
+autowrap = true
+clip_text = true
+
+[node name="TextureRect" type="TextureRect" parent="Skills/ScrollContainer/GridContainer/Yellow_Thunderstorm"]
+margin_left = 16.0
+margin_top = 16.0
+margin_right = 123.0
+margin_bottom = 123.0
+texture = ExtResource( 13 )
+expand = true
+
+[node name="Info" type="Label" parent="Skills/ScrollContainer/GridContainer/Yellow_Thunderstorm"]
+margin_left = 16.0
+margin_top = 128.0
+margin_right = 120.0
+margin_bottom = 232.0
+custom_fonts/font = ExtResource( 3 )
+text = "EN: 6
+COST: 3
+CD: 6"
+autowrap = true
+
+[node name="Green_Spread" type="Button" parent="Skills/ScrollContainer/GridContainer" groups=["Green"]]
+margin_left = 761.0
+margin_top = 1904.0
+margin_right = 1506.0
+margin_bottom = 2160.0
+rect_min_size = Vector2( 745, 256 )
+script = ExtResource( 29 )
+color = "Green"
+color_small = "green"
+
+[node name="SkillName" type="Label" parent="Skills/ScrollContainer/GridContainer/Green_Spread"]
+margin_left = 135.0
+margin_top = 16.0
+margin_right = 674.0
+margin_bottom = 62.0
+custom_fonts/font = ExtResource( 4 )
+text = "Spread"
+valign = 1
+
+[node name="SkillName2" type="Label" parent="Skills/ScrollContainer/GridContainer/Green_Spread"]
+margin_left = 135.0
+margin_top = 64.0
+margin_right = 727.0
+margin_bottom = 240.0
+custom_fonts/font = ExtResource( 3 )
+text = "GREEN_SPREAD"
+autowrap = true
+clip_text = true
+
+[node name="TextureRect" type="TextureRect" parent="Skills/ScrollContainer/GridContainer/Green_Spread"]
+margin_left = 15.0
+margin_top = 16.0
+margin_right = 122.0
+margin_bottom = 123.0
+texture = ExtResource( 17 )
+expand = true
+
+[node name="Info" type="Label" parent="Skills/ScrollContainer/GridContainer/Green_Spread"]
+margin_left = 16.0
+margin_top = 128.0
+margin_right = 120.0
+margin_bottom = 232.0
+custom_fonts/font = ExtResource( 3 )
+text = "EN: 2
+COST: 1
+CD: 1"
+autowrap = true
+
+[node name="Green_Healing" type="Button" parent="Skills/ScrollContainer/GridContainer" groups=["Green"]]
+margin_top = 2176.0
+margin_right = 745.0
+margin_bottom = 2432.0
+rect_min_size = Vector2( 745, 256 )
+script = ExtResource( 29 )
+color = "Green"
+color_small = "green"
+
+[node name="SkillName" type="Label" parent="Skills/ScrollContainer/GridContainer/Green_Healing"]
+margin_left = 136.0
+margin_top = 16.0
+margin_right = 675.0
+margin_bottom = 62.0
+custom_fonts/font = ExtResource( 4 )
+text = "Healing"
+valign = 1
+
+[node name="SkillName2" type="Label" parent="Skills/ScrollContainer/GridContainer/Green_Healing"]
+margin_left = 136.0
+margin_top = 64.0
+margin_right = 728.0
+margin_bottom = 240.0
+custom_fonts/font = ExtResource( 3 )
+text = "GREEN_HEALING"
+autowrap = true
+clip_text = true
+
+[node name="TextureRect" type="TextureRect" parent="Skills/ScrollContainer/GridContainer/Green_Healing"]
+margin_left = 16.0
+margin_top = 16.0
+margin_right = 123.0
+margin_bottom = 123.0
+texture = ExtResource( 16 )
+expand = true
+
+[node name="Info" type="Label" parent="Skills/ScrollContainer/GridContainer/Green_Healing"]
+margin_left = 16.0
+margin_top = 128.0
+margin_right = 120.0
+margin_bottom = 232.0
+custom_fonts/font = ExtResource( 3 )
+text = "EN: 3
+COST: 1
+CD: 2"
+autowrap = true
+
+[node name="Green_Life_Circulation" type="Button" parent="Skills/ScrollContainer/GridContainer" groups=["Green"]]
+margin_left = 761.0
+margin_top = 2176.0
+margin_right = 1506.0
+margin_bottom = 2432.0
+rect_min_size = Vector2( 745, 256 )
+script = ExtResource( 29 )
+color = "Green"
+color_small = "green"
+
+[node name="SkillName" type="Label" parent="Skills/ScrollContainer/GridContainer/Green_Life_Circulation"]
+margin_left = 136.0
+margin_top = 16.0
+margin_right = 675.0
+margin_bottom = 62.0
+custom_fonts/font = ExtResource( 4 )
+text = "Life Circulation"
+valign = 1
+
+[node name="SkillName2" type="Label" parent="Skills/ScrollContainer/GridContainer/Green_Life_Circulation"]
+margin_left = 136.0
+margin_top = 64.0
+margin_right = 728.0
+margin_bottom = 240.0
+custom_fonts/font = ExtResource( 3 )
+text = "GREEN_LIFE_CIRCULATION"
+autowrap = true
+clip_text = true
+
+[node name="TextureRect" type="TextureRect" parent="Skills/ScrollContainer/GridContainer/Green_Life_Circulation"]
+margin_left = 16.0
+margin_top = 16.0
+margin_right = 123.0
+margin_bottom = 123.0
+texture = ExtResource( 7 )
+expand = true
+
+[node name="Info" type="Label" parent="Skills/ScrollContainer/GridContainer/Green_Life_Circulation"]
+margin_left = 16.0
+margin_top = 128.0
+margin_right = 120.0
+margin_bottom = 232.0
+custom_fonts/font = ExtResource( 3 )
+text = "EN: 4
+COST: 2
+CD: 6"
+autowrap = true
+
+[node name="Green_Studying" type="Button" parent="Skills/ScrollContainer/GridContainer" groups=["Green"]]
+margin_top = 2448.0
+margin_right = 745.0
+margin_bottom = 2704.0
+rect_min_size = Vector2( 745, 256 )
+script = ExtResource( 29 )
+color = "Green"
+color_small = "green"
+
+[node name="SkillName" type="Label" parent="Skills/ScrollContainer/GridContainer/Green_Studying"]
+margin_left = 136.0
+margin_top = 16.0
+margin_right = 675.0
+margin_bottom = 62.0
+custom_fonts/font = ExtResource( 4 )
+text = "Studying"
+valign = 1
+
+[node name="SkillName2" type="Label" parent="Skills/ScrollContainer/GridContainer/Green_Studying"]
+margin_left = 136.0
+margin_top = 64.0
+margin_right = 728.0
+margin_bottom = 240.0
+custom_fonts/font = ExtResource( 3 )
+text = "GREEN_STUDYING"
+autowrap = true
+clip_text = true
+
+[node name="TextureRect" type="TextureRect" parent="Skills/ScrollContainer/GridContainer/Green_Studying"]
+margin_left = 16.0
+margin_top = 16.0
+margin_right = 123.0
+margin_bottom = 123.0
+texture = ExtResource( 25 )
+expand = true
+
+[node name="Info" type="Label" parent="Skills/ScrollContainer/GridContainer/Green_Studying"]
+margin_left = 16.0
+margin_top = 128.0
+margin_right = 120.0
+margin_bottom = 232.0
+custom_fonts/font = ExtResource( 3 )
+text = "EN: 4
+COST: 2
+CD: 6"
+autowrap = true
+
+[node name="Green_Bloom" type="Button" parent="Skills/ScrollContainer/GridContainer" groups=["Green"]]
+margin_left = 761.0
+margin_top = 2448.0
+margin_right = 1506.0
+margin_bottom = 2704.0
+rect_min_size = Vector2( 745, 256 )
+script = ExtResource( 29 )
+color = "Green"
+color_small = "green"
+
+[node name="SkillName" type="Label" parent="Skills/ScrollContainer/GridContainer/Green_Bloom"]
+margin_left = 136.0
+margin_top = 16.0
+margin_right = 675.0
+margin_bottom = 62.0
+custom_fonts/font = ExtResource( 4 )
+text = "Bloom"
+valign = 1
+
+[node name="SkillName2" type="Label" parent="Skills/ScrollContainer/GridContainer/Green_Bloom"]
+margin_left = 136.0
+margin_top = 64.0
+margin_right = 728.0
+margin_bottom = 240.0
+custom_fonts/font = ExtResource( 3 )
+text = "GREEN_BLOOM"
+autowrap = true
+clip_text = true
+
+[node name="TextureRect" type="TextureRect" parent="Skills/ScrollContainer/GridContainer/Green_Bloom"]
+margin_left = 16.0
+margin_top = 16.0
+margin_right = 123.0
+margin_bottom = 123.0
+texture = ExtResource( 23 )
+expand = true
+
+[node name="Info" type="Label" parent="Skills/ScrollContainer/GridContainer/Green_Bloom"]
+margin_left = 16.0
+margin_top = 128.0
+margin_right = 120.0
+margin_bottom = 232.0
+custom_fonts/font = ExtResource( 3 )
+text = "EN: 4
+COST: 3
+CD: 6"
+autowrap = true
+
+[node name="Blue_Energy_Vampire" type="Button" parent="Skills/ScrollContainer/GridContainer" groups=["Blue"]]
+margin_top = 2720.0
+margin_right = 745.0
+margin_bottom = 2976.0
+rect_min_size = Vector2( 745, 256 )
+script = ExtResource( 29 )
+color = "Blue"
+color_small = "blue"
+
+[node name="SkillName" type="Label" parent="Skills/ScrollContainer/GridContainer/Blue_Energy_Vampire"]
+margin_left = 136.0
+margin_top = 16.0
+margin_right = 675.0
+margin_bottom = 62.0
+custom_fonts/font = ExtResource( 4 )
+text = "Energy Vampire"
+valign = 1
+
+[node name="SkillName2" type="Label" parent="Skills/ScrollContainer/GridContainer/Blue_Energy_Vampire"]
+margin_left = 136.0
+margin_top = 64.0
+margin_right = 728.0
+margin_bottom = 240.0
+custom_fonts/font = ExtResource( 3 )
+text = "BLUE_ENERGY_VAMPIRE"
+autowrap = true
+clip_text = true
+
+[node name="TextureRect" type="TextureRect" parent="Skills/ScrollContainer/GridContainer/Blue_Energy_Vampire"]
+margin_left = 16.0
+margin_top = 16.0
+margin_right = 123.0
+margin_bottom = 123.0
+texture = ExtResource( 26 )
+expand = true
+
+[node name="Info" type="Label" parent="Skills/ScrollContainer/GridContainer/Blue_Energy_Vampire"]
+margin_left = 16.0
+margin_top = 128.0
+margin_right = 120.0
+margin_bottom = 232.0
+custom_fonts/font = ExtResource( 3 )
+text = "EN: 2
+COST: 1
+CD: 1"
+autowrap = true
+
+[node name="Blue_Comatosis" type="Button" parent="Skills/ScrollContainer/GridContainer" groups=["Blue"]]
+margin_left = 761.0
+margin_top = 2720.0
+margin_right = 1506.0
+margin_bottom = 2976.0
+rect_min_size = Vector2( 745, 256 )
+script = ExtResource( 29 )
+color = "Blue"
+color_small = "blue"
+
+[node name="SkillName" type="Label" parent="Skills/ScrollContainer/GridContainer/Blue_Comatosis"]
+margin_left = 136.0
+margin_top = 16.0
+margin_right = 675.0
+margin_bottom = 62.0
+custom_fonts/font = ExtResource( 4 )
+text = "Comatosis"
+valign = 1
+
+[node name="SkillName2" type="Label" parent="Skills/ScrollContainer/GridContainer/Blue_Comatosis"]
+margin_left = 136.0
+margin_top = 64.0
+margin_right = 728.0
+margin_bottom = 240.0
+custom_fonts/font = ExtResource( 3 )
+text = "BLUE_COMATOSIS"
+autowrap = true
+clip_text = true
+
+[node name="TextureRect" type="TextureRect" parent="Skills/ScrollContainer/GridContainer/Blue_Comatosis"]
+margin_left = 16.0
+margin_top = 16.0
+margin_right = 123.0
+margin_bottom = 123.0
+texture = ExtResource( 21 )
+expand = true
+
+[node name="Info" type="Label" parent="Skills/ScrollContainer/GridContainer/Blue_Comatosis"]
+margin_left = 16.0
+margin_top = 128.0
+margin_right = 120.0
+margin_bottom = 232.0
+custom_fonts/font = ExtResource( 3 )
+text = "EN: 2
+COST: 1
+CD: 4"
+autowrap = true
+
+[node name="Blue_Nervous_Exhaustion" type="Button" parent="Skills/ScrollContainer/GridContainer" groups=["Blue"]]
+margin_top = 2992.0
+margin_right = 745.0
+margin_bottom = 3248.0
+rect_min_size = Vector2( 745, 256 )
+script = ExtResource( 29 )
+color = "Blue"
+color_small = "blue"
+
+[node name="SkillName" type="Label" parent="Skills/ScrollContainer/GridContainer/Blue_Nervous_Exhaustion"]
+margin_left = 136.0
+margin_top = 16.0
+margin_right = 675.0
+margin_bottom = 62.0
+custom_fonts/font = ExtResource( 4 )
+text = "Nervous Exhaustion"
+valign = 1
+
+[node name="SkillName2" type="Label" parent="Skills/ScrollContainer/GridContainer/Blue_Nervous_Exhaustion"]
+margin_left = 136.0
+margin_top = 64.0
+margin_right = 728.0
+margin_bottom = 240.0
+custom_fonts/font = ExtResource( 3 )
+text = "BLUE_NERVOUS_EXHAUSTION"
+autowrap = true
+clip_text = true
+
+[node name="TextureRect" type="TextureRect" parent="Skills/ScrollContainer/GridContainer/Blue_Nervous_Exhaustion"]
+margin_left = 16.0
+margin_top = 16.0
+margin_right = 123.0
+margin_bottom = 123.0
+texture = ExtResource( 31 )
+expand = true
+
+[node name="Info" type="Label" parent="Skills/ScrollContainer/GridContainer/Blue_Nervous_Exhaustion"]
+margin_left = 16.0
+margin_top = 128.0
+margin_right = 120.0
+margin_bottom = 232.0
+custom_fonts/font = ExtResource( 3 )
+text = "EN: 4
+COST: 2
+CD: 4"
+autowrap = true
+
+[node name="Blue_Soundproofing" type="Button" parent="Skills/ScrollContainer/GridContainer" groups=["Blue"]]
+margin_left = 761.0
+margin_top = 2992.0
+margin_right = 1506.0
+margin_bottom = 3248.0
+rect_min_size = Vector2( 745, 256 )
+script = ExtResource( 29 )
+color = "Blue"
+color_small = "blue"
+
+[node name="SkillName" type="Label" parent="Skills/ScrollContainer/GridContainer/Blue_Soundproofing"]
+margin_left = 136.0
+margin_top = 16.0
+margin_right = 675.0
+margin_bottom = 62.0
+custom_fonts/font = ExtResource( 4 )
+text = "Soundproofing"
+valign = 1
+
+[node name="SkillName2" type="Label" parent="Skills/ScrollContainer/GridContainer/Blue_Soundproofing"]
+margin_left = 136.0
+margin_top = 64.0
+margin_right = 728.0
+margin_bottom = 240.0
+custom_fonts/font = ExtResource( 3 )
+text = "BLUE_SOUNDPROOFING"
+autowrap = true
+clip_text = true
+
+[node name="TextureRect" type="TextureRect" parent="Skills/ScrollContainer/GridContainer/Blue_Soundproofing"]
+margin_left = 16.0
+margin_top = 16.0
+margin_right = 123.0
+margin_bottom = 123.0
+texture = ExtResource( 24 )
+expand = true
+
+[node name="Info" type="Label" parent="Skills/ScrollContainer/GridContainer/Blue_Soundproofing"]
+margin_left = 16.0
+margin_top = 128.0
+margin_right = 120.0
+margin_bottom = 232.0
+custom_fonts/font = ExtResource( 3 )
+text = "EN: 4
+COST: 2
+CD: 4"
+autowrap = true
+
+[node name="Blue_Mental_Shield" type="Button" parent="Skills/ScrollContainer/GridContainer" groups=["Blue"]]
+margin_top = 3264.0
+margin_right = 745.0
+margin_bottom = 3520.0
+rect_min_size = Vector2( 745, 256 )
+script = ExtResource( 29 )
+color = "Blue"
+color_small = "blue"
+
+[node name="SkillName" type="Label" parent="Skills/ScrollContainer/GridContainer/Blue_Mental_Shield"]
+margin_left = 136.0
+margin_top = 16.0
+margin_right = 675.0
+margin_bottom = 62.0
+custom_fonts/font = ExtResource( 4 )
+text = "Mental Shield"
+valign = 1
+
+[node name="SkillName2" type="Label" parent="Skills/ScrollContainer/GridContainer/Blue_Mental_Shield"]
+margin_left = 136.0
+margin_top = 64.0
+margin_right = 728.0
+margin_bottom = 240.0
+custom_fonts/font = ExtResource( 3 )
+text = "BLUE_MENTAL_SHIELD"
+autowrap = true
+clip_text = true
+
+[node name="TextureRect" type="TextureRect" parent="Skills/ScrollContainer/GridContainer/Blue_Mental_Shield"]
+margin_left = 16.0
+margin_top = 16.0
+margin_right = 123.0
+margin_bottom = 123.0
+texture = ExtResource( 32 )
+expand = true
+
+[node name="Info" type="Label" parent="Skills/ScrollContainer/GridContainer/Blue_Mental_Shield"]
+margin_left = 16.0
+margin_top = 128.0
+margin_right = 120.0
+margin_bottom = 232.0
+custom_fonts/font = ExtResource( 3 )
+text = "EN: 3
+COST: 3
+CD: 6"
+autowrap = true
+
+[node name="Purple_Miasma" type="Button" parent="Skills/ScrollContainer/GridContainer" groups=["Purple"]]
+margin_left = 761.0
+margin_top = 3264.0
+margin_right = 1506.0
+margin_bottom = 3520.0
+rect_min_size = Vector2( 745, 256 )
+script = ExtResource( 29 )
+color = "Purple"
+color_small = "purple"
+
+[node name="SkillName" type="Label" parent="Skills/ScrollContainer/GridContainer/Purple_Miasma"]
+margin_left = 136.0
+margin_top = 16.0
+margin_right = 675.0
+margin_bottom = 62.0
+custom_fonts/font = ExtResource( 4 )
+text = "Miasma"
+valign = 1
+
+[node name="SkillName2" type="Label" parent="Skills/ScrollContainer/GridContainer/Purple_Miasma"]
+margin_left = 136.0
+margin_top = 64.0
+margin_right = 728.0
+margin_bottom = 240.0
+custom_fonts/font = ExtResource( 3 )
+text = "PURPLE_MIASMA"
+autowrap = true
+clip_text = true
+
+[node name="TextureRect" type="TextureRect" parent="Skills/ScrollContainer/GridContainer/Purple_Miasma"]
+margin_left = 16.0
+margin_top = 16.0
+margin_right = 123.0
+margin_bottom = 123.0
+texture = ExtResource( 30 )
+expand = true
+
+[node name="Info" type="Label" parent="Skills/ScrollContainer/GridContainer/Purple_Miasma"]
+margin_left = 16.0
+margin_top = 128.0
+margin_right = 120.0
+margin_bottom = 232.0
+custom_fonts/font = ExtResource( 3 )
+text = "EN: 2
+COST: 1
+CD: 1"
+autowrap = true
+
+[node name="Purple_Curse" type="Button" parent="Skills/ScrollContainer/GridContainer" groups=["Purple"]]
+margin_top = 3536.0
+margin_right = 745.0
+margin_bottom = 3792.0
+rect_min_size = Vector2( 745, 256 )
+script = ExtResource( 29 )
+color = "Purple"
+color_small = "purple"
+
+[node name="SkillName" type="Label" parent="Skills/ScrollContainer/GridContainer/Purple_Curse"]
+margin_left = 136.0
+margin_top = 16.0
+margin_right = 675.0
+margin_bottom = 62.0
+custom_fonts/font = ExtResource( 4 )
+text = "Curse"
+valign = 1
+
+[node name="SkillName2" type="Label" parent="Skills/ScrollContainer/GridContainer/Purple_Curse"]
+margin_left = 136.0
+margin_top = 64.0
+margin_right = 728.0
+margin_bottom = 240.0
+custom_fonts/font = ExtResource( 3 )
+text = "PURPLE_CURSE"
+autowrap = true
+clip_text = true
+
+[node name="TextureRect" type="TextureRect" parent="Skills/ScrollContainer/GridContainer/Purple_Curse"]
+margin_left = 16.0
+margin_top = 16.0
+margin_right = 123.0
+margin_bottom = 123.0
+texture = ExtResource( 33 )
+expand = true
+
+[node name="Info" type="Label" parent="Skills/ScrollContainer/GridContainer/Purple_Curse"]
+margin_left = 16.0
+margin_top = 128.0
+margin_right = 120.0
+margin_bottom = 232.0
+custom_fonts/font = ExtResource( 3 )
+text = "EN: 2
+COST: 2
+CD: 5"
+autowrap = true
+
+[node name="Purple_Weak_Body" type="Button" parent="Skills/ScrollContainer/GridContainer" groups=["Purple"]]
+margin_left = 761.0
+margin_top = 3536.0
+margin_right = 1506.0
+margin_bottom = 3792.0
+rect_min_size = Vector2( 745, 256 )
+script = ExtResource( 29 )
+color = "Purple"
+color_small = "purple"
+
+[node name="SkillName" type="Label" parent="Skills/ScrollContainer/GridContainer/Purple_Weak_Body"]
+margin_left = 136.0
+margin_top = 16.0
+margin_right = 675.0
+margin_bottom = 62.0
+custom_fonts/font = ExtResource( 4 )
+text = "Weak Body"
+valign = 1
+
+[node name="SkillName2" type="Label" parent="Skills/ScrollContainer/GridContainer/Purple_Weak_Body"]
+margin_left = 136.0
+margin_top = 64.0
+margin_right = 728.0
+margin_bottom = 240.0
+custom_fonts/font = ExtResource( 3 )
+text = "PURPLE_WEAK_BODY"
+autowrap = true
+clip_text = true
+
+[node name="TextureRect" type="TextureRect" parent="Skills/ScrollContainer/GridContainer/Purple_Weak_Body"]
+margin_left = 16.0
+margin_top = 16.0
+margin_right = 123.0
+margin_bottom = 123.0
+texture = ExtResource( 34 )
+expand = true
+
+[node name="Info" type="Label" parent="Skills/ScrollContainer/GridContainer/Purple_Weak_Body"]
+margin_left = 16.0
+margin_top = 128.0
+margin_right = 120.0
+margin_bottom = 232.0
+custom_fonts/font = ExtResource( 3 )
+text = "EN: 2
+COST: 2
+CD: 5"
+autowrap = true
+
+[node name="Purple_Sweet_Dreams" type="Button" parent="Skills/ScrollContainer/GridContainer" groups=["Purple"]]
+margin_top = 3808.0
+margin_right = 745.0
+margin_bottom = 4064.0
+rect_min_size = Vector2( 745, 256 )
+script = ExtResource( 29 )
+color = "Purple"
+color_small = "purple"
+
+[node name="SkillName" type="Label" parent="Skills/ScrollContainer/GridContainer/Purple_Sweet_Dreams"]
+margin_left = 136.0
+margin_top = 16.0
+margin_right = 675.0
+margin_bottom = 62.0
+custom_fonts/font = ExtResource( 4 )
+text = "Sweet Dreams"
+valign = 1
+
+[node name="SkillName2" type="Label" parent="Skills/ScrollContainer/GridContainer/Purple_Sweet_Dreams"]
+margin_left = 136.0
+margin_top = 64.0
+margin_right = 728.0
+margin_bottom = 240.0
+custom_fonts/font = ExtResource( 3 )
+text = "PURPLE_SWEET_DREAMS"
+autowrap = true
+clip_text = true
+
+[node name="TextureRect" type="TextureRect" parent="Skills/ScrollContainer/GridContainer/Purple_Sweet_Dreams"]
+margin_left = 16.0
+margin_top = 16.0
+margin_right = 123.0
+margin_bottom = 123.0
+texture = ExtResource( 38 )
+expand = true
+
+[node name="Info" type="Label" parent="Skills/ScrollContainer/GridContainer/Purple_Sweet_Dreams"]
+margin_left = 16.0
+margin_top = 128.0
+margin_right = 120.0
+margin_bottom = 232.0
+custom_fonts/font = ExtResource( 3 )
+text = "EN: 4
+COST: 3
+CD: 4"
+autowrap = true
+
+[node name="Purple_Octopus_Ink" type="Button" parent="Skills/ScrollContainer/GridContainer" groups=["Purple"]]
+margin_left = 761.0
+margin_top = 3808.0
+margin_right = 1506.0
+margin_bottom = 4064.0
+rect_min_size = Vector2( 745, 256 )
+script = ExtResource( 29 )
+color = "Purple"
+color_small = "purple"
+
+[node name="SkillName" type="Label" parent="Skills/ScrollContainer/GridContainer/Purple_Octopus_Ink"]
+margin_left = 136.0
+margin_top = 16.0
+margin_right = 675.0
+margin_bottom = 62.0
+custom_fonts/font = ExtResource( 4 )
+text = "Octopus Ink"
+valign = 1
+
+[node name="SkillName2" type="Label" parent="Skills/ScrollContainer/GridContainer/Purple_Octopus_Ink"]
+margin_left = 136.0
+margin_top = 64.0
+margin_right = 728.0
+margin_bottom = 240.0
+custom_fonts/font = ExtResource( 3 )
+text = "PURPLE_OCTOPUS_INK"
+autowrap = true
+clip_text = true
+
+[node name="TextureRect" type="TextureRect" parent="Skills/ScrollContainer/GridContainer/Purple_Octopus_Ink"]
+margin_left = 16.0
+margin_top = 16.0
+margin_right = 123.0
+margin_bottom = 123.0
+texture = ExtResource( 10 )
+expand = true
+
+[node name="Info" type="Label" parent="Skills/ScrollContainer/GridContainer/Purple_Octopus_Ink"]
+margin_left = 16.0
+margin_top = 128.0
+margin_right = 120.0
+margin_bottom = 232.0
+custom_fonts/font = ExtResource( 3 )
+text = "EN: 3
+COST: 3
+CD: 5"
+autowrap = true
+
+[node name="Choose" type="Button" parent="Skills"]
+margin_left = 1632.0
+margin_top = 968.0
+margin_right = 1856.0
+margin_bottom = 1064.0
+text = "Choose"
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Skills"]
+margin_left = 1632.0
+margin_top = 24.0
+margin_right = 1856.0
+margin_bottom = 864.0
+custom_constants/separation = 8
+
+[node name="All" type="Button" parent="Skills/VBoxContainer"]
+margin_right = 224.0
+margin_bottom = 94.649
+text = "All"
+
+[node name="Red" type="Button" parent="Skills/VBoxContainer"]
+margin_top = 102.0
+margin_right = 224.0
+margin_bottom = 196.649
+text = "Red"
+
+[node name="Orange" type="Button" parent="Skills/VBoxContainer"]
+margin_top = 204.0
+margin_right = 224.0
+margin_bottom = 298.649
+text = "Orange"
+
+[node name="Yellow" type="Button" parent="Skills/VBoxContainer"]
+margin_top = 306.0
+margin_right = 224.0
+margin_bottom = 400.649
+text = "Yellow"
+
+[node name="Green" type="Button" parent="Skills/VBoxContainer"]
+margin_top = 408.0
+margin_right = 224.0
+margin_bottom = 502.649
+text = "Green"
+
+[node name="Blue" type="Button" parent="Skills/VBoxContainer"]
+margin_top = 510.0
+margin_right = 224.0
+margin_bottom = 604.649
+text = "Blue"
+
+[node name="Purple" type="Button" parent="Skills/VBoxContainer"]
+margin_top = 612.0
+margin_right = 224.0
+margin_bottom = 706.649
+text = "Purple"
+
+[node name="TV" parent="." instance=ExtResource( 1 )]
+visible = false
+material = SubResource( 1 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[connection signal="item_selected" from="SkillChoosing/Resistances/HBoxContainer/Resistance1" to="SkillChoosing/Resistances" method="_on_Resistance1_item_selected"]
+[connection signal="item_selected" from="SkillChoosing/Resistances/HBoxContainer/Resistance2" to="SkillChoosing/Resistances" method="_on_Resistance2_item_selected"]
+[connection signal="item_selected" from="SkillChoosing/Resistances/HBoxContainer/Resistance3" to="SkillChoosing/Resistances" method="_on_Resistance3_item_selected"]
+[connection signal="item_selected" from="SkillChoosing/Resistances/HBoxContainer/Weakness" to="SkillChoosing/Resistances" method="_on_Weakness_item_selected"]
+[connection signal="item_selected" from="SkillChoosing/Resistances/HBoxContainer/Weakness2" to="SkillChoosing/Resistances" method="_on_Weakness2_item_selected"]
+[connection signal="pressed" from="SkillChoosing/CenterContainer/HBoxContainer/Skill1" to="." method="_on_Skill1_pressed"]
+[connection signal="pressed" from="SkillChoosing/CenterContainer/HBoxContainer/Skill2" to="." method="_on_Skill2_pressed"]
+[connection signal="pressed" from="SkillChoosing/CenterContainer/HBoxContainer/Skill3" to="." method="_on_Skill3_pressed"]
+[connection signal="pressed" from="SkillChoosing/Go" to="." method="_on_Go_pressed"]
+[connection signal="pressed" from="Skills/ScrollContainer/GridContainer/Red_Warning_Strike" to="Skills/ScrollContainer/GridContainer/Red_Warning_Strike" method="_on_self_pressed"]
+[connection signal="pressed" from="Skills/ScrollContainer/GridContainer/Red_Dirty_Trick" to="Skills/ScrollContainer/GridContainer/Red_Dirty_Trick" method="_on_self_pressed"]
+[connection signal="pressed" from="Skills/ScrollContainer/GridContainer/Red_Blood_Exchange" to="Skills/ScrollContainer/GridContainer/Red_Blood_Exchange" method="_on_self_pressed"]
+[connection signal="pressed" from="Skills/ScrollContainer/GridContainer/Red_Crimson_Whirl" to="Skills/ScrollContainer/GridContainer/Red_Crimson_Whirl" method="_on_self_pressed"]
+[connection signal="pressed" from="Skills/ScrollContainer/GridContainer/Red_Adrenalin_Rush" to="Skills/ScrollContainer/GridContainer/Red_Adrenalin_Rush" method="_on_self_pressed"]
+[connection signal="pressed" from="Skills/ScrollContainer/GridContainer/Orange_Break_In_Defense" to="Skills/ScrollContainer/GridContainer/Orange_Break_In_Defense" method="_on_self_pressed"]
+[connection signal="pressed" from="Skills/ScrollContainer/GridContainer/Orange_Spiked_Shield" to="Skills/ScrollContainer/GridContainer/Orange_Spiked_Shield" method="_on_self_pressed"]
+[connection signal="pressed" from="Skills/ScrollContainer/GridContainer/Orange_Stone_Shield" to="Skills/ScrollContainer/GridContainer/Orange_Stone_Shield" method="_on_self_pressed"]
+[connection signal="pressed" from="Skills/ScrollContainer/GridContainer/Orange_Cleansing" to="Skills/ScrollContainer/GridContainer/Orange_Cleansing" method="_on_self_pressed"]
+[connection signal="pressed" from="Skills/ScrollContainer/GridContainer/Orange_Stun" to="Skills/ScrollContainer/GridContainer/Orange_Stun" method="_on_self_pressed"]
+[connection signal="pressed" from="Skills/ScrollContainer/GridContainer/Yellow_Lightning_Strike" to="Skills/ScrollContainer/GridContainer/Yellow_Lightning_Strike" method="_on_self_pressed"]
+[connection signal="pressed" from="Skills/ScrollContainer/GridContainer/Yellow_Zig_Zag" to="Skills/ScrollContainer/GridContainer/Yellow_Zig_Zag" method="_on_self_pressed"]
+[connection signal="pressed" from="Skills/ScrollContainer/GridContainer/Yellow_Thunder_Pulse" to="Skills/ScrollContainer/GridContainer/Yellow_Thunder_Pulse" method="_on_self_pressed"]
+[connection signal="pressed" from="Skills/ScrollContainer/GridContainer/Yellow_Flash_Of_Light" to="Skills/ScrollContainer/GridContainer/Yellow_Flash_Of_Light" method="_on_self_pressed"]
+[connection signal="pressed" from="Skills/ScrollContainer/GridContainer/Yellow_Thunderstorm" to="Skills/ScrollContainer/GridContainer/Yellow_Thunderstorm" method="_on_self_pressed"]
+[connection signal="pressed" from="Skills/ScrollContainer/GridContainer/Green_Spread" to="Skills/ScrollContainer/GridContainer/Green_Spread" method="_on_self_pressed"]
+[connection signal="pressed" from="Skills/ScrollContainer/GridContainer/Green_Healing" to="Skills/ScrollContainer/GridContainer/Green_Healing" method="_on_self_pressed"]
+[connection signal="pressed" from="Skills/ScrollContainer/GridContainer/Green_Life_Circulation" to="Skills/ScrollContainer/GridContainer/Green_Life_Circulation" method="_on_self_pressed"]
+[connection signal="pressed" from="Skills/ScrollContainer/GridContainer/Green_Studying" to="Skills/ScrollContainer/GridContainer/Green_Studying" method="_on_self_pressed"]
+[connection signal="pressed" from="Skills/ScrollContainer/GridContainer/Green_Bloom" to="Skills/ScrollContainer/GridContainer/Green_Bloom" method="_on_self_pressed"]
+[connection signal="pressed" from="Skills/ScrollContainer/GridContainer/Blue_Energy_Vampire" to="Skills/ScrollContainer/GridContainer/Blue_Energy_Vampire" method="_on_self_pressed"]
+[connection signal="pressed" from="Skills/ScrollContainer/GridContainer/Blue_Comatosis" to="Skills/ScrollContainer/GridContainer/Blue_Comatosis" method="_on_self_pressed"]
+[connection signal="pressed" from="Skills/ScrollContainer/GridContainer/Blue_Nervous_Exhaustion" to="Skills/ScrollContainer/GridContainer/Blue_Nervous_Exhaustion" method="_on_self_pressed"]
+[connection signal="pressed" from="Skills/ScrollContainer/GridContainer/Blue_Soundproofing" to="Skills/ScrollContainer/GridContainer/Blue_Soundproofing" method="_on_self_pressed"]
+[connection signal="pressed" from="Skills/ScrollContainer/GridContainer/Blue_Mental_Shield" to="Skills/ScrollContainer/GridContainer/Blue_Mental_Shield" method="_on_self_pressed"]
+[connection signal="pressed" from="Skills/ScrollContainer/GridContainer/Purple_Miasma" to="Skills/ScrollContainer/GridContainer/Purple_Miasma" method="_on_self_pressed"]
+[connection signal="pressed" from="Skills/ScrollContainer/GridContainer/Purple_Curse" to="Skills/ScrollContainer/GridContainer/Purple_Curse" method="_on_self_pressed"]
+[connection signal="pressed" from="Skills/ScrollContainer/GridContainer/Purple_Weak_Body" to="Skills/ScrollContainer/GridContainer/Purple_Weak_Body" method="_on_self_pressed"]
+[connection signal="pressed" from="Skills/ScrollContainer/GridContainer/Purple_Sweet_Dreams" to="Skills/ScrollContainer/GridContainer/Purple_Sweet_Dreams" method="_on_self_pressed"]
+[connection signal="pressed" from="Skills/ScrollContainer/GridContainer/Purple_Octopus_Ink" to="Skills/ScrollContainer/GridContainer/Purple_Octopus_Ink" method="_on_self_pressed"]
+[connection signal="pressed" from="Skills/Choose" to="." method="_on_Choose_pressed"]
+[connection signal="pressed" from="Skills/VBoxContainer/All" to="." method="_on_All_pressed"]
+[connection signal="pressed" from="Skills/VBoxContainer/Red" to="." method="_on_Red_pressed"]
+[connection signal="pressed" from="Skills/VBoxContainer/Orange" to="." method="_on_Orange_pressed"]
+[connection signal="pressed" from="Skills/VBoxContainer/Yellow" to="." method="_on_Yellow_pressed"]
+[connection signal="pressed" from="Skills/VBoxContainer/Green" to="." method="_on_Green_pressed"]
+[connection signal="pressed" from="Skills/VBoxContainer/Blue" to="." method="_on_Blue_pressed"]
+[connection signal="pressed" from="Skills/VBoxContainer/Purple" to="." method="_on_Purple_pressed"]

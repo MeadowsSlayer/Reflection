@@ -1,0 +1,15 @@
+[gd_resource type="Resource" load_steps=2 format=2]
+
+[ext_resource path="res://Scripts/Skills/SkillResource.gd" type="Script" id=1]
+
+[resource]
+script = ExtResource( 1 )
+color = "Red"
+CD = 7
+actions = 3
+description = "RED_ADRENALIN_RUSH"
+skill_name = "Adrenalin Rush"
+type = "enemy"
+icon = "res://Sprites/UI/Skills/Red/Red_Adrenalin_Rush.png"
+en = 7
+skill_code = "Red_Adrenalin_Rush"

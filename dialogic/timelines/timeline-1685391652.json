@@ -1,0 +1,130 @@
+{
+	"events": [
+		{
+			"background": "res://Sprites/Backround/First Floor/BackgroundFirstFloor.png",
+			"event_id": "dialogic_021",
+			"fade_duration": 0
+		},
+		{
+			"animation": "[Default]",
+			"animation_length": 0,
+			"change_mirror_portrait": false,
+			"change_z_index": false,
+			"character": "character-1673695181.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"portrait": "SalimConfused",
+			"portrait_definition": "",
+			"position": {
+				"0": true,
+				"1": false,
+				"2": false,
+				"3": false,
+				"4": false
+			},
+			"type": 0,
+			"z_index": 0
+		},
+		{
+			"animation": "[Default]",
+			"animation_length": 0,
+			"change_mirror_portrait": false,
+			"change_z_index": false,
+			"character": "character-1680338876.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"portrait": "AsyaHappy",
+			"portrait_definition": "",
+			"position": {
+				"0": false,
+				"1": false,
+				"2": false,
+				"3": false,
+				"4": true
+			},
+			"type": 0,
+			"z_index": 0
+		},
+		{
+			"character": "character-1680338876.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Hello there!"
+		},
+		{
+			"character": "character-1673695181.json",
+			"event_id": "dialogic_001",
+			"portrait": "SalimPositive",
+			"text": "Asya? What are you doing here?"
+		},
+		{
+			"character": "character-1680338876.json",
+			"event_id": "dialogic_001",
+			"portrait": "Default",
+			"text": "Well, you see, remember I told you I'll find a way to help?"
+		},
+		{
+			"character": "character-1673695181.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Yes."
+		},
+		{
+			"character": "character-1680338876.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "So I found out that I can sell you things for Stickers you get from enemies. Feels like Host planned it all along tho."
+		},
+		{
+			"character": "character-1673695181.json",
+			"event_id": "dialogic_001",
+			"portrait": "SalimConfused",
+			"text": "Because you really like stickers?"
+		},
+		{
+			"character": "character-1680338876.json",
+			"event_id": "dialogic_001",
+			"portrait": "AsyaHappy",
+			"text": "Yes!"
+		},
+		{
+			"character": "character-1680338876.json",
+			"event_id": "dialogic_001",
+			"portrait": "Default",
+			"text": "Anyway, how're you doing?"
+		},
+		{
+			"character": "character-1673695181.json",
+			"event_id": "dialogic_001",
+			"portrait": "Default",
+			"text": "Could've been better, but thanks to your encouragment I think I'll be able to do it eventually!"
+		},
+		{
+			"character": "character-1680338876.json",
+			"event_id": "dialogic_001",
+			"portrait": "Default",
+			"text": "Great! Now... Let's get down to business!"
+		},
+		{
+			"character": "character-1673695181.json",
+			"event_id": "dialogic_001",
+			"portrait": "SalimPositive",
+			"text": "Okay! Let me see what you have here!"
+		},
+		{
+			"call_node": {
+				"arguments": [
+
+				],
+				"method_name": "Finish",
+				"target_node_path": "/root/DialogueShopFirstTime"
+			},
+			"event_id": "dialogic_042"
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.4.5",
+		"file": "timeline-1685391652.json",
+		"name": "0. Shop"
+	}
+}

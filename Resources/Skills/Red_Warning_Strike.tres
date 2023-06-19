@@ -1,0 +1,15 @@
+[gd_resource type="Resource" load_steps=2 format=2]
+
+[ext_resource path="res://Scripts/Skills/SkillResource.gd" type="Script" id=1]
+
+[resource]
+script = ExtResource( 1 )
+color = "Red"
+CD = 2
+actions = 1
+description = "RED_WARNING_STRIKE"
+skill_name = "Warning Strike"
+type = "enemy"
+icon = "res://Sprites/UI/Skills/Red/Red_Warning_Strike.png"
+en = 2
+skill_code = "Red_Warning_Strike"

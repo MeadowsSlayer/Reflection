@@ -1,0 +1,15 @@
+[gd_resource type="Resource" load_steps=2 format=2]
+
+[ext_resource path="res://Scripts/Skills/SkillResource.gd" type="Script" id=1]
+
+[resource]
+script = ExtResource( 1 )
+color = "Yellow"
+CD = 7
+actions = 2
+description = "YELLOW_FLASH_OF_LIGHT"
+skill_name = "Flash Of Light"
+type = "enemy"
+icon = "res://Sprites/UI/Skills/Yellow/Yellow_Flash_Of_Light.png"
+en = 5
+skill_code = "Yellow_Flash_Of_Light"

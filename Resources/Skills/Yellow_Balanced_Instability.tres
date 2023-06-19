@@ -1,0 +1,15 @@
+[gd_resource type="Resource" load_steps=2 format=2]
+
+[ext_resource path="res://Scripts/Skills/SkillResource.gd" type="Script" id=1]
+
+[resource]
+script = ExtResource( 1 )
+color = "Yellow"
+CD = 11
+actions = 0
+description = "YELLOW_BALANCED_INSTABILITY"
+skill_name = "Balanced Instability"
+type = "self"
+icon = "res://Sprites/UI/Skills/Yellow/Yellow_Balanced_Instability.png"
+en = 35
+skill_code = "Yellow_Balanced_Instability"

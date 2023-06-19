@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/mixkit-quick-knife-slice-cutting-2152.mp3-c9444f56bea3df9edc9d8c04914aeae5.mp3str"
+
+[deps]
+
+source_file="res://Resources/Audio/SoundEffects/Sounds/mixkit-quick-knife-slice-cutting-2152.mp3"
+dest_files=[ "res://.import/mixkit-quick-knife-slice-cutting-2152.mp3-c9444f56bea3df9edc9d8c04914aeae5.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

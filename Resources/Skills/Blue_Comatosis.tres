@@ -1,0 +1,15 @@
+[gd_resource type="Resource" load_steps=2 format=2]
+
+[ext_resource path="res://Scripts/Skills/SkillResource.gd" type="Script" id=1]
+
+[resource]
+script = ExtResource( 1 )
+color = "Blue"
+CD = 7
+actions = 1
+description = "BLUE_COMATOSIS"
+skill_name = "Comatosis"
+type = "enemy"
+icon = "res://Sprites/UI/Skills/Blue/Blue_Comatosis.png"
+en = 2
+skill_code = "Blue_Comatosis"

@@ -1,0 +1,704 @@
+[gd_scene load_steps=29 format=2]
+
+[ext_resource path="res://Sprites/Enemies/Guard/GuardAnimations.tres" type="SpriteFrames" id=1]
+[ext_resource path="res://Sprites/GameFXexport/SPRITESHEET_Files/Effects.tres" type="SpriteFrames" id=2]
+[ext_resource path="res://Resources/Images/white.png" type="Texture" id=3]
+[ext_resource path="res://Sprites/UI/Battle UI/Bar.png" type="Texture" id=4]
+[ext_resource path="res://Resources/Particles/Damage.tres" type="Material" id=5]
+[ext_resource path="res://Resources/Shaders/Glitch.tres" type="Material" id=6]
+[ext_resource path="res://Sprites/Shadow.png" type="Texture" id=7]
+[ext_resource path="res://Sprites/UI/Battle UI/Icons/StatusEffects/Fragile.png" type="Texture" id=8]
+[ext_resource path="res://Sprites/UI/Battle UI/Icons/StatusEffects/Blind.png" type="Texture" id=9]
+[ext_resource path="res://Sprites/UI/Battle UI/Icons/StatusEffects/Silence.png" type="Texture" id=10]
+[ext_resource path="res://Sprites/UI/Battle UI/Icons/StatusEffects/ClosureAlt.png" type="Texture" id=11]
+[ext_resource path="res://Sprites/UI/Battle UI/Icons/StatusEffects/Sleep.png" type="Texture" id=12]
+[ext_resource path="res://Sprites/UI/Battle UI/Icons/StatusEffects/Miasma.png" type="Texture" id=13]
+[ext_resource path="res://Sprites/UI/Battle UI/Icons/StatusEffects/Aches.png" type="Texture" id=14]
+[ext_resource path="res://Sprites/UI/Battle UI/Icons/StatusEffects/Exhaustion.png" type="Texture" id=15]
+[ext_resource path="res://Sprites/UI/Battle UI/Icons/StatusEffects/Spread.png" type="Texture" id=16]
+[ext_resource path="res://Sprites/UI/Battle UI/Target.png" type="Texture" id=17]
+[ext_resource path="res://Sprites/UI/Battle UI/Icons/StatusEffects/PowerUpWhite.png" type="Texture" id=18]
+[ext_resource path="res://Prefabs/Enemies/BaseEnemy/Enemy.gd" type="Script" id=19]
+[ext_resource path="res://Resources/Fonts/GlasstownNbpRegular-RyMM.ttf" type="DynamicFontData" id=20]
+[ext_resource path="res://Resources/Fonts/PixelVerySmall.tres" type="DynamicFont" id=21]
+[ext_resource path="res://Sprites/UI/Battle UI/Icons/StatusEffects/Bind.png" type="Texture" id=22]
+[ext_resource path="res://Sprites/UI/Battle UI/Icons/StatusEffects/Haste.png" type="Texture" id=23]
+[ext_resource path="res://Sprites/UI/Battle UI/Icons/StatusEffects/Empowerment.png" type="Texture" id=24]
+[ext_resource path="res://Sprites/UI/Skills/White/White_Regression.png" type="Texture" id=25]
+
+[sub_resource type="DynamicFont" id=8]
+size = 32
+outline_size = 1
+outline_color = Color( 0, 0, 0, 1 )
+font_data = ExtResource( 20 )
+
+[sub_resource type="Animation" id=4]
+resource_name = "Active"
+length = 0.8
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:rect_position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.2, 0.4 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 31, 31 ), Vector2( 36, 36 ), Vector2( 31, 31 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath(".:rect_size")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 0.2, 0.4 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 58, 58 ), Vector2( 48, 48 ), Vector2( 58, 58 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath(".:self_modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0, 0.2, 0.4 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 0.964706, 0.223529, 0.223529, 1 ), Color( 1, 1, 1, 1 ) ]
+}
+
+[sub_resource type="Animation" id=5]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:rect_position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 31, 31 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath(".:rect_size")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 58, 58 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath(".:self_modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ) ]
+}
+
+[node name="Enemy" type="AnimatedSprite"]
+pause_mode = 1
+scale = Vector2( 2.5, 2.5 )
+frames = ExtResource( 1 )
+animation = "idle"
+script = ExtResource( 19 )
+
+[node name="Control" type="Control" parent="."]
+margin_left = -42.0
+margin_top = -78.0
+margin_right = 78.0
+margin_bottom = -55.0
+rect_scale = Vector2( 0.8, 0.8 )
+
+[node name="EnemyHP" type="TextureProgress" parent="Control"]
+margin_top = 30.1667
+margin_right = 120.0
+margin_bottom = 43.1667
+value = 50.0
+texture_under = ExtResource( 3 )
+texture_progress = ExtResource( 4 )
+tint_under = Color( 0.239216, 0.215686, 0.215686, 1 )
+tint_progress = Color( 0.819608, 0.12549, 0.0941176, 1 )
+nine_patch_stretch = true
+
+[node name="Label" type="Label" parent="Control/EnemyHP"]
+margin_left = 3.0
+margin_top = -1.0
+margin_right = 60.0
+margin_bottom = 15.0
+custom_fonts/font = ExtResource( 21 )
+text = "10"
+valign = 1
+
+[node name="EnemyEN" type="TextureProgress" parent="Control"]
+margin_left = 10.0
+margin_top = 44.6667
+margin_right = 110.0
+margin_bottom = 48.6667
+value = 50.0
+texture_under = ExtResource( 3 )
+texture_progress = ExtResource( 4 )
+tint_under = Color( 0.239216, 0.215686, 0.215686, 1 )
+tint_progress = Color( 0.0941176, 0.682353, 0.819608, 1 )
+nine_patch_stretch = true
+
+[node name="StatusEffects" type="CenterContainer" parent="Control"]
+margin_left = 0.5
+margin_top = -14.5
+margin_right = 117.5
+margin_bottom = 29.5
+
+[node name="HBoxContainer" type="GridContainer" parent="Control/StatusEffects"]
+margin_left = 58.0
+margin_top = 22.0
+margin_right = 58.0
+margin_bottom = 22.0
+rect_pivot_offset = Vector2( -102.643, -84.2857 )
+columns = 5
+
+[node name="Spread" type="TextureRect" parent="Control/StatusEffects/HBoxContainer"]
+visible = false
+margin_right = 20.0
+margin_bottom = 20.0
+texture = ExtResource( 16 )
+
+[node name="Time" type="Label" parent="Control/StatusEffects/HBoxContainer/Spread"]
+margin_left = 11.0
+margin_top = 10.0
+margin_right = 41.0
+margin_bottom = 42.0
+rect_scale = Vector2( 0.4, 0.4 )
+custom_fonts/font = SubResource( 8 )
+text = "10"
+align = 1
+valign = 1
+
+[node name="Potency" type="Label" parent="Control/StatusEffects/HBoxContainer/Spread"]
+margin_left = 11.0
+margin_top = -4.0
+margin_right = 41.0
+margin_bottom = 28.0
+rect_scale = Vector2( 0.4, 0.4 )
+custom_fonts/font = SubResource( 8 )
+text = "10"
+align = 1
+valign = 1
+
+[node name="Sleep" type="TextureRect" parent="Control/StatusEffects/HBoxContainer"]
+visible = false
+margin_right = 20.0
+margin_bottom = 20.0
+texture = ExtResource( 12 )
+
+[node name="Time" type="Label" parent="Control/StatusEffects/HBoxContainer/Sleep"]
+margin_left = 11.0
+margin_top = 10.0
+margin_right = 41.0
+margin_bottom = 42.0
+rect_scale = Vector2( 0.4, 0.4 )
+custom_fonts/font = SubResource( 8 )
+text = "10"
+align = 1
+valign = 1
+
+[node name="Fragile" type="TextureRect" parent="Control/StatusEffects/HBoxContainer"]
+visible = false
+margin_right = 20.0
+margin_bottom = 20.0
+texture = ExtResource( 8 )
+
+[node name="Time" type="Label" parent="Control/StatusEffects/HBoxContainer/Fragile"]
+margin_left = 11.0
+margin_top = 10.0
+margin_right = 41.0
+margin_bottom = 42.0
+rect_scale = Vector2( 0.4, 0.4 )
+custom_fonts/font = SubResource( 8 )
+text = "10"
+align = 1
+valign = 1
+
+[node name="Potency" type="Label" parent="Control/StatusEffects/HBoxContainer/Fragile"]
+margin_left = 11.0
+margin_top = -4.0
+margin_right = 41.0
+margin_bottom = 28.0
+rect_scale = Vector2( 0.4, 0.4 )
+custom_fonts/font = SubResource( 8 )
+text = "10"
+align = 1
+valign = 1
+
+[node name="Closure" type="TextureRect" parent="Control/StatusEffects/HBoxContainer"]
+visible = false
+margin_left = 72.0
+margin_right = 92.0
+margin_bottom = 20.0
+texture = ExtResource( 11 )
+
+[node name="Time" type="Label" parent="Control/StatusEffects/HBoxContainer/Closure"]
+margin_left = 11.0
+margin_top = 10.0
+margin_right = 41.0
+margin_bottom = 42.0
+rect_scale = Vector2( 0.4, 0.4 )
+custom_fonts/font = SubResource( 8 )
+text = "10"
+align = 1
+valign = 1
+
+[node name="Potency" type="Label" parent="Control/StatusEffects/HBoxContainer/Closure"]
+margin_left = 11.0
+margin_top = -4.0
+margin_right = 41.0
+margin_bottom = 28.0
+rect_scale = Vector2( 0.4, 0.4 )
+custom_fonts/font = SubResource( 8 )
+text = "10"
+align = 1
+valign = 1
+
+[node name="Aches" type="TextureRect" parent="Control/StatusEffects/HBoxContainer"]
+visible = false
+margin_left = 96.0
+margin_right = 116.0
+margin_bottom = 20.0
+texture = ExtResource( 14 )
+
+[node name="Time" type="Label" parent="Control/StatusEffects/HBoxContainer/Aches"]
+margin_left = 11.0
+margin_top = 10.0
+margin_right = 41.0
+margin_bottom = 42.0
+rect_scale = Vector2( 0.4, 0.4 )
+custom_fonts/font = SubResource( 8 )
+text = "10"
+align = 1
+valign = 1
+
+[node name="Potency" type="Label" parent="Control/StatusEffects/HBoxContainer/Aches"]
+margin_left = 11.0
+margin_top = -4.0
+margin_right = 41.0
+margin_bottom = 28.0
+rect_scale = Vector2( 0.4, 0.4 )
+custom_fonts/font = SubResource( 8 )
+text = "10"
+align = 1
+valign = 1
+
+[node name="Exhaustion" type="TextureRect" parent="Control/StatusEffects/HBoxContainer"]
+visible = false
+margin_top = 24.0
+margin_right = 20.0
+margin_bottom = 44.0
+texture = ExtResource( 15 )
+
+[node name="Time" type="Label" parent="Control/StatusEffects/HBoxContainer/Exhaustion"]
+margin_left = 11.0
+margin_top = 10.0
+margin_right = 41.0
+margin_bottom = 42.0
+rect_scale = Vector2( 0.4, 0.4 )
+custom_fonts/font = SubResource( 8 )
+text = "10"
+align = 1
+valign = 1
+
+[node name="Miasma" type="TextureRect" parent="Control/StatusEffects/HBoxContainer"]
+visible = false
+margin_left = 24.0
+margin_top = 24.0
+margin_right = 44.0
+margin_bottom = 44.0
+texture = ExtResource( 13 )
+
+[node name="Time" type="Label" parent="Control/StatusEffects/HBoxContainer/Miasma"]
+margin_left = 11.0
+margin_top = 10.0
+margin_right = 41.0
+margin_bottom = 42.0
+rect_scale = Vector2( 0.4, 0.4 )
+custom_fonts/font = SubResource( 8 )
+text = "10"
+align = 1
+valign = 1
+
+[node name="Potency" type="Label" parent="Control/StatusEffects/HBoxContainer/Miasma"]
+margin_left = 11.0
+margin_top = -4.0
+margin_right = 41.0
+margin_bottom = 28.0
+rect_scale = Vector2( 0.4, 0.4 )
+custom_fonts/font = SubResource( 8 )
+text = "10"
+align = 1
+valign = 1
+
+[node name="Silence" type="TextureRect" parent="Control/StatusEffects/HBoxContainer"]
+visible = false
+margin_left = 48.0
+margin_top = 24.0
+margin_right = 68.0
+margin_bottom = 44.0
+texture = ExtResource( 10 )
+
+[node name="Time" type="Label" parent="Control/StatusEffects/HBoxContainer/Silence"]
+margin_left = 11.0
+margin_top = 10.0
+margin_right = 41.0
+margin_bottom = 42.0
+rect_scale = Vector2( 0.4, 0.4 )
+custom_fonts/font = SubResource( 8 )
+text = "10"
+align = 1
+valign = 1
+
+[node name="Blind" type="TextureRect" parent="Control/StatusEffects/HBoxContainer"]
+visible = false
+margin_left = 72.0
+margin_top = 24.0
+margin_right = 92.0
+margin_bottom = 44.0
+texture = ExtResource( 9 )
+
+[node name="Time" type="Label" parent="Control/StatusEffects/HBoxContainer/Blind"]
+margin_left = 11.0
+margin_top = 10.0
+margin_right = 41.0
+margin_bottom = 42.0
+rect_scale = Vector2( 0.4, 0.4 )
+custom_fonts/font = SubResource( 8 )
+text = "10"
+align = 1
+valign = 1
+
+[node name="Potency" type="Label" parent="Control/StatusEffects/HBoxContainer/Blind"]
+margin_left = 11.0
+margin_top = -4.0
+margin_right = 41.0
+margin_bottom = 28.0
+rect_scale = Vector2( 0.4, 0.4 )
+custom_fonts/font = SubResource( 8 )
+text = "10"
+align = 1
+valign = 1
+
+[node name="Bind" type="TextureRect" parent="Control/StatusEffects/HBoxContainer"]
+visible = false
+margin_right = 20.0
+margin_bottom = 20.0
+texture = ExtResource( 22 )
+
+[node name="Time" type="Label" parent="Control/StatusEffects/HBoxContainer/Bind"]
+margin_left = 11.0
+margin_top = 10.0
+margin_right = 41.0
+margin_bottom = 42.0
+rect_scale = Vector2( 0.4, 0.4 )
+custom_fonts/font = SubResource( 8 )
+text = "10"
+align = 1
+valign = 1
+
+[node name="Potency" type="Label" parent="Control/StatusEffects/HBoxContainer/Bind"]
+margin_left = 11.0
+margin_top = -4.0
+margin_right = 41.0
+margin_bottom = 28.0
+rect_scale = Vector2( 0.4, 0.4 )
+custom_fonts/font = SubResource( 8 )
+text = "10"
+align = 1
+valign = 1
+
+[node name="Haste" type="TextureRect" parent="Control/StatusEffects/HBoxContainer"]
+visible = false
+margin_right = 20.0
+margin_bottom = 20.0
+texture = ExtResource( 23 )
+
+[node name="Time" type="Label" parent="Control/StatusEffects/HBoxContainer/Haste"]
+margin_left = 11.0
+margin_top = 10.0
+margin_right = 41.0
+margin_bottom = 42.0
+rect_scale = Vector2( 0.4, 0.4 )
+custom_fonts/font = SubResource( 8 )
+text = "10"
+align = 1
+valign = 1
+
+[node name="Potency" type="Label" parent="Control/StatusEffects/HBoxContainer/Haste"]
+margin_left = 11.0
+margin_top = -4.0
+margin_right = 41.0
+margin_bottom = 28.0
+rect_scale = Vector2( 0.4, 0.4 )
+custom_fonts/font = SubResource( 8 )
+text = "10"
+align = 1
+valign = 1
+
+[node name="Empowerment" type="TextureRect" parent="Control/StatusEffects/HBoxContainer"]
+visible = false
+margin_right = 20.0
+margin_bottom = 20.0
+texture = ExtResource( 24 )
+
+[node name="Time" type="Label" parent="Control/StatusEffects/HBoxContainer/Empowerment"]
+margin_left = 11.0
+margin_top = 10.0
+margin_right = 41.0
+margin_bottom = 42.0
+rect_scale = Vector2( 0.4, 0.4 )
+custom_fonts/font = SubResource( 8 )
+text = "10"
+align = 1
+valign = 1
+
+[node name="Potency" type="Label" parent="Control/StatusEffects/HBoxContainer/Empowerment"]
+margin_left = 11.0
+margin_top = -4.0
+margin_right = 41.0
+margin_bottom = 28.0
+rect_scale = Vector2( 0.4, 0.4 )
+custom_fonts/font = SubResource( 8 )
+text = "10"
+align = 1
+valign = 1
+
+[node name="GrowingFracture" type="TextureRect" parent="Control/StatusEffects/HBoxContainer"]
+visible = false
+margin_right = 20.0
+margin_bottom = 20.0
+rect_min_size = Vector2( 20, 20 )
+texture = ExtResource( 8 )
+
+[node name="Time" type="Label" parent="Control/StatusEffects/HBoxContainer/GrowingFracture"]
+margin_left = 11.0
+margin_top = 10.0
+margin_right = 41.0
+margin_bottom = 42.0
+rect_scale = Vector2( 0.4, 0.4 )
+custom_fonts/font = SubResource( 8 )
+text = "10"
+align = 1
+valign = 1
+
+[node name="Potency" type="Label" parent="Control/StatusEffects/HBoxContainer/GrowingFracture"]
+margin_left = 11.0
+margin_top = -4.0
+margin_right = 41.0
+margin_bottom = 28.0
+rect_scale = Vector2( 0.4, 0.4 )
+custom_fonts/font = SubResource( 8 )
+text = "10"
+align = 1
+valign = 1
+
+[node name="Regression" type="TextureRect" parent="Control/StatusEffects/HBoxContainer"]
+visible = false
+margin_left = 24.0
+margin_right = 44.0
+margin_bottom = 20.0
+rect_min_size = Vector2( 20, 20 )
+texture = ExtResource( 25 )
+expand = true
+
+[node name="Time" type="Label" parent="Control/StatusEffects/HBoxContainer/Regression"]
+margin_left = 11.0
+margin_top = 10.0
+margin_right = 41.0
+margin_bottom = 42.0
+rect_scale = Vector2( 0.4, 0.4 )
+custom_fonts/font = SubResource( 8 )
+text = "10"
+align = 1
+valign = 1
+
+[node name="MentalProtection" type="TextureRect" parent="Control/StatusEffects/HBoxContainer"]
+visible = false
+self_modulate = Color( 0.764706, 0, 0.698039, 1 )
+margin_left = 48.0
+margin_right = 68.0
+margin_bottom = 20.0
+texture = ExtResource( 18 )
+
+[node name="Time" type="Label" parent="Control/StatusEffects/HBoxContainer/MentalProtection"]
+margin_left = 11.0
+margin_top = 10.0
+margin_right = 41.0
+margin_bottom = 42.0
+rect_scale = Vector2( 0.4, 0.4 )
+custom_fonts/font = SubResource( 8 )
+text = "10"
+align = 1
+valign = 1
+
+[node name="Potency" type="Label" parent="Control/StatusEffects/HBoxContainer/MentalProtection"]
+margin_left = 11.0
+margin_top = -4.0
+margin_right = 41.0
+margin_bottom = 28.0
+rect_scale = Vector2( 0.4, 0.4 )
+custom_fonts/font = SubResource( 8 )
+text = "10"
+align = 1
+valign = 1
+
+[node name="ProtectTheArt" type="TextureRect" parent="Control/StatusEffects/HBoxContainer"]
+visible = false
+self_modulate = Color( 0.92549, 0.490196, 0.490196, 1 )
+margin_top = 48.0
+margin_right = 20.0
+margin_bottom = 68.0
+texture = ExtResource( 18 )
+
+[node name="Time" type="Label" parent="Control/StatusEffects/HBoxContainer/ProtectTheArt"]
+margin_left = 11.0
+margin_top = 10.0
+margin_right = 41.0
+margin_bottom = 42.0
+rect_scale = Vector2( 0.4, 0.4 )
+custom_fonts/font = SubResource( 8 )
+text = "10"
+align = 1
+valign = 1
+
+[node name="Potency" type="Label" parent="Control/StatusEffects/HBoxContainer/ProtectTheArt"]
+margin_left = 11.0
+margin_top = -4.0
+margin_right = 41.0
+margin_bottom = 28.0
+rect_scale = Vector2( 0.4, 0.4 )
+custom_fonts/font = SubResource( 8 )
+text = "10"
+align = 1
+valign = 1
+
+[node name="BurstOfEnergy" type="TextureRect" parent="Control/StatusEffects/HBoxContainer"]
+visible = false
+self_modulate = Color( 0, 1, 0.976471, 1 )
+margin_left = 24.0
+margin_top = 48.0
+margin_right = 44.0
+margin_bottom = 68.0
+texture = ExtResource( 18 )
+
+[node name="Time" type="Label" parent="Control/StatusEffects/HBoxContainer/BurstOfEnergy"]
+margin_left = 11.0
+margin_top = 10.0
+margin_right = 41.0
+margin_bottom = 42.0
+rect_scale = Vector2( 0.4, 0.4 )
+custom_fonts/font = SubResource( 8 )
+text = "10"
+align = 1
+valign = 1
+
+[node name="Potency" type="Label" parent="Control/StatusEffects/HBoxContainer/BurstOfEnergy"]
+margin_left = 11.0
+margin_top = -4.0
+margin_right = 41.0
+margin_bottom = 28.0
+rect_scale = Vector2( 0.4, 0.4 )
+custom_fonts/font = SubResource( 8 )
+text = "10"
+align = 1
+valign = 1
+
+[node name="ScorchingHeat" type="TextureRect" parent="Control/StatusEffects/HBoxContainer"]
+visible = false
+self_modulate = Color( 1, 0.117647, 0.945098, 1 )
+margin_left = 48.0
+margin_top = 48.0
+margin_right = 68.0
+margin_bottom = 68.0
+texture = ExtResource( 18 )
+
+[node name="Time" type="Label" parent="Control/StatusEffects/HBoxContainer/ScorchingHeat"]
+margin_left = 11.0
+margin_top = 10.0
+margin_right = 41.0
+margin_bottom = 42.0
+rect_scale = Vector2( 0.4, 0.4 )
+custom_fonts/font = SubResource( 8 )
+text = "10"
+align = 1
+valign = 1
+
+[node name="Potency" type="Label" parent="Control/StatusEffects/HBoxContainer/ScorchingHeat"]
+margin_left = 11.0
+margin_top = -4.0
+margin_right = 41.0
+margin_bottom = 28.0
+rect_scale = Vector2( 0.4, 0.4 )
+custom_fonts/font = SubResource( 8 )
+text = "10"
+align = 1
+valign = 1
+
+[node name="Target" type="TextureRect" parent="Control"]
+visible = false
+margin_left = 31.0
+margin_top = 31.0
+margin_right = 89.0
+margin_bottom = 89.0
+texture = ExtResource( 17 )
+expand = true
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Control/Target"]
+anims/Active = SubResource( 4 )
+anims/RESET = SubResource( 5 )
+
+[node name="Damage" type="AnimatedSprite" parent="."]
+visible = false
+material = ExtResource( 6 )
+frames = ExtResource( 1 )
+animation = "taking damage"
+
+[node name="Timer" type="Timer" parent="."]
+one_shot = true
+
+[node name="Particles2D" type="Particles2D" parent="."]
+position = Vector2( 21.3333, 0 )
+z_index = 10
+emitting = false
+amount = 50
+speed_scale = 2.0
+process_material = ExtResource( 5 )
+texture = ExtResource( 3 )
+
+[node name="Shadow" type="Sprite" parent="."]
+modulate = Color( 1, 1, 1, 0.45098 )
+show_behind_parent = true
+position = Vector2( 22.4, 60.8 )
+scale = Vector2( 1.00036, 1.00036 )
+texture = ExtResource( 7 )
+
+[node name="EffectsSpecial" type="AnimatedSprite" parent="."]
+visible = false
+position = Vector2( 22.4, 12.8 )
+scale = Vector2( 1.26667, 1.26667 )
+frames = ExtResource( 2 )
+animation = "None"
+playing = true
+
+[connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]

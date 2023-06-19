@@ -1,0 +1,12 @@
+[gd_resource type="Resource" load_steps=2 format=2]
+
+[ext_resource path="res://Scripts/Global.gd" type="Script" id=1]
+
+[resource]
+script = ExtResource( 1 )
+language = "en"
+volume = 0.5
+music = 0.15
+se = 0.3
+save = 1
+glitches = true

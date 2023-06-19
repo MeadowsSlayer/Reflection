@@ -1,0 +1,15 @@
+[gd_resource type="Resource" load_steps=2 format=2]
+
+[ext_resource path="res://Scripts/Skills/SkillResource.gd" type="Script" id=1]
+
+[resource]
+script = ExtResource( 1 )
+color = "Red"
+CD = 4
+actions = 1
+description = "RED_DIRTY_TRICK"
+skill_name = "Dirty Trick"
+type = "enemy"
+icon = "res://Sprites/UI/Skills/Red/Red_Dirty_Trick.png"
+en = 3
+skill_code = "Red_Dirty_Trick"

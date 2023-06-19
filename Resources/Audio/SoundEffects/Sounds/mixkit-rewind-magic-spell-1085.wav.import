@@ -1,0 +1,23 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/mixkit-rewind-magic-spell-1085.wav-0b4d68c28c7ff4d82141e787c51fff3c.sample"
+
+[deps]
+
+source_file="res://Resources/Audio/SoundEffects/Sounds/mixkit-rewind-magic-spell-1085.wav"
+dest_files=[ "res://.import/mixkit-rewind-magic-spell-1085.wav-0b4d68c28c7ff4d82141e787c51fff3c.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

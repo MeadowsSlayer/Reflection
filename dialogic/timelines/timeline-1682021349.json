@@ -1,0 +1,68 @@
+{
+	"events": [
+		{
+			"background": "res://Sprites/UI/Longe/Room/Lobby.png",
+			"event_id": "dialogic_021",
+			"fade_duration": 0.1
+		},
+		{
+			"animation": "[Default]",
+			"animation_length": 0,
+			"change_mirror_portrait": false,
+			"change_z_index": false,
+			"character": "character-1673695181.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"portrait": "SalimAngry",
+			"portrait_definition": "",
+			"position": {
+				"0": true,
+				"1": false,
+				"2": false,
+				"3": false,
+				"4": false
+			},
+			"type": 0,
+			"z_index": 0
+		},
+		{
+			"character": "character-1673695181.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Gatekeeper_1"
+		},
+		{
+			"character": "character-1673695181.json",
+			"event_id": "dialogic_001",
+			"portrait": "SalimDissapointed",
+			"text": "Gatekeeper_2"
+		},
+		{
+			"character": "character-1673695181.json",
+			"event_id": "dialogic_001",
+			"portrait": "SalimAngry",
+			"text": "Gatekeeper_3\nGatekeeper_4"
+		},
+		{
+			"character": "character-1673695181.json",
+			"event_id": "dialogic_001",
+			"portrait": "SalimConfused",
+			"text": "Gatekeeper_5\nGatekeeper_6"
+		},
+		{
+			"character": "character-1673695181.json",
+			"event_id": "dialogic_001",
+			"portrait": "SalimAngry",
+			"text": "Gatekeeper_7"
+		},
+		{
+			"event_id": "dialogic_022",
+			"transition_duration": 0.2
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.4.5",
+		"file": "timeline-1682021349.json",
+		"name": "Gatekeeper"
+	}
+}

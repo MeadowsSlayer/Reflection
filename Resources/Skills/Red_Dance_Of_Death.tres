@@ -1,0 +1,15 @@
+[gd_resource type="Resource" load_steps=2 format=2]
+
+[ext_resource path="res://Scripts/Skills/SkillResource.gd" type="Script" id=1]
+
+[resource]
+script = ExtResource( 1 )
+color = "Red"
+CD = 11
+actions = 0
+description = "RED_DANCE_OF_DEATH"
+skill_name = "Dance Of Death"
+type = "enemy"
+icon = "res://Sprites/UI/Skills/Red/Red_Dance_Of_Death.png"
+en = 40
+skill_code = "Red_Dance_Of_Death"

@@ -1,0 +1,15 @@
+[gd_resource type="Resource" load_steps=2 format=2]
+
+[ext_resource path="res://Scripts/Skills/SkillResource.gd" type="Script" id=1]
+
+[resource]
+script = ExtResource( 1 )
+color = "White"
+CD = 3
+actions = 2
+description = "WHITE_COLORFUL_SPLASH"
+skill_name = "Colorful Splash"
+type = "all enemies"
+icon = "res://Sprites/UI/Skills/White/White_Colorful_Splash.png"
+en = 5
+skill_code = "White_Colorful_Splash"

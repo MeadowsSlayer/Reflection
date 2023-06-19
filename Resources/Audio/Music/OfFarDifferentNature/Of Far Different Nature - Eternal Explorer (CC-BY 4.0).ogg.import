@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/Of Far Different Nature - Eternal Explorer (CC-BY 4.0).ogg-44e54819fce946e8e052ef90c3b470a4.oggstr"
+
+[deps]
+
+source_file="res://Resources/Audio/Music/OfFarDifferentNature/Of Far Different Nature - Eternal Explorer (CC-BY 4.0).ogg"
+dest_files=[ "res://.import/Of Far Different Nature - Eternal Explorer (CC-BY 4.0).ogg-44e54819fce946e8e052ef90c3b470a4.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

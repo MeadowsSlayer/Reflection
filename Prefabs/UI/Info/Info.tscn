@@ -1,0 +1,3782 @@
+[gd_scene load_steps=59 format=2]
+
+[ext_resource path="res://Sprites/UI/Buttons UI/button.png" type="Texture" id=1]
+[ext_resource path="res://Resources/Fonts/EncounterTextMedium.tres" type="DynamicFont" id=2]
+[ext_resource path="res://Resources/Fonts/EncounterSmallText.tres" type="DynamicFont" id=3]
+[ext_resource path="res://Sprites/UI/Skills/Red/Red_Dance_Of_Death.png" type="Texture" id=4]
+[ext_resource path="res://Sprites/UI/Skills/Orange/Orange_Stone_Shield.png" type="Texture" id=5]
+[ext_resource path="res://Sprites/UI/Skills/Blue/Blue_Mental_Shield.png" type="Texture" id=6]
+[ext_resource path="res://Sprites/UI/Battle UI/Icons/StatusEffects/Fragile.png" type="Texture" id=7]
+[ext_resource path="res://Sprites/UI/Skills/Green/Green_Growing_Pain.png" type="Texture" id=8]
+[ext_resource path="res://Sprites/UI/Battle UI/Icons/StatusEffects/Empowerment.png" type="Texture" id=9]
+[ext_resource path="res://Sprites/UI/Battle UI/Icons/StatusEffects/Blind.png" type="Texture" id=10]
+[ext_resource path="res://Sprites/UI/Skills/Green/Green_Beatiful_Garden.png" type="Texture" id=11]
+[ext_resource path="res://Sprites/UI/Skills/Orange/Orange_Cleansing.png" type="Texture" id=12]
+[ext_resource path="res://Sprites/UI/Skills/Yellow/Yellow_Balanced_Instability.png" type="Texture" id=13]
+[ext_resource path="res://Prefabs/UI/Info/Info.gd" type="Script" id=14]
+[ext_resource path="res://Sprites/UI/Skills/Orange/Orange_Adaptation.png" type="Texture" id=15]
+[ext_resource path="res://Sprites/UI/Key Letters/AD_Eng.png" type="Texture" id=16]
+[ext_resource path="res://Sprites/UI/Skills/Green/Green_Studying.png" type="Texture" id=17]
+[ext_resource path="res://Sprites/UI/Battle UI/Icons/StatusEffects/Spread.png" type="Texture" id=18]
+[ext_resource path="res://Sprites/UI/Skills/Blue/Blue_Mental_Spiral.png" type="Texture" id=19]
+[ext_resource path="res://Sprites/UI/Skills/Orange/Orange_Spiked_Shield.png" type="Texture" id=20]
+[ext_resource path="res://Sprites/UI/Battle UI/Icons/StatusEffects/Aches.png" type="Texture" id=21]
+[ext_resource path="res://Sprites/UI/Battle UI/Icons/StatusEffects/Silence.png" type="Texture" id=22]
+[ext_resource path="res://Sprites/UI/Battle UI/Icons/StatusEffects/Exhaustion.png" type="Texture" id=23]
+[ext_resource path="res://Sprites/UI/Battle UI/Icons/StatusEffects/Bind.png" type="Texture" id=24]
+[ext_resource path="res://Sprites/UI/Battle UI/Icons/StatusEffects/Block.png" type="Texture" id=25]
+[ext_resource path="res://Sprites/UI/Battle UI/Icons/StatusEffects/Haste.png" type="Texture" id=26]
+[ext_resource path="res://Sprites/UI/Battle UI/Icons/StatusEffects/Miasma.png" type="Texture" id=27]
+[ext_resource path="res://Sprites/UI/Skills/Orange/Orange_BDIGO.png" type="Texture" id=28]
+[ext_resource path="res://Sprites/UI/Battle UI/Icons/StatusEffects/ClosureAlt.png" type="Texture" id=29]
+[ext_resource path="res://Sprites/UI/Skills/Red/Red_Warning_Strike.png" type="Texture" id=30]
+[ext_resource path="res://Sprites/UI/Battle UI/Icons/StatusEffects/Sleep.png" type="Texture" id=31]
+[ext_resource path="res://Sprites/UI/Skills/Blue/Blue_Cycle_Of_Sadness.png" type="Texture" id=32]
+[ext_resource path="res://Sprites/UI/Skills/Green/Green_Waiting_Game.png" type="Texture" id=33]
+[ext_resource path="res://Sprites/UI/Battle UI/Icons/StatusEffects/PowerUpWhite.png" type="Texture" id=34]
+[ext_resource path="res://Sprites/UI/Skills/White/White_Regression.png" type="Texture" id=35]
+[ext_resource path="res://Sprites/UI/Skills/Purple/Purple_Growing_Fracture.png" type="Texture" id=36]
+[ext_resource path="res://Sprites/UI/Skills/Red/Red_Fury.png" type="Texture" id=37]
+[ext_resource path="res://Sprites/UI/Skills/Purple/Purple_Pandoras_Box.png" type="Texture" id=38]
+[ext_resource path="res://Sprites/UI/Skills/Orange/Orange_Stone_Cocoon.png" type="Texture" id=39]
+[ext_resource path="res://Sprites/UI/Skills/Red/Red_Blood_Moon.png" type="Texture" id=40]
+[ext_resource path="res://Sprites/UI/Skills/Yellow/Yellow_Time_Warp.png" type="Texture" id=41]
+[ext_resource path="res://Sprites/UI/Skills/White/White_White_Silence.png" type="Texture" id=42]
+[ext_resource path="res://Resources/Fonts/PixelText.tres" type="DynamicFont" id=43]
+[ext_resource path="res://Prefabs/UI/Skill Placing/PassiveSkill.gd" type="Script" id=44]
+[ext_resource path="res://Sprites/UI/Skills/Red/Red_Critical_Line.png" type="Texture" id=45]
+[ext_resource path="res://Sprites/UI/Skills/Purple/Purple_Unfair_Game.png" type="Texture" id=46]
+[ext_resource path="res://Sprites/UI/Skills/Yellow/Yellow_Lightning_Break.png" type="Texture" id=47]
+[ext_resource path="res://Sprites/UI/Skills/Purple/Purple_One_Foot_In_The_Grave.png" type="Texture" id=48]
+[ext_resource path="res://Sprites/UI/Skills/White/White_Iterative_Process.png" type="Texture" id=49]
+[ext_resource path="res://Sprites/UI/Skills/Blue/Blue_Peace_Of_Mind.png" type="Texture" id=50]
+[ext_resource path="res://Sprites/UI/Skills/Orange/Orange_Recoil.png" type="Texture" id=51]
+[ext_resource path="res://Sprites/UI/Skills/Yellow/Yellow_Fast_Reactions.png" type="Texture" id=52]
+[ext_resource path="res://Sprites/UI/Skills/Green/Green_Sprouting_From_Within.png" type="Texture" id=53]
+[ext_resource path="res://Sprites/UI/Skills/Blue/Blue_Mental_Abuse.png" type="Texture" id=54]
+[ext_resource path="res://Sprites/UI/Skills/White/White_Changing_Mood.png" type="Texture" id=55]
+
+[sub_resource type="Animation" id=1]
+resource_name = "Close"
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.3 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath(".:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 0.3 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ true, false ]
+}
+tracks/2/type = "method"
+tracks/2/path = NodePath(".")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0.3 ),
+"transitions": PoolRealArray( 1 ),
+"values": [ {
+"args": [  ],
+"method": "CloseFinal"
+} ]
+}
+
+[sub_resource type="Animation" id=2]
+resource_name = "Open"
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ true ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath(".:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 0.3 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
+}
+
+[sub_resource type="Animation" id=3]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ) ]
+}
+
+[node name="Info" type="Control"]
+pause_mode = 2
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 14 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+anims/Close = SubResource( 1 )
+anims/Open = SubResource( 2 )
+anims/RESET = SubResource( 3 )
+
+[node name="ColorRect" type="ColorRect" parent="."]
+margin_left = 936.0
+margin_right = 1920.0
+margin_bottom = 1080.0
+color = Color( 0.105882, 0.0784314, 0.160784, 0.486275 )
+
+[node name="Background" type="NinePatchRect" parent="."]
+margin_left = 960.0
+margin_top = 24.0
+margin_right = 1896.0
+margin_bottom = 960.0
+texture = ExtResource( 1 )
+patch_margin_left = 15
+patch_margin_top = 15
+patch_margin_right = 15
+patch_margin_bottom = 15
+
+[node name="Name" type="Label" parent="."]
+margin_left = 984.0
+margin_top = 25.0
+margin_right = 1135.0
+margin_bottom = 126.0
+custom_fonts/font = ExtResource( 43 )
+text = "Salim"
+
+[node name="Vulnerabilities" type="NinePatchRect" parent="."]
+self_modulate = Color( 1, 1, 1, 0.737255 )
+margin_left = 24.0
+margin_top = 672.0
+margin_right = 448.0
+margin_bottom = 960.0
+texture = ExtResource( 1 )
+patch_margin_left = 15
+patch_margin_top = 15
+patch_margin_right = 15
+patch_margin_bottom = 15
+
+[node name="VBoxContainer" type="GridContainer" parent="Vulnerabilities"]
+margin_left = 24.0
+margin_top = 8.0
+margin_right = 396.0
+margin_bottom = 276.0
+columns = 2
+
+[node name="IMU" type="Label" parent="Vulnerabilities/VBoxContainer"]
+margin_right = 156.0
+margin_bottom = 64.0
+text = "Immune: "
+
+[node name="Immunities" type="HBoxContainer" parent="Vulnerabilities/VBoxContainer"]
+margin_left = 160.0
+margin_right = 160.0
+margin_bottom = 64.0
+
+[node name="ColorRect" type="ColorRect" parent="Vulnerabilities/VBoxContainer/Immunities"]
+visible = false
+margin_right = 32.0
+margin_bottom = 64.0
+rect_min_size = Vector2( 32, 64 )
+color = Color( 1, 0, 0, 1 )
+
+[node name="ColorRect2" type="ColorRect" parent="Vulnerabilities/VBoxContainer/Immunities"]
+visible = false
+margin_left = 36.0
+margin_right = 68.0
+margin_bottom = 64.0
+rect_min_size = Vector2( 32, 64 )
+color = Color( 1, 0.513726, 0, 1 )
+
+[node name="ColorRect3" type="ColorRect" parent="Vulnerabilities/VBoxContainer/Immunities"]
+visible = false
+margin_left = 72.0
+margin_right = 104.0
+margin_bottom = 64.0
+rect_min_size = Vector2( 32, 64 )
+color = Color( 0.945098, 1, 0, 1 )
+
+[node name="ColorRect4" type="ColorRect" parent="Vulnerabilities/VBoxContainer/Immunities"]
+visible = false
+margin_left = 108.0
+margin_right = 140.0
+margin_bottom = 64.0
+rect_min_size = Vector2( 32, 64 )
+color = Color( 0, 1, 0.0156863, 1 )
+
+[node name="ColorRect5" type="ColorRect" parent="Vulnerabilities/VBoxContainer/Immunities"]
+visible = false
+margin_left = 144.0
+margin_right = 176.0
+margin_bottom = 64.0
+rect_min_size = Vector2( 32, 64 )
+color = Color( 0, 0.156863, 1, 1 )
+
+[node name="ColorRect6" type="ColorRect" parent="Vulnerabilities/VBoxContainer/Immunities"]
+visible = false
+margin_left = 180.0
+margin_right = 212.0
+margin_bottom = 64.0
+rect_min_size = Vector2( 32, 64 )
+color = Color( 0.827451, 0, 1, 1 )
+
+[node name="RES" type="Label" parent="Vulnerabilities/VBoxContainer"]
+margin_top = 68.0
+margin_right = 156.0
+margin_bottom = 132.0
+text = "Resist: "
+
+[node name="Resistances" type="HBoxContainer" parent="Vulnerabilities/VBoxContainer"]
+margin_left = 160.0
+margin_top = 68.0
+margin_right = 160.0
+margin_bottom = 132.0
+
+[node name="ColorRect" type="ColorRect" parent="Vulnerabilities/VBoxContainer/Resistances"]
+visible = false
+margin_right = 32.0
+margin_bottom = 64.0
+rect_min_size = Vector2( 32, 30 )
+color = Color( 1, 0, 0, 1 )
+
+[node name="ColorRect2" type="ColorRect" parent="Vulnerabilities/VBoxContainer/Resistances"]
+visible = false
+margin_left = 36.0
+margin_right = 68.0
+margin_bottom = 64.0
+rect_min_size = Vector2( 32, 30 )
+color = Color( 1, 0.513726, 0, 1 )
+
+[node name="ColorRect3" type="ColorRect" parent="Vulnerabilities/VBoxContainer/Resistances"]
+visible = false
+margin_left = 72.0
+margin_right = 104.0
+margin_bottom = 64.0
+rect_min_size = Vector2( 32, 30 )
+color = Color( 0.945098, 1, 0, 1 )
+
+[node name="ColorRect4" type="ColorRect" parent="Vulnerabilities/VBoxContainer/Resistances"]
+visible = false
+margin_left = 108.0
+margin_right = 140.0
+margin_bottom = 64.0
+rect_min_size = Vector2( 32, 30 )
+color = Color( 0, 1, 0.0156863, 1 )
+
+[node name="ColorRect5" type="ColorRect" parent="Vulnerabilities/VBoxContainer/Resistances"]
+visible = false
+margin_left = 144.0
+margin_right = 176.0
+margin_bottom = 64.0
+rect_min_size = Vector2( 32, 30 )
+color = Color( 0, 0.156863, 1, 1 )
+
+[node name="ColorRect6" type="ColorRect" parent="Vulnerabilities/VBoxContainer/Resistances"]
+visible = false
+margin_left = 180.0
+margin_right = 212.0
+margin_bottom = 64.0
+rect_min_size = Vector2( 32, 30 )
+color = Color( 0.827451, 0, 1, 1 )
+
+[node name="WEK" type="Label" parent="Vulnerabilities/VBoxContainer"]
+margin_top = 136.0
+margin_right = 156.0
+margin_bottom = 200.0
+text = "Weak: "
+
+[node name="Weaknesses" type="HBoxContainer" parent="Vulnerabilities/VBoxContainer"]
+margin_left = 160.0
+margin_top = 136.0
+margin_right = 160.0
+margin_bottom = 200.0
+
+[node name="ColorRect" type="ColorRect" parent="Vulnerabilities/VBoxContainer/Weaknesses"]
+visible = false
+margin_right = 32.0
+margin_bottom = 64.0
+rect_min_size = Vector2( 32, 30 )
+color = Color( 1, 0, 0, 1 )
+
+[node name="ColorRect2" type="ColorRect" parent="Vulnerabilities/VBoxContainer/Weaknesses"]
+visible = false
+margin_left = 36.0
+margin_right = 68.0
+margin_bottom = 64.0
+rect_min_size = Vector2( 32, 30 )
+color = Color( 1, 0.513726, 0, 1 )
+
+[node name="ColorRect3" type="ColorRect" parent="Vulnerabilities/VBoxContainer/Weaknesses"]
+visible = false
+margin_left = 72.0
+margin_right = 104.0
+margin_bottom = 64.0
+rect_min_size = Vector2( 32, 30 )
+color = Color( 0.945098, 1, 0, 1 )
+
+[node name="ColorRect4" type="ColorRect" parent="Vulnerabilities/VBoxContainer/Weaknesses"]
+visible = false
+margin_left = 108.0
+margin_right = 140.0
+margin_bottom = 64.0
+rect_min_size = Vector2( 32, 30 )
+color = Color( 0, 1, 0.0156863, 1 )
+
+[node name="ColorRect5" type="ColorRect" parent="Vulnerabilities/VBoxContainer/Weaknesses"]
+visible = false
+margin_left = 144.0
+margin_right = 176.0
+margin_bottom = 64.0
+rect_min_size = Vector2( 32, 30 )
+color = Color( 0, 0.156863, 1, 1 )
+
+[node name="ColorRect6" type="ColorRect" parent="Vulnerabilities/VBoxContainer/Weaknesses"]
+visible = false
+margin_left = 180.0
+margin_right = 212.0
+margin_bottom = 64.0
+rect_min_size = Vector2( 32, 30 )
+color = Color( 0.827451, 0, 1, 1 )
+
+[node name="FAT" type="Label" parent="Vulnerabilities/VBoxContainer"]
+margin_top = 204.0
+margin_right = 156.0
+margin_bottom = 268.0
+text = "Fatal: "
+
+[node name="Fatals" type="HBoxContainer" parent="Vulnerabilities/VBoxContainer"]
+margin_left = 160.0
+margin_top = 204.0
+margin_right = 160.0
+margin_bottom = 268.0
+
+[node name="ColorRect" type="ColorRect" parent="Vulnerabilities/VBoxContainer/Fatals"]
+visible = false
+margin_right = 32.0
+margin_bottom = 64.0
+rect_min_size = Vector2( 32, 30 )
+color = Color( 1, 0, 0, 1 )
+
+[node name="ColorRect2" type="ColorRect" parent="Vulnerabilities/VBoxContainer/Fatals"]
+visible = false
+margin_left = 36.0
+margin_right = 68.0
+margin_bottom = 64.0
+rect_min_size = Vector2( 32, 30 )
+color = Color( 1, 0.513726, 0, 1 )
+
+[node name="ColorRect3" type="ColorRect" parent="Vulnerabilities/VBoxContainer/Fatals"]
+visible = false
+margin_left = 72.0
+margin_right = 104.0
+margin_bottom = 64.0
+rect_min_size = Vector2( 32, 30 )
+color = Color( 0.945098, 1, 0, 1 )
+
+[node name="ColorRect4" type="ColorRect" parent="Vulnerabilities/VBoxContainer/Fatals"]
+visible = false
+margin_left = 108.0
+margin_right = 140.0
+margin_bottom = 64.0
+rect_min_size = Vector2( 32, 30 )
+color = Color( 0, 1, 0.0156863, 1 )
+
+[node name="ColorRect5" type="ColorRect" parent="Vulnerabilities/VBoxContainer/Fatals"]
+visible = false
+margin_left = 144.0
+margin_right = 176.0
+margin_bottom = 64.0
+rect_min_size = Vector2( 32, 30 )
+color = Color( 0, 0.156863, 1, 1 )
+
+[node name="ColorRect6" type="ColorRect" parent="Vulnerabilities/VBoxContainer/Fatals"]
+visible = false
+margin_left = 180.0
+margin_right = 212.0
+margin_bottom = 64.0
+rect_min_size = Vector2( 32, 30 )
+color = Color( 0.827451, 0, 1, 1 )
+
+[node name="INFO" type="Button" parent="."]
+margin_left = 992.0
+margin_top = 144.0
+margin_right = 1424.0
+margin_bottom = 224.0
+custom_fonts/font = ExtResource( 2 )
+text = "Base Info"
+
+[node name="TALENTS" type="Button" parent="."]
+margin_left = 1456.0
+margin_top = 144.0
+margin_right = 1864.0
+margin_bottom = 224.0
+custom_fonts/font = ExtResource( 2 )
+text = "Abilities"
+
+[node name="DownUI" type="Control" parent="."]
+margin_right = 40.0
+margin_bottom = 40.0
+
+[node name="Background" type="NinePatchRect" parent="DownUI"]
+margin_left = -24.0
+margin_top = 984.0
+margin_right = 1936.0
+margin_bottom = 1080.0
+texture = ExtResource( 1 )
+patch_margin_left = 15
+patch_margin_top = 15
+patch_margin_right = 15
+patch_margin_bottom = 15
+
+[node name="Close" type="Button" parent="DownUI"]
+margin_left = 1800.0
+margin_top = 984.0
+margin_right = 1921.76
+margin_bottom = 1078.65
+text = "X"
+
+[node name="TextDown" type="Control" parent="DownUI"]
+margin_left = 920.0
+margin_top = 992.0
+margin_right = 1790.0
+margin_bottom = 1073.0
+
+[node name="HBoxContainer" type="HBoxContainer" parent="DownUI/TextDown"]
+margin_left = 560.0
+margin_top = 18.0
+margin_right = 872.0
+margin_bottom = 64.0
+custom_constants/separation = 20
+alignment = 1
+
+[node name="WS" type="TextureRect" parent="DownUI/TextDown/HBoxContainer"]
+margin_left = 7.0
+margin_right = 107.0
+margin_bottom = 46.0
+texture = ExtResource( 16 )
+
+[node name="Navigate" type="Label" parent="DownUI/TextDown/HBoxContainer"]
+margin_left = 127.0
+margin_right = 305.0
+margin_bottom = 46.0
+custom_fonts/font = ExtResource( 2 )
+text = "Change Target"
+
+[node name="BaseInfo" type="Control" parent="."]
+margin_right = 40.0
+margin_bottom = 40.0
+
+[node name="Stats" type="Control" parent="BaseInfo"]
+margin_left = 1112.0
+margin_top = 232.0
+margin_right = 1112.0
+margin_bottom = 232.0
+
+[node name="ATK" type="Label" parent="BaseInfo/Stats"]
+margin_right = 80.0
+margin_bottom = 64.0
+text = "ATK:"
+
+[node name="ATKNum" type="Label" parent="BaseInfo/Stats"]
+margin_left = 84.0
+margin_right = 164.0
+margin_bottom = 64.0
+rect_min_size = Vector2( 80, 64 )
+text = "10"
+align = 1
+
+[node name="RES" type="Label" parent="BaseInfo/Stats"]
+margin_left = 512.0
+margin_right = 592.0
+margin_bottom = 64.0
+text = "RES:"
+
+[node name="RESNum" type="Label" parent="BaseInfo/Stats"]
+margin_left = 596.0
+margin_right = 676.0
+margin_bottom = 64.0
+rect_min_size = Vector2( 80, 64 )
+text = "10"
+align = 1
+
+[node name="DEF" type="Label" parent="BaseInfo/Stats"]
+margin_left = 256.0
+margin_right = 336.0
+margin_bottom = 64.0
+text = "DEF:"
+
+[node name="DEFNum" type="Label" parent="BaseInfo/Stats"]
+margin_left = 340.0
+margin_right = 420.0
+margin_bottom = 64.0
+rect_min_size = Vector2( 80, 64 )
+text = "10"
+align = 1
+
+[node name="END" type="Label" parent="BaseInfo/Stats"]
+margin_top = 64.0
+margin_right = 80.0
+margin_bottom = 128.0
+text = "END:"
+
+[node name="ENDNum" type="Label" parent="BaseInfo/Stats"]
+margin_left = 84.0
+margin_top = 64.0
+margin_right = 164.0
+margin_bottom = 128.0
+rect_min_size = Vector2( 80, 64 )
+text = "10"
+align = 1
+
+[node name="SEN" type="Label" parent="BaseInfo/Stats"]
+margin_left = 256.0
+margin_top = 64.0
+margin_right = 336.0
+margin_bottom = 128.0
+text = "SEN:"
+
+[node name="SENNum" type="Label" parent="BaseInfo/Stats"]
+margin_left = 340.0
+margin_top = 64.0
+margin_right = 420.0
+margin_bottom = 128.0
+rect_min_size = Vector2( 80, 64 )
+text = "10"
+align = 1
+
+[node name="SPD" type="Label" parent="BaseInfo/Stats"]
+margin_left = 512.0
+margin_top = 64.0
+margin_right = 592.0
+margin_bottom = 128.0
+text = "SPD:"
+
+[node name="SPDNum" type="Label" parent="BaseInfo/Stats"]
+margin_left = 596.0
+margin_top = 64.0
+margin_right = 676.0
+margin_bottom = 128.0
+rect_min_size = Vector2( 80, 64 )
+text = "10"
+align = 1
+
+[node name="ENR" type="Label" parent="BaseInfo/Stats"]
+margin_top = 128.0
+margin_right = 80.0
+margin_bottom = 192.0
+text = "ENR:"
+
+[node name="ENRNum" type="Label" parent="BaseInfo/Stats"]
+margin_left = 84.0
+margin_top = 128.0
+margin_right = 164.0
+margin_bottom = 192.0
+rect_min_size = Vector2( 80, 64 )
+text = "10"
+align = 1
+
+[node name="CRIT" type="Label" parent="BaseInfo/Stats"]
+margin_left = 256.0
+margin_top = 128.0
+margin_right = 352.0
+margin_bottom = 192.0
+text = "CRIT:"
+
+[node name="CRITNum" type="Label" parent="BaseInfo/Stats"]
+margin_left = 352.0
+margin_top = 128.0
+margin_right = 432.0
+margin_bottom = 192.0
+rect_min_size = Vector2( 80, 64 )
+text = "10"
+align = 1
+
+[node name="AVO" type="Label" parent="BaseInfo/Stats"]
+margin_left = 512.0
+margin_top = 128.0
+margin_right = 592.0
+margin_bottom = 192.0
+text = "AVO:"
+
+[node name="AVONum" type="Label" parent="BaseInfo/Stats"]
+margin_left = 596.0
+margin_top = 128.0
+margin_right = 676.0
+margin_bottom = 192.0
+rect_min_size = Vector2( 80, 64 )
+text = "10"
+align = 1
+
+[node name="StatusText" type="Label" parent="BaseInfo"]
+margin_left = 984.0
+margin_top = 424.0
+margin_right = 1896.0
+margin_bottom = 488.0
+text = "Status Effects"
+autowrap = true
+
+[node name="StatusEffects" type="ScrollContainer" parent="BaseInfo"]
+margin_left = 992.0
+margin_top = 496.0
+margin_right = 1864.0
+margin_bottom = 944.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="BaseInfo/StatusEffects"]
+
+[node name="Fragile" type="NinePatchRect" parent="BaseInfo/StatusEffects/VBoxContainer"]
+visible = false
+margin_right = 872.0
+margin_bottom = 80.0
+rect_min_size = Vector2( 872, 80 )
+texture = ExtResource( 1 )
+patch_margin_left = 15
+patch_margin_top = 15
+patch_margin_right = 15
+patch_margin_bottom = 15
+
+[node name="Icon" type="TextureRect" parent="BaseInfo/StatusEffects/VBoxContainer/Fragile"]
+margin_left = 16.0
+margin_top = 8.0
+margin_right = 64.0
+margin_bottom = 56.0
+texture = ExtResource( 7 )
+expand = true
+
+[node name="StatusName" type="Label" parent="BaseInfo/StatusEffects/VBoxContainer/Fragile"]
+margin_left = 72.0
+margin_top = 8.0
+margin_right = 568.0
+margin_bottom = 40.0
+custom_fonts/font = ExtResource( 3 )
+text = "Fragile"
+
+[node name="Duration" type="Label" parent="BaseInfo/StatusEffects/VBoxContainer/Fragile"]
+margin_left = 576.0
+margin_top = 8.0
+margin_right = 864.0
+margin_bottom = 40.0
+custom_fonts/font = ExtResource( 3 )
+text = "Duration:"
+
+[node name="StatusText" type="Label" parent="BaseInfo/StatusEffects/VBoxContainer/Fragile"]
+modulate = Color( 0.67451, 0.67451, 0.67451, 1 )
+margin_left = 72.0
+margin_top = 40.0
+margin_right = 856.0
+margin_bottom = 72.0
+custom_fonts/font = ExtResource( 3 )
+text = "Damage recieved increases by X%."
+
+[node name="Spread" type="NinePatchRect" parent="BaseInfo/StatusEffects/VBoxContainer"]
+visible = false
+margin_top = 84.0
+margin_right = 872.0
+margin_bottom = 196.0
+rect_min_size = Vector2( 872, 112 )
+texture = ExtResource( 1 )
+patch_margin_left = 15
+patch_margin_top = 15
+patch_margin_right = 15
+patch_margin_bottom = 15
+
+[node name="Icon" type="TextureRect" parent="BaseInfo/StatusEffects/VBoxContainer/Spread"]
+margin_left = 16.0
+margin_top = 8.0
+margin_right = 64.0
+margin_bottom = 56.0
+texture = ExtResource( 18 )
+expand = true
+
+[node name="StatusName" type="Label" parent="BaseInfo/StatusEffects/VBoxContainer/Spread"]
+margin_left = 72.0
+margin_top = 8.0
+margin_right = 568.0
+margin_bottom = 40.0
+custom_fonts/font = ExtResource( 3 )
+text = "Spread"
+
+[node name="Duration" type="Label" parent="BaseInfo/StatusEffects/VBoxContainer/Spread"]
+margin_left = 576.0
+margin_top = 8.0
+margin_right = 864.0
+margin_bottom = 40.0
+custom_fonts/font = ExtResource( 3 )
+text = "Duration:"
+
+[node name="StatusText" type="Label" parent="BaseInfo/StatusEffects/VBoxContainer/Spread"]
+modulate = Color( 0.67451, 0.67451, 0.67451, 1 )
+margin_left = 72.0
+margin_top = 40.0
+margin_right = 856.0
+margin_bottom = 72.0
+custom_fonts/font = ExtResource( 3 )
+text = "CRIT of attacks made against this unit increases by X. Effect is doubled if the attack is green."
+autowrap = true
+
+[node name="Bind" type="NinePatchRect" parent="BaseInfo/StatusEffects/VBoxContainer"]
+visible = false
+margin_top = 200.0
+margin_right = 872.0
+margin_bottom = 280.0
+rect_min_size = Vector2( 872, 80 )
+texture = ExtResource( 1 )
+patch_margin_left = 15
+patch_margin_top = 15
+patch_margin_right = 15
+patch_margin_bottom = 15
+
+[node name="Icon" type="TextureRect" parent="BaseInfo/StatusEffects/VBoxContainer/Bind"]
+margin_left = 16.0
+margin_top = 8.0
+margin_right = 64.0
+margin_bottom = 56.0
+texture = ExtResource( 24 )
+expand = true
+
+[node name="StatusName" type="Label" parent="BaseInfo/StatusEffects/VBoxContainer/Bind"]
+margin_left = 72.0
+margin_top = 8.0
+margin_right = 568.0
+margin_bottom = 40.0
+custom_fonts/font = ExtResource( 3 )
+text = "Bind"
+
+[node name="Duration" type="Label" parent="BaseInfo/StatusEffects/VBoxContainer/Bind"]
+margin_left = 576.0
+margin_top = 8.0
+margin_right = 864.0
+margin_bottom = 40.0
+custom_fonts/font = ExtResource( 3 )
+text = "Duration:"
+
+[node name="StatusText" type="Label" parent="BaseInfo/StatusEffects/VBoxContainer/Bind"]
+modulate = Color( 0.67451, 0.67451, 0.67451, 1 )
+margin_left = 72.0
+margin_top = 40.0
+margin_right = 856.0
+margin_bottom = 72.0
+custom_fonts/font = ExtResource( 3 )
+text = "Decreases hit chance by X and SPD by third."
+autowrap = true
+
+[node name="Miasma" type="NinePatchRect" parent="BaseInfo/StatusEffects/VBoxContainer"]
+visible = false
+margin_right = 872.0
+margin_bottom = 80.0
+rect_min_size = Vector2( 872, 80 )
+texture = ExtResource( 1 )
+patch_margin_left = 15
+patch_margin_top = 15
+patch_margin_right = 15
+patch_margin_bottom = 15
+
+[node name="Icon" type="TextureRect" parent="BaseInfo/StatusEffects/VBoxContainer/Miasma"]
+margin_left = 16.0
+margin_top = 8.0
+margin_right = 64.0
+margin_bottom = 56.0
+texture = ExtResource( 27 )
+expand = true
+
+[node name="StatusName" type="Label" parent="BaseInfo/StatusEffects/VBoxContainer/Miasma"]
+margin_left = 72.0
+margin_top = 8.0
+margin_right = 568.0
+margin_bottom = 40.0
+custom_fonts/font = ExtResource( 3 )
+text = "Miasma"
+
+[node name="Duration" type="Label" parent="BaseInfo/StatusEffects/VBoxContainer/Miasma"]
+margin_left = 576.0
+margin_top = 8.0
+margin_right = 864.0
+margin_bottom = 40.0
+custom_fonts/font = ExtResource( 3 )
+text = "Duration:"
+
+[node name="StatusText" type="Label" parent="BaseInfo/StatusEffects/VBoxContainer/Miasma"]
+modulate = Color( 0.67451, 0.67451, 0.67451, 1 )
+margin_left = 72.0
+margin_top = 40.0
+margin_right = 856.0
+margin_bottom = 72.0
+custom_fonts/font = ExtResource( 3 )
+text = "RES -X"
+autowrap = true
+
+[node name="Haste" type="NinePatchRect" parent="BaseInfo/StatusEffects/VBoxContainer"]
+visible = false
+margin_top = 84.0
+margin_right = 872.0
+margin_bottom = 164.0
+rect_min_size = Vector2( 872, 80 )
+texture = ExtResource( 1 )
+patch_margin_left = 15
+patch_margin_top = 15
+patch_margin_right = 15
+patch_margin_bottom = 15
+
+[node name="Icon" type="TextureRect" parent="BaseInfo/StatusEffects/VBoxContainer/Haste"]
+margin_left = 16.0
+margin_top = 8.0
+margin_right = 64.0
+margin_bottom = 56.0
+texture = ExtResource( 26 )
+expand = true
+
+[node name="StatusName" type="Label" parent="BaseInfo/StatusEffects/VBoxContainer/Haste"]
+margin_left = 72.0
+margin_top = 8.0
+margin_right = 568.0
+margin_bottom = 40.0
+custom_fonts/font = ExtResource( 3 )
+text = "Haste"
+
+[node name="Duration" type="Label" parent="BaseInfo/StatusEffects/VBoxContainer/Haste"]
+margin_left = 576.0
+margin_top = 8.0
+margin_right = 864.0
+margin_bottom = 40.0
+custom_fonts/font = ExtResource( 3 )
+text = "Duration:"
+
+[node name="StatusText" type="Label" parent="BaseInfo/StatusEffects/VBoxContainer/Haste"]
+modulate = Color( 0.67451, 0.67451, 0.67451, 1 )
+margin_left = 72.0
+margin_top = 40.0
+margin_right = 856.0
+margin_bottom = 72.0
+custom_fonts/font = ExtResource( 3 )
+text = "Increases SPD by X and decreases skills CD by Y."
+autowrap = true
+
+[node name="Block" type="NinePatchRect" parent="BaseInfo/StatusEffects/VBoxContainer"]
+visible = false
+margin_top = 168.0
+margin_right = 872.0
+margin_bottom = 248.0
+rect_min_size = Vector2( 872, 80 )
+texture = ExtResource( 1 )
+patch_margin_left = 15
+patch_margin_top = 15
+patch_margin_right = 15
+patch_margin_bottom = 15
+
+[node name="Icon" type="TextureRect" parent="BaseInfo/StatusEffects/VBoxContainer/Block"]
+margin_left = 16.0
+margin_top = 8.0
+margin_right = 64.0
+margin_bottom = 56.0
+texture = ExtResource( 25 )
+expand = true
+
+[node name="StatusName" type="Label" parent="BaseInfo/StatusEffects/VBoxContainer/Block"]
+margin_left = 72.0
+margin_top = 8.0
+margin_right = 568.0
+margin_bottom = 40.0
+custom_fonts/font = ExtResource( 3 )
+text = "Block"
+
+[node name="StatusText" type="Label" parent="BaseInfo/StatusEffects/VBoxContainer/Block"]
+modulate = Color( 0.67451, 0.67451, 0.67451, 1 )
+margin_left = 72.0
+margin_top = 40.0
+margin_right = 856.0
+margin_bottom = 72.0
+custom_fonts/font = ExtResource( 3 )
+text = "Blocks X instances of damage."
+autowrap = true
+
+[node name="Closure" type="NinePatchRect" parent="BaseInfo/StatusEffects/VBoxContainer"]
+visible = false
+margin_top = 252.0
+margin_right = 872.0
+margin_bottom = 332.0
+rect_min_size = Vector2( 872, 80 )
+texture = ExtResource( 1 )
+patch_margin_left = 15
+patch_margin_top = 15
+patch_margin_right = 15
+patch_margin_bottom = 15
+
+[node name="Icon" type="TextureRect" parent="BaseInfo/StatusEffects/VBoxContainer/Closure"]
+margin_left = 16.0
+margin_top = 8.0
+margin_right = 64.0
+margin_bottom = 56.0
+texture = ExtResource( 29 )
+expand = true
+
+[node name="StatusName" type="Label" parent="BaseInfo/StatusEffects/VBoxContainer/Closure"]
+margin_left = 72.0
+margin_top = 8.0
+margin_right = 568.0
+margin_bottom = 40.0
+custom_fonts/font = ExtResource( 3 )
+text = "Closure"
+
+[node name="Duration" type="Label" parent="BaseInfo/StatusEffects/VBoxContainer/Closure"]
+margin_left = 576.0
+margin_top = 8.0
+margin_right = 864.0
+margin_bottom = 40.0
+custom_fonts/font = ExtResource( 3 )
+text = "Duration:"
+
+[node name="StatusText" type="Label" parent="BaseInfo/StatusEffects/VBoxContainer/Closure"]
+modulate = Color( 0.67451, 0.67451, 0.67451, 1 )
+margin_left = 72.0
+margin_top = 40.0
+margin_right = 856.0
+margin_bottom = 72.0
+custom_fonts/font = ExtResource( 3 )
+text = "SPD -X and can't gain additional actions."
+autowrap = true
+
+[node name="Aches" type="NinePatchRect" parent="BaseInfo/StatusEffects/VBoxContainer"]
+visible = false
+margin_right = 872.0
+margin_bottom = 80.0
+rect_min_size = Vector2( 872, 80 )
+texture = ExtResource( 1 )
+patch_margin_left = 15
+patch_margin_top = 15
+patch_margin_right = 15
+patch_margin_bottom = 15
+
+[node name="Icon" type="TextureRect" parent="BaseInfo/StatusEffects/VBoxContainer/Aches"]
+margin_left = 16.0
+margin_top = 8.0
+margin_right = 64.0
+margin_bottom = 56.0
+texture = ExtResource( 21 )
+expand = true
+
+[node name="StatusName" type="Label" parent="BaseInfo/StatusEffects/VBoxContainer/Aches"]
+margin_left = 72.0
+margin_top = 8.0
+margin_right = 568.0
+margin_bottom = 40.0
+custom_fonts/font = ExtResource( 3 )
+text = "Aches"
+
+[node name="Duration" type="Label" parent="BaseInfo/StatusEffects/VBoxContainer/Aches"]
+margin_left = 576.0
+margin_top = 8.0
+margin_right = 864.0
+margin_bottom = 40.0
+custom_fonts/font = ExtResource( 3 )
+text = "Duration:"
+
+[node name="StatusText" type="Label" parent="BaseInfo/StatusEffects/VBoxContainer/Aches"]
+modulate = Color( 0.67451, 0.67451, 0.67451, 1 )
+margin_left = 72.0
+margin_top = 40.0
+margin_right = 856.0
+margin_bottom = 72.0
+custom_fonts/font = ExtResource( 3 )
+text = "Damage dealt is decreased by X."
+autowrap = true
+
+[node name="Empowerment" type="NinePatchRect" parent="BaseInfo/StatusEffects/VBoxContainer"]
+visible = false
+margin_top = 84.0
+margin_right = 872.0
+margin_bottom = 164.0
+rect_min_size = Vector2( 872, 80 )
+texture = ExtResource( 1 )
+patch_margin_left = 15
+patch_margin_top = 15
+patch_margin_right = 15
+patch_margin_bottom = 15
+
+[node name="Icon" type="TextureRect" parent="BaseInfo/StatusEffects/VBoxContainer/Empowerment"]
+margin_left = 16.0
+margin_top = 8.0
+margin_right = 64.0
+margin_bottom = 56.0
+texture = ExtResource( 9 )
+expand = true
+
+[node name="StatusName" type="Label" parent="BaseInfo/StatusEffects/VBoxContainer/Empowerment"]
+margin_left = 72.0
+margin_top = 8.0
+margin_right = 568.0
+margin_bottom = 40.0
+custom_fonts/font = ExtResource( 3 )
+text = "Empowerment"
+
+[node name="Duration" type="Label" parent="BaseInfo/StatusEffects/VBoxContainer/Empowerment"]
+margin_left = 576.0
+margin_top = 8.0
+margin_right = 864.0
+margin_bottom = 40.0
+custom_fonts/font = ExtResource( 3 )
+text = "Duration:"
+
+[node name="StatusText" type="Label" parent="BaseInfo/StatusEffects/VBoxContainer/Empowerment"]
+modulate = Color( 0.67451, 0.67451, 0.67451, 1 )
+margin_left = 72.0
+margin_top = 40.0
+margin_right = 856.0
+margin_bottom = 72.0
+custom_fonts/font = ExtResource( 3 )
+text = "Damage dealt is increased by X."
+autowrap = true
+
+[node name="Blindness" type="NinePatchRect" parent="BaseInfo/StatusEffects/VBoxContainer"]
+visible = false
+margin_top = 168.0
+margin_right = 872.0
+margin_bottom = 248.0
+rect_min_size = Vector2( 872, 80 )
+texture = ExtResource( 1 )
+patch_margin_left = 15
+patch_margin_top = 15
+patch_margin_right = 15
+patch_margin_bottom = 15
+
+[node name="Icon" type="TextureRect" parent="BaseInfo/StatusEffects/VBoxContainer/Blindness"]
+margin_left = 16.0
+margin_top = 8.0
+margin_right = 64.0
+margin_bottom = 56.0
+texture = ExtResource( 10 )
+expand = true
+
+[node name="StatusName" type="Label" parent="BaseInfo/StatusEffects/VBoxContainer/Blindness"]
+margin_left = 72.0
+margin_top = 8.0
+margin_right = 568.0
+margin_bottom = 40.0
+custom_fonts/font = ExtResource( 3 )
+text = "Blindness"
+
+[node name="Duration" type="Label" parent="BaseInfo/StatusEffects/VBoxContainer/Blindness"]
+margin_left = 576.0
+margin_top = 8.0
+margin_right = 864.0
+margin_bottom = 40.0
+custom_fonts/font = ExtResource( 3 )
+text = "Duration:"
+
+[node name="StatusText" type="Label" parent="BaseInfo/StatusEffects/VBoxContainer/Blindness"]
+modulate = Color( 0.67451, 0.67451, 0.67451, 1 )
+margin_left = 72.0
+margin_top = 40.0
+margin_right = 856.0
+margin_bottom = 72.0
+custom_fonts/font = ExtResource( 3 )
+text = "Hit chance and AVO are decreased by X."
+autowrap = true
+
+[node name="Silence" type="NinePatchRect" parent="BaseInfo/StatusEffects/VBoxContainer"]
+visible = false
+margin_top = 252.0
+margin_right = 872.0
+margin_bottom = 332.0
+rect_min_size = Vector2( 872, 80 )
+texture = ExtResource( 1 )
+patch_margin_left = 15
+patch_margin_top = 15
+patch_margin_right = 15
+patch_margin_bottom = 15
+
+[node name="Icon" type="TextureRect" parent="BaseInfo/StatusEffects/VBoxContainer/Silence"]
+margin_left = 16.0
+margin_top = 8.0
+margin_right = 64.0
+margin_bottom = 56.0
+texture = ExtResource( 22 )
+expand = true
+
+[node name="StatusName" type="Label" parent="BaseInfo/StatusEffects/VBoxContainer/Silence"]
+margin_left = 72.0
+margin_top = 8.0
+margin_right = 568.0
+margin_bottom = 40.0
+custom_fonts/font = ExtResource( 3 )
+text = "Silence"
+
+[node name="Duration" type="Label" parent="BaseInfo/StatusEffects/VBoxContainer/Silence"]
+margin_left = 576.0
+margin_top = 8.0
+margin_right = 864.0
+margin_bottom = 40.0
+custom_fonts/font = ExtResource( 3 )
+text = "Duration:"
+
+[node name="StatusText" type="Label" parent="BaseInfo/StatusEffects/VBoxContainer/Silence"]
+modulate = Color( 0.67451, 0.67451, 0.67451, 1 )
+margin_left = 72.0
+margin_top = 40.0
+margin_right = 856.0
+margin_bottom = 72.0
+custom_fonts/font = ExtResource( 3 )
+text = "Can't use skills and ultimate. Passives are silenced unless they state otherwise."
+autowrap = true
+
+[node name="Exhaustion" type="NinePatchRect" parent="BaseInfo/StatusEffects/VBoxContainer"]
+visible = false
+margin_right = 872.0
+margin_bottom = 80.0
+rect_min_size = Vector2( 872, 80 )
+texture = ExtResource( 1 )
+patch_margin_left = 15
+patch_margin_top = 15
+patch_margin_right = 15
+patch_margin_bottom = 15
+
+[node name="Icon" type="TextureRect" parent="BaseInfo/StatusEffects/VBoxContainer/Exhaustion"]
+margin_left = 16.0
+margin_top = 8.0
+margin_right = 64.0
+margin_bottom = 56.0
+texture = ExtResource( 23 )
+expand = true
+
+[node name="StatusName" type="Label" parent="BaseInfo/StatusEffects/VBoxContainer/Exhaustion"]
+margin_left = 72.0
+margin_top = 8.0
+margin_right = 568.0
+margin_bottom = 40.0
+custom_fonts/font = ExtResource( 3 )
+text = "Exhaustion"
+
+[node name="Duration" type="Label" parent="BaseInfo/StatusEffects/VBoxContainer/Exhaustion"]
+margin_left = 576.0
+margin_top = 8.0
+margin_right = 864.0
+margin_bottom = 40.0
+custom_fonts/font = ExtResource( 3 )
+text = "Duration:"
+
+[node name="StatusText" type="Label" parent="BaseInfo/StatusEffects/VBoxContainer/Exhaustion"]
+modulate = Color( 0.67451, 0.67451, 0.67451, 1 )
+margin_left = 72.0
+margin_top = 40.0
+margin_right = 856.0
+margin_bottom = 72.0
+custom_fonts/font = ExtResource( 3 )
+text = "At the start of each turn lose X EN and take 5*X damage."
+autowrap = true
+
+[node name="Sleep" type="NinePatchRect" parent="BaseInfo/StatusEffects/VBoxContainer"]
+visible = false
+margin_right = 872.0
+margin_bottom = 80.0
+rect_min_size = Vector2( 872, 80 )
+texture = ExtResource( 1 )
+patch_margin_left = 15
+patch_margin_top = 15
+patch_margin_right = 15
+patch_margin_bottom = 15
+
+[node name="Icon" type="TextureRect" parent="BaseInfo/StatusEffects/VBoxContainer/Sleep"]
+margin_left = 16.0
+margin_top = 8.0
+margin_right = 64.0
+margin_bottom = 56.0
+texture = ExtResource( 31 )
+expand = true
+
+[node name="StatusName" type="Label" parent="BaseInfo/StatusEffects/VBoxContainer/Sleep"]
+margin_left = 72.0
+margin_top = 8.0
+margin_right = 568.0
+margin_bottom = 40.0
+custom_fonts/font = ExtResource( 3 )
+text = "Sleep"
+
+[node name="Duration" type="Label" parent="BaseInfo/StatusEffects/VBoxContainer/Sleep"]
+margin_left = 576.0
+margin_top = 8.0
+margin_right = 864.0
+margin_bottom = 40.0
+custom_fonts/font = ExtResource( 3 )
+text = "Duration:"
+
+[node name="StatusText" type="Label" parent="BaseInfo/StatusEffects/VBoxContainer/Sleep"]
+modulate = Color( 0.67451, 0.67451, 0.67451, 1 )
+margin_left = 72.0
+margin_top = 40.0
+margin_right = 856.0
+margin_bottom = 72.0
+custom_fonts/font = ExtResource( 3 )
+text = "Can't take actions and slips turns."
+autowrap = true
+
+[node name="MentalProtection" type="NinePatchRect" parent="BaseInfo/StatusEffects/VBoxContainer"]
+visible = false
+margin_right = 872.0
+margin_bottom = 80.0
+rect_min_size = Vector2( 872, 80 )
+texture = ExtResource( 1 )
+patch_margin_left = 15
+patch_margin_top = 15
+patch_margin_right = 15
+patch_margin_bottom = 15
+
+[node name="Icon" type="TextureRect" parent="BaseInfo/StatusEffects/VBoxContainer/MentalProtection"]
+modulate = Color( 0.764706, 0, 0.698039, 1 )
+margin_left = 16.0
+margin_top = 8.0
+margin_right = 64.0
+margin_bottom = 56.0
+texture = ExtResource( 34 )
+expand = true
+
+[node name="StatusName" type="Label" parent="BaseInfo/StatusEffects/VBoxContainer/MentalProtection"]
+margin_left = 72.0
+margin_top = 8.0
+margin_right = 568.0
+margin_bottom = 40.0
+custom_fonts/font = ExtResource( 3 )
+text = "Mental Protection"
+
+[node name="Duration" type="Label" parent="BaseInfo/StatusEffects/VBoxContainer/MentalProtection"]
+margin_left = 576.0
+margin_top = 8.0
+margin_right = 864.0
+margin_bottom = 40.0
+custom_fonts/font = ExtResource( 3 )
+text = "Duration:"
+
+[node name="StatusText" type="Label" parent="BaseInfo/StatusEffects/VBoxContainer/MentalProtection"]
+modulate = Color( 0.67451, 0.67451, 0.67451, 1 )
+margin_left = 72.0
+margin_top = 40.0
+margin_right = 856.0
+margin_bottom = 72.0
+custom_fonts/font = ExtResource( 3 )
+text = "RES +10"
+autowrap = true
+
+[node name="ProtectTheArt" type="NinePatchRect" parent="BaseInfo/StatusEffects/VBoxContainer"]
+visible = false
+margin_top = 84.0
+margin_right = 872.0
+margin_bottom = 164.0
+rect_min_size = Vector2( 872, 80 )
+texture = ExtResource( 1 )
+patch_margin_left = 15
+patch_margin_top = 15
+patch_margin_right = 15
+patch_margin_bottom = 15
+
+[node name="Icon" type="TextureRect" parent="BaseInfo/StatusEffects/VBoxContainer/ProtectTheArt"]
+modulate = Color( 0.909804, 0.576471, 0.054902, 1 )
+margin_left = 16.0
+margin_top = 8.0
+margin_right = 64.0
+margin_bottom = 56.0
+texture = ExtResource( 34 )
+expand = true
+
+[node name="StatusName" type="Label" parent="BaseInfo/StatusEffects/VBoxContainer/ProtectTheArt"]
+margin_left = 72.0
+margin_top = 8.0
+margin_right = 568.0
+margin_bottom = 40.0
+custom_fonts/font = ExtResource( 3 )
+text = "Protection of the Art"
+
+[node name="Duration" type="Label" parent="BaseInfo/StatusEffects/VBoxContainer/ProtectTheArt"]
+margin_left = 576.0
+margin_top = 8.0
+margin_right = 864.0
+margin_bottom = 40.0
+custom_fonts/font = ExtResource( 3 )
+text = "Duration:"
+
+[node name="StatusText" type="Label" parent="BaseInfo/StatusEffects/VBoxContainer/ProtectTheArt"]
+modulate = Color( 0.67451, 0.67451, 0.67451, 1 )
+margin_left = 72.0
+margin_top = 40.0
+margin_right = 856.0
+margin_bottom = 72.0
+custom_fonts/font = ExtResource( 3 )
+text = "DEF +10"
+autowrap = true
+
+[node name="BurstOfEnergy" type="NinePatchRect" parent="BaseInfo/StatusEffects/VBoxContainer"]
+visible = false
+margin_right = 872.0
+margin_bottom = 80.0
+rect_min_size = Vector2( 872, 80 )
+texture = ExtResource( 1 )
+patch_margin_left = 15
+patch_margin_top = 15
+patch_margin_right = 15
+patch_margin_bottom = 15
+
+[node name="Icon" type="TextureRect" parent="BaseInfo/StatusEffects/VBoxContainer/BurstOfEnergy"]
+modulate = Color( 0, 1, 0.976471, 1 )
+margin_left = 16.0
+margin_top = 8.0
+margin_right = 64.0
+margin_bottom = 56.0
+texture = ExtResource( 34 )
+expand = true
+
+[node name="StatusName" type="Label" parent="BaseInfo/StatusEffects/VBoxContainer/BurstOfEnergy"]
+margin_left = 72.0
+margin_top = 8.0
+margin_right = 568.0
+margin_bottom = 40.0
+custom_fonts/font = ExtResource( 3 )
+text = "Burst Of Energy"
+
+[node name="Duration" type="Label" parent="BaseInfo/StatusEffects/VBoxContainer/BurstOfEnergy"]
+margin_left = 576.0
+margin_top = 8.0
+margin_right = 864.0
+margin_bottom = 40.0
+custom_fonts/font = ExtResource( 3 )
+text = "Duration:"
+
+[node name="StatusText" type="Label" parent="BaseInfo/StatusEffects/VBoxContainer/BurstOfEnergy"]
+modulate = Color( 0.67451, 0.67451, 0.67451, 1 )
+margin_left = 72.0
+margin_top = 40.0
+margin_right = 856.0
+margin_bottom = 72.0
+custom_fonts/font = ExtResource( 3 )
+text = "SEN +20"
+autowrap = true
+
+[node name="ScorchingHeat" type="NinePatchRect" parent="BaseInfo/StatusEffects/VBoxContainer"]
+visible = false
+margin_right = 872.0
+margin_bottom = 80.0
+rect_min_size = Vector2( 872, 80 )
+texture = ExtResource( 1 )
+patch_margin_left = 15
+patch_margin_top = 15
+patch_margin_right = 15
+patch_margin_bottom = 15
+
+[node name="Icon" type="TextureRect" parent="BaseInfo/StatusEffects/VBoxContainer/ScorchingHeat"]
+modulate = Color( 0.968627, 0.0431373, 0.0431373, 1 )
+margin_left = 16.0
+margin_top = 8.0
+margin_right = 64.0
+margin_bottom = 56.0
+texture = ExtResource( 34 )
+expand = true
+
+[node name="StatusName" type="Label" parent="BaseInfo/StatusEffects/VBoxContainer/ScorchingHeat"]
+margin_left = 72.0
+margin_top = 8.0
+margin_right = 568.0
+margin_bottom = 40.0
+custom_fonts/font = ExtResource( 3 )
+text = "Scorching Heat"
+
+[node name="Duration" type="Label" parent="BaseInfo/StatusEffects/VBoxContainer/ScorchingHeat"]
+margin_left = 576.0
+margin_top = 8.0
+margin_right = 864.0
+margin_bottom = 40.0
+custom_fonts/font = ExtResource( 3 )
+text = "Duration:"
+
+[node name="StatusText" type="Label" parent="BaseInfo/StatusEffects/VBoxContainer/ScorchingHeat"]
+modulate = Color( 0.67451, 0.67451, 0.67451, 1 )
+margin_left = 72.0
+margin_top = 40.0
+margin_right = 856.0
+margin_bottom = 72.0
+custom_fonts/font = ExtResource( 3 )
+text = "ATK +10"
+autowrap = true
+
+[node name="DanceOfDeath" type="NinePatchRect" parent="BaseInfo/StatusEffects/VBoxContainer"]
+visible = false
+margin_right = 872.0
+margin_bottom = 80.0
+rect_min_size = Vector2( 872, 80 )
+texture = ExtResource( 1 )
+patch_margin_left = 15
+patch_margin_top = 15
+patch_margin_right = 15
+patch_margin_bottom = 15
+
+[node name="Icon" type="TextureRect" parent="BaseInfo/StatusEffects/VBoxContainer/DanceOfDeath"]
+margin_left = 16.0
+margin_top = 8.0
+margin_right = 64.0
+margin_bottom = 56.0
+texture = ExtResource( 4 )
+expand = true
+
+[node name="StatusName" type="Label" parent="BaseInfo/StatusEffects/VBoxContainer/DanceOfDeath"]
+margin_left = 72.0
+margin_top = 8.0
+margin_right = 568.0
+margin_bottom = 40.0
+custom_fonts/font = ExtResource( 3 )
+text = "Dance Of Death"
+
+[node name="Duration" type="Label" parent="BaseInfo/StatusEffects/VBoxContainer/DanceOfDeath"]
+margin_left = 576.0
+margin_top = 8.0
+margin_right = 864.0
+margin_bottom = 40.0
+custom_fonts/font = ExtResource( 3 )
+text = "Duration:"
+
+[node name="StatusText" type="Label" parent="BaseInfo/StatusEffects/VBoxContainer/DanceOfDeath"]
+modulate = Color( 0.67451, 0.67451, 0.67451, 1 )
+margin_left = 72.0
+margin_top = 40.0
+margin_right = 856.0
+margin_bottom = 72.0
+custom_fonts/font = ExtResource( 3 )
+text = "Salim and this creature ignore each other's resistances."
+autowrap = true
+
+[node name="GrowingFracture" type="NinePatchRect" parent="BaseInfo/StatusEffects/VBoxContainer"]
+visible = false
+margin_right = 872.0
+margin_bottom = 80.0
+rect_min_size = Vector2( 872, 80 )
+texture = ExtResource( 1 )
+patch_margin_left = 15
+patch_margin_top = 15
+patch_margin_right = 15
+patch_margin_bottom = 15
+
+[node name="Icon" type="TextureRect" parent="BaseInfo/StatusEffects/VBoxContainer/GrowingFracture"]
+margin_left = 16.0
+margin_top = 8.0
+margin_right = 64.0
+margin_bottom = 56.0
+texture = ExtResource( 36 )
+expand = true
+
+[node name="StatusName" type="Label" parent="BaseInfo/StatusEffects/VBoxContainer/GrowingFracture"]
+margin_left = 72.0
+margin_top = 8.0
+margin_right = 568.0
+margin_bottom = 40.0
+custom_fonts/font = ExtResource( 3 )
+text = "Growing Fracture"
+
+[node name="Duration" type="Label" parent="BaseInfo/StatusEffects/VBoxContainer/GrowingFracture"]
+margin_left = 576.0
+margin_top = 8.0
+margin_right = 864.0
+margin_bottom = 40.0
+custom_fonts/font = ExtResource( 3 )
+text = "Duration:"
+
+[node name="StatusText" type="Label" parent="BaseInfo/StatusEffects/VBoxContainer/GrowingFracture"]
+modulate = Color( 0.67451, 0.67451, 0.67451, 1 )
+margin_left = 72.0
+margin_top = 40.0
+margin_right = 856.0
+margin_bottom = 72.0
+custom_fonts/font = ExtResource( 3 )
+text = "Each turn increase Fragile on self by X."
+autowrap = true
+
+[node name="Regression" type="NinePatchRect" parent="BaseInfo/StatusEffects/VBoxContainer"]
+visible = false
+margin_right = 872.0
+margin_bottom = 80.0
+rect_min_size = Vector2( 872, 80 )
+texture = ExtResource( 1 )
+patch_margin_left = 15
+patch_margin_top = 15
+patch_margin_right = 15
+patch_margin_bottom = 15
+
+[node name="Icon" type="TextureRect" parent="BaseInfo/StatusEffects/VBoxContainer/Regression"]
+margin_left = 16.0
+margin_top = 8.0
+margin_right = 64.0
+margin_bottom = 56.0
+texture = ExtResource( 35 )
+expand = true
+
+[node name="StatusName" type="Label" parent="BaseInfo/StatusEffects/VBoxContainer/Regression"]
+margin_left = 72.0
+margin_top = 8.0
+margin_right = 568.0
+margin_bottom = 40.0
+custom_fonts/font = ExtResource( 3 )
+text = "Regression"
+
+[node name="Duration" type="Label" parent="BaseInfo/StatusEffects/VBoxContainer/Regression"]
+margin_left = 576.0
+margin_top = 8.0
+margin_right = 864.0
+margin_bottom = 40.0
+custom_fonts/font = ExtResource( 3 )
+text = "Duration:"
+
+[node name="StatusText" type="Label" parent="BaseInfo/StatusEffects/VBoxContainer/Regression"]
+modulate = Color( 0.67451, 0.67451, 0.67451, 1 )
+margin_left = 72.0
+margin_top = 40.0
+margin_right = 856.0
+margin_bottom = 72.0
+custom_fonts/font = ExtResource( 3 )
+text = "X resistance is lowered by one level."
+autowrap = true
+
+[node name="MentalShield" type="NinePatchRect" parent="BaseInfo/StatusEffects/VBoxContainer"]
+visible = false
+margin_top = 280.0
+margin_right = 872.0
+margin_bottom = 392.0
+rect_min_size = Vector2( 872, 112 )
+texture = ExtResource( 1 )
+patch_margin_left = 15
+patch_margin_top = 15
+patch_margin_right = 15
+patch_margin_bottom = 15
+
+[node name="Icon" type="TextureRect" parent="BaseInfo/StatusEffects/VBoxContainer/MentalShield"]
+margin_left = 16.0
+margin_top = 8.0
+margin_right = 64.0
+margin_bottom = 56.0
+texture = ExtResource( 6 )
+expand = true
+
+[node name="StatusName" type="Label" parent="BaseInfo/StatusEffects/VBoxContainer/MentalShield"]
+margin_left = 72.0
+margin_top = 8.0
+margin_right = 568.0
+margin_bottom = 40.0
+custom_fonts/font = ExtResource( 3 )
+text = "Mental Shield"
+
+[node name="Duration" type="Label" parent="BaseInfo/StatusEffects/VBoxContainer/MentalShield"]
+margin_left = 576.0
+margin_top = 8.0
+margin_right = 864.0
+margin_bottom = 40.0
+custom_fonts/font = ExtResource( 3 )
+text = "Duration:"
+
+[node name="StatusText" type="Label" parent="BaseInfo/StatusEffects/VBoxContainer/MentalShield"]
+modulate = Color( 0.67451, 0.67451, 0.67451, 1 )
+margin_left = 72.0
+margin_top = 40.0
+margin_right = 856.0
+margin_bottom = 72.0
+custom_fonts/font = ExtResource( 3 )
+text = "When shield takes damage restore 1 EN for every 10 damage(minimum 1 EN for each hit taken)."
+autowrap = true
+
+[node name="WarningStrike" type="NinePatchRect" parent="BaseInfo/StatusEffects/VBoxContainer"]
+visible = false
+margin_right = 872.0
+margin_bottom = 80.0
+rect_min_size = Vector2( 872, 80 )
+texture = ExtResource( 1 )
+patch_margin_left = 15
+patch_margin_top = 15
+patch_margin_right = 15
+patch_margin_bottom = 15
+
+[node name="Icon" type="TextureRect" parent="BaseInfo/StatusEffects/VBoxContainer/WarningStrike"]
+margin_left = 16.0
+margin_top = 8.0
+margin_right = 64.0
+margin_bottom = 56.0
+texture = ExtResource( 30 )
+expand = true
+
+[node name="StatusName" type="Label" parent="BaseInfo/StatusEffects/VBoxContainer/WarningStrike"]
+margin_left = 72.0
+margin_top = 8.0
+margin_right = 568.0
+margin_bottom = 40.0
+custom_fonts/font = ExtResource( 3 )
+text = "Warning Strike"
+
+[node name="Duration" type="Label" parent="BaseInfo/StatusEffects/VBoxContainer/WarningStrike"]
+margin_left = 576.0
+margin_top = 8.0
+margin_right = 864.0
+margin_bottom = 40.0
+custom_fonts/font = ExtResource( 3 )
+text = "Duration:"
+
+[node name="StatusText" type="Label" parent="BaseInfo/StatusEffects/VBoxContainer/WarningStrike"]
+modulate = Color( 0.67451, 0.67451, 0.67451, 1 )
+margin_left = 72.0
+margin_top = 40.0
+margin_right = 856.0
+margin_bottom = 72.0
+custom_fonts/font = ExtResource( 3 )
+text = "Next attack deals X% more damage."
+autowrap = true
+
+[node name="StoneShield" type="NinePatchRect" parent="BaseInfo/StatusEffects/VBoxContainer"]
+visible = false
+margin_top = 84.0
+margin_right = 872.0
+margin_bottom = 164.0
+rect_min_size = Vector2( 872, 80 )
+texture = ExtResource( 1 )
+patch_margin_left = 15
+patch_margin_top = 15
+patch_margin_right = 15
+patch_margin_bottom = 15
+
+[node name="Icon" type="TextureRect" parent="BaseInfo/StatusEffects/VBoxContainer/StoneShield"]
+margin_left = 16.0
+margin_top = 8.0
+margin_right = 64.0
+margin_bottom = 56.0
+texture = ExtResource( 5 )
+expand = true
+
+[node name="StatusName" type="Label" parent="BaseInfo/StatusEffects/VBoxContainer/StoneShield"]
+margin_left = 72.0
+margin_top = 8.0
+margin_right = 568.0
+margin_bottom = 40.0
+custom_fonts/font = ExtResource( 3 )
+text = "Stone Shield"
+
+[node name="Duration" type="Label" parent="BaseInfo/StatusEffects/VBoxContainer/StoneShield"]
+margin_left = 576.0
+margin_top = 8.0
+margin_right = 864.0
+margin_bottom = 40.0
+custom_fonts/font = ExtResource( 3 )
+text = "Duration:"
+
+[node name="StatusText" type="Label" parent="BaseInfo/StatusEffects/VBoxContainer/StoneShield"]
+modulate = Color( 0.67451, 0.67451, 0.67451, 1 )
+margin_left = 72.0
+margin_top = 40.0
+margin_right = 856.0
+margin_bottom = 72.0
+custom_fonts/font = ExtResource( 3 )
+text = "Hits on Weak colors count as Normal hits."
+autowrap = true
+
+[node name="SpikedShield" type="NinePatchRect" parent="BaseInfo/StatusEffects/VBoxContainer"]
+visible = false
+margin_top = 168.0
+margin_right = 872.0
+margin_bottom = 248.0
+rect_min_size = Vector2( 872, 80 )
+texture = ExtResource( 1 )
+patch_margin_left = 15
+patch_margin_top = 15
+patch_margin_right = 15
+patch_margin_bottom = 15
+
+[node name="Icon" type="TextureRect" parent="BaseInfo/StatusEffects/VBoxContainer/SpikedShield"]
+margin_left = 16.0
+margin_top = 8.0
+margin_right = 64.0
+margin_bottom = 56.0
+texture = ExtResource( 20 )
+expand = true
+
+[node name="StatusName" type="Label" parent="BaseInfo/StatusEffects/VBoxContainer/SpikedShield"]
+margin_left = 72.0
+margin_top = 8.0
+margin_right = 568.0
+margin_bottom = 40.0
+custom_fonts/font = ExtResource( 3 )
+text = "Spiked Shield"
+
+[node name="Duration" type="Label" parent="BaseInfo/StatusEffects/VBoxContainer/SpikedShield"]
+margin_left = 576.0
+margin_top = 8.0
+margin_right = 864.0
+margin_bottom = 40.0
+custom_fonts/font = ExtResource( 3 )
+text = "Duration:"
+
+[node name="StatusText" type="Label" parent="BaseInfo/StatusEffects/VBoxContainer/SpikedShield"]
+modulate = Color( 0.67451, 0.67451, 0.67451, 1 )
+margin_left = 72.0
+margin_top = 40.0
+margin_right = 856.0
+margin_bottom = 72.0
+custom_fonts/font = ExtResource( 3 )
+text = "Reflect damage taken by the shield to an attacker."
+autowrap = true
+
+[node name="Cleansing" type="NinePatchRect" parent="BaseInfo/StatusEffects/VBoxContainer"]
+visible = false
+margin_right = 872.0
+margin_bottom = 80.0
+rect_min_size = Vector2( 872, 80 )
+texture = ExtResource( 1 )
+patch_margin_left = 15
+patch_margin_top = 15
+patch_margin_right = 15
+patch_margin_bottom = 15
+
+[node name="Icon" type="TextureRect" parent="BaseInfo/StatusEffects/VBoxContainer/Cleansing"]
+margin_left = 16.0
+margin_top = 8.0
+margin_right = 64.0
+margin_bottom = 56.0
+texture = ExtResource( 12 )
+expand = true
+
+[node name="StatusName" type="Label" parent="BaseInfo/StatusEffects/VBoxContainer/Cleansing"]
+margin_left = 72.0
+margin_top = 8.0
+margin_right = 568.0
+margin_bottom = 40.0
+custom_fonts/font = ExtResource( 3 )
+text = "Cleansing"
+
+[node name="Duration" type="Label" parent="BaseInfo/StatusEffects/VBoxContainer/Cleansing"]
+margin_left = 576.0
+margin_top = 8.0
+margin_right = 864.0
+margin_bottom = 40.0
+custom_fonts/font = ExtResource( 3 )
+text = "Duration:"
+
+[node name="StatusText" type="Label" parent="BaseInfo/StatusEffects/VBoxContainer/Cleansing"]
+modulate = Color( 0.67451, 0.67451, 0.67451, 1 )
+margin_left = 72.0
+margin_top = 40.0
+margin_right = 856.0
+margin_bottom = 72.0
+custom_fonts/font = ExtResource( 3 )
+text = "RES +X"
+autowrap = true
+
+[node name="BDIGO" type="NinePatchRect" parent="BaseInfo/StatusEffects/VBoxContainer"]
+visible = false
+margin_top = 84.0
+margin_right = 872.0
+margin_bottom = 164.0
+rect_min_size = Vector2( 872, 80 )
+texture = ExtResource( 1 )
+patch_margin_left = 15
+patch_margin_top = 15
+patch_margin_right = 15
+patch_margin_bottom = 15
+
+[node name="Icon" type="TextureRect" parent="BaseInfo/StatusEffects/VBoxContainer/BDIGO"]
+margin_left = 16.0
+margin_top = 8.0
+margin_right = 64.0
+margin_bottom = 56.0
+texture = ExtResource( 28 )
+expand = true
+
+[node name="StatusName" type="Label" parent="BaseInfo/StatusEffects/VBoxContainer/BDIGO"]
+margin_left = 72.0
+margin_top = 8.0
+margin_right = 568.0
+margin_bottom = 44.0
+custom_fonts/font = ExtResource( 3 )
+text = "Best Defense Is a Good Offense"
+
+[node name="Duration" type="Label" parent="BaseInfo/StatusEffects/VBoxContainer/BDIGO"]
+visible = false
+margin_left = 576.0
+margin_top = 8.0
+margin_right = 864.0
+margin_bottom = 40.0
+custom_fonts/font = ExtResource( 3 )
+text = "Duration:"
+
+[node name="StatusText" type="Label" parent="BaseInfo/StatusEffects/VBoxContainer/BDIGO"]
+modulate = Color( 0.67451, 0.67451, 0.67451, 1 )
+margin_left = 72.0
+margin_top = 40.0
+margin_right = 856.0
+margin_bottom = 72.0
+custom_fonts/font = ExtResource( 3 )
+text = "ATK +X"
+autowrap = true
+
+[node name="WaitingGame" type="NinePatchRect" parent="BaseInfo/StatusEffects/VBoxContainer"]
+visible = false
+margin_top = 168.0
+margin_right = 872.0
+margin_bottom = 256.0
+rect_min_size = Vector2( 872, 88 )
+texture = ExtResource( 1 )
+patch_margin_left = 15
+patch_margin_top = 15
+patch_margin_right = 15
+patch_margin_bottom = 15
+
+[node name="StatusText" type="RichTextLabel" parent="BaseInfo/StatusEffects/VBoxContainer/WaitingGame"]
+modulate = Color( 0.67451, 0.67451, 0.67451, 1 )
+margin_left = 72.0
+margin_top = 44.0
+margin_right = 368.0
+margin_bottom = 80.0
+custom_fonts/normal_font = ExtResource( 3 )
+text = "CRIT +X"
+
+[node name="StatusName" type="Label" parent="BaseInfo/StatusEffects/VBoxContainer/WaitingGame"]
+margin_left = 72.0
+margin_top = 8.0
+margin_right = 368.0
+margin_bottom = 44.0
+custom_fonts/font = ExtResource( 3 )
+text = "Waiting Game"
+autowrap = true
+
+[node name="Icon" type="TextureRect" parent="BaseInfo/StatusEffects/VBoxContainer/WaitingGame"]
+margin_left = 16.0
+margin_top = 8.0
+margin_right = 64.0
+margin_bottom = 56.0
+texture = ExtResource( 33 )
+expand = true
+
+[node name="Studying" type="NinePatchRect" parent="BaseInfo/StatusEffects/VBoxContainer"]
+visible = false
+margin_right = 872.0
+margin_bottom = 88.0
+rect_min_size = Vector2( 872, 88 )
+texture = ExtResource( 1 )
+patch_margin_left = 15
+patch_margin_top = 15
+patch_margin_right = 15
+patch_margin_bottom = 15
+
+[node name="StatusText" type="RichTextLabel" parent="BaseInfo/StatusEffects/VBoxContainer/Studying"]
+modulate = Color( 0.67451, 0.67451, 0.67451, 1 )
+margin_left = 72.0
+margin_top = 44.0
+margin_right = 856.0
+margin_bottom = 80.0
+custom_fonts/normal_font = ExtResource( 3 )
+text = "Dodge next attack and deal damage to an attacker."
+
+[node name="StatusName" type="Label" parent="BaseInfo/StatusEffects/VBoxContainer/Studying"]
+margin_left = 72.0
+margin_top = 8.0
+margin_right = 368.0
+margin_bottom = 44.0
+custom_fonts/font = ExtResource( 3 )
+text = "Studying"
+autowrap = true
+
+[node name="Icon" type="TextureRect" parent="BaseInfo/StatusEffects/VBoxContainer/Studying"]
+margin_left = 16.0
+margin_top = 8.0
+margin_right = 64.0
+margin_bottom = 56.0
+texture = ExtResource( 17 )
+expand = true
+
+[node name="Fury" type="NinePatchRect" parent="BaseInfo/StatusEffects/VBoxContainer"]
+visible = false
+margin_right = 872.0
+margin_bottom = 88.0
+rect_min_size = Vector2( 872, 88 )
+texture = ExtResource( 1 )
+patch_margin_left = 15
+patch_margin_top = 15
+patch_margin_right = 15
+patch_margin_bottom = 15
+
+[node name="StatusText" type="RichTextLabel" parent="BaseInfo/StatusEffects/VBoxContainer/Fury"]
+modulate = Color( 0.67451, 0.67451, 0.67451, 1 )
+margin_left = 72.0
+margin_top = 44.0
+margin_right = 368.0
+margin_bottom = 80.0
+custom_fonts/normal_font = ExtResource( 3 )
+text = "ATK +X"
+
+[node name="StatusName" type="Label" parent="BaseInfo/StatusEffects/VBoxContainer/Fury"]
+margin_left = 72.0
+margin_top = 8.0
+margin_right = 368.0
+margin_bottom = 44.0
+custom_fonts/font = ExtResource( 3 )
+text = "Fury"
+autowrap = true
+
+[node name="Icon" type="TextureRect" parent="BaseInfo/StatusEffects/VBoxContainer/Fury"]
+margin_left = 16.0
+margin_top = 8.0
+margin_right = 64.0
+margin_bottom = 56.0
+texture = ExtResource( 37 )
+expand = true
+
+[node name="ULT_Dance_Of_Death" type="NinePatchRect" parent="BaseInfo/StatusEffects/VBoxContainer"]
+visible = false
+margin_right = 872.0
+margin_bottom = 112.0
+rect_min_size = Vector2( 872, 112 )
+texture = ExtResource( 1 )
+patch_margin_left = 15
+patch_margin_top = 15
+patch_margin_right = 15
+patch_margin_bottom = 15
+
+[node name="Icon" type="TextureRect" parent="BaseInfo/StatusEffects/VBoxContainer/ULT_Dance_Of_Death"]
+margin_left = 16.0
+margin_top = 8.0
+margin_right = 64.0
+margin_bottom = 56.0
+texture = ExtResource( 4 )
+expand = true
+
+[node name="StatusName" type="Label" parent="BaseInfo/StatusEffects/VBoxContainer/ULT_Dance_Of_Death"]
+margin_left = 72.0
+margin_top = 8.0
+margin_right = 568.0
+margin_bottom = 40.0
+custom_fonts/font = ExtResource( 3 )
+text = "Dance Of Death"
+
+[node name="Duration" type="Label" parent="BaseInfo/StatusEffects/VBoxContainer/ULT_Dance_Of_Death"]
+margin_left = 576.0
+margin_top = 8.0
+margin_right = 864.0
+margin_bottom = 40.0
+custom_fonts/font = ExtResource( 3 )
+text = "Duration:"
+
+[node name="StatusText" type="Label" parent="BaseInfo/StatusEffects/VBoxContainer/ULT_Dance_Of_Death"]
+modulate = Color( 0.67451, 0.67451, 0.67451, 1 )
+margin_left = 72.0
+margin_top = 40.0
+margin_right = 856.0
+margin_bottom = 72.0
+custom_fonts/font = ExtResource( 3 )
+text = "ATK +X"
+autowrap = true
+
+[node name="StatusText2" type="Label" parent="BaseInfo/StatusEffects/VBoxContainer/ULT_Dance_Of_Death"]
+modulate = Color( 0.67451, 0.67451, 0.67451, 1 )
+margin_left = 72.0
+margin_top = 72.0
+margin_right = 856.0
+margin_bottom = 104.0
+custom_fonts/font = ExtResource( 3 )
+text = "You and choosen enemy ignore each other resistances."
+autowrap = true
+
+[node name="ULT_Blood_Moon" type="NinePatchRect" parent="BaseInfo/StatusEffects/VBoxContainer"]
+visible = false
+margin_top = 116.0
+margin_right = 872.0
+margin_bottom = 228.0
+rect_min_size = Vector2( 872, 112 )
+texture = ExtResource( 1 )
+patch_margin_left = 15
+patch_margin_top = 15
+patch_margin_right = 15
+patch_margin_bottom = 15
+
+[node name="Icon" type="TextureRect" parent="BaseInfo/StatusEffects/VBoxContainer/ULT_Blood_Moon"]
+margin_left = 16.0
+margin_top = 8.0
+margin_right = 64.0
+margin_bottom = 56.0
+texture = ExtResource( 40 )
+expand = true
+
+[node name="StatusName" type="Label" parent="BaseInfo/StatusEffects/VBoxContainer/ULT_Blood_Moon"]
+margin_left = 72.0
+margin_top = 8.0
+margin_right = 568.0
+margin_bottom = 40.0
+custom_fonts/font = ExtResource( 3 )
+text = "Blood Moon"
+
+[node name="Duration" type="Label" parent="BaseInfo/StatusEffects/VBoxContainer/ULT_Blood_Moon"]
+margin_left = 576.0
+margin_top = 8.0
+margin_right = 864.0
+margin_bottom = 40.0
+custom_fonts/font = ExtResource( 3 )
+text = "Duration:"
+
+[node name="StatusText" type="Label" parent="BaseInfo/StatusEffects/VBoxContainer/ULT_Blood_Moon"]
+modulate = Color( 0.67451, 0.67451, 0.67451, 1 )
+margin_left = 72.0
+margin_top = 40.0
+margin_right = 856.0
+margin_bottom = 72.0
+custom_fonts/font = ExtResource( 3 )
+text = "ATK +X, DEF -X"
+autowrap = true
+
+[node name="StatusText2" type="Label" parent="BaseInfo/StatusEffects/VBoxContainer/ULT_Blood_Moon"]
+modulate = Color( 0.67451, 0.67451, 0.67451, 1 )
+margin_left = 72.0
+margin_top = 72.0
+margin_right = 856.0
+margin_bottom = 104.0
+custom_fonts/font = ExtResource( 3 )
+text = "Your attacks always hit and ignore X% DEF."
+autowrap = true
+
+[node name="ULT_Adaptation" type="NinePatchRect" parent="BaseInfo/StatusEffects/VBoxContainer"]
+visible = false
+margin_top = 232.0
+margin_right = 872.0
+margin_bottom = 312.0
+rect_min_size = Vector2( 872, 80 )
+texture = ExtResource( 1 )
+patch_margin_left = 15
+patch_margin_top = 15
+patch_margin_right = 15
+patch_margin_bottom = 15
+
+[node name="Icon" type="TextureRect" parent="BaseInfo/StatusEffects/VBoxContainer/ULT_Adaptation"]
+margin_left = 16.0
+margin_top = 8.0
+margin_right = 64.0
+margin_bottom = 56.0
+texture = ExtResource( 15 )
+expand = true
+
+[node name="StatusName" type="Label" parent="BaseInfo/StatusEffects/VBoxContainer/ULT_Adaptation"]
+margin_left = 72.0
+margin_top = 8.0
+margin_right = 568.0
+margin_bottom = 40.0
+custom_fonts/font = ExtResource( 3 )
+text = "Adaptation"
+
+[node name="Duration" type="Label" parent="BaseInfo/StatusEffects/VBoxContainer/ULT_Adaptation"]
+margin_left = 576.0
+margin_top = 8.0
+margin_right = 864.0
+margin_bottom = 40.0
+custom_fonts/font = ExtResource( 3 )
+text = "Duration:"
+
+[node name="StatusText" type="Label" parent="BaseInfo/StatusEffects/VBoxContainer/ULT_Adaptation"]
+modulate = Color( 0.67451, 0.67451, 0.67451, 1 )
+margin_left = 72.0
+margin_top = 40.0
+margin_right = 856.0
+margin_bottom = 72.0
+custom_fonts/font = ExtResource( 3 )
+text = "ATK and DEF +X"
+autowrap = true
+
+[node name="ULT_Stone_Cocoon" type="NinePatchRect" parent="BaseInfo/StatusEffects/VBoxContainer"]
+visible = false
+margin_top = 116.0
+margin_right = 872.0
+margin_bottom = 196.0
+rect_min_size = Vector2( 872, 80 )
+texture = ExtResource( 1 )
+patch_margin_left = 15
+patch_margin_top = 15
+patch_margin_right = 15
+patch_margin_bottom = 15
+
+[node name="Icon" type="TextureRect" parent="BaseInfo/StatusEffects/VBoxContainer/ULT_Stone_Cocoon"]
+margin_left = 16.0
+margin_top = 8.0
+margin_right = 64.0
+margin_bottom = 56.0
+texture = ExtResource( 39 )
+expand = true
+
+[node name="StatusName" type="Label" parent="BaseInfo/StatusEffects/VBoxContainer/ULT_Stone_Cocoon"]
+margin_left = 72.0
+margin_top = 8.0
+margin_right = 568.0
+margin_bottom = 40.0
+custom_fonts/font = ExtResource( 3 )
+text = "Stone Cocoon"
+
+[node name="Duration" type="Label" parent="BaseInfo/StatusEffects/VBoxContainer/ULT_Stone_Cocoon"]
+margin_left = 576.0
+margin_top = 8.0
+margin_right = 864.0
+margin_bottom = 40.0
+custom_fonts/font = ExtResource( 3 )
+text = "Duration:"
+
+[node name="StatusText" type="Label" parent="BaseInfo/StatusEffects/VBoxContainer/ULT_Stone_Cocoon"]
+modulate = Color( 0.67451, 0.67451, 0.67451, 1 )
+margin_left = 72.0
+margin_top = 40.0
+margin_right = 856.0
+margin_bottom = 72.0
+custom_fonts/font = ExtResource( 3 )
+text = "ATK and DEF +X"
+autowrap = true
+
+[node name="ULT_Balanced_Instability" type="NinePatchRect" parent="BaseInfo/StatusEffects/VBoxContainer"]
+visible = false
+margin_right = 872.0
+margin_bottom = 112.0
+rect_min_size = Vector2( 872, 112 )
+texture = ExtResource( 1 )
+patch_margin_left = 15
+patch_margin_top = 15
+patch_margin_right = 15
+patch_margin_bottom = 15
+
+[node name="Icon" type="TextureRect" parent="BaseInfo/StatusEffects/VBoxContainer/ULT_Balanced_Instability"]
+margin_left = 16.0
+margin_top = 8.0
+margin_right = 64.0
+margin_bottom = 56.0
+texture = ExtResource( 13 )
+expand = true
+
+[node name="StatusName" type="Label" parent="BaseInfo/StatusEffects/VBoxContainer/ULT_Balanced_Instability"]
+margin_left = 72.0
+margin_top = 8.0
+margin_right = 568.0
+margin_bottom = 40.0
+custom_fonts/font = ExtResource( 3 )
+text = "Balanced Instability"
+
+[node name="Duration" type="Label" parent="BaseInfo/StatusEffects/VBoxContainer/ULT_Balanced_Instability"]
+margin_left = 576.0
+margin_top = 8.0
+margin_right = 864.0
+margin_bottom = 40.0
+custom_fonts/font = ExtResource( 3 )
+text = "Duration:"
+
+[node name="StatusText" type="Label" parent="BaseInfo/StatusEffects/VBoxContainer/ULT_Balanced_Instability"]
+modulate = Color( 0.67451, 0.67451, 0.67451, 1 )
+margin_left = 72.0
+margin_top = 40.0
+margin_right = 856.0
+margin_bottom = 72.0
+custom_fonts/font = ExtResource( 3 )
+text = "SEN and ATK +X"
+autowrap = true
+
+[node name="StatusText2" type="Label" parent="BaseInfo/StatusEffects/VBoxContainer/ULT_Balanced_Instability"]
+modulate = Color( 0.67451, 0.67451, 0.67451, 1 )
+margin_left = 72.0
+margin_top = 72.0
+margin_right = 856.0
+margin_bottom = 104.0
+custom_fonts/font = ExtResource( 3 )
+text = "At the start of the turn gain 1-2 actions."
+autowrap = true
+
+[node name="ULT_Time_Warp" type="NinePatchRect" parent="BaseInfo/StatusEffects/VBoxContainer"]
+visible = false
+margin_top = 116.0
+margin_right = 872.0
+margin_bottom = 196.0
+rect_min_size = Vector2( 872, 80 )
+texture = ExtResource( 1 )
+patch_margin_left = 15
+patch_margin_top = 15
+patch_margin_right = 15
+patch_margin_bottom = 15
+
+[node name="Icon" type="TextureRect" parent="BaseInfo/StatusEffects/VBoxContainer/ULT_Time_Warp"]
+margin_left = 16.0
+margin_top = 8.0
+margin_right = 64.0
+margin_bottom = 56.0
+texture = ExtResource( 41 )
+expand = true
+
+[node name="StatusName" type="Label" parent="BaseInfo/StatusEffects/VBoxContainer/ULT_Time_Warp"]
+margin_left = 72.0
+margin_top = 8.0
+margin_right = 568.0
+margin_bottom = 40.0
+custom_fonts/font = ExtResource( 3 )
+text = "Time Warp"
+
+[node name="Duration" type="Label" parent="BaseInfo/StatusEffects/VBoxContainer/ULT_Time_Warp"]
+margin_left = 576.0
+margin_top = 8.0
+margin_right = 864.0
+margin_bottom = 40.0
+custom_fonts/font = ExtResource( 3 )
+text = "Duration:"
+
+[node name="StatusText" type="Label" parent="BaseInfo/StatusEffects/VBoxContainer/ULT_Time_Warp"]
+modulate = Color( 0.67451, 0.67451, 0.67451, 1 )
+margin_left = 72.0
+margin_top = 40.0
+margin_right = 856.0
+margin_bottom = 72.0
+custom_fonts/font = ExtResource( 3 )
+text = "SPD and SEN +X"
+autowrap = true
+
+[node name="ULT_Growing_Pain" type="NinePatchRect" parent="BaseInfo/StatusEffects/VBoxContainer"]
+visible = false
+margin_top = 200.0
+margin_right = 872.0
+margin_bottom = 280.0
+rect_min_size = Vector2( 872, 80 )
+texture = ExtResource( 1 )
+patch_margin_left = 15
+patch_margin_top = 15
+patch_margin_right = 15
+patch_margin_bottom = 15
+
+[node name="Icon" type="TextureRect" parent="BaseInfo/StatusEffects/VBoxContainer/ULT_Growing_Pain"]
+margin_left = 16.0
+margin_top = 8.0
+margin_right = 64.0
+margin_bottom = 56.0
+texture = ExtResource( 8 )
+expand = true
+
+[node name="StatusName" type="Label" parent="BaseInfo/StatusEffects/VBoxContainer/ULT_Growing_Pain"]
+margin_left = 72.0
+margin_top = 8.0
+margin_right = 568.0
+margin_bottom = 40.0
+custom_fonts/font = ExtResource( 3 )
+text = "Growing Pain"
+
+[node name="Duration" type="Label" parent="BaseInfo/StatusEffects/VBoxContainer/ULT_Growing_Pain"]
+margin_left = 576.0
+margin_top = 8.0
+margin_right = 864.0
+margin_bottom = 40.0
+custom_fonts/font = ExtResource( 3 )
+text = "Duration:"
+
+[node name="StatusText" type="Label" parent="BaseInfo/StatusEffects/VBoxContainer/ULT_Growing_Pain"]
+modulate = Color( 0.67451, 0.67451, 0.67451, 1 )
+margin_left = 72.0
+margin_top = 40.0
+margin_right = 856.0
+margin_bottom = 72.0
+custom_fonts/font = ExtResource( 3 )
+text = "ATK and SEN +X"
+autowrap = true
+
+[node name="ULT_Beautiful_Garden" type="NinePatchRect" parent="BaseInfo/StatusEffects/VBoxContainer"]
+visible = false
+margin_right = 872.0
+margin_bottom = 80.0
+rect_min_size = Vector2( 872, 80 )
+texture = ExtResource( 1 )
+patch_margin_left = 15
+patch_margin_top = 15
+patch_margin_right = 15
+patch_margin_bottom = 15
+
+[node name="Icon" type="TextureRect" parent="BaseInfo/StatusEffects/VBoxContainer/ULT_Beautiful_Garden"]
+margin_left = 16.0
+margin_top = 8.0
+margin_right = 64.0
+margin_bottom = 56.0
+texture = ExtResource( 11 )
+expand = true
+
+[node name="StatusName" type="Label" parent="BaseInfo/StatusEffects/VBoxContainer/ULT_Beautiful_Garden"]
+margin_left = 72.0
+margin_top = 8.0
+margin_right = 568.0
+margin_bottom = 40.0
+custom_fonts/font = ExtResource( 3 )
+text = "Beautiful Garden"
+
+[node name="Duration" type="Label" parent="BaseInfo/StatusEffects/VBoxContainer/ULT_Beautiful_Garden"]
+margin_left = 576.0
+margin_top = 8.0
+margin_right = 864.0
+margin_bottom = 40.0
+custom_fonts/font = ExtResource( 3 )
+text = "Duration:"
+
+[node name="StatusText" type="Label" parent="BaseInfo/StatusEffects/VBoxContainer/ULT_Beautiful_Garden"]
+modulate = Color( 0.67451, 0.67451, 0.67451, 1 )
+margin_left = 72.0
+margin_top = 40.0
+margin_right = 856.0
+margin_bottom = 72.0
+custom_fonts/font = ExtResource( 3 )
+text = "ATK +X"
+autowrap = true
+
+[node name="ULT_Mental_Spiral" type="NinePatchRect" parent="BaseInfo/StatusEffects/VBoxContainer"]
+visible = false
+margin_top = 84.0
+margin_right = 872.0
+margin_bottom = 164.0
+rect_min_size = Vector2( 872, 80 )
+texture = ExtResource( 1 )
+patch_margin_left = 15
+patch_margin_top = 15
+patch_margin_right = 15
+patch_margin_bottom = 15
+
+[node name="Icon" type="TextureRect" parent="BaseInfo/StatusEffects/VBoxContainer/ULT_Mental_Spiral"]
+margin_left = 16.0
+margin_top = 8.0
+margin_right = 64.0
+margin_bottom = 56.0
+texture = ExtResource( 19 )
+expand = true
+
+[node name="StatusName" type="Label" parent="BaseInfo/StatusEffects/VBoxContainer/ULT_Mental_Spiral"]
+margin_left = 72.0
+margin_top = 8.0
+margin_right = 568.0
+margin_bottom = 40.0
+custom_fonts/font = ExtResource( 3 )
+text = "Mental Spiral"
+
+[node name="Duration" type="Label" parent="BaseInfo/StatusEffects/VBoxContainer/ULT_Mental_Spiral"]
+margin_left = 576.0
+margin_top = 8.0
+margin_right = 864.0
+margin_bottom = 40.0
+custom_fonts/font = ExtResource( 3 )
+text = "Duration:"
+
+[node name="StatusText" type="Label" parent="BaseInfo/StatusEffects/VBoxContainer/ULT_Mental_Spiral"]
+modulate = Color( 0.67451, 0.67451, 0.67451, 1 )
+margin_left = 72.0
+margin_top = 40.0
+margin_right = 856.0
+margin_bottom = 72.0
+custom_fonts/font = ExtResource( 3 )
+text = "ENR +X"
+autowrap = true
+
+[node name="ULT_Cycle_Of_Sadness" type="NinePatchRect" parent="BaseInfo/StatusEffects/VBoxContainer"]
+visible = false
+margin_right = 872.0
+margin_bottom = 80.0
+rect_min_size = Vector2( 872, 80 )
+texture = ExtResource( 1 )
+patch_margin_left = 15
+patch_margin_top = 15
+patch_margin_right = 15
+patch_margin_bottom = 15
+
+[node name="Icon" type="TextureRect" parent="BaseInfo/StatusEffects/VBoxContainer/ULT_Cycle_Of_Sadness"]
+margin_left = 16.0
+margin_top = 8.0
+margin_right = 64.0
+margin_bottom = 56.0
+texture = ExtResource( 32 )
+expand = true
+
+[node name="StatusName" type="Label" parent="BaseInfo/StatusEffects/VBoxContainer/ULT_Cycle_Of_Sadness"]
+margin_left = 72.0
+margin_top = 8.0
+margin_right = 568.0
+margin_bottom = 40.0
+custom_fonts/font = ExtResource( 3 )
+text = "Cycle Of Sadness"
+
+[node name="Duration" type="Label" parent="BaseInfo/StatusEffects/VBoxContainer/ULT_Cycle_Of_Sadness"]
+margin_left = 576.0
+margin_top = 8.0
+margin_right = 864.0
+margin_bottom = 40.0
+custom_fonts/font = ExtResource( 3 )
+text = "Duration:"
+
+[node name="StatusText" type="Label" parent="BaseInfo/StatusEffects/VBoxContainer/ULT_Cycle_Of_Sadness"]
+modulate = Color( 0.67451, 0.67451, 0.67451, 1 )
+margin_left = 72.0
+margin_top = 40.0
+margin_right = 856.0
+margin_bottom = 72.0
+custom_fonts/font = ExtResource( 3 )
+text = "ENR +X"
+autowrap = true
+
+[node name="ULT_Pandoras_Box" type="NinePatchRect" parent="BaseInfo/StatusEffects/VBoxContainer"]
+visible = false
+margin_right = 872.0
+margin_bottom = 80.0
+rect_min_size = Vector2( 872, 80 )
+texture = ExtResource( 1 )
+patch_margin_left = 15
+patch_margin_top = 15
+patch_margin_right = 15
+patch_margin_bottom = 15
+
+[node name="Icon" type="TextureRect" parent="BaseInfo/StatusEffects/VBoxContainer/ULT_Pandoras_Box"]
+margin_left = 16.0
+margin_top = 8.0
+margin_right = 64.0
+margin_bottom = 56.0
+texture = ExtResource( 38 )
+expand = true
+
+[node name="StatusName" type="Label" parent="BaseInfo/StatusEffects/VBoxContainer/ULT_Pandoras_Box"]
+margin_left = 72.0
+margin_top = 8.0
+margin_right = 568.0
+margin_bottom = 40.0
+custom_fonts/font = ExtResource( 3 )
+text = "Pandora's Box"
+
+[node name="Duration" type="Label" parent="BaseInfo/StatusEffects/VBoxContainer/ULT_Pandoras_Box"]
+margin_left = 576.0
+margin_top = 8.0
+margin_right = 864.0
+margin_bottom = 40.0
+custom_fonts/font = ExtResource( 3 )
+text = "Duration:"
+
+[node name="StatusText" type="Label" parent="BaseInfo/StatusEffects/VBoxContainer/ULT_Pandoras_Box"]
+modulate = Color( 0.67451, 0.67451, 0.67451, 1 )
+margin_left = 72.0
+margin_top = 40.0
+margin_right = 856.0
+margin_bottom = 72.0
+custom_fonts/font = ExtResource( 3 )
+text = "RES and ATK +X"
+autowrap = true
+
+[node name="ULT_Growing_Fracture" type="NinePatchRect" parent="BaseInfo/StatusEffects/VBoxContainer"]
+visible = false
+margin_right = 872.0
+margin_bottom = 80.0
+rect_min_size = Vector2( 872, 80 )
+texture = ExtResource( 1 )
+patch_margin_left = 15
+patch_margin_top = 15
+patch_margin_right = 15
+patch_margin_bottom = 15
+
+[node name="Icon" type="TextureRect" parent="BaseInfo/StatusEffects/VBoxContainer/ULT_Growing_Fracture"]
+margin_left = 16.0
+margin_top = 8.0
+margin_right = 64.0
+margin_bottom = 56.0
+texture = ExtResource( 36 )
+expand = true
+
+[node name="StatusName" type="Label" parent="BaseInfo/StatusEffects/VBoxContainer/ULT_Growing_Fracture"]
+margin_left = 72.0
+margin_top = 8.0
+margin_right = 568.0
+margin_bottom = 40.0
+custom_fonts/font = ExtResource( 3 )
+text = "Growing Fracture"
+
+[node name="Duration" type="Label" parent="BaseInfo/StatusEffects/VBoxContainer/ULT_Growing_Fracture"]
+margin_left = 576.0
+margin_top = 8.0
+margin_right = 864.0
+margin_bottom = 40.0
+custom_fonts/font = ExtResource( 3 )
+text = "Duration:"
+
+[node name="StatusText" type="Label" parent="BaseInfo/StatusEffects/VBoxContainer/ULT_Growing_Fracture"]
+modulate = Color( 0.67451, 0.67451, 0.67451, 1 )
+margin_left = 72.0
+margin_top = 40.0
+margin_right = 856.0
+margin_bottom = 72.0
+custom_fonts/font = ExtResource( 3 )
+text = "RES +X"
+autowrap = true
+
+[node name="ULT_White_Silence" type="NinePatchRect" parent="BaseInfo/StatusEffects/VBoxContainer"]
+visible = false
+margin_right = 872.0
+margin_bottom = 80.0
+rect_min_size = Vector2( 872, 80 )
+texture = ExtResource( 1 )
+patch_margin_left = 15
+patch_margin_top = 15
+patch_margin_right = 15
+patch_margin_bottom = 15
+
+[node name="Icon" type="TextureRect" parent="BaseInfo/StatusEffects/VBoxContainer/ULT_White_Silence"]
+margin_left = 16.0
+margin_top = 8.0
+margin_right = 64.0
+margin_bottom = 56.0
+texture = ExtResource( 42 )
+expand = true
+
+[node name="StatusName" type="Label" parent="BaseInfo/StatusEffects/VBoxContainer/ULT_White_Silence"]
+margin_left = 72.0
+margin_top = 8.0
+margin_right = 568.0
+margin_bottom = 40.0
+custom_fonts/font = ExtResource( 3 )
+text = "White Silence"
+
+[node name="Duration" type="Label" parent="BaseInfo/StatusEffects/VBoxContainer/ULT_White_Silence"]
+margin_left = 576.0
+margin_top = 8.0
+margin_right = 864.0
+margin_bottom = 40.0
+custom_fonts/font = ExtResource( 3 )
+text = "Duration:"
+
+[node name="StatusText" type="Label" parent="BaseInfo/StatusEffects/VBoxContainer/ULT_White_Silence"]
+modulate = Color( 0.67451, 0.67451, 0.67451, 1 )
+margin_left = 72.0
+margin_top = 40.0
+margin_right = 856.0
+margin_bottom = 72.0
+custom_fonts/font = ExtResource( 3 )
+text = "ATK +X"
+autowrap = true
+
+[node name="ULT_Regression" type="NinePatchRect" parent="BaseInfo/StatusEffects/VBoxContainer"]
+visible = false
+margin_right = 872.0
+margin_bottom = 80.0
+rect_min_size = Vector2( 872, 80 )
+texture = ExtResource( 1 )
+patch_margin_left = 15
+patch_margin_top = 15
+patch_margin_right = 15
+patch_margin_bottom = 15
+
+[node name="Icon" type="TextureRect" parent="BaseInfo/StatusEffects/VBoxContainer/ULT_Regression"]
+margin_left = 16.0
+margin_top = 8.0
+margin_right = 64.0
+margin_bottom = 56.0
+texture = ExtResource( 35 )
+expand = true
+
+[node name="StatusName" type="Label" parent="BaseInfo/StatusEffects/VBoxContainer/ULT_Regression"]
+margin_left = 72.0
+margin_top = 8.0
+margin_right = 568.0
+margin_bottom = 40.0
+custom_fonts/font = ExtResource( 3 )
+text = "Regression"
+
+[node name="Duration" type="Label" parent="BaseInfo/StatusEffects/VBoxContainer/ULT_Regression"]
+margin_left = 576.0
+margin_top = 8.0
+margin_right = 864.0
+margin_bottom = 40.0
+custom_fonts/font = ExtResource( 3 )
+text = "Duration:"
+
+[node name="StatusText" type="Label" parent="BaseInfo/StatusEffects/VBoxContainer/ULT_Regression"]
+modulate = Color( 0.67451, 0.67451, 0.67451, 1 )
+margin_left = 72.0
+margin_top = 40.0
+margin_right = 856.0
+margin_bottom = 72.0
+custom_fonts/font = ExtResource( 3 )
+text = "RES and SEN +X"
+autowrap = true
+
+[node name="Talents" type="Control" parent="."]
+visible = false
+margin_right = 40.0
+margin_bottom = 40.0
+
+[node name="StatusText" type="Label" parent="Talents"]
+margin_left = 984.0
+margin_top = 232.0
+margin_right = 1864.0
+margin_bottom = 296.0
+text = "Abilities"
+autowrap = true
+
+[node name="Salim" type="Control" parent="Talents"]
+margin_right = 40.0
+margin_bottom = 40.0
+rect_pivot_offset = Vector2( 464, 184 )
+
+[node name="ScrollContainer" type="ScrollContainer" parent="Talents/Salim"]
+margin_left = 984.0
+margin_top = 296.0
+margin_right = 1880.0
+margin_bottom = 936.0
+
+[node name="GridContainer" type="GridContainer" parent="Talents/Salim/ScrollContainer"]
+margin_right = 872.0
+margin_bottom = 2448.0
+custom_constants/vseparation = 16
+custom_constants/hseparation = 16
+
+[node name="Red_Fury" type="NinePatchRect" parent="Talents/Salim/ScrollContainer/GridContainer"]
+margin_right = 872.0
+margin_bottom = 160.0
+rect_min_size = Vector2( 872, 160 )
+texture = ExtResource( 1 )
+patch_margin_left = 15
+patch_margin_top = 15
+patch_margin_right = 15
+patch_margin_bottom = 15
+script = ExtResource( 44 )
+
+[node name="Icon" type="TextureRect" parent="Talents/Salim/ScrollContainer/GridContainer/Red_Fury"]
+margin_left = 16.0
+margin_top = 16.0
+margin_right = 104.0
+margin_bottom = 104.0
+texture = ExtResource( 37 )
+expand = true
+stretch_mode = 5
+
+[node name="Name" type="Label" parent="Talents/Salim/ScrollContainer/GridContainer/Red_Fury"]
+margin_left = 112.0
+margin_top = 8.0
+margin_right = 648.0
+margin_bottom = 72.0
+text = "Fury"
+
+[node name="Description" type="Label" parent="Talents/Salim/ScrollContainer/GridContainer/Red_Fury"]
+margin_left = 112.0
+margin_top = 64.0
+margin_right = 856.0
+margin_bottom = 136.0
+custom_fonts/font = ExtResource( 3 )
+text = "Red_Fury_1"
+autowrap = true
+
+[node name="Red_Critical_Line" type="NinePatchRect" parent="Talents/Salim/ScrollContainer/GridContainer"]
+margin_top = 176.0
+margin_right = 872.0
+margin_bottom = 336.0
+rect_min_size = Vector2( 872, 160 )
+texture = ExtResource( 1 )
+patch_margin_left = 15
+patch_margin_top = 15
+patch_margin_right = 15
+patch_margin_bottom = 15
+script = ExtResource( 44 )
+
+[node name="Icon" type="TextureRect" parent="Talents/Salim/ScrollContainer/GridContainer/Red_Critical_Line"]
+margin_left = 16.0
+margin_top = 16.0
+margin_right = 104.0
+margin_bottom = 104.0
+texture = ExtResource( 45 )
+expand = true
+stretch_mode = 5
+
+[node name="Name" type="Label" parent="Talents/Salim/ScrollContainer/GridContainer/Red_Critical_Line"]
+margin_left = 112.0
+margin_top = 8.0
+margin_right = 648.0
+margin_bottom = 72.0
+text = "Critical Line"
+
+[node name="Description" type="Label" parent="Talents/Salim/ScrollContainer/GridContainer/Red_Critical_Line"]
+margin_left = 112.0
+margin_top = 64.0
+margin_right = 848.0
+margin_bottom = 144.0
+custom_fonts/font = ExtResource( 3 )
+text = "Red_Crititcal_Line_1"
+autowrap = true
+
+[node name="Orange_BDIGO" type="NinePatchRect" parent="Talents/Salim/ScrollContainer/GridContainer"]
+margin_top = 352.0
+margin_right = 872.0
+margin_bottom = 512.0
+rect_min_size = Vector2( 872, 160 )
+texture = ExtResource( 1 )
+patch_margin_left = 15
+patch_margin_top = 15
+patch_margin_right = 15
+patch_margin_bottom = 15
+script = ExtResource( 44 )
+
+[node name="Icon" type="TextureRect" parent="Talents/Salim/ScrollContainer/GridContainer/Orange_BDIGO"]
+margin_left = 16.0
+margin_top = 16.0
+margin_right = 104.0
+margin_bottom = 104.0
+texture = ExtResource( 28 )
+expand = true
+stretch_mode = 5
+
+[node name="Name" type="Label" parent="Talents/Salim/ScrollContainer/GridContainer/Orange_BDIGO"]
+margin_left = 112.0
+margin_top = 8.0
+margin_right = 648.0
+margin_bottom = 72.0
+text = "Best Defense Is Good Offense"
+
+[node name="Description" type="Label" parent="Talents/Salim/ScrollContainer/GridContainer/Orange_BDIGO"]
+margin_left = 112.0
+margin_top = 64.0
+margin_right = 848.0
+margin_bottom = 144.0
+custom_fonts/font = ExtResource( 3 )
+text = "Orange_BDIGO_1"
+autowrap = true
+
+[node name="Orange_Recoil" type="NinePatchRect" parent="Talents/Salim/ScrollContainer/GridContainer"]
+margin_top = 528.0
+margin_right = 872.0
+margin_bottom = 688.0
+rect_min_size = Vector2( 872, 160 )
+texture = ExtResource( 1 )
+patch_margin_left = 15
+patch_margin_top = 15
+patch_margin_right = 15
+patch_margin_bottom = 15
+script = ExtResource( 44 )
+
+[node name="Icon" type="TextureRect" parent="Talents/Salim/ScrollContainer/GridContainer/Orange_Recoil"]
+margin_left = 16.0
+margin_top = 16.0
+margin_right = 104.0
+margin_bottom = 104.0
+texture = ExtResource( 51 )
+expand = true
+stretch_mode = 5
+
+[node name="Name" type="Label" parent="Talents/Salim/ScrollContainer/GridContainer/Orange_Recoil"]
+margin_left = 112.0
+margin_top = 8.0
+margin_right = 648.0
+margin_bottom = 72.0
+text = "Recoil"
+
+[node name="Description" type="Label" parent="Talents/Salim/ScrollContainer/GridContainer/Orange_Recoil"]
+margin_left = 112.0
+margin_top = 64.0
+margin_right = 848.0
+margin_bottom = 144.0
+custom_fonts/font = ExtResource( 3 )
+text = "Orange_Recoil_1"
+autowrap = true
+
+[node name="Yellow_Lightning_Break" type="NinePatchRect" parent="Talents/Salim/ScrollContainer/GridContainer"]
+margin_top = 704.0
+margin_right = 872.0
+margin_bottom = 864.0
+rect_min_size = Vector2( 872, 160 )
+texture = ExtResource( 1 )
+patch_margin_left = 15
+patch_margin_top = 15
+patch_margin_right = 15
+patch_margin_bottom = 15
+script = ExtResource( 44 )
+
+[node name="Icon" type="TextureRect" parent="Talents/Salim/ScrollContainer/GridContainer/Yellow_Lightning_Break"]
+margin_left = 16.0
+margin_top = 16.0
+margin_right = 104.0
+margin_bottom = 104.0
+texture = ExtResource( 47 )
+expand = true
+stretch_mode = 5
+
+[node name="Name" type="Label" parent="Talents/Salim/ScrollContainer/GridContainer/Yellow_Lightning_Break"]
+margin_left = 112.0
+margin_top = 8.0
+margin_right = 648.0
+margin_bottom = 72.0
+text = "Lightning Break"
+
+[node name="Description" type="Label" parent="Talents/Salim/ScrollContainer/GridContainer/Yellow_Lightning_Break"]
+margin_left = 112.0
+margin_top = 64.0
+margin_right = 848.0
+margin_bottom = 144.0
+custom_fonts/font = ExtResource( 3 )
+text = "Yellow_Lightning_Break_1"
+autowrap = true
+
+[node name="Yellow_Fast_Reaction" type="NinePatchRect" parent="Talents/Salim/ScrollContainer/GridContainer"]
+margin_top = 880.0
+margin_right = 872.0
+margin_bottom = 1040.0
+rect_min_size = Vector2( 872, 160 )
+texture = ExtResource( 1 )
+patch_margin_left = 15
+patch_margin_top = 15
+patch_margin_right = 15
+patch_margin_bottom = 15
+script = ExtResource( 44 )
+
+[node name="Icon" type="TextureRect" parent="Talents/Salim/ScrollContainer/GridContainer/Yellow_Fast_Reaction"]
+margin_left = 16.0
+margin_top = 16.0
+margin_right = 104.0
+margin_bottom = 104.0
+texture = ExtResource( 52 )
+expand = true
+stretch_mode = 5
+
+[node name="Name" type="Label" parent="Talents/Salim/ScrollContainer/GridContainer/Yellow_Fast_Reaction"]
+margin_left = 112.0
+margin_top = 8.0
+margin_right = 648.0
+margin_bottom = 72.0
+text = "Fast Reaction"
+
+[node name="Description" type="Label" parent="Talents/Salim/ScrollContainer/GridContainer/Yellow_Fast_Reaction"]
+margin_left = 112.0
+margin_top = 64.0
+margin_right = 848.0
+margin_bottom = 144.0
+custom_fonts/font = ExtResource( 3 )
+text = "Yellow_Fast_Reaction"
+autowrap = true
+
+[node name="Green_Waiting_Game" type="NinePatchRect" parent="Talents/Salim/ScrollContainer/GridContainer"]
+margin_top = 1056.0
+margin_right = 872.0
+margin_bottom = 1216.0
+rect_min_size = Vector2( 872, 160 )
+texture = ExtResource( 1 )
+patch_margin_left = 15
+patch_margin_top = 15
+patch_margin_right = 15
+patch_margin_bottom = 15
+script = ExtResource( 44 )
+
+[node name="Icon" type="TextureRect" parent="Talents/Salim/ScrollContainer/GridContainer/Green_Waiting_Game"]
+margin_left = 16.0
+margin_top = 16.0
+margin_right = 104.0
+margin_bottom = 104.0
+texture = ExtResource( 33 )
+expand = true
+stretch_mode = 5
+
+[node name="Name" type="Label" parent="Talents/Salim/ScrollContainer/GridContainer/Green_Waiting_Game"]
+margin_left = 112.0
+margin_top = 8.0
+margin_right = 648.0
+margin_bottom = 72.0
+text = "Waiting Game"
+
+[node name="Description" type="Label" parent="Talents/Salim/ScrollContainer/GridContainer/Green_Waiting_Game"]
+margin_left = 112.0
+margin_top = 64.0
+margin_right = 848.0
+margin_bottom = 144.0
+custom_fonts/font = ExtResource( 3 )
+text = "Green_Waiting_Game_1"
+autowrap = true
+
+[node name="Green_Sprouting_From_Within" type="NinePatchRect" parent="Talents/Salim/ScrollContainer/GridContainer"]
+margin_top = 1232.0
+margin_right = 872.0
+margin_bottom = 1392.0
+rect_min_size = Vector2( 872, 160 )
+texture = ExtResource( 1 )
+patch_margin_left = 15
+patch_margin_top = 15
+patch_margin_right = 15
+patch_margin_bottom = 15
+script = ExtResource( 44 )
+
+[node name="Icon" type="TextureRect" parent="Talents/Salim/ScrollContainer/GridContainer/Green_Sprouting_From_Within"]
+margin_left = 16.0
+margin_top = 16.0
+margin_right = 104.0
+margin_bottom = 104.0
+texture = ExtResource( 53 )
+expand = true
+stretch_mode = 5
+
+[node name="Name" type="Label" parent="Talents/Salim/ScrollContainer/GridContainer/Green_Sprouting_From_Within"]
+margin_left = 112.0
+margin_top = 8.0
+margin_right = 648.0
+margin_bottom = 72.0
+text = "Sprouting From Within"
+
+[node name="Description" type="Label" parent="Talents/Salim/ScrollContainer/GridContainer/Green_Sprouting_From_Within"]
+margin_left = 112.0
+margin_top = 64.0
+margin_right = 848.0
+margin_bottom = 144.0
+custom_fonts/font = ExtResource( 3 )
+text = "Green_Sprouting_From_Within_1"
+autowrap = true
+
+[node name="Blue_Mental_Abuse" type="NinePatchRect" parent="Talents/Salim/ScrollContainer/GridContainer"]
+margin_top = 1408.0
+margin_right = 872.0
+margin_bottom = 1568.0
+rect_min_size = Vector2( 872, 160 )
+texture = ExtResource( 1 )
+patch_margin_left = 15
+patch_margin_top = 15
+patch_margin_right = 15
+patch_margin_bottom = 15
+script = ExtResource( 44 )
+
+[node name="Icon" type="TextureRect" parent="Talents/Salim/ScrollContainer/GridContainer/Blue_Mental_Abuse"]
+margin_left = 16.0
+margin_top = 16.0
+margin_right = 104.0
+margin_bottom = 104.0
+texture = ExtResource( 54 )
+expand = true
+stretch_mode = 5
+
+[node name="Name" type="Label" parent="Talents/Salim/ScrollContainer/GridContainer/Blue_Mental_Abuse"]
+margin_left = 112.0
+margin_top = 8.0
+margin_right = 648.0
+margin_bottom = 72.0
+text = "Mental Abuse"
+
+[node name="Description" type="Label" parent="Talents/Salim/ScrollContainer/GridContainer/Blue_Mental_Abuse"]
+margin_left = 112.0
+margin_top = 64.0
+margin_right = 848.0
+margin_bottom = 144.0
+custom_fonts/font = ExtResource( 3 )
+text = "Blue_Mental_Abuse_1"
+autowrap = true
+
+[node name="Blue_Peace_Of_Mind" type="NinePatchRect" parent="Talents/Salim/ScrollContainer/GridContainer"]
+margin_top = 1584.0
+margin_right = 872.0
+margin_bottom = 1744.0
+rect_min_size = Vector2( 872, 160 )
+texture = ExtResource( 1 )
+patch_margin_left = 15
+patch_margin_top = 15
+patch_margin_right = 15
+patch_margin_bottom = 15
+script = ExtResource( 44 )
+
+[node name="Icon" type="TextureRect" parent="Talents/Salim/ScrollContainer/GridContainer/Blue_Peace_Of_Mind"]
+margin_left = 16.0
+margin_top = 16.0
+margin_right = 104.0
+margin_bottom = 104.0
+texture = ExtResource( 50 )
+expand = true
+stretch_mode = 5
+
+[node name="Name" type="Label" parent="Talents/Salim/ScrollContainer/GridContainer/Blue_Peace_Of_Mind"]
+margin_left = 112.0
+margin_top = 8.0
+margin_right = 648.0
+margin_bottom = 72.0
+text = "Peace Of Mind"
+
+[node name="Description" type="Label" parent="Talents/Salim/ScrollContainer/GridContainer/Blue_Peace_Of_Mind"]
+margin_left = 112.0
+margin_top = 64.0
+margin_right = 848.0
+margin_bottom = 144.0
+custom_fonts/font = ExtResource( 3 )
+text = "Blue_Peace_Of_Mind_1"
+autowrap = true
+
+[node name="Purple_One_Foot_In_Grave" type="NinePatchRect" parent="Talents/Salim/ScrollContainer/GridContainer"]
+margin_top = 1760.0
+margin_right = 872.0
+margin_bottom = 1920.0
+rect_min_size = Vector2( 872, 160 )
+texture = ExtResource( 1 )
+patch_margin_left = 15
+patch_margin_top = 15
+patch_margin_right = 15
+patch_margin_bottom = 15
+script = ExtResource( 44 )
+
+[node name="Icon" type="TextureRect" parent="Talents/Salim/ScrollContainer/GridContainer/Purple_One_Foot_In_Grave"]
+margin_left = 16.0
+margin_top = 16.0
+margin_right = 104.0
+margin_bottom = 104.0
+texture = ExtResource( 48 )
+expand = true
+stretch_mode = 5
+
+[node name="Name" type="Label" parent="Talents/Salim/ScrollContainer/GridContainer/Purple_One_Foot_In_Grave"]
+margin_left = 112.0
+margin_top = 8.0
+margin_right = 648.0
+margin_bottom = 72.0
+text = "One Foot In Grave"
+
+[node name="Description" type="Label" parent="Talents/Salim/ScrollContainer/GridContainer/Purple_One_Foot_In_Grave"]
+margin_left = 112.0
+margin_top = 64.0
+margin_right = 848.0
+margin_bottom = 144.0
+custom_fonts/font = ExtResource( 3 )
+text = "Purple_One_Foot_In_Grave"
+autowrap = true
+
+[node name="Purple_Unfair_Game" type="NinePatchRect" parent="Talents/Salim/ScrollContainer/GridContainer"]
+margin_top = 1936.0
+margin_right = 872.0
+margin_bottom = 2096.0
+rect_min_size = Vector2( 872, 160 )
+texture = ExtResource( 1 )
+patch_margin_left = 15
+patch_margin_top = 15
+patch_margin_right = 15
+patch_margin_bottom = 15
+script = ExtResource( 44 )
+
+[node name="Icon" type="TextureRect" parent="Talents/Salim/ScrollContainer/GridContainer/Purple_Unfair_Game"]
+margin_left = 16.0
+margin_top = 16.0
+margin_right = 104.0
+margin_bottom = 104.0
+texture = ExtResource( 46 )
+expand = true
+stretch_mode = 5
+
+[node name="Name" type="Label" parent="Talents/Salim/ScrollContainer/GridContainer/Purple_Unfair_Game"]
+margin_left = 112.0
+margin_top = 8.0
+margin_right = 648.0
+margin_bottom = 72.0
+text = "Unfair Game"
+
+[node name="Description" type="Label" parent="Talents/Salim/ScrollContainer/GridContainer/Purple_Unfair_Game"]
+margin_left = 112.0
+margin_top = 64.0
+margin_right = 848.0
+margin_bottom = 144.0
+custom_fonts/font = ExtResource( 3 )
+text = "Purple_Unfair_Game_1"
+autowrap = true
+
+[node name="White_Changing_Mood" type="NinePatchRect" parent="Talents/Salim/ScrollContainer/GridContainer"]
+margin_top = 2112.0
+margin_right = 872.0
+margin_bottom = 2272.0
+rect_min_size = Vector2( 872, 160 )
+texture = ExtResource( 1 )
+patch_margin_left = 15
+patch_margin_top = 15
+patch_margin_right = 15
+patch_margin_bottom = 15
+script = ExtResource( 44 )
+
+[node name="Icon" type="TextureRect" parent="Talents/Salim/ScrollContainer/GridContainer/White_Changing_Mood"]
+margin_left = 16.0
+margin_top = 16.0
+margin_right = 104.0
+margin_bottom = 104.0
+texture = ExtResource( 55 )
+expand = true
+stretch_mode = 5
+
+[node name="Name" type="Label" parent="Talents/Salim/ScrollContainer/GridContainer/White_Changing_Mood"]
+margin_left = 112.0
+margin_top = 8.0
+margin_right = 648.0
+margin_bottom = 72.0
+text = "Changing Mood"
+
+[node name="Description" type="Label" parent="Talents/Salim/ScrollContainer/GridContainer/White_Changing_Mood"]
+margin_left = 112.0
+margin_top = 64.0
+margin_right = 848.0
+margin_bottom = 144.0
+custom_fonts/font = ExtResource( 3 )
+text = "White_Changing_Mood_1"
+autowrap = true
+
+[node name="White_Iterative_Process" type="NinePatchRect" parent="Talents/Salim/ScrollContainer/GridContainer"]
+margin_top = 2288.0
+margin_right = 872.0
+margin_bottom = 2448.0
+rect_min_size = Vector2( 872, 160 )
+texture = ExtResource( 1 )
+patch_margin_left = 15
+patch_margin_top = 15
+patch_margin_right = 15
+patch_margin_bottom = 15
+script = ExtResource( 44 )
+
+[node name="Icon" type="TextureRect" parent="Talents/Salim/ScrollContainer/GridContainer/White_Iterative_Process"]
+margin_left = 16.0
+margin_top = 16.0
+margin_right = 104.0
+margin_bottom = 104.0
+texture = ExtResource( 49 )
+expand = true
+stretch_mode = 5
+
+[node name="Name" type="Label" parent="Talents/Salim/ScrollContainer/GridContainer/White_Iterative_Process"]
+margin_left = 112.0
+margin_top = 8.0
+margin_right = 648.0
+margin_bottom = 72.0
+text = "Iterative Process"
+
+[node name="Description" type="Label" parent="Talents/Salim/ScrollContainer/GridContainer/White_Iterative_Process"]
+margin_left = 112.0
+margin_top = 64.0
+margin_right = 848.0
+margin_bottom = 144.0
+custom_fonts/font = ExtResource( 3 )
+text = "White_Iterative_Process_1"
+autowrap = true
+
+[node name="Guard" type="Control" parent="Talents"]
+visible = false
+margin_left = 992.0
+margin_top = 296.0
+margin_right = 1032.0
+margin_bottom = 336.0
+
+[node name="ActiveSkills" type="ScrollContainer" parent="Talents/Guard"]
+margin_right = 896.0
+margin_bottom = 640.0
+rect_min_size = Vector2( 528, 0 )
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Talents/Guard/ActiveSkills"]
+margin_right = 872.0
+margin_bottom = 356.0
+
+[node name="Attack" type="NinePatchRect" parent="Talents/Guard/ActiveSkills/VBoxContainer"]
+margin_right = 872.0
+margin_bottom = 160.0
+rect_min_size = Vector2( 872, 160 )
+texture = ExtResource( 1 )
+patch_margin_left = 15
+patch_margin_top = 15
+patch_margin_right = 15
+patch_margin_bottom = 15
+
+[node name="Name" type="Label" parent="Talents/Guard/ActiveSkills/VBoxContainer/Attack"]
+margin_left = 16.0
+margin_top = 8.0
+margin_right = 56.0
+margin_bottom = 72.0
+text = "Attack"
+
+[node name="Description" type="Label" parent="Talents/Guard/ActiveSkills/VBoxContainer/Attack"]
+margin_left = 16.0
+margin_top = 112.0
+margin_right = 856.0
+margin_bottom = 152.0
+custom_fonts/font = ExtResource( 3 )
+text = "Camera Guard makes an attack dealing physical damage to Salim."
+autowrap = true
+
+[node name="Description2" type="Label" parent="Talents/Guard/ActiveSkills/VBoxContainer/Attack"]
+margin_left = 16.0
+margin_top = 64.0
+margin_right = 376.0
+margin_bottom = 104.0
+custom_fonts/font = ExtResource( 3 )
+text = "(Damage Type: Physical; +1 EN)"
+valign = 2
+autowrap = true
+
+[node name="Ultimate" type="NinePatchRect" parent="Talents/Guard/ActiveSkills/VBoxContainer"]
+margin_top = 164.0
+margin_right = 872.0
+margin_bottom = 356.0
+rect_min_size = Vector2( 512, 192 )
+texture = ExtResource( 1 )
+patch_margin_left = 15
+patch_margin_top = 15
+patch_margin_right = 15
+patch_margin_bottom = 15
+
+[node name="Name" type="Label" parent="Talents/Guard/ActiveSkills/VBoxContainer/Ultimate"]
+margin_left = 16.0
+margin_top = 8.0
+margin_right = 56.0
+margin_bottom = 72.0
+text = "Ultimate: Supression"
+
+[node name="Description" type="Label" parent="Talents/Guard/ActiveSkills/VBoxContainer/Ultimate"]
+margin_left = 16.0
+margin_top = 100.0
+margin_right = 856.0
+margin_bottom = 167.0
+custom_fonts/font = ExtResource( 3 )
+text = "Camera Guard makes an attack dealing heavy red damage to Salim and inflicting Silence on him for 1 turn."
+autowrap = true
+
+[node name="Description2" type="Label" parent="Talents/Guard/ActiveSkills/VBoxContainer/Ultimate"]
+margin_left = 16.0
+margin_top = 60.0
+margin_right = 376.0
+margin_bottom = 100.0
+custom_fonts/font = ExtResource( 3 )
+text = "(Damage Type: Red; EN COST: 4)"
+valign = 2
+autowrap = true
+
+[node name="Gunner" type="Control" parent="Talents"]
+visible = false
+margin_left = 992.0
+margin_top = 296.0
+margin_right = 1032.0
+margin_bottom = 336.0
+
+[node name="ActiveSkills" type="ScrollContainer" parent="Talents/Gunner"]
+margin_right = 896.0
+margin_bottom = 640.0
+rect_min_size = Vector2( 528, 0 )
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Talents/Gunner/ActiveSkills"]
+margin_right = 872.0
+margin_bottom = 520.0
+
+[node name="Attack" type="NinePatchRect" parent="Talents/Gunner/ActiveSkills/VBoxContainer"]
+margin_right = 872.0
+margin_bottom = 160.0
+rect_min_size = Vector2( 872, 160 )
+texture = ExtResource( 1 )
+patch_margin_left = 15
+patch_margin_top = 15
+patch_margin_right = 15
+patch_margin_bottom = 15
+
+[node name="Name" type="Label" parent="Talents/Gunner/ActiveSkills/VBoxContainer/Attack"]
+margin_left = 16.0
+margin_top = 8.0
+margin_right = 56.0
+margin_bottom = 72.0
+text = "Attack"
+
+[node name="Description" type="Label" parent="Talents/Gunner/ActiveSkills/VBoxContainer/Attack"]
+margin_left = 16.0
+margin_top = 112.0
+margin_right = 856.0
+margin_bottom = 152.0
+custom_fonts/font = ExtResource( 3 )
+text = "Gunner makes an attack dealing green damage to Salim."
+autowrap = true
+
+[node name="Description2" type="Label" parent="Talents/Gunner/ActiveSkills/VBoxContainer/Attack"]
+margin_left = 16.0
+margin_top = 64.0
+margin_right = 376.0
+margin_bottom = 104.0
+custom_fonts/font = ExtResource( 3 )
+text = "(Damage Type: Green; +1 EN)"
+valign = 2
+autowrap = true
+
+[node name="Skill" type="NinePatchRect" parent="Talents/Gunner/ActiveSkills/VBoxContainer"]
+margin_top = 164.0
+margin_right = 872.0
+margin_bottom = 324.0
+rect_min_size = Vector2( 872, 160 )
+texture = ExtResource( 1 )
+patch_margin_left = 15
+patch_margin_top = 15
+patch_margin_right = 15
+patch_margin_bottom = 15
+
+[node name="Name" type="Label" parent="Talents/Gunner/ActiveSkills/VBoxContainer/Skill"]
+margin_left = 16.0
+margin_top = 8.0
+margin_right = 56.0
+margin_bottom = 72.0
+text = "First Aid"
+
+[node name="Description" type="Label" parent="Talents/Gunner/ActiveSkills/VBoxContainer/Skill"]
+margin_left = 16.0
+margin_top = 112.0
+margin_right = 856.0
+margin_bottom = 152.0
+custom_fonts/font = ExtResource( 3 )
+text = "If an ally is below 75% of their Max HP Gunner restores ally's HP."
+autowrap = true
+
+[node name="Description2" type="Label" parent="Talents/Gunner/ActiveSkills/VBoxContainer/Skill"]
+margin_left = 16.0
+margin_top = 64.0
+margin_right = 376.0
+margin_bottom = 104.0
+custom_fonts/font = ExtResource( 3 )
+text = "(Heal; +2 EN; CD: 2 turns)"
+valign = 2
+autowrap = true
+
+[node name="Ultimate" type="NinePatchRect" parent="Talents/Gunner/ActiveSkills/VBoxContainer"]
+margin_top = 328.0
+margin_right = 872.0
+margin_bottom = 520.0
+rect_min_size = Vector2( 512, 192 )
+texture = ExtResource( 1 )
+patch_margin_left = 15
+patch_margin_top = 15
+patch_margin_right = 15
+patch_margin_bottom = 15
+
+[node name="Name" type="Label" parent="Talents/Gunner/ActiveSkills/VBoxContainer/Ultimate"]
+margin_left = 16.0
+margin_top = 8.0
+margin_right = 56.0
+margin_bottom = 72.0
+text = "Ultimate: Aimed Shot"
+
+[node name="Description" type="Label" parent="Talents/Gunner/ActiveSkills/VBoxContainer/Ultimate"]
+margin_left = 16.0
+margin_top = 100.0
+margin_right = 856.0
+margin_bottom = 167.0
+custom_fonts/font = ExtResource( 3 )
+text = "Gunner makes an attack dealing heavy green damage to Salim. CRIT for this attack is increased by +20."
+autowrap = true
+
+[node name="Description2" type="Label" parent="Talents/Gunner/ActiveSkills/VBoxContainer/Ultimate"]
+margin_left = 16.0
+margin_top = 60.0
+margin_right = 376.0
+margin_bottom = 100.0
+custom_fonts/font = ExtResource( 3 )
+text = "(Damage Type: Green; EN COST: 5)"
+valign = 2
+autowrap = true
+
+[node name="DP_Cold" type="Control" parent="Talents"]
+visible = false
+margin_left = 992.0
+margin_top = 296.0
+margin_right = 1032.0
+margin_bottom = 336.0
+
+[node name="ActiveSkills" type="ScrollContainer" parent="Talents/DP_Cold"]
+margin_right = 896.0
+margin_bottom = 640.0
+rect_min_size = Vector2( 528, 0 )
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Talents/DP_Cold/ActiveSkills"]
+margin_right = 872.0
+margin_bottom = 944.0
+
+[node name="Attack" type="NinePatchRect" parent="Talents/DP_Cold/ActiveSkills/VBoxContainer"]
+margin_right = 872.0
+margin_bottom = 192.0
+rect_min_size = Vector2( 872, 192 )
+texture = ExtResource( 1 )
+patch_margin_left = 15
+patch_margin_top = 15
+patch_margin_right = 15
+patch_margin_bottom = 15
+
+[node name="Name" type="Label" parent="Talents/DP_Cold/ActiveSkills/VBoxContainer/Attack"]
+margin_left = 16.0
+margin_top = 8.0
+margin_right = 56.0
+margin_bottom = 72.0
+text = "Colorful Attack"
+
+[node name="Description" type="Label" parent="Talents/DP_Cold/ActiveSkills/VBoxContainer/Attack"]
+margin_left = 16.0
+margin_top = 112.0
+margin_right = 856.0
+margin_bottom = 152.0
+custom_fonts/font = ExtResource( 3 )
+text = "Dancing Painting makes an attack(100% ATK) against Salim, on hit dealing blue, green or purple damage."
+autowrap = true
+
+[node name="Description2" type="Label" parent="Talents/DP_Cold/ActiveSkills/VBoxContainer/Attack"]
+margin_left = 16.0
+margin_top = 64.0
+margin_right = 848.0
+margin_bottom = 104.0
+custom_fonts/font = ExtResource( 3 )
+text = "(Damage Type: Random; +1 EN)"
+valign = 2
+autowrap = true
+
+[node name="TargetTheWeak" type="NinePatchRect" parent="Talents/DP_Cold/ActiveSkills/VBoxContainer"]
+margin_top = 196.0
+margin_right = 872.0
+margin_bottom = 388.0
+rect_min_size = Vector2( 872, 192 )
+texture = ExtResource( 1 )
+patch_margin_left = 15
+patch_margin_top = 15
+patch_margin_right = 15
+patch_margin_bottom = 15
+
+[node name="Name" type="Label" parent="Talents/DP_Cold/ActiveSkills/VBoxContainer/TargetTheWeak"]
+margin_left = 16.0
+margin_top = 8.0
+margin_right = 56.0
+margin_bottom = 72.0
+text = "Target The Weak"
+
+[node name="Description" type="Label" parent="Talents/DP_Cold/ActiveSkills/VBoxContainer/TargetTheWeak"]
+margin_left = 16.0
+margin_top = 112.0
+margin_right = 856.0
+margin_bottom = 180.0
+custom_fonts/font = ExtResource( 3 )
+text = "Dancing Painting attacks Salim, on hit dealing purple damage and reducing his DEF by 5 for 2 turns."
+valign = 1
+autowrap = true
+
+[node name="Description2" type="Label" parent="Talents/DP_Cold/ActiveSkills/VBoxContainer/TargetTheWeak"]
+margin_left = 16.0
+margin_top = 64.0
+margin_right = 848.0
+margin_bottom = 104.0
+custom_fonts/font = ExtResource( 3 )
+text = "(Damage Type: Purple; +2 EN; CD: 3 turns)"
+valign = 2
+autowrap = true
+
+[node name="MentalProtection" type="NinePatchRect" parent="Talents/DP_Cold/ActiveSkills/VBoxContainer"]
+margin_top = 392.0
+margin_right = 872.0
+margin_bottom = 584.0
+rect_min_size = Vector2( 872, 192 )
+texture = ExtResource( 1 )
+patch_margin_left = 15
+patch_margin_top = 15
+patch_margin_right = 15
+patch_margin_bottom = 15
+
+[node name="Name" type="Label" parent="Talents/DP_Cold/ActiveSkills/VBoxContainer/MentalProtection"]
+margin_left = 16.0
+margin_top = 8.0
+margin_right = 56.0
+margin_bottom = 72.0
+text = "Mental Protection"
+
+[node name="Description" type="Label" parent="Talents/DP_Cold/ActiveSkills/VBoxContainer/MentalProtection"]
+margin_left = 16.0
+margin_top = 112.0
+margin_right = 856.0
+margin_bottom = 180.0
+custom_fonts/font = ExtResource( 3 )
+text = "If there is no Mental Protection, Dancing Painting gives all allies(including itself) Mental Protection increasing their RES by 20 for 2 turns."
+valign = 1
+autowrap = true
+
+[node name="Description2" type="Label" parent="Talents/DP_Cold/ActiveSkills/VBoxContainer/MentalProtection"]
+margin_left = 16.0
+margin_top = 64.0
+margin_right = 848.0
+margin_bottom = 104.0
+custom_fonts/font = ExtResource( 3 )
+text = "(Buff; +2 EN; CD: 3 turns)"
+valign = 2
+autowrap = true
+
+[node name="ClearMind" type="NinePatchRect" parent="Talents/DP_Cold/ActiveSkills/VBoxContainer"]
+margin_top = 588.0
+margin_right = 872.0
+margin_bottom = 748.0
+rect_min_size = Vector2( 872, 160 )
+texture = ExtResource( 1 )
+patch_margin_left = 15
+patch_margin_top = 15
+patch_margin_right = 15
+patch_margin_bottom = 15
+
+[node name="Name" type="Label" parent="Talents/DP_Cold/ActiveSkills/VBoxContainer/ClearMind"]
+margin_left = 16.0
+margin_top = 8.0
+margin_right = 56.0
+margin_bottom = 72.0
+text = "Clear Mind"
+
+[node name="Description" type="Label" parent="Talents/DP_Cold/ActiveSkills/VBoxContainer/ClearMind"]
+margin_left = 16.0
+margin_top = 112.0
+margin_right = 856.0
+margin_bottom = 152.0
+custom_fonts/font = ExtResource( 3 )
+text = "Dancing Painting's RES +20."
+autowrap = true
+
+[node name="Description2" type="Label" parent="Talents/DP_Cold/ActiveSkills/VBoxContainer/ClearMind"]
+margin_left = 16.0
+margin_top = 64.0
+margin_right = 376.0
+margin_bottom = 104.0
+custom_fonts/font = ExtResource( 3 )
+text = "(Passive)"
+valign = 2
+autowrap = true
+
+[node name="Ultimate" type="NinePatchRect" parent="Talents/DP_Cold/ActiveSkills/VBoxContainer"]
+margin_top = 752.0
+margin_right = 872.0
+margin_bottom = 944.0
+rect_min_size = Vector2( 512, 192 )
+texture = ExtResource( 1 )
+patch_margin_left = 15
+patch_margin_top = 15
+patch_margin_right = 15
+patch_margin_bottom = 15
+
+[node name="Name" type="Label" parent="Talents/DP_Cold/ActiveSkills/VBoxContainer/Ultimate"]
+margin_left = 16.0
+margin_top = 8.0
+margin_right = 56.0
+margin_bottom = 72.0
+text = "Ultimate: Burst Of Energy"
+
+[node name="Description" type="Label" parent="Talents/DP_Cold/ActiveSkills/VBoxContainer/Ultimate"]
+margin_left = 16.0
+margin_top = 100.0
+margin_right = 856.0
+margin_bottom = 167.0
+custom_fonts/font = ExtResource( 3 )
+text = "Dancing Painting restores EN of all alies(except self) to the Maximum and increases their SEN by 20 for 3 turns. This effect can stack."
+autowrap = true
+
+[node name="Description2" type="Label" parent="Talents/DP_Cold/ActiveSkills/VBoxContainer/Ultimate"]
+margin_left = 16.0
+margin_top = 60.0
+margin_right = 376.0
+margin_bottom = 100.0
+custom_fonts/font = ExtResource( 3 )
+text = "(Buff; EN COST: 10)"
+valign = 2
+autowrap = true
+
+[node name="DP_Warm" type="Control" parent="Talents"]
+visible = false
+margin_left = 992.0
+margin_top = 296.0
+margin_right = 1032.0
+margin_bottom = 336.0
+
+[node name="ActiveSkills" type="ScrollContainer" parent="Talents/DP_Warm"]
+margin_right = 896.0
+margin_bottom = 640.0
+rect_min_size = Vector2( 528, 0 )
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Talents/DP_Warm/ActiveSkills"]
+margin_right = 872.0
+margin_bottom = 944.0
+
+[node name="Attack" type="NinePatchRect" parent="Talents/DP_Warm/ActiveSkills/VBoxContainer"]
+margin_right = 872.0
+margin_bottom = 192.0
+rect_min_size = Vector2( 872, 192 )
+texture = ExtResource( 1 )
+patch_margin_left = 15
+patch_margin_top = 15
+patch_margin_right = 15
+patch_margin_bottom = 15
+
+[node name="Name" type="Label" parent="Talents/DP_Warm/ActiveSkills/VBoxContainer/Attack"]
+margin_left = 16.0
+margin_top = 8.0
+margin_right = 56.0
+margin_bottom = 72.0
+text = "Colorful Attack"
+
+[node name="Description" type="Label" parent="Talents/DP_Warm/ActiveSkills/VBoxContainer/Attack"]
+margin_left = 16.0
+margin_top = 112.0
+margin_right = 856.0
+margin_bottom = 176.0
+custom_fonts/font = ExtResource( 3 )
+text = "Dancing Painting makes an attack against Salim, on hit dealing red, yellow or orange damage."
+valign = 1
+autowrap = true
+
+[node name="Description2" type="Label" parent="Talents/DP_Warm/ActiveSkills/VBoxContainer/Attack"]
+margin_left = 16.0
+margin_top = 64.0
+margin_right = 848.0
+margin_bottom = 104.0
+custom_fonts/font = ExtResource( 3 )
+text = "(Damage Type: Random; +1 EN)"
+valign = 2
+autowrap = true
+
+[node name="StopTheArtist" type="NinePatchRect" parent="Talents/DP_Warm/ActiveSkills/VBoxContainer"]
+margin_right = 872.0
+margin_bottom = 192.0
+rect_min_size = Vector2( 872, 192 )
+texture = ExtResource( 1 )
+patch_margin_left = 15
+patch_margin_top = 15
+patch_margin_right = 15
+patch_margin_bottom = 15
+
+[node name="Name" type="Label" parent="Talents/DP_Warm/ActiveSkills/VBoxContainer/StopTheArtist"]
+margin_left = 16.0
+margin_top = 8.0
+margin_right = 56.0
+margin_bottom = 72.0
+text = "Stop The Artist"
+
+[node name="Description" type="Label" parent="Talents/DP_Warm/ActiveSkills/VBoxContainer/StopTheArtist"]
+margin_left = 16.0
+margin_top = 112.0
+margin_right = 856.0
+margin_bottom = 180.0
+custom_fonts/font = ExtResource( 3 )
+text = "Dancing Painting attacks Salim, on hit dealing yellow damage and applying Closure(2) for 2 turns."
+valign = 1
+autowrap = true
+
+[node name="Description2" type="Label" parent="Talents/DP_Warm/ActiveSkills/VBoxContainer/StopTheArtist"]
+margin_left = 16.0
+margin_top = 64.0
+margin_right = 848.0
+margin_bottom = 104.0
+custom_fonts/font = ExtResource( 3 )
+text = "(Damage Type: Yellow; +2 EN; CD: 3 turns)"
+valign = 2
+autowrap = true
+
+[node name="ProtectionOfTheArt" type="NinePatchRect" parent="Talents/DP_Warm/ActiveSkills/VBoxContainer"]
+margin_right = 872.0
+margin_bottom = 192.0
+rect_min_size = Vector2( 872, 192 )
+texture = ExtResource( 1 )
+patch_margin_left = 15
+patch_margin_top = 15
+patch_margin_right = 15
+patch_margin_bottom = 15
+
+[node name="Name" type="Label" parent="Talents/DP_Warm/ActiveSkills/VBoxContainer/ProtectionOfTheArt"]
+margin_left = 16.0
+margin_top = 8.0
+margin_right = 56.0
+margin_bottom = 72.0
+text = "Protection of the Art"
+
+[node name="Description" type="Label" parent="Talents/DP_Warm/ActiveSkills/VBoxContainer/ProtectionOfTheArt"]
+margin_left = 16.0
+margin_top = 112.0
+margin_right = 856.0
+margin_bottom = 180.0
+custom_fonts/font = ExtResource( 3 )
+text = "If there is no Protection of the Art, Dancing Painting gives all allies(including itself) Protection of the Art increasing their DEF by 5 for 2 turns."
+valign = 1
+autowrap = true
+
+[node name="Description2" type="Label" parent="Talents/DP_Warm/ActiveSkills/VBoxContainer/ProtectionOfTheArt"]
+margin_left = 16.0
+margin_top = 64.0
+margin_right = 848.0
+margin_bottom = 104.0
+custom_fonts/font = ExtResource( 3 )
+text = "(Buff; +2 EN; CD: 3 turns)"
+valign = 2
+autowrap = true
+
+[node name="ClearMind" type="NinePatchRect" parent="Talents/DP_Warm/ActiveSkills/VBoxContainer"]
+margin_top = 196.0
+margin_right = 872.0
+margin_bottom = 356.0
+rect_min_size = Vector2( 872, 160 )
+texture = ExtResource( 1 )
+patch_margin_left = 15
+patch_margin_top = 15
+patch_margin_right = 15
+patch_margin_bottom = 15
+
+[node name="Name" type="Label" parent="Talents/DP_Warm/ActiveSkills/VBoxContainer/ClearMind"]
+margin_left = 16.0
+margin_top = 8.0
+margin_right = 56.0
+margin_bottom = 72.0
+text = "Clear Mind"
+
+[node name="Description" type="Label" parent="Talents/DP_Warm/ActiveSkills/VBoxContainer/ClearMind"]
+margin_left = 16.0
+margin_top = 112.0
+margin_right = 856.0
+margin_bottom = 152.0
+custom_fonts/font = ExtResource( 3 )
+text = "Dancing Painting's RES +20."
+autowrap = true
+
+[node name="Description2" type="Label" parent="Talents/DP_Warm/ActiveSkills/VBoxContainer/ClearMind"]
+margin_left = 16.0
+margin_top = 64.0
+margin_right = 376.0
+margin_bottom = 104.0
+custom_fonts/font = ExtResource( 3 )
+text = "(Passive)"
+valign = 2
+autowrap = true
+
+[node name="Ultimate" type="NinePatchRect" parent="Talents/DP_Warm/ActiveSkills/VBoxContainer"]
+margin_top = 360.0
+margin_right = 872.0
+margin_bottom = 552.0
+rect_min_size = Vector2( 512, 192 )
+texture = ExtResource( 1 )
+patch_margin_left = 15
+patch_margin_top = 15
+patch_margin_right = 15
+patch_margin_bottom = 15
+
+[node name="Name" type="Label" parent="Talents/DP_Warm/ActiveSkills/VBoxContainer/Ultimate"]
+margin_left = 16.0
+margin_top = 8.0
+margin_right = 56.0
+margin_bottom = 72.0
+text = "Ultimate: Scorching Heat"
+
+[node name="Description" type="Label" parent="Talents/DP_Warm/ActiveSkills/VBoxContainer/Ultimate"]
+margin_left = 16.0
+margin_top = 100.0
+margin_right = 856.0
+margin_bottom = 167.0
+custom_fonts/font = ExtResource( 3 )
+text = "Dancing Painting restores HP of all alies to the Maximum and increases their ATK by 10 for 3 turns."
+valign = 1
+autowrap = true
+
+[node name="Description2" type="Label" parent="Talents/DP_Warm/ActiveSkills/VBoxContainer/Ultimate"]
+margin_left = 16.0
+margin_top = 60.0
+margin_right = 376.0
+margin_bottom = 100.0
+custom_fonts/font = ExtResource( 3 )
+text = "(Buff; Heal; EN COST: 10)"
+valign = 2
+autowrap = true
+
+[connection signal="pressed" from="INFO" to="." method="_on_INFO_pressed"]
+[connection signal="pressed" from="TALENTS" to="." method="_on_TALENTS_pressed"]
+[connection signal="pressed" from="DownUI/Close" to="." method="_on_Close_pressed"]

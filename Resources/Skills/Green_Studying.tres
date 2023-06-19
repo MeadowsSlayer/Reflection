@@ -1,0 +1,15 @@
+[gd_resource type="Resource" load_steps=2 format=2]
+
+[ext_resource path="res://Scripts/Skills/SkillResource.gd" type="Script" id=1]
+
+[resource]
+script = ExtResource( 1 )
+color = "Green"
+CD = 7
+actions = 2
+description = "GREEN_STUDYING"
+skill_name = "Studying"
+type = "self"
+icon = "res://Sprites/UI/Skills/Green/Green_Studying.png"
+en = 6
+skill_code = "Green_Studying"

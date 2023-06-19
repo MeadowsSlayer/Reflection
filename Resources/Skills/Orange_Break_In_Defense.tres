@@ -1,0 +1,15 @@
+[gd_resource type="Resource" load_steps=2 format=2]
+
+[ext_resource path="res://Scripts/Skills/SkillResource.gd" type="Script" id=1]
+
+[resource]
+script = ExtResource( 1 )
+color = "Orange"
+CD = 3
+actions = 1
+description = "ORANGE_BREAK_IN_DEFENSE"
+skill_name = "Break In Defense"
+type = "enemy"
+icon = "res://Sprites/UI/Skills/Orange/Orange_Break_In_Defense.png"
+en = 2
+skill_code = "Orange_Break_In_Defense"

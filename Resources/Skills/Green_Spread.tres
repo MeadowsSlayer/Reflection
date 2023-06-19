@@ -1,0 +1,15 @@
+[gd_resource type="Resource" load_steps=2 format=2]
+
+[ext_resource path="res://Scripts/Skills/SkillResource.gd" type="Script" id=1]
+
+[resource]
+script = ExtResource( 1 )
+color = "Green"
+CD = 3
+actions = 1
+description = "GREEN_SPREAD"
+skill_name = "Spread"
+type = "enemy"
+icon = "res://Sprites/UI/Skills/Green/Green_Spread.png"
+en = 2
+skill_code = "Green_Spread"

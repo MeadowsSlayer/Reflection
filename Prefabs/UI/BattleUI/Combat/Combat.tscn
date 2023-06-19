@@ -1,0 +1,39 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Resources/Shaders/Fire.tres" type="Material" id=1]
+
+[node name="Combat" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="ColorRect3" type="ColorRect" parent="."]
+margin_left = -53.0
+margin_top = -376.0
+margin_right = 2047.0
+margin_bottom = -27.0
+rect_rotation = 2.0
+color = Color( 0.0431373, 0.0431373, 0.0470588, 1 )
+
+[node name="ColorRect" type="ColorRect" parent="."]
+material = ExtResource( 1 )
+margin_left = 2048.0
+margin_top = 160.0
+margin_right = 4148.0
+margin_bottom = 343.0
+rect_rotation = 180.477
+
+[node name="ColorRect2" type="ColorRect" parent="."]
+margin_left = -91.8201
+margin_top = 992.0
+margin_right = 2008.18
+margin_bottom = 1341.0
+rect_rotation = 2.0
+color = Color( 0.0431373, 0.0431373, 0.0470588, 1 )
+
+[node name="ColorRect4" type="ColorRect" parent="."]
+material = ExtResource( 1 )
+margin_left = -96.0
+margin_top = 880.0
+margin_right = 2004.0
+margin_bottom = 1058.0
+rect_rotation = 2.0

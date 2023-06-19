@@ -1,0 +1,92 @@
+{
+	"events": [
+		{
+			"background": "res://Sprites/UI/Longe/Room/Lobby.png",
+			"event_id": "dialogic_021",
+			"fade_duration": 0.1
+		},
+		{
+			"animation": "[Default]",
+			"animation_length": 0,
+			"change_mirror_portrait": false,
+			"change_z_index": false,
+			"character": "character-1673695181.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"portrait": "SalimDissapointed",
+			"portrait_definition": "",
+			"position": {
+				"0": true,
+				"1": false,
+				"2": false,
+				"3": false,
+				"4": false
+			},
+			"type": 0,
+			"z_index": 0
+		},
+		{
+			"character": "character-1673695181.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Repeat_1"
+		},
+		{
+			"character": "character-1673695181.json",
+			"event_id": "dialogic_001",
+			"portrait": "SalimConfused",
+			"text": "Repeat_2"
+		},
+		{
+			"character": "character-1673695181.json",
+			"event_id": "dialogic_001",
+			"portrait": "SalimDissapointed",
+			"text": "Repeat_3"
+		},
+		{
+			"character": "character-1673695181.json",
+			"event_id": "dialogic_001",
+			"portrait": "SalimAngry",
+			"text": "Repeat_4"
+		},
+		{
+			"character": "character-1673695181.json",
+			"event_id": "dialogic_001",
+			"portrait": "SalimConfused",
+			"text": "Repeat_5"
+		},
+		{
+			"character": "character-1673695181.json",
+			"event_id": "dialogic_001",
+			"portrait": "SalimPositive",
+			"text": "Repeat_6"
+		},
+		{
+			"character": "character-1673695181.json",
+			"event_id": "dialogic_001",
+			"portrait": "SalimConfused",
+			"text": "Repeat_7\nRepeat_8"
+		},
+		{
+			"character": "character-1673695181.json",
+			"event_id": "dialogic_001",
+			"portrait": "SalimDissapointed",
+			"text": "...\nRepeat_9"
+		},
+		{
+			"character": "character-1673695181.json",
+			"event_id": "dialogic_001",
+			"portrait": "Default",
+			"text": "Repeat_10"
+		},
+		{
+			"event_id": "dialogic_022",
+			"transition_duration": 0.2
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.4.5",
+		"file": "timeline-1682021513.json",
+		"name": "Repeat"
+	}
+}

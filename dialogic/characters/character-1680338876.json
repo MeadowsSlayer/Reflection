@@ -1,0 +1,41 @@
+{
+	"color": "#ffed820f",
+	"description": "",
+	"display_name": "",
+	"display_name_bool": false,
+	"id": "character-1680338876.json",
+	"mirror_portraits": false,
+	"name": "Asya",
+	"nickname": "",
+	"nickname_bool": false,
+	"offset_x": 0,
+	"offset_y": 0,
+	"portraits": [
+		{
+			"name": "Default",
+			"path": "res://Sprites/Characters/Asiyat/AsyaDefault.png"
+		},
+		{
+			"name": "AsyaMad",
+			"path": "res://Sprites/Characters/Asiyat/AsyaMad.png"
+		},
+		{
+			"name": "AsyaHappy",
+			"path": "res://Sprites/Characters/Asiyat/AsyaHappy.png"
+		},
+		{
+			"name": "AsyaDissapointed",
+			"path": "res://Sprites/Characters/Asiyat/AsyaDissapointed.png"
+		},
+		{
+			"name": "AsyaAngry",
+			"path": "res://Sprites/Characters/Asiyat/AsyaAngry.png"
+		},
+		{
+			"name": "AsyaAnnoyed",
+			"path": "res://Sprites/Characters/Asiyat/AsyaAnnoyed.png"
+		}
+	],
+	"scale": 40,
+	"theme": "theme-1680339244.cfg"
+}

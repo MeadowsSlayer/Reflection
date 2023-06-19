@@ -1,0 +1,1226 @@
+,en,ru
+New Game,New Game,Новая Игра
+Load Save,Load Save,Загрузить
+Settings,Settings,Настройки
+Credits,Credits,Авторы
+Exit,Exit,Выйти
+REFLECTION,REFLECTION,РЕФЛЕКСИЯ
+Volume,Volume,Громкость
+Controls,Controls,Управленние
+Language,Language,Язык
+Back,Back,Назад
+Delete,Delete,Удалить
+Start Game,Start Game,Начать Игру
+Credits,Credits,Создатели
+Confirm,Confirm,Подтвердить
+Difficulty,Difficuty,Сложность
+Easy,Easy,Легкая
+Normal,Normal,Средняя
+Hard,Hard,Сложная
+Start,Start,Начать
+(Empty Save Slot),(Empty Save Slot),(Пустой Слот Сохранения)
+Save Slots,Save Slots,Слоты Сохранения
+(Empty),(Empty),(Пусто)
+Slot 1,Slot 1,Слот 1
+Slot 2,Slot 2,Слот 2
+Slot 3,Slot 3,Слот 3
+Cancel,Cancel,Отмена
+Target,Target,Прицеливание
+Info,Info,Подробнее
+Accept,Accept,Принять
+Choose,Choose,Выбрать
+Salim,Salim,Салим
+Asiyat,Asiyat,Асият
+Maksud,Maksud,Максуд
+Observer,Observer,Наблюдатель
+Host,Host,Заведующий
+Guard,Guard,Страж
+Gatekeeper,Gatekeeper,Привратник
+Orange,Orange,Оранжевые
+Green,Green,Зеленые
+Red,Red,Красные
+Blue,Blue,Синие
+Purple,Purple,Фиолетовые
+Yellow,Yellow,Желтые
+All,All,Все
+White,White,Белые
+Orange Skill,Orange Skill,Оранжевый Навык
+Green Skill,Green Skill,Зеленый Навык
+Red Skill,Red Skill,Красный Навык
+Blue Skill,Blue Skill,Синий Навык
+Purple Skill,Purple Skill,Фиолетовый Навык
+Yellow Skill,Yellow Skill,Желтый Навык
+White Skill,White Skill,Белый Навык
+" turns"," turns"," ходов"
+///////////////////////////STATUS EFFECTS////////////////////////////////,.,.
+Status Effects,Status Effects,Эффекты Статуса
+Fragile,Fragile,Уязвимость
+Spread,Spread,Разрастание
+Weakness Coverage,Weakness Coverage,Прикрытие Слабостей
+Mental Fortress,Mental Fortress,Ментальная Крепость
+Blind,Blindness,Слепота
+Empowerment,Empowerment,Усиление
+Exhaustion,Exhaustion,Истощение
+Sleep,Sleep,Сон
+SPREAD,"Spread: Critical Rate increased by X% against enemies marked by Spread. Effect is doubled if the attack is green","Разрастание: Шанс Крита против врагов, отмеченных Разрастанием увеличен на Х%. Эффект удваивается если атака зеленая."
+FRAGILE,"Fragile: Fragile creature takes X% more damage.","Уязвимость: Уязвимое существо получает на Х% больше урона."
+EMPOWERMENT,"Empowerment: Empowered creature deals X% more damage.","Усиление: Усиленное существо наносит на Х% больше урона."
+BLINDNESS,"Blindness: Blinded creature's AVO is decreased by X and while it's Blinded it has X more chance to miss an attack.","Слепота: Вероятность промаха цели и вероятность попадания по цели увеличиваются на Х%."
+EXHAUSTION,"Exhaustion: Exhausted creature looses X EN and takes X*5 blue damage at the start of every turn after what Exhaustion is lowered by 1.","Истощение: Цель теряет Х энергии и получает Х * 5 синего урона в начале каждого хода, после чего Истощение снижается на 1."
+SLEEP,"Sleep: Sleeping creature can't act. Attacks against sleeping creature always hit, but wake up the creature.","Сон: Спящее существо не может действовать. Атаки по спящему существу всегда попадают, но в таком случае существо просыпается."
+BIND,"Bind: Creature's hit probability is lowered by X and its SPD is reduced by a third.","Связывание: Вероятность попадания существа снижается на Х и SPD уменьшается на треть."
+ACHES,"Aches: Creature deals X% less damage.","Ломота: Существо наносит на Х% меньше урона."
+SILENCE,"Silence: Creature can't use abilities and it's passive abilities and bonuses from abilities are inactive unless it's stated otherwise.","Молчание: Существо не может использовать навыки и его пассивные навыки и бонусы от навыков не работают, если не указано иначе."
+CLOSURE,"Closure: Creature can't gain additional actions and its SPD is reduced by X(can't go below 1).","Замыкание: Существо не может получать дополнительные действия и его SPD понижается на Х(не ниже 1)."
+MIASMA,"Miasma: Creature's RES is reduced by X.","Миазма: RES существа понижено на Х."
+HASTE,"Haste: Creature's SPD is increased by X. If the creature is Salim - active abilities' CD is reduced by Y.","Ускорение: SPD существа увеличено на Х. Если существо Салим - откат всех его активных навыков сокращается на Y."
+EASY_DIFFICULTY,"Enemies are easier to defeat and game more easy to clear the more you play. Suitable for players that want to see the whole story first.","Врагов проще победить и сложность игры понижается чем дольше вы играете. Подходит для игроков, которые хотят увидеть всю историю быстрее."
+NORMAL_DIFFICULTY,"Normal difficulty that allows to experience the story normally and play game at mid speed. Not too fast, not too painful.","Средняя сложность, которая позволяет прогрессировать по истории нормально и проходить игру на средней скорости. Не слишком быстро, не слишком болезненно."
+HARD_DIFFICULTY,"Welcome to Hell. You only have yourself to blame.","Добро пожаловать в Ад. Вы сами виноваты в этом."
+///////////////////////////INFO UI////////////////////////////////,.,.
+"When shield takes damage restore 1 EN for every 10 damage.","When shield takes damage restore 1 EN for every 10 damage.","Когда щит получает урон за каждые 10 урона получите +1 EN."
+BLOOD_MOON_STATUS_1,"Salim can't miss and his attacks ignore 10% DEF.","Салим не может промахнуться и его атаки игнорируют 10% DEF."
+BLOOD_MOON_STATUS_2,"Salim can't miss and his attacks ignore 20% DEF.","Салим не может промахнуться и его атаки игнорируют 20% DEF."
+BLOOD_MOON_STATUS_3,"Salim can't miss and his attacks ignore 30% DEF.","Салим не может промахнуться и его атаки игнорируют 30% DEF."
+BLOOD_MOON_STATUS_4,"Salim can't miss and his attacks ignore 40% DEF.","Салим не может промахнуться и его атаки игнорируют 40% DEF."
+BLOOD_MOON_STATUS_5,"Salim can't miss and his attacks ignore 50% DEF.","Салим не может промахнуться и его атаки игнорируют 50% DEF."
+DURATION_1,"Duration: 1 turn","Длительность: 1 ход"
+DURATION_2,"Duration: 2 turns","Длительность: 2 хода"
+DURATION_3,"Duration: 3 turns","Длительность: 3 хода"
+DURATION_4,"Duration: 4 turns","Длительность: 4 хода"
+DURATION_5,"Duration: 5 turns","Длительность: 5 ходов"
+DURATION_6,"Duration: 6 turns","Длительность: 6 ходов"
+DURATION_7,"Duration: 7 turns","Длительность: 7 ходов"
+DURATION_8,"Duration: 8 turns","Длительность: 8 ходов"
+DURATION_9,"Duration: 9 turns","Длительность: 9 ходов"
+DURATION_10,"Duration: 10 turns","Длительность: 10 ходов"
+DURATION_11,"Duration: 11 turns","Длительность: 11 ходов"
+DURATION_12,"Duration: 12 turns","Длительность: 12 ходов"
+DURATION_13,"Duration: 13 turns","Длительность: 13 ходов"
+DURATION_14,"Duration: 14 turns","Длительность: 14 ходов"
+DURATION_15,"Duration: 15 turns","Длительность: 15 ходов"
+///////////////////////////UPGRADES////////////////////////////////,.,.
+Upgrades,Upgrades,Улучшения
+Reach Upgrades LVL 10 to unlock,Reach Upgrades LVL 10 to unlock,"Достигните 10го уровня Улучшений, чтобы раскрыть"
+Reach Upgrades LVL 25 to unlock,Reach Upgrades LVL 25 to unlock,"Достигните 25го уровня Улучшений, чтобы раскрыть"
+Sleep With A Baseball Bat,Sleep With A Baseball Bat,Sleep With A Baseball Bat
+SWABB_DESCRIPTION,"Normal attacks deal +10% damage.","Обычные атаки наносят на 10% больше урона."
+Health Insurance,Health Insurance,Медицинская Страховка
+HEALTH_INSURANCE_DESCRIPTION,"Max HP +10.","Максимальное ХП +10."
+Poise For Actions,Poise For Actions,Призыв к Действиям
+POISE_FOR_ACTIONS_DESCRIPTION,"Number of actions per turn +1.","Число действий в ход +1."
+Sticker's Bag,Sticker's Bag,Сумка Для Стикеров
+STICKERS_BAG_DESCRIPTION,"Start runs with 20 more stickers.","Начинайте забег с +20 стикерами."
+Death Evasion,Death Evasion,Избегание Смерти
+DEATH_EVASION_DESCRIPTION,"Gain +1 Death Evasion at the start of each run. Each Death Evasion is used to restore your HP when it reaches 0, allowing you to continue fighting.","Получите +1 Избегание Смерти. Каждое Избегание Смерти тратится, чтобы восстановить ваше ХП, когда оно падает до 0, позволяя сражаться дальше."
+Regular Customer,Regular Customer,Постоянный Покупатель
+REGULAR_CUSTOMER_DESCRIPTION,"1 more item is up to sale in the Shop.","В Магазине продает на 1 предмет больше."
+Colorful Beats,Colorful Beats,Красочные Ритмы
+COLORFUL_BEATS_DESCRIPTION,"Deal +2% damage for each skill of different color brought to fight.","Наносите на 2% больше урона за каждый навык разного цвета, взятый в бой."
+Fate Changer,Fate Changer,Хозяин Судьбы
+FATE_CHANGER_DESCRIPTION,"You can reroll skills when selecting them as a rewards or from the Shop 1 more time.","Вы можете перебрасывать навыки, когда выбираете их как награду или в Магазине, на 1 раз больше."
+Navigator,Navigator,Навигатор
+NAVIGATOR_DESCRIPTION,"You can reroll room rewards 1 more time.","Вы можете перебрасывать награды комнат на 1 раз больше."
+Tough,Tough,Крепкий
+TOUGH_DESCRIPTION,"Number of Resistances +1.","Количество Сопротивлений +1."
+///////////////////////////START ITEMS////////////////////////////////,.,.
+thorns_NAME,Thorns,Шипы
+thorns_DESCRIPTION,"ATK +5","ATK +5"
+THORNS_DESCRIPTION,"ATK +5","ATK +5"
+thorns_LORE,"A spiked wire looking like thorns, left here by someone. Looks like it was made in hurry. Great for wrapping around a bat, although it doesn't look very safe for the user.","Проволока с шипами, оставленная здесь кем-то. Судя по всему была создана на коленке из частей местной техники. Отлично подходит для обматывания вокруг биты, хотя ощущается не очень безопасной для пользования."
+favoriteshirt_NAME,Favorite Shirt,Любимая Рубашка
+favoriteshirt_DESCRIPTION,"END +5","END +5"
+FAVORITE_SHIRT_DESCRIPTION,"END +5","END +5"
+favoriteshirt_LORE,"'Mom, what's the package on my bed?'\n'It's our gift for you, look!'\nInside there was just one T-shirt, that looked silly and old-fashioned, with the words 'BEST SON' written on it. After looking at it kid happily ran to hug his parents.\n'I'm gonna wear it always-always!'\n---\n'How did it get here?'","'Мам, что у меня на кровати за пакет?'\n'Это наш подарок для тебя, посмотри!'\nВнутри была лишь одна футболка, что выглядела очень старомодной и глупой, с надписью 'ЛУЧШИЙ СЫН'. Рассмотрев ее, мальчик обрадовался и подбежал обнять своих родителей.\n'Я буду всегда-всегда носить ее!'\n---\n'Как она оказалась здесь?'"
+comfortableshoes_NAME,Comfortable Shoes,Удобные Ботинки
+comfortableshoes_DESCRIPTION,"SPD +10","SPD +10"
+COMFORTABLE_SHOES_DESCRIPTION,"SPD +10","SPD +10"
+comfortableshoes_LORE,"These sneakers are very comfortable and fit perfectly on the wearer's foot.\n---\n'Can I wear them?'\n'For Musa's wedding? No, wear proper shoes.'\n---\n'I'm going to wear these shoes.'\n'To prom? Not that I really mind...'\n---\n'I think it's time for you to change your shoes, these are already old and it's winter...'\n'But I'm comfortable in them! I can walk in them for another year!'\n'Just yesterday you slipped because of their soles...'\n---\nUnfortunately, we often have to sacrifice the comfort of shoes for the sake of the situation...","Эти кроссовки очень удобные и идеально подходят на ногу своего владельца.\n---\n'Можно я надену их?'\n'На свадьбу Мусы? Нет, надень нормальные ботинки.'\n---\n'Я собираюсь пойти в этих кроссовках.'\n'На выпускной? Не то чтобы я сильно против...'\n---\n'Мне кажется тебе пора сменить обувь, эта уже старая и сейчас зима...'\n'Но мне удобно в них! Я могу проходить в них еще год!'\n'Ты буквально вчера подскользнулся из-за подошвы у них...'\n---\nК сожалению, нам часто приходится жертвовать удобством обуви в угоду ситуации..."
+helmet_NAME,Helmet,Каска
+helmet_DESCRIPTION_UNLOCK,"How to obtain: Create 3 shields in one battle.","Как получить: Создайте 3 щита в одном бою."
+helmet_DESCRIPTION,"DEF +10","DEF +10"
+HELMET_DESCRIPTION,"DEF +10","DEF +10"
+helmet_LORE,"Ordinary helmet for motorcyclists. There are no secrets around it, it has no history. At least it protects the head from blows.","Обычный шлем для мотоциклистов. Вокруг него нет тайн, у него нет истории. По крайней мере он защищает голову от ударов."
+glasses_NAME,Glasses,Очки
+glasses_DESCRIPTION_UNLOCK,"How to obtain: Score 3 critical hits in one battle.","Способ получения: Нанесите 3 критических удара за один бой."
+glasses_DESCRIPTION,"SEN +10","SEN +10"
+GLASSES_DESCRIPTION,"SEN +10","SEN +10"
+glasses_LORE,"For the bullies it's easier to choose the weak as targets. Especially if you can take off their glasses - they won't even see you. When they learned about it, two guys decided to wear fake glasses to school as a solidarity with their friend.\nIn the end to stop the bullying they had to choose more violent methods, but at the very least their friend was happy with a support. The fake glasses remained as another token of their friendship.","Для задир удобн выбирать целью тех, кто не может ответить им. Особенно, если забрать их очки - они не увидят тебя. Узнав об этом, в знак солидарности со своей подругой, два парня начали ходить в школу в очках с обычными стеклами.\nВ конечном итоге им все равно пришлось прибегнуть к насилию для прекращения буллинга, но по крайней мере их подруга была рада их поддержке. Очки так и остались как еще один знак их дружбы."
+cup_NAME,Cup,Кубок
+cup_DESCRIPTION_UNLOCK,"How to obtain: Use 3 ultimates in one battle.","Способ получения: Используйте 3 ультимейта за один бой."
+cup_DESCRIPTION,"ENR +10","ENR +10"
+CUP_DESCRIPTION,"ENR +10","ENR +10"
+cup_LORE,"One guy very much loved going to exhibitions with his friends and looking at relics of the past. Only one listed relic was not brought to the exhibition - the old Grail, bought more than a thousand years ago by one of the khans.\nThe guy never saw that cup in person, so his friends made a replica of the cup from papier-mâché. Although the paper does not shine, and the cup is not a thousand years old, he carefully keeps it to this day and treasures it above all of his treasures.","Один парень очень любил ходить по выставкам со своими друзьями и рассматривать реликвии прошлого. Лишь одну обещанную реликвию не привезли на выставку - старый Грааль, выкупленный более тысячи лет назад одним из ханов.\nПарень так никогда и не увидел тот кубок вживую, поэтому его друзья сделали реплику кубка из папье-маше. Пускай бумага не сияет, и кубку не тысяча лет, он по сей день бережно хранит его и ценит больше всех сокровищ."
+notebook_NAME,Notebook,Блокнот
+notebook_DESCRIPTION_UNLOCK,"How to obtain: Spend a total of 300 stickers among runs.","Способ получения: Потратьте в общем 300 стикеров во время забегов."
+notebook_DESCRIPTION,"Number of stickers at the start of the run +100.","Стартовое число стикеров при начале забега +100."
+NOTEBOOK_DESCRIPTION,"Number of stickers at the start of the run +100.","Стартовое число стикеров при начале забега +100."
+notebook_LORE,"The young man carefully sews the sheets together, straightens them and checks the thread. For two days now, he has been working on this notebook, slowly working through each step of its creation to make it perfect. In the end, the notebook, hand-made from the cover to the sheets, was ready. Although the guy wasn't happy with the result, the deadline had already come up.\n'I'm not sure how good it is, but... Happy Birthday!'\n'Thanks! I really like it, don't be too harsh on yourself!'\nThe birthday girl took the notebook and stick one of her stickers to it.\nEven after all those years he couldn't forget the result of his suffering.","Молодой человек аккуратно сшивает листы вместе, выпрямляет их и проверяет ход нити. Уже два дня, он работает над этим блокнотом, медленно выполняя каждый шаг его создания, чтобы он получился идеальным. В конце концов, блокнот, сделанный на коленке от обложки до листов, был готов. Хоть парень и не был доволен результатом, крайний срок уже подошел.\n'Я не уверен, насколько он хорошо вышел, но... С днем рождения!'\n'Спасибо! Мне очень нравится, не наговаривай на себя!'\nИменинница взяла блокнот и налепила туда подаренный ей стикер.\nДаже спустя столько лет, он не смог забыть результат своих страданий."
+bottleofblood_NAME,Bottle Of Blood,Бутылек Крови
+bottleofblood_DESCRIPTION_UNLOCK,"How to obtain: Learn all red skills.","Способ получения: Выучите все красные навыки."
+bottleofblood_DESCRIPTION,"Chance of rooms with red skills appearing increses.\nWhen getting a red skill, its starting level is 2.","Шанс появления комнат с красными навыками увеличен.\nКогда вы получаете красные навыки, они изначально второго уровня."
+BOTTLE_OF_BLOOD_DESCRIPTION,"Chance of rooms with red skills appearing increses.\nWhen getting a red skill, its starting level is 2.","Шанс появления комнат с красными навыками увеличен.\nКогда вы получаете красные навыки, они изначально второго уровня."
+bottleofblood_LORE,"'Come on, it's just a blood test. Don't be afraid.'\n'But they'll suck all my blood!'\n'No, they'll only take a little, it won't hurt.'\n'You say that because they hypnotized you, I saw it on TV , vampires can do that!'\n'...'\nFor the next half hour, the poor woman had to explain to her little son that there were definitely no vampires at the local clinic.","'Ну же, это просто сдача крови для анализов. Не бойся.'\n'Но они высосут всю мою кровь!'\n'Нет, они возьмут совсем чуть-чуть, это не будет больно.'\n'Ты так говоришь, потому что они загипнотизировали тебя, я видел по телевизору, вампиры могут так делать!'\n'...'\nВ течение следующего получаса, бедной женщине пришлось объяснять своему маленькому сыну, что в местной поликлинике точно нет вампиров."
+pieceofshield_NAME,Piece Of Shield,Обломок Щита
+pieceofsield_DESCRIPTION_UNLOCK,"How to obtain: Learn all orange skills.","Способ получения: Выучите все оранжевые навыки."
+pieceofsield_DESCRIPTION,"Chance of rooms with orange skills appearing increses.\nWhen getting a orange skill, its starting level is 2.","Шанс появления комнат с оранжевыми навыками увеличен.\nКогда вы получаете оранжевые навыки, они изначально второго уровня."
+PIECE_OF_SHIELD_DESCRIPTION,"Chance of rooms with orange skills appearing increses.\nWhen getting a orange skill, its starting level is 2.","Шанс появления комнат с оранжевыми навыками увеличен.\nКогда вы получаете оранжевые навыки, они изначально второго уровня."
+pieceofsield_LORE,"A piece of an old broken shield. The ornament on it vaguely recalls the story of the ancient king and his knights, which one boy liked so much in the past. He even had a toy that looked like a shield...\n...\nIt turns out that if you take this shard in your hands, you can understand that it is made of plastic...","Кусок от старинного сломанного щита. Орнамент на нем смутно напоминает об истории про древнего короля и его рыцарей, которые так нравились одному мальчику в прошлом. У него даже была игрушка, похожая на щит...\n...\nОказывается, если взять этот осколок в руки, можно понять, что он из пластика..."
+bottledlightnings_NAME,Bottled Lightnings,Бутылированные Молнии
+bottledlightnings_DESCRIPTION_UNLOCK,"How to obtain: Learn all yellow skills.","Способ получения: Выучите все желтые навыки."
+bottledlightnings_DESCRIPTION,"Chance of rooms with yellow skills appearing increses.\nWhen getting a yellow skill, its starting level is 2.","Шанс появления комнат с красными навыками увеличен.\nКогда вы получаете красные навыки, они изначально второго уровня."
+BOTTLED_LIGHTNINGS_DESCRIPTION,"Chance of rooms with yellow skills appearing increses.\nWhen getting a yellow skill, its starting level is 2.","Шанс появления комнат с красными навыками увеличен.\nКогда вы получаете красные навыки, они изначально второго уровня."
+bottledlightnings_LORE,"Legends tell a lot about gods who could call lightning. Makes you wonder if they lived now, would they collect bottled lightning like the ships they sank?","Легенды рассказывают много о богах, которые могли призывать молнии. Интересно, если бы они жили сейчас, коллекционировали бы они молнии в бутылках подобно кораблям, что они топили?"
+sprout_NAME,Sprout,Росток
+sprout_DESCRIPTION_UNLOCK,"How to obtain: Learn all green skills.","Способ получения: Выучите все зеленые навыки."
+sprout_DESCRIPTION,"Chance of rooms with green skills appearing increses.\nWhen getting a green skill, its starting level is 2.","Шанс появления комнат с зелеными навыками увеличен.\nКогда вы получаете зеленые навыки, они изначально второго уровня."
+SPROUT_DESCRIPTION,"Chance of rooms with green skills appearing increses.\nWhen getting a green skill, its starting level is 2.","Шанс появления комнат с зелеными навыками увеличен.\nКогда вы получаете зеленые навыки, они изначально второго уровня."
+sprout_LORE,"The young guy had a burning desire to grow flowers. A noble undertaking, which, unfortunately, did not guarantee success. He took an orchid home to test himself. Unfortunately, the orchid never bloomed, dying two weeks later. Since then, the young man has kept only one cactus in his room.","Молодой парень загорелся желанием разводить цветы. Благородная затея, которая, к сожалению, не гарантировала успешность. Он взял на дом орхидею дабы испытать себя. К сожалению, орхидея так и не зацвела, погибнув спустя две недели. С тех самых пор молодой человек держит у себя в комнате только один кактус."
+umbrella_DESCRIPTION_UNLOCK,"How to obtain: Learn all blue skills.","Способ получения: Выучите все синие навыки."
+umbrella_DESCRIPTION,"Chance of rooms with blue skills appearing increses.\nWhen getting a blue skill, its starting level is 2.","Шанс появления комнат с синими навыками увеличен.\nКогда вы получаете синие навыки, они изначально второго уровня."
+UMBRELLA_DESCRIPTION,"Chance of rooms with blue skills appearing increses.\nWhen getting a blue skill, its starting level is 2.","Шанс появления комнат с синими навыками увеличен.\nКогда вы получаете синие навыки, они изначально второго уровня."
+umbrella_LORE,"'Do you have an umbrella?'\n'Of course I have an umbrella, how else am I going to walk in the rain?'\n'But an umbrella is not manly! That's what my parents tell me...'\n'And you think I'm less manly because I carry an umbrella?'\n'...no...'\n'Don't be silly then... Oh, it started to rain like according to the forecast. Hold on, it takes longer for you to get home.'\n'But it's yours...'\n'Yes, so I'm giving it to you. So you will have at least one umbrella! Or do you want me to walk you home with him?'\n'N-No! Thank you Maksud...'\n'Hehe~ You're welcome!'","'У тебя есть зонт?'\n'Конечно у меня есть зонт, как иначе я буду ходить в дождь?'\n'Но зонт это не мужественно! Мне так родители говорят...'\n'И ты считаешь меня менее мужественным потому что я хожу с зонтом?'\n'...нет...'\n'Тогда не глупи... О, дождь начался как по прогнозу. Держи, тебе дольше идти до дома.'\n'Но он твой...'\n'Да, поэтому я отдаю его тебе. Так у тебя будет хоть один зонт! Или хочешь, чтобы я проводил тебя до дома с ним?'\n'Д-Нет! Спасибо, Максуд...'\n'Хе-хе~ Всегда пожалуйста!'"
+violet_NAME,Violet,Фиалка
+violet_DESCRIPTION_UNLOCK,"How to obtain: Learn all purple skills.","Способ получения: Выучите все фиолетовые навыки."
+violet_DESCRIPTION,"Chance of rooms with purple skills appearing increses.\nWhen getting a purple skill, its starting level is 2.","Шанс появления комнат с фиолетовыми навыками увеличен.\nКогда вы получаете фиолетовые навыки, они изначально второго уровня."
+VIOLET_DESCRIPTION,"Chance of rooms with purple skills appearing increses.\nWhen getting a purple skill, its starting level is 2.","Шанс появления комнат с фиолетовыми навыками увеличен.\nКогда вы получаете фиолетовые навыки, они изначально второго уровня."
+violet_LORE,"Roses are red,\nViolets are blue,\nThis flower is whole,\nAnd so will be you.","Красный - цвет роз,\nСиний - фиалок.\nБудешь ты цельным,\nСловно сей цветок."
+photographicfilm_NAME,Photographic Film,Фотопленка
+photographicfilm_DESCRIPTION_UNLOCK,"How to obtain: Use a total of 100 actions among runs.","Способ получения: Используйте в общем 100 действий во время забегов."
+photographicfilm_DESCRIPTION,"Number of actions per turn +2.","Количество действий в ход +2."
+PHOTOGRAPHIC_FILM_DESCRIPTION,"Number of actions per turn +2.","Количество действий в ход +2."
+photographicfilm_LORE,"It looks like an ordinary film, but if you look closely, you can see that something is wrong. Each next frame on it is more and more different from the previous one. With each frame, the face of one guy in the photo becomes more and more blurred until it turns into an incomprehensible mass of colors. And then it becomes empty. Like the film itself, on which only he remains, looking into nowhere and at the same time seeing everything.","С виду обычная фотопленка, но если присмотреться, то можно заметить, что что-то не так. Каждый следующий кадр на ней все сильнее отличается от предыдущего. С каждым кадром, лицо одного парня на фото становится все более и более размытым, пока не превращается в непонятную массу красок. И после, оно становится пустым. Как и сама пленка, на которой остается только он, смотрящий вникуда и одновременно видящий все."
+///////////////////////////ITEMS////////////////////////////////,.,.
+Common Items,Common Items,Обычные Предметы
+Stationery Knife,Stationery Knife,Канцелярский Ножик
+STATIONERY_KNIFE_DESCRIPTION,"Gain 20% more stickers after fights.","Вы получаете на 20% больше стикеров после боев."
+Heart Pin,Heart Pin,Пин с Сердечком
+HEART_PIN_DESCRIPTION,"For each 10 stickers gained through the current run increase Max HP by 5.","За каждые 10 стикеров, полученных за этот забег, Максимум ХП увеличивается на 5."
+Bottle Of Water,Bottle Of Water,Бутылка Воды
+BOTTLE_OF_WATER_DESCRIPTION,"At the start of the fight restore 7 EN.","В начале боя вы восстанавливаете 7 EN."
+Thermos,Thermos,Термос
+THERMOS_DESCRIPTION,"At the start of your turn you restore 10 HP.","В начале своего хода вы восстанавливаете 10 ХП."
+Energy Drink,Energy Drink,Энергетический напиток
+ENERGY_DRINK_DESCRIPTION,"At the start of your turn you restore 1 EN.","В начале своего хода вы восстанавливаете 1 EN."
+Bottle Of Acid,Bottle Of Acid,Склянка с Кислотой
+BOTTLE_OF_ACID_DESCRIPTION,"All enemies' DEF -5%.","DEF -5% у всех врагов."
+Toy Hammer,Toy Hammer,Игрушечный Молоток
+TOY_HAMMER_DESCRIPTION,"All enemies' ATK -5%.","ATK -5% у всех врагов."
+Nails,Nails,Гвозди
+NAILS_DESCRIPTION,"Normal attacks deal 20% more damage.","Обычные атаки наносят на 20% больше урона."
+Needle,Needle,Игла
+NEEDLE_DESCRIPTION,"When inflicting Exhaustion, inflict 1 more stack.","Когда вы накладываете Истощение, наложите на 1 Истощение больше."
+Shocker,Shocker,Шокер
+SHOCKER_DESCRIPTION,"Each stack of Exhaustion deals 1 more damage.","Каждая единица истощения наносит на 1 больше урона."
+Blood Pact,Blood Pact,Кровавый Пакт
+BLOOD_PACT_DESCRIPTION,"Your Max HP is reduces by 30.","Ваш Максимум ХП уменьшен на 30"
+Bottle of Paints,Bottle Of Paints,Бутылек с Красками
+BOTTLE_OF_PAINTS_DESCRIPTION,"Your Max HP is increases by 30. Immediately gain 50 stickers.\nThis item cannot be sold.","Ваш Максимум ХП увеличен на 30. Сразу же получите 50 стикеров.\nДанный предмет нельзя продать."
+Herbalist Kit,Herbalist Kit,Набор Травника
+HERBALIST_KIT_DESCRIPTION,"Increases the healing effectiveness by 25%.","Повышает эффективность лечения на 25%."
+Uncommon Items,Uncommon Items,Необычные предметы
+Business Card,Business Card,Визитка
+BUSINESS_CARD_DESCRIPTION,"Gain 50% more stickers after fights.","Вы получаете на 20% больше стикеров после боев."
+Cat Pin,Cat Pin,Пин с Котиком
+CAT_PIN_DESCRIPTION,"For each 10 stickers gained through the current run increase SEN by 1.","За каждые 10 стикеров, полученных за этот забег, SEN увеличивается на 1."
+Hearts Pin,Hearts Pin,Пин с Сердечками
+HEARTS_PIN_DESCRIPTION,"For each 10 stickers gained through the current run increase Max HP by 15.","За каждые 10 стикеров, полученных за этот забег, Максимум ХП увеличивается на 15."
+Jiuce,Juice,Сок
+JUICE_DESCRIPTION,"At the start of the fight restore 12 EN.","В начале боя вы восстанавливаете 12 EN."
+Coffee,Coffee,Кофе
+COFFEE_DESCRIPTION,"At the start of your turn you restore 2 EN.","В начале своего хода вы восстанавливаете 2 EN."
+Magnifying Glass,Magnifying Glass,Увеличительное Стекло
+MAGNIFYING_GLASS_DESCRIPTION,"At the start of each turn you gain ATK +50%. This effect ends after you use normal attack, skill or ultimate.","В начале каждого хода вы получаете ATK +50%. Данный эффект оканчивается после того как вы испольуете обычную атаку, навык или ультимейт."
+Used Battery,Used Battery,Использованная Батарейка
+USED_BATTERY_DESCRIPTION,"Normal attacks restore 2 additional EN.","Обычные атаки восстанавливают дополнительно 2 EN."
+Saber,Saber,Сабля
+SABER_DESCRIPTION,"Normal attacks deal 40% more damage.","Обычные атаки наносят на 40% больше урона."
+Paper Ship,Paper Ship,Бумажный Кораблик
+PAPER_SHIP_DESCRIPTION,"All enemies' DEF -15%.","DEF -15% у всех врагов."
+Water Pistol,Water Pistol,Водный Пистолетик
+WATER_PISTOL_DESCRIPTION,"All enemies' ATK -15%.","ATK -15% у всех врагов."
+Alarm Clock,Alarm Clock,Будильник
+ALARM_CLOCK_DESCRIPTION,"At the start of its turn, sleeping creature takes 30 physical damage.","В начале своего хода спящее существо получает 30 физического урона."
+Mike,Mike,Микрофон
+MIKE_DESCRIPTION,"When inflicting Exhaustion, inflict 2 more stack.","Когда вы накладываете Истощение, наложите на 2 Истощение больше."
+Music Disc,Music Disc,Музыкальный Диск
+MUSIC_DISC_DESCRIPTION,"Blue skills restore 1 more EN.","Синие навыки восстанавливают на 1 EN больше."
+Root Of Despair,Root Of Despair,Корень Отчаяния
+ROOT_OF_DESPAIR_DESCRIPTION,"Enemies can't restore health.","Враги не могут восстанавливать здоровье."
+Paper Cranes,Paper Cranes,Бумажные Журавлики
+PAPER_CRANES_DESCRIPTION,"ATK, DEF and END increases by 1 for each room visited in this run.","ATK, DEF и END увеличиваются на 1 за каждый пройденный этаж в этом забеге."
+Bandages,Bandages,Бинты
+BANDAGES_DESCRIPTION,"Increases the healing effectiveness by 50%.","Повышает эффективность лечения на 50%."
+Fan,Fan,Веер
+FAN_DESCRIPTION,"Each time you dodge the attack, attacker takes 20 physical damage.","Каждый раз, когда вы уклоняетесь от атаки, атакующий получает 20 физического урона."
+Bloodstained Armor,Bloodstained Armon,Окровавленный Доспех
+BLOODSTAINED_ARMOR_DESCRIPTION,"END +5\nWhen your HP is below 50% of Max HP, ATK +5.","END +5\nКогда ваше ХП ниже 50% от Максимума ХП, АТК +5."
+Backpack,Backpack,Ранец
+BACKPACK_DESCRIPTION,"DEF +10\nWhen you attack, deal additional damage equal to 20% of your DEF.","DEF +10\nКогда вы атакуете, вы наносите дополнительный урон, равный 20% от вашего DEF."
+Hands Pin,Hands Pin,Пин с Руками
+HANDS_PIN_DESCRIPTION,"For each 10 stickers gained through the current run increase SEN by 3.","За каждые 10 стикеров, полученных за этот забег, SEN увеличивается на 3."
+Coupon For Hugs,Coupon For Hugs,Купон на Обнимашки
+COUPON_FOR_HUGS_DESCRITION,"All goods in Shop cost 50% less stickers.","Все товары в магазине стоят на 50% дешевле."
+Pocket Watch,Pocket Watch,Карманные Часы
+POCKET_WATCH_DESCRIPTION,"At the start of each turn you gain ATK +100%. This effect ends after you use normal attack, skill or ultimate.","В начале каждого хода вы получаете ATK +100%. Данный эффект оканчивается после того как вы испольуете обычную атаку, навык или ультимейт."
+Cocktail,Cocktail,Коктейль
+COCKTAIL_DESCRIPTION,"At the start of your turn you restore 4 EN.","В начале своего хода вы восстанавливаете 4 EN."
+Battery,Battery,Аккамулятор
+BATTERY_DESCRIPTION,"Normal attacks restore 3 additional EN.","Обычные атаки восстанавливают дополнительно 3 EN."
+Knife,Knife,Кинжал
+KNIFE_DESCRIPTION,"Normal attacks' CRIT increases by 10.","CRIT обычных атак повышен на 10."
+Vial Of Poison,Vial Of Poison,Склянка с Ядом
+VIAL_OF_POISON_DESCRIPTION,"All enemies' Max HP -15%.","Макс ХП -15% у всех врагов."
+Root Of Vulnerability,Root Of Vulnerability,Корень Уязвимости
+ROOT_OF_VULNERABILITY_DESCRIPTION,"All enemies' DEF -45%.","DEF -45% у всех врагов."
+Broken Blade,Broken Blade,Сломанный Клинок
+BROKEN_BLADE_DESCRIPTION,"All enemies' ATK -15%.","ATK -15% у всех врагов."
+Trombone,Trombone,Тромбон
+TROMBONE_DESCRIPTION,"At the start of its turn, sleeping creature takes 60 physical damage.","В начале своего хода спящее существо получает 60 физического урона."
+Shell,Seashell,Ракушка
+SHELL_DESCRIPTION,"When inflicting Exhaustion, inflict 4 more stack.","Когда вы накладываете Истощение, наложите на 4 Истощение больше."
+Charging Device,Charging Device,Зарядное Устройство
+CHARGING_DEVICE_DESCRIPTION,"Blue skills restore 2 more EN.","Синие навыки восстанавливают на 2 EN больше."
+One For All,"'One For All'","'Один за Всех'"
+ONE_FOR_ALL_DESCRIPTON,"When there are more than 1 enemy, restore 50 HP at the start of the turn.","Когда на поле боя больше 1 врага, вы восстанавливаете 50 ХП в начале хода."
+All For One,"'All For One'","'Все за Одного'"
+ALL_FOR_ONE_DESCRIPTION,"When there are only 1 enemy, ATK +50%.","Когда на поле боя только 1 враг, АТК +50%."
+Spiked Sword,Spiked Sword,Шипастый Меч
+SPIKED_SWORD_DESCRIPTION,"END +10\nAt 50% HP or less ATK +10 and CRIT +5.","END +10\nКогда ХП 50% или меньше, АТК +10 и CRIT +5."
+Gloves,Gloves,Перчатки
+GLOVES_DESCRIPTION,"DEF +20\nAttacks deal additional damage equal to 40% of DEF.","DEF +20\nАтаки наносят дополнительный урон равный 40% от DEF."
+Wonder-Remedy,Wonder-Remedy,Чудо-Лекарство
+WONDER_REMEDY_DESCRIPTION,"Each tme you restore HP, ATK +5 and SEN +5. This buff can stack up to 5 times and resets at the start of each battle.","Каждый раз, когда вы восстанавливаете ХП, АТК +5 и SEN +5. Данный бафф может складываться до 5 раз и сбрасывается в начале каждого боя."
+First Aid Kit,First Aid Kit,Аптечка
+FIRST_AID_KIT_DESCRIPTION,"Increases the healing effectiveness by 75%.","Повышает эффективность лечения на 75%."
+Boomerang,Boomerang,Бумеранг
+BOOMERANG_DESCRIPTION,"Each time you dodge the attack, attacker takes 40 physical damage.","Каждый раз, когда вы уклоняетесь от атаки, атакующий получает 40 физического урона."
+White Crest,White Crest,Белый Герб
+WHITE_CREST_DESCRIPTION,"If all equipped skills are of different colors(excluding white skills), ATK +20.\nOtherwise ATK -5.","Если все экипированные навыки разных цветов(исключая белые навыки), АТК +20.\nВ ином случае АТК -5."
+Lightning Crest,Lightning Crest,Герб Молнии
+LIGHTNING_CREST,"SPD +10\nFor each two equipped yellow skill get +1 action per turn.","SPD +10\nЗа каждые два экипированных желтых навыка получите +1 действие в ход."
+Rose Crest,Rose Crest,Герб Розы
+ROSE_CREST_DESCRIPTION,"CRIT +5\nRed attacks immediately knock out enemies with less than 15% HP.","CRIT +5\nКрасные атаки моментально выбивают врагов, у которых меньше 15% ХП."
+Health Crest,Health Crest,Герб Здоровья
+HEALTH_CREST_DESCRIPTION,"Max HP +50\nWhen you restore HP, deal green damage equal to 50% of the healed amount to all enemies.","Макс ХП +50\nКогда вы восстанавливаете ХП, нанесите всем врагам зеленый урон равный 50% от размера лечения."
+Whirl Crest,Whirl Crest,Герб Вихря
+WHIRL_CREST_DESCRIPTION,"ENR +10\nAt the start of the battle inflict Exhaustion(10) on all enemies.","ENR +10\nВ начале боя наложите Истощение(10) на всех врагов."
+Needle Crest,Needle Crest,Герб Иглы
+NEEDLE_CREST_DESCRIPTION,"RES +10\nIgnore 20 RES of all enemies.","RES +10\nВы игнорируете 20 RES всех врагов."
+Stone Crest,Stone Crest,Герб Камня
+STONE_CREST_DESCRIPTION,"DEF +20\nShields have double the amount of HP.","DEF +20\nХП щитов увеличено вдвое."
+and,and,и
+///////////////////////////SKILLS////////////////////////////////,.,.
+NORMAL_ATTACK,"Salim attacks one enemy dealing physical damage(100% ATK).","Салим атакует одного противника, нанося существу физический урон(100% ATK)."
+Normal Attack,Normal Attack,Обычная Атака
+Normal_Attack,Normal Attack,Обычная Атака
+"Find this skill to unlock it.","Find this skill to unlock it.","Найдите данный навык, чтобы разблокировать его."
+RED_WARNING_STRIKE_1,"On hit deal red damage(100% ATK) to one enemy and the next attack within 2 turns gains Empowerment(30%).","При попадании нанесите красный урон(100% АТК) одному врагу и следующая атака сделанная в течение 2 ходов получает Усиление(30%)."
+RED_WARNING_STRIKE_2,"On hit deal red damage(120% ATK) to one enemy and the next attack within 2 turns gains Empowerment(35%).","При попадании нанесите красный урон(120% АТК) одному врагу и следующая атака сделанная в течение 2 ходов получает Усиление(35%)."
+RED_WARNING_STRIKE_3,"On hit deal red damage(140% ATK) to one enemy and the next attack within 2 turns gains Empowerment(40%).","При попадании нанесите красный урон(140% АТК) одному врагу и следующая атака сделанная в течение 2 ходов получает Усиление(40%)."
+RED_WARNING_STRIKE_4,"On hit deal red damage(160% ATK) to one enemy and the next attack within 2 turns gains Empowerment(50%).","При попадании нанесите красный урон(160% АТК) одному врагу и следующая атака сделанная в течение 2 ходов получает Усиление(50%)."
+RED_WARNING_STRIKE_5,"On hit deal red damage(200% ATK) to one enemy and the next attack within 2 turns gains Empowerment(60%).","При попадании нанесите красный урон(200% АТК) одному врагу и следующая атака сделанная в течение 2 ходов получает Усиление(60%)."
+Warning Strike,Warning Strike,Предупреждающий Удар
+Red_Warning_Strike,Warning Strike,Предупреждающий Удар
+RED_DIRTY_TRICK_1,"On hit deal red damage(100% ATK) to one enemy and inflict Blindness(20%) for 2 turns.","При попадании нанесите красный урон(100% АТК) одному врагу и наложите на него Слепоту(20%) на 2 хода."
+RED_DIRTY_TRICK_2,"On hit deal red damage(120% ATK) to one enemy and inflict Blindness(25%) for 2 turns.","При попадании нанесите красный урон(120% АТК) одному врагу и наложите на него Слепоту(25%) на 2 хода."
+RED_DIRTY_TRICK_3,"On hit deal red damage(140% ATK) to one enemy and inflict Blindness(30%) for 3 turns.","При попадании нанесите красный урон(140% АТК) одному врагу и наложите на него Слепоту(30%) на 3 хода."
+RED_DIRTY_TRICK_4,"On hit deal red damage(160% ATK) to one enemy and inflict Blindness(35%) for 3 turns.","При попадании нанесите красный урон(160% АТК) одному врагу и наложите на него Слепоту(35%) на 3 хода."
+RED_DIRTY_TRICK_5,"On hit deal red damage(200% ATK) to one enemy and inflict Blindness(40%) for 4 turns.","При попадании нанесите красный урон(200% АТК) одному врагу и наложите на него Слепоту(40%) на 4 хода."
+Dirty Trick,Dirty Trick,Грязный Прием
+Red_Dirty_Trick,Dirty Trick,Грязный Прием
+RED_BLOOD_EXCHANGE_1,"Lose 50% of your current HP, get rid of all negative status effects and gain Empowerment(20%) for 2 turns.\nThis skill cannot be silenced.","Потратьте 50% текущих ХП, чтобы снять с себя все негативные эффекты и получить Усиление(20%) на 2 хода.\nДанная способность не может быть заблокирована."
+RED_BLOOD_EXCHANGE_2,"Lose 45% of your current HP, get rid of all negative status effects and gain Empowerment(25%) for 2 turns.\nThis skill cannot be silenced.","Потратьте 45% текущих ХП, чтобы снять с себя все негативные эффекты и получить Усиление(25%) на 2 хода.\nДанная способность не может быть заблокирована."
+RED_BLOOD_EXCHANGE_3,"Lose 40% of your current HP, get rid of all negative status effects and gain Empowerment(30%) for 3 turns.\nThis skill cannot be silenced.","Потратьте 40% текущих ХП, чтобы снять с себя все негативные эффекты и получить Усиление(30%) на 3 хода.\nДанная способность не может быть заблокирована."
+RED_BLOOD_EXCHANGE_4,"Lose 30% of your current HP, get rid of all negative status effects and gain Empowerment(40%) for 3 turns.\nThis skill cannot be silenced.","Потратьте 30% текущих ХП, чтобы снять с себя все негативные эффекты и получить Усиление(40%) на 3 хода.\nДанная способность не может быть заблокирована."
+RED_BLOOD_EXCHANGE_5,"Lose 20% of your current HP, get rid of all negative status effects and gain Empowerment(50%) for 4 turns.\nThis skill cannot be silenced.","Потратьте 20% текущих ХП, чтобы снять с себя все негативные эффекты и получить Усиление(50%) на 4 хода.\nДанная способность не может быть заблокирована."
+Blood Exchange,Blood Exchange,Кровообмен
+Red_Blood_Exchange,Blood Exchange,Кровообмен
+RED_CRIMSON_WHIRL_1,"Deal red damage(100% ATK) to all enemies. For each killed enemy regenerate 10% max HP.","Нанесите всем врагам красный урон(100% АТК). За каждого убитого противника вы восстанавливаете 10% максимального ХП."
+RED_CRIMSON_WHIRL_2,"Deal red damage(120% ATK) to all enemies. For each killed enemy regenerate 15% max HP.","Нанесите всем врагам красный урон(120% АТК). За каждого убитого противника вы восстанавливаете 15% максимального ХП."
+RED_CRIMSON_WHIRL_3,"Deal red damage(140% ATK) to all enemies. For each killed enemy regenerate 20% max HP.","Нанесите всем врагам красный урон(140% АТК). За каждого убитого противника вы восстанавливаете 20% максимального ХП."
+RED_CRIMSON_WHIRL_4,"Deal red damage(160% ATK) to all enemies. For each killed enemy regenerate 25% max HP.","Нанесите всем врагам красный урон(160% АТК). За каждого убитого противника вы восстанавливаете 25% максимального ХП."
+RED_CRIMSON_WHIRL_5,"Deal red damage(200% ATK) to all enemies. For each killed enemy regenerate 30% max HP.","Нанесите всем врагам красный урон(200% АТК). За каждого убитого противника вы восстанавливаете 30% максимального ХП."
+Crimson Whirl,Crimson Whirl,Алый Вихрь
+Red_Crimson_Whirl,Crimson Whirl,Алый Вихрь
+RED_ADRENALIN_RUSH_1,"Deal red damage(200% ATK) to one enemy. If Salim has less HP procentage than the target or has 10% of max HP, damage is increased by 50%, otherwise Salim looses 10% max HP.","Нанесите красный урон(200% АТК) одному врагу. Если у Салима меньше процентов ХП, чем у цели или у него только 10% от максимального ХП, урон увеличивается на 50%, в ином случае Салим теряет 10% максимального ХП."
+RED_ADRENALIN_RUSH_2,"Deal red damage(220% ATK) to one enemy. If Salim has less HP procentage than the target or has 10% of max HP, damage is increased by 60%, otherwise Salim looses 10% max HP.","Нанесите красный урон(220% АТК) одному врагу. Если у Салима меньше процентов ХП, чем у цели или у него только 10% от максимального ХП, урон увеличивается на 60%, в ином случае Салим теряет 10% максимального ХП."
+RED_ADRENALIN_RUSH_3,"Deal red damage(240% ATK) to one enemy. If Salim has less HP procentage than the target or has 10% of max HP, damage is increased by 70%, otherwise Salim looses 10% max HP.","Нанесите красный урон(240% АТК) одному врагу. Если у Салима меньше процентов ХП, чем у цели или у него только 10% от максимального ХП, урон увеличивается на 70%, в ином случае Салим теряет 10% максимального ХП."
+RED_ADRENALIN_RUSH_4,"Deal red damage(260% ATK) to one enemy. If Salim has less HP procentage than the target or has 10% of max HP, damage is increased by 80%, otherwise Salim looses 10% max HP.","Нанесите красный урон(260% АТК) одному врагу. Если у Салима меньше процентов ХП, чем у цели или у него только 10% от максимального ХП, урон увеличивается на 80%, в ином случае Салим теряет 10% максимального ХП."
+RED_ADRENALIN_RUSH_5,"Deal red damage(300% ATK) to one enemy. If Salim has less HP procentage than the target or has 10% of max HP, damage is increased by 100%, otherwise Salim looses 10% max HP.","Нанесите красный урон(300% АТК) одному врагу. Если у Салима меньше процентов ХП, чем у цели или у него только 10% от максимального ХП, урон увеличивается на 100%, в ином случае Салим теряет 10% максимального ХП."
+Adrenalin Rush,Adrenalin Rush,Всплеск Адреналина
+Red_Adrenalin_Rush,Adrenalin Rush,Всплеск Адреналина
+RED_FURY_1,"Every time Salim takes damage while shield isn't active, there's a 30% chance he'll increase his ATK by 2 for this fight(max 5 stacks).","Каждый раз, когда Салим получает урон, пока щит не активен, с 30% шансом он повышает АТК на 2 на этот бой(максимум 5 раз за бой)."
+RED_FURY_2,"Every time Salim takes damage while shield isn't active, there's a 40% chance he'll increase his ATK by 3 for this fight(max 5 stacks).","Каждый раз, когда Салим получает урон, пока щит не активен, с 40% шансом он повышает АТК на 3 на этот бой(максимум 5 раз за бой)."
+RED_FURY_3,"Every time Salim takes damage while shield isn't active, there's a 50% chance he'll increase his ATK by 4 for this fight(max 5 stacks).","Каждый раз, когда Салим получает урон, пока щит не активен, с 50% шансом он повышает АТК на 4 на этот бой(максимум 5 раз за бой)."
+RED_FURY_4,"Every time Salim takes damage while shield isn't active, there's a 60% chance he'll increase his ATK by 5 for this fight(max 5 stacks).","Каждый раз, когда Салим получает урон, пока щит не активен, с 60% шансом он повышает АТК на 5 на этот бой(максимум 5 раз за бой)."
+RED_FURY_5,"Every time Salim takes damage while shield isn't active, there's a 70% chance he'll increase his ATK by 6 for this fight(max 5 stacks).","Каждый раз, когда Салим получает урон, пока щит не активен, с 70% шансом он повышает АТК на 6 на этот бой(максимум 5 раз за бой)."
+Passive: Fury,Passive: Fury,Пассивный Навык: Ярость
+Fury,Fury,Ярость
+Red_Fury,Fury,Ярость
+RED_CRITICAL_LINE_1,"Critical hits with red attacks regenerate 50% of damage dealt HP.","Критические попадания красными атаками восстанавливают 50% от нанесенного урона ХП."
+RED_CRITICAL_LINE_2,"Critical hits with red attacks regenerate 60% of damage dealt HP.","Критические попадания красными атаками восстанавливают 60% от нанесенного урона ХП."
+RED_CRITICAL_LINE_3,"Critical hits with red attacks regenerate 80% of damage dealt HP.","Критические попадания красными атаками восстанавливают 80% от нанесенного урона ХП."
+RED_CRITICAL_LINE_4,"Critical hits with red attacks regenerate 90% of damage dealt HP.","Критические попадания красными атаками восстанавливают 90% от нанесенного урона ХП."
+RED_CRITICAL_LINE_5,"Critical hits with red attacks regenerate 100% of damage dealt HP.","Критические попадания красными атаками восстанавливают 100% от нанесенного урона ХП."
+Passive: Critical Line,Passive: Critical Line,Пассивный Навык: Критическая Линия
+Critical Line,Critical Line,Критическая Линия
+Red_Critical_Line,Critical Line,Критическая Линия
+RED_DANCE_OF_DEATH_1,"ATK +12 for 3 turns.\nDeal red damage(200% ATK) to one enemy. For the next 3 turns Salim and this enemy ignore resistances of each other.","АТК +12 на 3 хода.\nНанесите красный урон(200% АТК) одному врагу. В течение следующих 3 ходов Салим и это существо игнорируют сопротивления друг друга."
+RED_DANCE_OF_DEATH_2,"ATK +14 for 3 turns.\nDeal red damage(250% ATK) to one enemy. For the next 3 turns Salim and this enemy ignore resistances of each other.","АТК +14 на 3 хода.\nНанесите красный урон(250% АТК) одному врагу. В течение следующих 3 ходов Салим и это существо игнорируют сопротивления друг друга."
+RED_DANCE_OF_DEATH_3,"ATK +17 for 4 turns.\nDeal red damage(300% ATK) to one enemy. For the next 4 turns Salim and this enemy ignore resistances of each other.","АТК +17 на 4 хода.\nНанесите красный урон(300% АТК) одному врагу. В течение следующих 4 ходов Салим и это существо игнорируют сопротивления друг друга."
+RED_DANCE_OF_DEATH_4,"ATK +21 for 4 turns.\nDeal red damage(400% ATK) to one enemy. For the next 4 turns Salim and this enemy ignore resistances of each other.","АТК +21 на 4 хода.\nНанесите красный урон(400% АТК) одному врагу. В течение следующих 4 ходов Салим и это существо игнорируют сопротивления друг друга."
+RED_DANCE_OF_DEATH_5,"ATK +25 for 5 turns.\nDeal red damage(500% ATK) to one enemy. For the next 5 turns Salim and this enemy ignore resistances of each other.","АТК +25 на 5 хода.\nНанесите красный урон(500% АТК) одному врагу. В течение следующих 5 ходов Салим и это существо игнорируют сопротивления друг друга."
+Ultimate: Dance Of Death,Ultimate: Dance Of Death,Ультимейт: Танец Смерти
+Dance Of Death,Dance Of Death,Танец Смерти
+Red_Dance_Of_Death,Dance Of Death,Танец Смерти
+"Let's give into the temptation and dance together!","Let's give into the temptation and dance together!","Давай же отдадимся страстям и станцуем вместе!"
+RED_BLOOD_MOON_1,"ATK +10 and DEF -10 for 3 turns.\nFor the next 3 turns all attacks are guaranteed to hit and ignore 10% of enemies DEF.","АТК +10 и DEF -10 на 3 хода.\nВ течение 3 ходов все атаки гарантированно попадают и игнорируют 10% DEF врагов."
+RED_BLOOD_MOON_2,"ATK +15 and DEF -15 for 3 turns.\nFor the next 3 turns all attacks are guaranteed to hit and ignore 20% of enemies DEF.","АТК +15 и DEF -15 на 3 хода.\nВ течение 3 ходов все атаки гарантированно попадают и игнорируют 20% DEF врагов."
+RED_BLOOD_MOON_3,"ATK +20 and DEF -20 for 4 turns.\nFor the next 4 turns all attacks are guaranteed to hit and ignore 30% of enemies DEF.","АТК +20 и DEF -20 на 4 хода.\nВ течение 4 ходов все атаки гарантированно попадают и игнорируют 30% DEF врагов."
+RED_BLOOD_MOON_4,"ATK +25 and DEF -25 for 4 turns.\nFor the next 4 turns all attacks are guaranteed to hit and ignore 40% of enemies DEF.","АТК +25 и DEF -25ина 4 хода.\nВ течение 4 ходов все атаки гарантированно попадают и игнорируют 40% DEF врагов."
+RED_BLOOD_MOON_5,"ATK +30 and DEF -30 for 5 turns.\nFor the next 5 turns all attacks are guaranteed to hit and ignore 50% of enemies DEF.","АТК +30 и DEF -30 на 5 хода.\nВ течение 5 ходов все атаки гарантированно попадают и игнорируют 50% DEF врагов."
+Ultimate: Blood Moon,Ultimate: Blood Moon,Ультимейт: Кровавая Луна
+Blood Moon,Blood Moon,Кровавая Луна
+Red_Blood_Moon,Blood Moon,Кровавая Луна
+"The moon I cherish now accepts my anguish.","The moon I cherish now accepts my anguish.","Луна, коей дорожу, в сей момент вбирает мои муки."
+ORANGE_BREAK_IN_DEFENSE_1,"On hit deal orange damage(80% ATK) to one enemy and inflict Fragile(20%) for 2 turns.","При попадании нанесите оранжевый урон(80% АТК) одному врагу и наложите Уязвимость(20%) на 2 хода."
+ORANGE_BREAK_IN_DEFENSE_2,"On hit deal orange damage(100% ATK) to one enemy and inflict Fragile(25%) for 2 turns.","При попадании нанесите оранжевый урон(100% АТК) одному врагу и наложите Уязвимость(25%) на 2 хода."
+ORANGE_BREAK_IN_DEFENSE_3,"On hit deal orange damage(120% ATK) to one enemy and inflict Fragile(30%) for 3 turns.","При попадании нанесите оранжевый урон(120% АТК) одному врагу и наложите Уязвимость(30%) на 3 хода."
+ORANGE_BREAK_IN_DEFENSE_4,"On hit deal orange damage(160% ATK) to one enemy and inflict Fragile(35%) for 3 turns.","При попадании нанесите оранжевый урон(160% АТК) одному врагу и наложите Уязвимость(35%) на 3 хода."
+ORANGE_BREAK_IN_DEFENSE_5,"On hit deal orange damage(200% ATK) to one enemy and inflict Fragile(40%) for 4 turns.","При попадании нанесите оранжевый урон(200% АТК) одному врагу и наложите Уязвимость(40%) на 4 хода."
+Break In Defense,Break In Defense,Брешь В Защите
+Orange_Break_In_Defense,Break In Defense,Брешь В Защите
+ORANGE_SPIKED_SHIELD_1,"Gain a shield with 300% DEF HP for 3 turns. This shield reflects damage taken by shield as an orange damage onto attacker.","Получите щит с 300% DEF ХП на 3 хода. Данный щит отражает в атакующего полученный урон в виде оранжевого урона."
+ORANGE_SPIKED_SHIELD_2,"Gain a shield with 400% DEF HP for 3 turns. This shield reflects damage taken by shield as an orange damage onto attacker.","Получите щит с 400% DEF ХП на 3 хода. Данный щит отражает в атакующего полученный урон в виде оранжевого урона."
+ORANGE_SPIKED_SHIELD_3,"Gain a shield with 500% DEF HP for 4 turns. This shield reflects damage taken by shield as an orange damage onto attacker.","Получите щит с 500% DEF ХП на 4 хода. Данный щит отражает в атакующего полученный урон в виде оранжевого урона."
+ORANGE_SPIKED_SHIELD_4,"Gain a shield with 600% DEF HP for 4 turns. This shield reflects damage taken by shield as an orange damage onto attacker.","Получите щит с 600% DEF ХП на 4 хода. Данный щит отражает в атакующего полученный урон в виде оранжевого урона."
+ORANGE_SPIKED_SHIELD_5,"Gain a shield with 800% DEF HP for 5 turns. This shield reflects damage taken by shield as an orange damage onto attacker.","Получите щит с 800% DEF ХП на 5 ходов. Данный щит отражает в атакующего полученный урон в виде оранжевого урона."
+Spiked Shield,Spiked Shield,Шипованный Щит
+Orange_Spiked_Shield,Spiked Shield,Шипованный Щит
+ORANGE_STONE_SHIELD_1,"Gain a shield with 600% DEF HP for 3 turns. While this shield is active all hits on Salim's weaknesses are considered normal hits.","Получите щит с 600% DEF ХП на 3 хода. Пока данный щит активен, попадания по слабостям Салима считаются обычными попаданиями."
+ORANGE_STONE_SHIELD_2,"Gain a shield with 700% DEF HP for 3 turns. While this shield is active all hits on Salim's weaknesses are considered normal hits.","Получите щит с 700% DEF ХП на 3 хода. Пока данный щит активен, попадания по слабостям Салима считаются обычными попаданиями."
+ORANGE_STONE_SHIELD_3,"Gain a shield with 800% DEF HP for 4 turns. While this shield is active all hits on Salim's weaknesses are considered normal hits.","Получите щит с 800% DEF ХП на 4 хода. Пока данный щит активен, попадания по слабостям Салима считаются обычными попаданиями."
+ORANGE_STONE_SHIELD_4,"Gain a shield with 1000% DEF HP for 4 turns. While this shield is active all hits on Salim's weaknesses are considered normal hits.","Получите щит с 1000% DEF ХП на 4 хода. Пока данный щит активен, попадания по слабостям Салима считаются обычными попаданиями."
+ORANGE_STONE_SHIELD_5,"Gain a shield with 1200% DEF HP for 5 turns. While this shield is active all hits on Salim's weaknesses are considered normal hits.","Получите щит с 1200% DEF ХП на 5 хода. Пока данный щит активен, попадания по слабостям Салима считаются обычными попаданиями."
+Stone Shield,Stone Shield,Каменный Щит
+Orange_Stone_Shield,Stone Shield,Каменный Щит
+ORANGE_CLEANSING_1,"Restore 200% of DEF HP and get rid of all debuffs on yourself, increasing RES by 10 for 3 turns.\nThis skill cannot be silenced.","Вы восстанавливаету себе 200% DEF ХП и снимаету с себя все дебаффы и повышая RES на 10 на 3 хода.\nДанная способность не может быть заблокирована."
+ORANGE_CLEANSING_2,"Restore 250% of DEF HP and get rid of all debuffs on yourself, increasing RES by 15 for 3 turns.\nThis skill cannot be silenced.","Вы восстанавливаету себе 250% DEF ХП и снимаету с себя все дебаффы и повышая RES на 15 на 3 хода.\nДанная способность не может быть заблокирована."
+ORANGE_CLEANSING_3,"Restore 300% of DEF HP and get rid of all debuffs on yourself, increasing RES by 20 for 4 turns.\nThis skill cannot be silenced.","Вы восстанавливаету себе 300% DEF ХП и снимаету с себя все дебаффы и повышая RES на 20 на 4 хода.\nДанная способность не может быть заблокирована."
+ORANGE_CLEANSING_4,"Restore 400% of DEF HP and get rid of all debuffs on yourself, increasing RES by 25 for 4 turns.\nThis skill cannot be silenced.","Вы восстанавливаету себе 400% DEF ХП и снимаету с себя все дебаффы и повышая RES на 25 на 4 хода.\nДанная способность не может быть заблокирована."
+ORANGE_CLEANSING_5,"Restore 500% of DEF HP and get rid of all debuffs on yourself, increasing RES by 30 for 5 turns.\nThis skill cannot be silenced.","Вы восстанавливаету себе 500% DEF ХП и снимаету с себя все дебаффы и повышая RES на 30 на 5 ходов.\nДанная способность не может быть заблокирована."
+Cleansing,Cleansing,Очищение
+Orange_Cleansing,Cleansing,Очищение
+ORANGE_STUN_1,"Deal orange damage(100% ATK) to all enemies and inflict Silence on them for 2 turns.","Нанесите оранжевый урон(100% ATK) всем врагам и наложите Молчание на них на 2 хода."
+ORANGE_STUN_2,"Deal orange damage(120% ATK) to all enemies and inflict Silence on them for 2 turns.","Нанесите оранжевый урон(120% ATK) всем врагам и наложите Молчание на них на 2 хода."
+ORANGE_STUN_3,"Deal orange damage(140% ATK) to all enemies and inflict Silence on them for 3 turns.","Нанесите оранжевый урон(140% ATK) всем врагам и наложите Молчание на них на 3 хода."
+ORANGE_STUN_4,"Deal orange damage(160% ATK) to all enemies and inflict Silence on them for 3 turns.","Нанесите оранжевый урон(160% ATK) всем врагам и наложите Молчание на них на 3 хода."
+ORANGE_STUN_5,"Deal orange damage(200% ATK) to all enemies and inflict Silence on them for 4 turns.","Нанесите оранжевый урон(200% ATK) всем врагам и наложите Молчание на них на 4 хода."
+Stun,Stun,Оглушение
+Orange_Stun,Stun,Оглушение
+ORANGE_BDIGO_1,"10% of Salim's DEF adds to his ATK.","10% DEF Салима прибавляются к его АТК."
+ORANGE_BDIGO_2,"20% of Salim's DEF adds to his ATK.","20% DEF Салима прибавляются к его АТК."
+ORANGE_BDIGO_3,"30% of Salim's DEF adds to his ATK.","30% DEF Салима прибавляются к его АТК."
+ORANGE_BDIGO_4,"40% of Salim's DEF adds to his ATK.","40% DEF Салима прибавляются к его АТК."
+ORANGE_BDIGO_5,"50% of Salim's DEF adds to his ATK.","50% DEF Салима прибавляются к его АТК."
+Passive: Best Defense Is Good Offense,Passive: Best Defense Is Good Offense,Пассивный Навык: Лучшая Защита - Это Нападение
+Orange_BDIGO,Best Defense Is Good Offense,Лучшая Защита - Это Нападение
+Best Defense Is Good Offense,Best Defense Is Good Offense,Лучшая Защита - Это Нападение
+ORANGE_RECOIL_1,"When any shield breaks or ends inflict Fragile(10%) on all enemies for 2 turns.","Когда любой щит ломается или время его действия кончается, наложите Уязвимость(10%) на всех врагов на 2 хода."
+ORANGE_RECOIL_2,"When any shield breaks or ends inflict Fragile(20%) on all enemies for 2 turns.","Когда любой щит ломается или время его действия кончается, наложите Уязвимость(20%) на всех врагов на 2 хода."
+ORANGE_RECOIL_3,"When any shield breaks or ends inflict Fragile(30%) on all enemies for 2 turns.","Когда любой щит ломается или время его действия кончается, наложите Уязвимость(30%) на всех врагов на 2 хода."
+ORANGE_RECOIL_4,"When any shield breaks or ends inflict Fragile(40%) on all enemies for 2 turns.","Когда любой щит ломается или время его действия кончается, наложите Уязвимость(40%) на всех врагов на 2 хода."
+ORANGE_RECOIL_5,"When any shield breaks or ends inflict Fragile(50%) on all enemies for 2 turns.","Когда любой щит ломается или время его действия кончается, наложите Уязвимость(50%) на всех врагов на 2 хода."
+Passive: Recoil,Passive: Recoil,Пассивный Навык: Отдача
+Recoil,Recoil,Отдача
+Orange_Recoil,Recoil,Отдача
+ORANGE_ADAPTATION_1,"ATK and DEF +6 for 3 turns.\nIf Salim doesn't have shield, he gains shield with 800% DEF HP for 3 turns.\nIf Salim has shield, it breaks, dealing oragne damage to all enemies equal to 100% of shield HP left.","АТК и DEF +6 на 3 хода.\nЕсли у Салима нет щита, он получает щит с 800% DEF ХП на 3 хода.\nЕсли у Салима есть щит, он ломается, нанося всем противникам оранжевый урон в размере 100% оставшихся ХП щита."
+ORANGE_ADAPTATION_2,"ATK and DEF +8 for 3 turns.\nIf Salim doesn't have shield, he gains shield with 900% DEF HP for 3 turns.\nIf Salim has shield, it breaks, dealing oragne damage to all enemies equal to 130% of shield HP left.","АТК и DEF +8 на 3 хода.\nЕсли у Салима нет щита, он получает щит с 900% DEF ХП на 3 хода.\nЕсли у Салима есть щит, он ломается, нанося всем противникам оранжевый урон в размере 130% оставшихся ХП щита."
+ORANGE_ADAPTATION_3,"ATK and DEF +10 for 4 turns.\nIf Salim doesn't have shield, he gains shield with 1000% DEF HP for 4 turns.\nIf Salim has shield, it breaks, dealing oragne damage to all enemies equal to 150% of shield HP left.","АТК и DEF +10 на 4 хода.\nЕсли у Салима нет щита, он получает щит с 1000% DEF ХП на 4 хода.\nЕсли у Салима есть щит, он ломается, нанося всем противникам оранжевый урон в размере 150% оставшихся ХП щита."
+ORANGE_ADAPTATION_4,"ATK and DEF +12 for 4 turns.\nIf Salim doesn't have shield, he gains shield with 1100% DEF HP for 4 turns.\nIf Salim has shield, it breaks, dealing oragne damage to all enemies equal to 200% of shield HP left.","АТК и DEF +12 на 4 хода.\nЕсли у Салима нет щита, он получает щит с 1100% DEF ХП на 4 хода.\nЕсли у Салима есть щит, он ломается, нанося всем противникам оранжевый урон в размере 200% оставшихся ХП щита."
+ORANGE_ADAPTATION_5,"ATK and DEF +15 for 5 turns.\nIf Salim doesn't have shield, he gains shield with 1200% DEF HP for 5 turns.\nIf Salim has shield, it breaks, dealing oragne damage to all enemies equal to 250% of shield HP left.","АТК и DEF +15 на 5 ходов.\nЕсли у Салима нет щита, он получает щит с 1200% DEF ХП на 5 ходов.\nЕсли у Салима есть щит, он ломается, нанося всем противникам оранжевый урон в размере 250% оставшихся ХП щита."
+Ultimate: Adaptation,Ultimate: Adaptation,Ультимейт: Адаптация
+Adaptation,Adaptation,Адаптация
+Orange_Adaptation,Adaptation,Адаптация
+"I've been holding this feelings to this moment...","I've been holding this feelings to this moment...","Я сдерживал все эти чувства до сего момента..."
+"[I] will protect [me]","[I] will protect [me]","[Я] защищу [себя]"
+ORANGE_STONE_COCOON_1,"RES and DEF +10 for 3 turns.\nDeal orange damage(150% ATK) to all enemies and gain 2 Blocks.","RES и DEF +10 на 3 хода.\nНанесите оранжевый урон(150% ATK) всем врагам и получите 2 Блока."
+ORANGE_STONE_COCOON_2,"RES and DEF +15 for 3 turns.\nDeal orange damage(200% ATK) to all enemies and gain 3 Blocks.","RES и DEF +15 на 3 хода.\nНанесите оранжевый урон(200% ATK) всем врагам и получите 3 Блока."
+ORANGE_STONE_COCOON_3,"RES and DEF +20 for 4 turns.\nDeal orange damage(250% ATK) to all enemies and gain 4 Blocks.","RES и DEF +20 на 4 хода.\nНанесите оранжевый урон(250% ATK) всем врагам и получите 4 Блока."
+ORANGE_STONE_COCOON_4,"RES and DEF +30 for 4 turns.\nDeal orange damage(300% ATK) to all enemies and gain 5 Blocks.","RES и DEF +30 на 4 хода.\nНанесите оранжевый урон(300% ATK) всем врагам и получите 5 Блоков."
+ORANGE_STONE_COCOON_5,"RES and DEF +40 for 5 turns.\nDeal orange damage(350% ATK) to all enemies and gain 6 Blocks.","RES и DEF +40 на 5 ходов.\nНанесите оранжевый урон(350% ATK) всем врагам и получите 6 Блоков."
+Ultimate: Stone Cocoon,Ultimate: Stone Cocoon,Ультимейт: Каменный Кокон
+Stone Cocoon,Stone Cocoon,Каменный Кокон
+Orange_Stone_Cocoon,Stone Cocoon,Каменный Кокон
+"I don't want to be hurt in the end...","I don't want to be hurt in the end...","В конце концов, я не хочу, чтобы меня ранили..."
+YELLOW_LIGHTNING_STRIKE_1,"On hit deal yellow damage(100% ATK) to one enemy and reduce CD of all other skills by 1. If this attack defeats an enemy, you don't waste action.","При попадании нанесите желтый урон(100% ATK) одному врагу и сократите CD всех остальных навыков на 1. Если данная атака побеждает врага, вы не тратите действие."
+YELLOW_LIGHTNING_STRIKE_2,"On hit deal yellow damage(120% ATK) to one enemy and reduce CD of all other skills by 1. If this attack defeats an enemy, you don't waste action.","При попадании нанесите желтый урон(120% ATK) одному врагу и сократите CD всех остальных навыков на 1. Если данная атака побеждает врага, вы не тратите действие."
+YELLOW_LIGHTNING_STRIKE_3,"On hit deal yellow damage(140% ATK) to one enemy and reduce CD of all other skills by 2. If this attack defeats an enemy, you don't waste action.","При попадании нанесите желтый урон(140% ATK) одному врагу и сократите CD всех остальных навыков на 2. Если данная атака побеждает врага, вы не тратите действие."
+YELLOW_LIGHTNING_STRIKE_4,"On hit deal yellow damage(160% ATK) to one enemy and reduce CD of all other skills by 2. If this attack defeats an enemy, you don't waste action.","При попадании нанесите желтый урон(160% ATK) одному врагу и сократите CD всех остальных навыков на 2. Если данная атака побеждает врага, вы не тратите действие."
+YELLOW_LIGHTNING_STRIKE_5,"On hit deal yellow damage(200% ATK) to one enemy and reduce CD of all other skills by 3. If this attack defeats an enemy, you don't waste action.","При попадании нанесите желтый урон(200% ATK) одному врагу и сократите CD всех остальных навыков на 3. Если данная атака побеждает врага, вы не тратите действие."
+Lightning Strike,Lightning Strike,Удар Молнии
+Yellow_Lightning_Strike,Lightning Strike,Удар Молнии
+YELLOW_ZIG_ZAG_1,"On hit deal yellow damage(120% ATK) to one enemy and inflict Closure(5) for 2 turns.","При попадании нанесите желтый урон(120% ATK) одному врагу и наложите Замыкание(5) на 2 хода."
+YELLOW_ZIG_ZAG_2,"On hit deal yellow damage(140% ATK) to one enemy and inflict Closure(7) for 2 turns.","При попадании нанесите желтый урон(140% ATK) одному врагу и наложите Замыкание(7) на 2 хода."
+YELLOW_ZIG_ZAG_3,"On hit deal yellow damage(160% ATK) to one enemy and inflict Closure(10) for 3 turns.","При попадании нанесите желтый урон(160% ATK) одному врагу и наложите Замыкание(10) на 3 хода."
+YELLOW_ZIG_ZAG_4,"On hit deal yellow damage(180% ATK) to one enemy and inflict Closure(12) for 3 turns.","При попадании нанесите желтый урон(180% ATK) одному врагу и наложите Замыкание(12) на 3 хода."
+YELLOW_ZIG_ZAG_5,"On hit deal yellow damage(220% ATK) to one enemy and inflict Closure(15) for 4 turns.","При попадании нанесите желтый урон(220% ATK) одному врагу и наложите Замыкание(15) на 4 хода."
+Zig-Zag,Zig-Zag,Зиг-Заг
+Yellow_Zig_Zag,Zig-Zag,Зиг-Заг
+YELLOW_THUNDER_PULSE_1,"Restore 500% SEN HP and gain Haste(3;1) for 3 turns.","Восстановите 500% SEN ХП и получите Ускорение(3;1) на 3 хода."
+YELLOW_THUNDER_PULSE_2,"Restore 600% SEN HP and gain Haste(4;1) for 3 turns.","Восстановите 600% SEN ХП и получите Ускорение(4;1) на 3 хода."
+YELLOW_THUNDER_PULSE_3,"Restore 700% SEN HP and gain Haste(5;2) for 4 turns.","Восстановите 700% SEN ХП и получите Ускорение(5;2) на 4 хода."
+YELLOW_THUNDER_PULSE_4,"Restore 800% SEN HP and gain Haste(6;2) for 4 turns.","Восстановите 800% SEN ХП и получите Ускорение(6;2) на 4 хода."
+YELLOW_THUNDER_PULSE_5,"Restore 900% SEN HP and gain Haste(7;3) for 5 turns.","Восстановите 900% SEN ХП и получите Ускорение(7;3) на 5 ходов."
+Thunder Pulse,Thunder Pulse,Громовой Пульс
+Yellow_Thunder_Pulse,Thunder Pulse,Громовой Пульс
+YELLOW_FLASH_OF_LIGHT_1,"On hit deal yellow damage(120% ATK) to one enemy and inflict Blind(20%) for 3 turns.","При попадании нанесите желтый урон(120% ATK) одному врагу и наложите Слепоту(20%) на 3 хода."
+YELLOW_FLASH_OF_LIGHT_2,"On hit deal yellow damage(150% ATK) to one enemy and inflict Blind(30%) for 3 turns.","При попадании нанесите желтый урон(150% ATK) одному врагу и наложите Слепоту(20%) на 3 хода."
+YELLOW_FLASH_OF_LIGHT_3,"On hit deal yellow damage(170% ATK) to one enemy and inflict Blind(40%) for 4 turns.","При попадании нанесите желтый урон(170% ATK) одному врагу и наложите Слепоту(20%) на 4 хода."
+YELLOW_FLASH_OF_LIGHT_4,"On hit deal yellow damage(200% ATK) to one enemy and inflict Blind(50%) for 4 turns.","При попадании нанесите желтый урон(200% ATK) одному врагу и наложите Слепоту(20%) на 4 хода."
+YELLOW_FLASH_OF_LIGHT_5,"On hit deal yellow damage(250% ATK) to one enemy and inflict Blind(60%) for 5 turns.","При попадании нанесите желтый урон(250% ATK) одному врагу и наложите Слепоту(20%) на 5 ходов."
+Flash Of Light,Flash Of Light,Вспышка Света
+Yellow_Flash_Of_Light,Flash Of Light,Вспышка Света
+YELLOW_THUNDERSTORM_1,"Deal yellow damage(40% ATK) 5 times, each time targeting a random enemy. If this skill defeats an enemy, reduce CD of all other skills by 1.","Нанесите желтый урон(40% ATK) 5 раз, каждый раз атакуя случайного врага. Если враг был побежден этой способностью, сократите CD всех остальных навыков на 1."
+YELLOW_THUNDERSTORM_2,"Deal yellow damage(50% ATK) 6 times, each time targeting a random enemy. If this skill defeats an enemy, reduce CD of all other skills by 1.","Нанесите желтый урон(50% ATK) 6 раз, каждый раз атакуя случайного врага. Если враг был побежден этой способностью, сократите CD всех остальных навыков на 1."
+YELLOW_THUNDERSTORM_3,"Deal yellow damage(60% ATK) 7 times, each time targeting a random enemy. If this skill defeats an enemy, reduce CD of all other skills by 2.","Нанесите желтый урон(60% ATK) 7 раз, каждый раз атакуя случайного врага. Если враг был побежден этой способностью, сократите CD всех остальных навыков на 2."
+YELLOW_THUNDERSTORM_4,"Deal yellow damage(70% ATK) 8 times, each time targeting a random enemy. If this skill defeats an enemy, reduce CD of all other skills by 2.","Нанесите желтый урон(70% ATK) 8 раз, каждый раз атакуя случайного врага. Если враг был побежден этой способностью, сократите CD всех остальных навыков на 2."
+YELLOW_THUNDERSTORM_5,"Deal yellow damage(80% ATK) 9 times, each time targeting a random enemy. If this skill defeats an enemy, reduce CD of all other skills by 3.","Нанесите желтый урон(80% ATK) 9 раз, каждый раз атакуя случайного врага. Если враг был побежден этой способностью, сократите CD всех остальных навыков на 3."
+Thunderstorm,Thunderstorm,Гроза
+Yellow_Thunderstorm,Thunderstorm,Гроза
+YELLOW_LIGHTNING_BREAK_1,"Normal attacks have 15% chance to deal yellow damage and inflict Closure(10%) for 2 turns.","Обычные атаки имеют 15% шанс нанести желтый урон и наложить Замыкание(10%) на 2 хода."
+YELLOW_LIGHTNING_BREAK_2,"Normal attacks have 20% chance to deal yellow damage and inflict Closure(15%) for 2 turns.","Обычные атаки имеют 20% шанс нанести желтый урон и наложить Замыкание(15%) на 2 хода."
+YELLOW_LIGHTNING_BREAK_3,"Normal attacks have 25% chance to deal yellow damage and inflict Closure(20%) for 3 turns.","Обычные атаки имеют 25% шанс нанести желтый урон и наложить Замыкание(20%) на 3 хода."
+YELLOW_LIGHTNING_BREAK_4,"Normal attacks have 30% chance to deal yellow damage and inflict Closure(25%) for 3 turns.","Обычные атаки имеют 30% шанс нанести желтый урон и наложить Замыкание(25%) на 3 хода."
+YELLOW_LIGHTNING_BREAK_5,"Normal attacks have 40% chance to deal yellow damage and inflict Closure(30%) for 4 turns.","Обычные атаки имеют 40% шанс нанести желтый урон и наложить Замыкание(30%) на 4 хода."
+Passive: Lightning Break,Passive: Lightning Break,Пассивный Навык: Молниеносный Пролом
+Lightning Break,Lightning Break,Молниеносный Пролом
+Yellow_Lightning_Break,Lightning Break,Молниеносный Пролом
+YELLOW_FAST_REACTION_1,"After successful dodge deal yellow damage(50% ATK) to the attacker.","После успешного уклонения нанесите желтый урон(50% ATK) атакующему."
+YELLOW_FAST_REACTION_2,"After successful dodge deal yellow damage(60% ATK) to the attacker.","После успешного уклонения нанесите желтый урон(60% ATK) атакующему."
+YELLOW_FAST_REACTION_3,"After successful dodge deal yellow damage(70% ATK) to the attacker.","После успешного уклонения нанесите желтый урон(70% ATK) атакующему."
+YELLOW_FAST_REACTION_4,"After successful dodge deal yellow damage(80% ATK) to the attacker.","После успешного уклонения нанесите желтый урон(80% ATK) атакующему."
+YELLOW_FAST_REACTION_5,"After successful dodge deal yellow damage(100% ATK) to the attacker.","После успешного уклонения нанесите желтый урон(100% ATK) атакующему."
+Passive: Fast Reaction,Passive: Fast Reaction,Пассивный Навык: Быстрое Реагирование
+Fast Reaction,Fast Reaction,Быстрое Реагирование
+Yellow_Fast_Reaction,Fast Reaction,Быстрое Реагирование
+YELLOW_BALANCED_INSTABILITY_1,"SEN and ATK +6 for 3 turns.\nFor the next 3 turns at the start of the turn and when you use this skill randomly gain 1-2 more actions.","SEN и ATK +6 на 3 хода.\nВ течение следующих 3 ходов в начале каждого хода и когда вы используете этот навык вы получаете случайно на 1-2 больше действий."
+YELLOW_BALANCED_INSTABILITY_2,"SEN and ATK +8 for 3 turns.\nFor the next 3 turns at the start of the turn and when you use this skill randomly gain 1-3 more actions.","SEN и ATK +8 на 3 хода.\nВ течение следующих 3 ходов в начале каждого хода и когда вы используете этот навык вы получаете случайно на 1-3 больше действий."
+YELLOW_BALANCED_INSTABILITY_3,"SEN and ATK +11 for 4 turns.\nFor the next 4 turns at the start of the turn and when you use this skill randomly gain 2-4 more actions.","SEN и ATK +11 на 3 хода.\nВ течение следующих 4 ходов в начале каждого хода и когда вы используете этот навык вы получаете случайно на 2-4 больше действий."
+YELLOW_BALANCED_INSTABILITY_4,"SEN and ATK +15 for 4 turns.\nFor the next 4 turns at the start of the turn and when you use this skill randomly gain 2-5 more actions.","SEN и ATK +15 на 3 хода.\nВ течение следующих 4 ходов в начале каждого хода и когда вы используете этот навык вы получаете случайно на 2-5 больше действий."
+YELLOW_BALANCED_INSTABILITY_5,"SEN and ATK +20 for 5 turns.\nFor the next 5 turns at the start of the turn and when you use this skill randomly gain 3-5 more actions.","SEN и ATK +20 на 3 хода.\nВ течение следующих 5 ходов в начале каждого хода и когда вы используете этот навык вы получаете случайно на 3-5 больше действий."
+Ultimate: Balanced Instability,Ultimate: Balanced Instability,Ультимейт: Сбалансированная Нестабильность
+Balanced Instability,Balanced Instability,Сбалансированная Нестабильность
+Yellow_Balanced_Instability,Balanced Instability,Сбалансированная Нестабильность
+"Time to change the pacing!","Time to change the pacing!","Время сменить темп!"
+YELLOW_TIME_WARP_1,"SEN and SPD +6 for 3 turns.\nDeal yellow damage(100% ATK) to all enemies. CD of all other skills is nullified and their cost is reduced for this turn by 1(can't go lower than 1).","SEN и SPD +6 на 3 хода.n\Нанесите желтый урон(100% ATK) всем врагам. CD всех остальных навыков обнуляется и их стоимость понижается на 1 на этот ход(не ниже 1)."
+YELLOW_TIME_WARP_2,"SEN and SPD +8 for 3 turns.\nDeal yellow damage(120% ATK) to all enemies. CD of all other skills is nullified and their cost is reduced for this turn by 1(can't go lower than 1).","SEN и SPD +8 на 3 хода.n\Нанесите желтый урон(120% ATK) всем врагам. CD всех остальных навыков обнуляется и их стоимость понижается на 1 на этот ход(не ниже 1)."
+YELLOW_TIME_WARP_3,"SEN and SPD +11 for 4 turns.\nDeal yellow damage(140% ATK) to all enemies. CD of all other skills is nullified and their cost is reduced for this turn by 2(can't go lower than 1).","SEN и SPD +11 на 4 хода.n\Нанесите желтый урон(140% ATK) всем врагам. CD всех остальных навыков обнуляется и их стоимость понижается на 2 на этот ход(не ниже 1)."
+YELLOW_TIME_WARP_4,"SEN and SPD +15 for 4 turns.\nDeal yellow damage(160% ATK) to all enemies. CD of all other skills is nullified and their cost is reduced for this turn by 2(can't go lower than 1).","SEN и SPD +15 на 4 хода.n\Нанесите желтый урон(160% ATK) всем врагам. CD всех остальных навыков обнуляется и их стоимость понижается на 2 на этот ход(не ниже 1)."
+YELLOW_TIME_WARP_5,"SEN and SPD +20 for 5 turns.\nDeal yellow damage(200% ATK) to all enemies. CD of all other skills is nullified and their cost is reduced for this turn by 3(can't go lower than 1).","SEN и SPD +20 на 5 хода.n\Нанесите желтый урон(200% ATK) всем врагам. CD всех остальных навыков обнуляется и их стоимость понижается на 3 на этот ход(не ниже 1)."
+Ultimate: Time Warp,Ultimate: Time Warp,Ультимейт: Искривление Времени
+Time Warp,Time Warp,Искривление Времени
+Yellow_Time_Warp,Time Warp,Искривление Времени
+"Enough with repetition of this all!","Enough with repetition of this all!","С меня хватит всех этих повторений!"
+GREEN_HEALING_1,"Restore 400% END HP.","Восстановите 400% END ХП."
+GREEN_HEALING_2,"Restore 500% END HP.","Восстановите 500% END ХП."
+GREEN_HEALING_3,"Restore 600% END HP.","Восстановите 600% END ХП."
+GREEN_HEALING_4,"Restore 800% END HP.","Восстановите 800% END ХП."
+GREEN_HEALING_5,"Restore 1000% END HP.","Восстановите 1000% END ХП."
+Healing,Healing,Лечение
+Green_Healing,Healing,Лечение
+GREEN_SPREAD_1,"On hit deal green damage(115% ATK) to one enemy and inflict Spread(20%) for 3 turns.","При попадании нанесите зеленый урон(115% ATK) одному противнику и наложите Разрастание(20%) на 3 хода."
+GREEN_SPREAD_2,"On hit deal green damage(130% ATK) to one enemy and inflict Spread(25%) for 3 turns.","При попадании нанесите зеленый урон(130% ATK) одному противнику и наложите Разрастание(25%) на 3 хода."
+GREEN_SPREAD_3,"On hit deal green damage(145% ATK) to one enemy and inflict Spread(30%) for 4 turns.","При попадании нанесите зеленый урон(145% ATK) одному противнику и наложите Разрастание(30%) на 4 хода."
+GREEN_SPREAD_4,"On hit deal green damage(170% ATK) to one enemy and inflict Spread(35%) for 4 turns.","При попадании нанесите зеленый урон(170% ATK) одному противнику и наложите Разрастание(35%) на 4 хода."
+GREEN_SPREAD_5,"On hit deal green damage(200% ATK) to one enemy and inflict Spread(40%) for 5 turns.","При попадании нанесите зеленый урон(200% ATK) одному противнику и наложите Разрастание(40%) на 5 ходов."
+Spread,Spread,Разрастание
+Green_Spread,Spread,Разрастание
+GREEN_LIFE_CIRCULATION_1,"Burst Spread on a selected enemy, dealing 20% ATK green damage for each 5% of Spread on a target. Restore HP equal to 100% of damage dealt. The Spread is removed from the target after this.","Ускорьте Разрастание на выбранном противнике, нанося 20% ATK зеленого урона за каждые 5% Разрастания на враге. Восстановите ХП равное 100% нанесенного урона. Разрастание снимается с противника после этого."
+GREEN_LIFE_CIRCULATION_2,"Burst Spread on a selected enemy, dealing 25% ATK green damage for each 5% of Spread on a target. Restore HP equal to 125% of damage dealt. The Spread is removed from the target after this.","Ускорьте Разрастание на выбранном противнике, нанося 25% ATK зеленого урона за каждые 5% Разрастания на враге. Восстановите ХП равное 125% нанесенного урона. Разрастание снимается с противника после этого."
+GREEN_LIFE_CIRCULATION_3,"Burst Spread on a selected enemy, dealing 30% ATK green damage for each 5% of Spread on a target. Restore HP equal to 150% of damage dealt. The Spread is removed from the target after this.","Ускорьте Разрастание на выбранном противнике, нанося 30% ATK зеленого урона за каждые 5% Разрастания на враге. Восстановите ХП равное 150% нанесенного урона. Разрастание снимается с противника после этого."
+GREEN_LIFE_CIRCULATION_4,"Burst Spread on a selected enemy, dealing 35% ATK green damage for each 5% of Spread on a target. Restore HP equal to 175% of damage dealt. The Spread is removed from the target after this.","Ускорьте Разрастание на выбранном противнике, нанося 35% ATK зеленого урона за каждые 5% Разрастания на враге. Восстановите ХП равное 175% нанесенного урона. Разрастание снимается с противника после этого."
+GREEN_LIFE_CIRCULATION_5,"Burst Spread on a selected enemy, dealing 40% ATK green damage for each 5% of Spread on a target. Restore HP equal to 200% of damage dealt. The Spread is removed from the target after this.","Ускорьте Разрастание на выбранном противнике, нанося 40% ATK зеленого урона за каждые 5% Разрастания на враге. Восстановите ХП равное 200% нанесенного урона. Разрастание снимается с противника после этого."
+Life Circulation,Life Circulation,Циркуляция Жизни
+Green_Life_Circulation,Life Circulation,Циркуляция Жизни
+GREEN_STUDYING_1,"Gain a guaranteed chance to dodge the next attack and deal 200% green damage with 50% additional CRIT to the attacker.","Получите гарантированный шанс уклониться от следующей атаки и нанести 200% зеленого урона с 50% дополнительного CRIT атакующему."
+GREEN_STUDYING_2,"Gain a guaranteed chance to dodge the next attack and deal 250% green damage with 55% additional CRIT to the attacker.","Получите гарантированный шанс уклониться от следующей атаки и нанести 250% зеленого урона с 55% дополнительного CRIT атакующему."
+GREEN_STUDYING_3,"Gain a guaranteed chance to dodge the next attack and deal 300% green damage with 60% additional CRIT to the attacker.","Получите гарантированный шанс уклониться от следующей атаки и нанести 300% зеленого урона с 60% дополнительного CRIT атакующему."
+GREEN_STUDYING_4,"Gain a guaranteed chance to dodge the next attack and deal 350% green damage with 65% additional CRIT to the attacker.","Получите гарантированный шанс уклониться от следующей атаки и нанести 350% зеленого урона с 65% дополнительного CRIT атакующему."
+GREEN_STUDYING_5,"Gain a guaranteed chance to dodge the next attack and deal 400% green damage with 70% additional CRIT to the attacker.","Получите гарантированный шанс уклониться от следующей атаки и нанести 400% зеленого урона с 70% дополнительного CRIT атакующему."
+Studying,Studying,Изучение
+Green_Studying,Studying,Изучение
+GREEN_BLOOM_1,"On hit deal green damage(160% ATK) to one enemy and inflict Bind(30%) for 2 turns.","При попадании нанесит одному врагу зеленый урон(160% ATK) и наложите Связывание(30%) на 2 хода."
+GREEN_BLOOM_2,"On hit deal green damage(170% ATK) to one enemy and inflict Bind(40%) for 2 turns.","При попадании нанесит одному врагу зеленый урон(170% ATK) и наложите Связывание(30%) на 2 хода."
+GREEN_BLOOM_3,"On hit deal green damage(180% ATK) to one enemy and inflict Bind(50%) for 3 turns.","При попадании нанесит одному врагу зеленый урон(180% ATK) и наложите Связывание(30%) на 3 хода."
+GREEN_BLOOM_4,"On hit deal green damage(200% ATK) to one enemy and inflict Bind(60%) for 3 turns.","При попадании нанесит одному врагу зеленый урон(200% ATK) и наложите Связывание(30%) на 3 хода."
+GREEN_BLOOM_5,"On hit deal green damage(220% ATK) to one enemy and inflict Bind(70%) for 4 turns.","При попадании нанесит одному врагу зеленый урон(220% ATK) и наложите Связывание(30%) на 4 хода."
+Bloom,Bloom,Цветение
+Green_Bloom,Bloom,Цветение
+GREEN_WAITING_GAME_1,"Each time you waste action not on attacks, increase CRIT for the next attack by 4%. Resets after making an attack.","Каждый раз, когда вы тратите действие не атакуя, CRIT для следующей атаки повышается на 4%. Сбрасывается после совершения атаки."
+GREEN_WAITING_GAME_2,"Each time you waste action not on attacks, increase CRIT for the next attack by 6%. Resets after making an attack.","Каждый раз, когда вы тратите действие не атакуя, CRIT для следующей атаки повышается на 6%. Сбрасывается после совершения атаки."
+GREEN_WAITING_GAME_3,"Each time you waste action not on attacks, increase CRIT for the next attack by 8%. Resets after making an attack.","Каждый раз, когда вы тратите действие не атакуя, CRIT для следующей атаки повышается на 8%. Сбрасывается после совершения атаки."
+GREEN_WAITING_GAME_4,"Each time you waste action not on attacks, increase CRIT for the next attack by 10%. Resets after making an attack.","Каждый раз, когда вы тратите действие не атакуя, CRIT для следующей атаки повышается на 10%. Сбрасывается после совершения атаки."
+GREEN_WAITING_GAME_5,"Each time you waste action not on attacks, increase CRIT for the next attack by 12%. Resets after making an attack.","Каждый раз, когда вы тратите действие не атакуя, CRIT для следующей атаки повышается на 12%. Сбрасывается после совершения атаки."
+Passive: Waiting Game,Passive: Waiting Game,Пассивный Навык: Выжидание
+Waiting Game,Waiting Game,Выжидание
+Green_Waiting_Game,Waiting Game,Выжидание
+GREEN_SPROUTING_FROM_WITHIN_1,"Normal attacks have a 15% chance to deal green damage and inflict Spread(10%) on target.","Обычные атаки с вероятностью в 15% могут нанести зеленый урон и наложить Разрастание(10%) на цель."
+GREEN_SPROUTING_FROM_WITHIN_2,"Normal attacks have a 20% chance to deal green damage and inflict Spread(10%) on target.","Обычные атаки с вероятностью в 20% могут нанести зеленый урон и наложить Разрастание(10%) на цель."
+GREEN_SPROUTING_FROM_WITHIN_3,"Normal attacks have a 25% chance to deal green damage and inflict Spread(20%) on target.","Обычные атаки с вероятностью в 25% могут нанести зеленый урон и наложить Разрастание(20%) на цель."
+GREEN_SPROUTING_FROM_WITHIN_4,"Normal attacks have a 30% chance to deal green damage and inflict Spread(20%) on target.","Обычные атаки с вероятностью в 30% могут нанести зеленый урон и наложить Разрастание(20%) на цель."
+GREEN_SPROUTING_FROM_WITHIN_5,"Normal attacks have a 40% chance to deal green damage and inflict Spread(30%) on target.","Обычные атаки с вероятностью в 40% могут нанести зеленый урон и наложить Разрастание(30%) на цель."
+Passive: Sprouting From Within,Passive: Sprouting From Within,Пассивный Навык: Прорастание Изнутри
+Sprouting From Within,Sprouting From Within,Прорастание Изнутри
+Green_Sprouting_From_Within,Sprouting From Within,Прорастание Изнутри
+GREEN_GROWING_PAIN_1,"ATK and SEN +8 for 3 turns.\nDeal green damage(100% ATK) to a selected enemy. There is a 60% chance to repeat that attack. Each repeated attack has a 10% less chance to repeat again if it wasn't a critical hit, and 10% more damage if it was a critical hit. Chance resets after the attack misses.","ATK и SEN +8 на 3 хода.\nНанесите зеленый урон(100% ATK) выбранному противнику. С вероятностью в 60% данная атака повторится. Каждая повторная атака имеет на 10% меньше шанс повториться, если это не было критическое попадание, и на 10% больше шанс повториться, если это было критическое попадание. Вероятность сбрасывается после промаха."
+GREEN_GROWING_PAIN_2,"ATK and SEN +10 for 3 turns.\nDeal green damage(125% ATK) to a selected enemy. There is a 70% chance to repeat that attack. Each repeated attack has a 10% less chance to repeat again if it wasn't a critical hit, and 10% more chance if it was a critical hit. Chance resets after the attack misses.","ATK и SEN +10 на 3 хода.\nНанесите зеленый урон(125% ATK) выбранному противнику. С вероятностью в 70% данная атака повторится. Каждая повторная атака имеет на 10% меньше шанс повториться, если это не было критическое попадание, и на 10% больше шанс повториться, если это было критическое попадание. Вероятность сбрасывается после промаха."
+GREEN_GROWING_PAIN_3,"ATK and SEN +13 for 4 turns.\nDeal green damage(150% ATK) to a selected enemy. There is a 80% chance to repeat that attack. Each repeated attack has a 10% less chance to repeat again if it wasn't a critical hit, and 15% more chance if it was a critical hit. Chance resets after the attack misses.","ATK и SEN +13 на 4 хода.\nНанесите зеленый урон(150% ATK) выбранному противнику. С вероятностью в 80% данная атака повторится. Каждая повторная атака имеет на 10% меньше шанс повториться, если это не было критическое попадание, и на 15% больше шанс повториться, если это было критическое попадание. Вероятность сбрасывается после промаха."
+GREEN_GROWING_PAIN_4,"ATK and SEN +17 for 4 turns.\nDeal green damage(175% ATK) to a selected enemy. There is a 100% chance to repeat that attack. Each repeated attack has a 10% less chance to repeat again if it wasn't a critical hit, and 15% more chance if it was a critical hit. Chance resets after the attack misses.","ATK и SEN +17 на 4 хода.\nНанесите зеленый урон(175% ATK) выбранному противнику. С вероятностью в 100% данная атака повторится. Каждая повторная атака имеет на 10% меньше шанс повториться, если это не было критическое попадание, и на 15% больше шанс повториться, если это было критическое попадание. Вероятность сбрасывается после промаха."
+GREEN_GROWING_PAIN_5,"ATK and SEN +22 for 5 turns.\nDeal green damage(200% ATK) to a selected enemy. There is a 120% chance to repeat that attack. Each repeated attack has a 10% less chance to repeat again if it wasn't a critical hit, and 20% more chance if it was a critical hit. Chance resets after the attack misses.","ATK и SEN +22 на 5 ходов.\nНанесите зеленый урон(200% ATK) выбранному противнику. С вероятностью в 120% данная атака повторится. Каждая повторная атака имеет на 10% меньше шанс повториться, если это не было критическое попадание, и на 20% больше шанс повториться, если это было критическое попадание. Вероятность сбрасывается после промаха."
+Ultimate: Growing Pain,Ultimate: Growing Pain,Ультимейт: Нарастающая Боль
+Growing Pain,Growing Pain,Нарастающая Боль
+Green_Growing_Pain,Growing Pain,Нарастающая Боль
+"May luck be on my side!","May luck be on my side!","Пусть удача будет на моей стороне!"
+GREEN_BEAUTIFUL_GARDEN_1,"ATK +8 for 3 turns.\nDeal green damage(200% ATK) to all enemies and inflict Bind(30%) for 2 turns.","ATK +8 на 3 хода.\nНанесите зеленый урон(200% ATK) всем противникам и наложите на них Связывание(30%) на 2 хода."
+GREEN_BEAUTIFUL_GARDEN_2,"ATK +10 for 3 turns.\nDeal green damage(225% ATK) to all enemies and inflict Bind(35%) for 2 turns.","ATK +10 на 3 хода.\nНанесите зеленый урон(225% ATK) всем противникам и наложите на них Связывание(35%) на 2 хода."
+GREEN_BEAUTIFUL_GARDEN_3,"ATK +13 for 4 turns.\nDeal green damage(250% ATK) to all enemies and inflict Bind(40%) for 3 turns.","ATK +13 на 4 хода.\nНанесите зеленый урон(250% ATK) всем противникам и наложите на них Связывание(40%) на 3 хода."
+GREEN_BEAUTIFUL_GARDEN_4,"ATK +17 for 4 turns.\nDeal green damage(275% ATK) to all enemies and inflict Bind(45%) for 3 turns.","ATK +17 на 4 хода.\nНанесите зеленый урон(275% ATK) всем противникам и наложите на них Связывание(45%) на 3 хода."
+GREEN_BEAUTIFUL_GARDEN_5,"ATK +22 for 5 turns.\nDeal green damage(300% ATK) to all enemies and inflict Bind(50%) for 4 turns.","ATK +22 на 5 ходов.\nНанесите зеленый урон(300% ATK) всем противникам и наложите на них Связывание(50%) на 4 хода."
+Ultimate: Beautiful Garden,Ultimate: Beautiful Garden,Ультимейт: Прекрасный Сад
+Beautiful Garden,Beautiful Garden,Прекрасный Сад
+Green_Beautiful_Garden,Beautiful Garden,Прекрасный Сад
+"The scenery I saw in dreams...","The scenery I saw in dreams...","Пейзаж, что лицезрел во сне..."
+BLUE_ENERGY_VAMPIRE_1,"On hit deal blue damage(100% ATK) to one enemy and steal 2 EN from the target.","При попадании нанесите синий урон(100% ATK) одному врагу и украдите 2 EN у цели."
+BLUE_ENERGY_VAMPIRE_2,"On hit deal blue damage(120% ATK) to one enemy and steal 2 EN from the target.","При попадании нанесите синий урон(120% ATK) одному врагу и украдите 2 EN у цели."
+BLUE_ENERGY_VAMPIRE_3,"On hit deal blue damage(140% ATK) to one enemy and steal 3 EN from the target.","При попадании нанесите синий урон(140% ATK) одному врагу и украдите 3 EN у цели."
+BLUE_ENERGY_VAMPIRE_4,"On hit deal blue damage(160% ATK) to one enemy and steal 4 EN from the target.","При попадании нанесите синий урон(160% ATK) одному врагу и украдите 4 EN у цели."
+BLUE_ENERGY_VAMPIRE_5,"On hit deal blue damage(200% ATK) to one enemy and steal 5 EN from the target.","При попадании нанесите синий урон(200% ATK) одному врагу и украдите 5 EN у цели."
+Energy Vampire,Energy Vampire,Энергетический Вампир
+Blue_Energy_Vampire,Energy Vampire,Энергетический Вампир
+BLUE_COMATOSIS_1,"On hit deal blue damage(100% ATK) to one enemy and steal 1 EN from the target. If target's current EN is 0, inflict Sleep for 2 turns.","При попадании нанесите синий урон(100% ATK) одному врагу и украдите 1 EN у цели. Если текущие EN цели равны 0, наложите Сон на 2 хода."
+BLUE_COMATOSIS_2,"On hit deal blue damage(120% ATK) to one enemy and steal 1 EN from the target. If target's current EN is 0, inflict Sleep for 2 turns.","При попадании нанесите синий урон(120% ATK) одному врагу и украдите 1 EN у цели. Если текущие EN цели равны 0, наложите Сон на 2 хода."
+BLUE_COMATOSIS_3,"On hit deal blue damage(140% ATK) to one enemy and steal 2 EN from the target. If target's current EN is 0, inflict Sleep for 3 turns.","При попадании нанесите синий урон(140% ATK) одному врагу и украдите 2 EN у цели. Если текущие EN цели равны 0, наложите Сон на 3 хода."
+BLUE_COMATOSIS_4,"On hit deal blue damage(160% ATK) to one enemy and steal 2 EN from the target. If target's current EN is 0, inflict Sleep for 3 turns.","При попадании нанесите синий урон(160% ATK) одному врагу и украдите 2 EN у цели. Если текущие EN цели равны 0, наложите Сон на 3 хода."
+BLUE_COMATOSIS_5,"On hit deal blue damage(200% ATK) to one enemy and steal 3 EN from the target. If target's current EN is 0, inflict Sleep for 4 turns.","При попадании нанесите синий урон(200% ATK) одному врагу и украдите 3 EN у цели. Если текущие EN цели равны 0, наложите Сон на 4 хода."
+Comatosis,Comatosis,Коматоз
+Blue_Comatosis,Comatosis,Коматоз
+BLUE_NERVOUS_EXHAUSTION_1,"On hit deal blue damage(100% ATK) to one enemy and inflict Exhaustion(3).","При попадании нанесите синий урон(100% ATK) одному врагу и наложите Истощение(3)."
+BLUE_NERVOUS_EXHAUSTION_2,"On hit deal blue damage(110% ATK) to one enemy and inflict Exhaustion(4).","При попадании нанесите синий урон(110% ATK) одному врагу и наложите Истощение(4)."
+BLUE_NERVOUS_EXHAUSTION_3,"On hit deal blue damage(120% ATK) to one enemy and inflict Exhaustion(5).","При попадании нанесите синий урон(120% ATK) одному врагу и наложите Истощение(5)."
+BLUE_NERVOUS_EXHAUSTION_4,"On hit deal blue damage(140% ATK) to one enemy and inflict Exhaustion(6).","При попадании нанесите синий урон(140% ATK) одному врагу и наложите Истощение(6)."
+BLUE_NERVOUS_EXHAUSTION_5,"On hit deal blue damage(160% ATK) to one enemy and inflict Exhaustion(8).","При попадании нанесите синий урон(160% ATK) одному врагу и наложите Истощение(8)."
+Nervous Exhaustion,Nervous Exhaustion,Нервное Истощение
+Blue_Nervous_Exhaustion,Nervous Exhaustion,Нервное Истощение
+BLUE_SOUNDPROOFING_1,"On hit deal blue damage(150% ATK) to one enemy and inflict Silence for 2 turns.","При попадании нанесите синий урон(150% ATK) одному врагу и наложите Молчание на 2 хода."
+BLUE_SOUNDPROOFING_2,"On hit deal blue damage(170% ATK) to one enemy and inflict Silence for 2 turns.","При попадании нанесите синий урон(170% ATK) одному врагу и наложите Молчание на 2 хода."
+BLUE_SOUNDPROOFING_3,"On hit deal blue damage(200% ATK) to one enemy and inflict Silence for 3 turns.","При попадании нанесите синий урон(200% ATK) одному врагу и наложите Молчание на 3 хода."
+BLUE_SOUNDPROOFING_4,"On hit deal blue damage(220% ATK) to one enemy and inflict Silence for 3 turns.","При попадании нанесите синий урон(220% ATK) одному врагу и наложите Молчание на 3 хода."
+BLUE_SOUNDPROOFING_5,"On hit deal blue damage(250% ATK) to one enemy and inflict Silence for 4 turns.","При попадании нанесите синий урон(250% ATK) одному врагу и наложите Молчание на 4 хода."
+Soundproofing,Soundproofing,Звукоизоляция
+Blue_Soundproofing,Soundproofing,Звукоизоляция
+BLUE_MENTAL_SHIELD_1,"Gain a shield with 700% ENR HP for 3 turns. When this shield takes damage, restore 1 EN for each 10 damage the shield recieved(minimum 1 EN for each instance of damage).","Получите щит с 700% DEF ХП на 3 хода. Когда данный щит получает урон, восстановите 1 EN за каждые 10 единиц урона полученные щитом(минимум 1 EN за удар)."
+BLUE_MENTAL_SHIELD_2,"Gain a shield with 800% ENR HP for 3 turns. When this shield takes damage, restore 1 EN for each 10 damage the shield recieved(minimum 1 EN for each instance of damage).","Получите щит с 800% DEF ХП на 3 хода. Когда данный щит получает урон, восстановите 1 EN за каждые 10 единиц урона полученные щитом(минимум 1 EN за удар)."
+BLUE_MENTAL_SHIELD_3,"Gain a shield with 900% ENR HP for 4 turns. When this shield takes damage, restore 1 EN for each 10 damage the shield recieved(minimum 1 EN for each instance of damage).","Получите щит с 900% DEF ХП на 4 хода. Когда данный щит получает урон, восстановите 1 EN за каждые 10 единиц урона полученные щитом(минимум 1 EN за удар)."
+BLUE_MENTAL_SHIELD_4,"Gain a shield with 1000% ENR HP for 4 turns. When this shield takes damage, restore 1 EN for each 10 damage the shield recieved(minimum 1 EN for each instance of damage).","Получите щит с 1000% DEF ХП на 4 хода. Когда данный щит получает урон, восстановите 1 EN за каждые 10 единиц урона полученные щитом(минимум 1 EN за удар)."
+BLUE_MENTAL_SHIELD_5,"Gain a shield with 1200% ENR HP for 5 turns. When this shield takes damage, restore 1 EN for each 10 damage the shield recieved(minimum 1 EN for each instance of damage).","Получите щит с 1200% DEF ХП на 5 ходов. Когда данный щит получает урон, восстановите 1 EN за каждые 10 единиц урона полученные щитом(минимум 1 EN за удар)."
+Passive: Mental Shield,Passive: Mental Shield,Пассивный Навык: Ментальный Щит
+Mental Shield,Mental Shield,Ментальный Щит
+Blue_Mental_Shield,Mental Shield,Ментальный Щит
+BLUE_MENTAL_ABUSE_1,"Normal attacks have a 15% chance to deal blue damage and inflict Exhaustion(1) on target.","Обычные атаки с вероятностью в 15% могут нанести синий урон и наложить Истощение(1) на цель."
+BLUE_MENTAL_ABUSE_2,"Normal attacks have a 20% chance to deal blue damage and inflict Exhaustion(1) on target.","Обычные атаки с вероятностью в 20% могут нанести синий урон и наложить Истощение(1) на цель."
+BLUE_MENTAL_ABUSE_3,"Normal attacks have a 25% chance to deal blue damage and inflict Exhaustion(2) on target.","Обычные атаки с вероятностью в 25% могут нанести синий урон и наложить Истощение(2) на цель."
+BLUE_MENTAL_ABUSE_4,"Normal attacks have a 30% chance to deal blue damage and inflict Exhaustion(3) on target.","Обычные атаки с вероятностью в 30% могут нанести синий урон и наложить Истощение(3) на цель."
+BLUE_MENTAL_ABUSE_5,"Normal attacks have a 40% chance to deal blue damage and inflict Exhaustion(4) on target.","Обычные атаки с вероятностью в 40% могут нанести синий урон и наложить Истощение(4) на цель."
+Passive: Mental Abuse,Passive: Mental Abuse,Пассивный Навык: Ментальное Насилие
+Mental Abuse,Mental Abuse,Ментальное Насилие
+Blue_Mental_Abuse,Mental Abuse,Ментальное Насилие
+BLUE_PEACE_OF_MIND_1,"Increase ATK by 5 against enemies with less percentage of EN than yours(not included in mass attacks).","Повысьте ATK на 5 против врагов с меньшим процентом EN, чем у вас(не учитывается в массовых атаках)."
+BLUE_PEACE_OF_MIND_2,"Increase ATK by 7 against enemies with less percentage of EN than yours(not included in mass attacks).","Повысьте ATK на 7 против врагов с меньшим процентом EN, чем у вас(не учитывается в массовых атаках)."
+BLUE_PEACE_OF_MIND_3,"Increase ATK by 9 against enemies with less percentage of EN than yours(not included in mass attacks).","Повысьте ATK на 9 против врагов с меньшим процентом EN, чем у вас(не учитывается в массовых атаках)."
+BLUE_PEACE_OF_MIND_4,"Increase ATK by 12 against enemies with less percentage of EN than yours(not included in mass attacks).","Повысьте ATK на 12 против врагов с меньшим процентом EN, чем у вас(не учитывается в массовых атаках)."
+BLUE_PEACE_OF_MIND_5,"Increase ATK by 15 against enemies with less percentage of EN than yours(not included in mass attacks).","Повысьте ATK на 15 против врагов с меньшим процентом EN, чем у вас(не учитывается в массовых атаках)."
+Peace Of Mind,Peace Of Mind,Спокойствие Разума
+Blue_Peace_Of_Mind,Peace Of Mind,Спокойствие Разума
+BLUE_MENTAL_SPIRAL_1,"ENR +10 for 1 turn.\nDeal blue damage(120% ATK) to one enemy and inflict Exhaustion(5). Each time this skill is used within one battle, increase Exhaustion inflicted by all skills 1.","ENR + 10 на 1 ход.\nНанесите синий урон(120% ATK) одному врагу и наложите Истощение(5). Каждое использование способности в течение одного боя увеличивает Истощение, накладываемое всеми способностями на 1."
+BLUE_MENTAL_SPIRAL_2,"ENR +15 for 1 turn.\nDeal blue damage(140% ATK) to one enemy and inflict Exhaustion(6). Each time this skill is used within one battle, increase Exhaustion inflicted by all skills 1.","ENR + 15 на 1 ход.\nНанесите синий урон(140% ATK) одному врагу и наложите Истощение(6). Каждое использование способности в течение одного боя увеличивает Истощение, накладываемое всеми способностями на 1."
+BLUE_MENTAL_SPIRAL_3,"ENR +20 for 2 turns.\nDeal blue damage(160% ATK) to one enemy and inflict Exhaustion(7). Each time this skill is used within one battle, increase Exhaustion inflicted by all skills 2.","ENR + 20 на 2 хода.\nНанесите синий урон(160% ATK) одному врагу и наложите Истощение(7). Каждое использование способности в течение одного боя увеличивает Истощение, накладываемое всеми способностями на 2."
+BLUE_MENTAL_SPIRAL_4,"ENR +30 for 2 turns.\nDeal blue damage(180% ATK) to one enemy and inflict Exhaustion(8). Each time this skill is used within one battle, increase Exhaustion inflicted by all skills 2.","ENR + 30 на 2 хода.\nНанесите синий урон(180% ATK) одному врагу и наложите Истощение(8). Каждое использование способности в течение одного боя увеличивает Истощение, накладываемое всеми способностями на 2."
+BLUE_MENTAL_SPIRAL_5,"ENR +40 for 3 turns.\nDeal blue damage(200% ATK) to one enemy and inflict Exhaustion(10). Each time this skill is used within one battle, increase Exhaustion inflicted by all skills 3.","ENR + 40 на 3 хода.\nНанесите синий урон(200% ATK) одному врагу и наложите Истощение(10). Каждое использование способности в течение одного боя увеличивает Истощение, накладываемое всеми способностями на 3."
+Ultimate: Mental Spiral,Ultimate: Mental Spiral,Ультимейт: Ментальная Спираль
+Mental Spiral,Mental Spiral,Ментальная Спираль
+Blue_Mental_Spiral,Mental Spiral,Ментальная Спираль
+"Don't you feel tired of it all?","Don't you feel tired of it all?","Ты не ощущаешь усталости от всего?"
+BLUE_CYCLE_OF_SADNESS_1,"ENR +10 for 1 turn.\nDeal blue damage(120% ATK) to one enemy. Each odd activation of this skill reduces all enemies EN by 3 and each even activation of this skill inflicts Fragile(20%) on all enemies for 2 turns.","ENR +10 на 1 ход.\nНанесите синий урон(120% ATK) одному врагу. Каждая нечетная активация данной способности уменьшает EN всех врагов на 3, и каждая нечетная активация данной способности накладывает Уязвимость(20%) на всех врагов на 2 хода."
+BLUE_CYCLE_OF_SADNESS_2,"ENR +15 for 1 turn.\nDeal blue damage(140% ATK) to one enemy. Each odd activation of this skill reduces all enemies EN by 4 and each even activation of this skill inflicts Fragile(25%) on all enemies for 2 turns.","ENR +15 на 1 ход.\nНанесите синий урон(140% ATK) одному врагу. Каждая нечетная активация данной способности уменьшает EN всех врагов на 4, и каждая нечетная активация данной способности накладывает Уязвимость(25%) на всех врагов на 2 хода."
+BLUE_CYCLE_OF_SADNESS_3,"ENR +20 for 2 turns.\nDeal blue damage(160% ATK) to one enemy. Each odd activation of this skill reduces all enemies EN by 5 and each even activation of this skill inflicts Fragile(30%) on all enemies for 2 turns.","ENR +20 на 2 хода.\nНанесите синий урон(160% ATK) одному врагу. Каждая нечетная активация данной способности уменьшает EN всех врагов на 5, и каждая нечетная активация данной способности накладывает Уязвимость(30%) на всех врагов на 2 хода."
+BLUE_CYCLE_OF_SADNESS_4,"ENR +30 for 2 turns.\nDeal blue damage(180% ATK) to one enemy. Each odd activation of this skill reduces all enemies EN by 6 and each even activation of this skill inflicts Fragile(35%) on all enemies for 2 turns.","ENR +30 на 2 хода.\nНанесите синий урон(180% ATK) одному врагу. Каждая нечетная активация данной способности уменьшает EN всех врагов на 6, и каждая нечетная активация данной способности накладывает Уязвимость(35%) на всех врагов на 2 хода."
+BLUE_CYCLE_OF_SADNESS_5,"ENR +40 for 3 turns.\nDeal blue damage(200% ATK) to one enemy. Each odd activation of this skill reduces all enemies EN by 7 and each even activation of this skill inflicts Fragile(40%) on all enemies for 2 turns.","ENR +40 на 3 хода.\nНанесите синий урон(200% ATK) одному врагу. Каждая нечетная активация данной способности уменьшает EN всех врагов на 7, и каждая нечетная активация данной способности накладывает Уязвимость(40%) на всех врагов на 2 хода."
+Ultimate: Cycle Of Sadness,Ultimate: Cycle Of Sadness,Ультимейт: Круговорот Печали
+Cycle Of Sadness,Cycle Of Sadness,Круговорот Печали
+Blue_Cycle_Of_Sadness,Cycle Of Sadness,Круговорот Печали
+"The way I live but I can't change...","The way I live but I can't change...","Мой стиль жизни, что не могу сменить..."
+PURPLE_MIASMA_1,"On hit deal purple damage(100% ATK) to one enemy and inflict Miasma(10) for 2 turns.","При попадании нанесите фиолетовый урон(100% ATK) одному врагу и наложите Миазму(10) на 2 хода."
+PURPLE_MIASMA_2,"On hit deal purple damage(120% ATK) to one enemy and inflict Miasma(15) for 2 turns.","При попадании нанесите фиолетовый урон(120% ATK) одному врагу и наложите Миазму(15) на 2 хода."
+PURPLE_MIASMA_3,"On hit deal purple damage(140% ATK) to one enemy and inflict Miasma(20) for 3 turns.","При попадании нанесите фиолетовый урон(140% ATK) одному врагу и наложите Миазму(20) на 3 хода."
+PURPLE_MIASMA_4,"On hit deal purple damage(160% ATK) to one enemy and inflict Miasma(25) for 3 turns.","При попадании нанесите фиолетовый урон(160% ATK) одному врагу и наложите Миазму(25) на 3 хода."
+PURPLE_MIASMA_5,"On hit deal purple damage(200% ATK) to one enemy and inflict Miasma(30) for 4 turns.","При попадании нанесите фиолетовый урон(200% ATK) одному врагу и наложите Миазму(30) на 4 хода."
+Miasma,Miasma,Миазма
+Purple_Miasma,Miasma,Миазма
+PURPLE_CURSE_1,"Remove all buffs from all enemies and infcit them with Miasma(15) for 3 turns.","Снимите все баффы со всех противников и наложите на них Миазму(15) на 3 хода."
+PURPLE_CURSE_2,"Remove all buffs from all enemies and infcit them with Miasma(20) for 3 turns.","Снимите все баффы со всех противников и наложите на них Миазму(20) на 3 хода."
+PURPLE_CURSE_3,"Remove all buffs from all enemies and infcit them with Miasma(25) for 4 turns.","Снимите все баффы со всех противников и наложите на них Миазму(25) на 4 хода."
+PURPLE_CURSE_4,"Remove all buffs from all enemies and infcit them with Miasma(30) for 4 turns.","Снимите все баффы со всех противников и наложите на них Миазму(30) на 4 хода."
+PURPLE_CURSE_5,"Remove all buffs from all enemies and infcit them with Miasma(40) for 5 turns.","Снимите все баффы со всех противников и наложите на них Миазму(40) на 5 хода."
+Curse,Curse,Проклятие
+Purple_Curse,Curse,Проклятие
+PURPLE_WEAK_BODY_1,"On hit deal purple damage(150% ATK) to one enemy and inflict Aches(20) for 2 turns.","При попадании нанесите фиолетовый урон(150% ATK) одному врагу и наложите Ломоту(20) на 2 хода."
+PURPLE_WEAK_BODY_2,"On hit deal purple damage(200% ATK) to one enemy and inflict Aches(30) for 2 turns.","При попадании нанесите фиолетовый урон(200% ATK) одному врагу и наложите Ломоту(30) на 2 хода."
+PURPLE_WEAK_BODY_3,"On hit deal purple damage(250% ATK) to one enemy and inflict Aches(40) for 3 turns.","При попадании нанесите фиолетовый урон(250% ATK) одному врагу и наложите Ломоту(40) на 3 хода."
+PURPLE_WEAK_BODY_4,"On hit deal purple damage(300% ATK) to one enemy and inflict Aches(50) for 3 turns.","При попадании нанесите фиолетовый урон(300% ATK) одному врагу и наложите Ломоту(50) на 3 хода."
+PURPLE_WEAK_BODY_5,"On hit deal purple damage(350% ATK) to one enemy and inflict Aches(60) for 4 turns.","При попадании нанесите фиолетовый урон(350% ATK) одному врагу и наложите Ломоту(60) на 4 хода."
+Weak Body,Weak Body,Слабое Тело
+Purple_Weak_Body,Weak Body,Слабое Тело
+PURPLE_SWEET_DREAMS_1,"On hit deal purple damage(150% ATK) to one enemy and inflict Sleep for 2 turns. When the Sleep ends, target takes the same amount of purple damage again.","При попадании нанесите фиолетовый урон(150% ATK) одному врагу и наложите Сон на 2 хода. Когда Сон оканчивается, цель получает то же самое число фиолетового урона."
+PURPLE_SWEET_DREAMS_2,"On hit deal purple damage(200% ATK) to one enemy and inflict Sleep for 2 turns. When the Sleep ends, target takes the same amount of purple damage again.","При попадании нанесите фиолетовый урон(200% ATK) одному врагу и наложите Сон на 2 хода. Когда Сон оканчивается, цель получает то же самое число фиолетового урона."
+PURPLE_SWEET_DREAMS_3,"On hit deal purple damage(250% ATK) to one enemy and inflict Sleep for 2 turns. When the Sleep ends, target takes the same amount of purple damage again.","При попадании нанесите фиолетовый урон(250% ATK) одному врагу и наложите Сон на 2 хода. Когда Сон оканчивается, цель получает то же самое число фиолетового урона."
+PURPLE_SWEET_DREAMS_4,"On hit deal purple damage(300% ATK) to one enemy and inflict Sleep for 2 turns. When the Sleep ends, target takes the same amount of purple damage again.","При попадании нанесите фиолетовый урон(300% ATK) одному врагу и наложите Сон на 2 хода. Когда Сон оканчивается, цель получает то же самое число фиолетового урона."
+PURPLE_SWEET_DREAMS_5,"On hit deal purple damage(350% ATK) to one enemy and inflict Sleep for 2 turns. When the Sleep ends, target takes the same amount of purple damage again.","При попадании нанесите фиолетовый урон(350% ATK) одному врагу и наложите Сон на 2 хода. Когда Сон оканчивается, цель получает то же самое число фиолетового урона."
+Sweet Dreams,Sweet Dreams,Сладкие Грезы
+Purple_Sweet_Dreams,Sweet Dreams,Сладкие Грезы
+PURPLE_OCTOPUS_INK_1,"Deal purple damage(80% ATK) to all enemies and inflict Blindness(10) on them for 2 turns.","Нанесите фиолетовый урон(80% ATK) всем врагам и наложите Слепоту(10) на них на 2 хода."
+PURPLE_OCTOPUS_INK_2,"Deal purple damage(100% ATK) to all enemies and inflict Blindness(15) on them for 2 turns.","Нанесите фиолетовый урон(100% ATK) всем врагам и наложите Слепоту(15) на них на 2 хода."
+PURPLE_OCTOPUS_INK_3,"Deal purple damage(110% ATK) to all enemies and inflict Blindness(20) on them for 3 turns.","Нанесите фиолетовый урон(110% ATK) всем врагам и наложите Слепоту(20) на них на 3 хода."
+PURPLE_OCTOPUS_INK_4,"Deal purple damage(120% ATK) to all enemies and inflict Blindness(25) on them for 3 turns.","Нанесите фиолетовый урон(120% ATK) всем врагам и наложите Слепоту(25) на них на 3 хода."
+PURPLE_OCTOPUS_INK_5,"Deal purple damage(140% ATK) to all enemies and inflict Blindness(30) on them for 4 turns.","Нанесите фиолетовый урон(140% ATK) всем врагам и наложите Слепоту(30) на них на 4 хода."
+Octopus Ink,Octopus Ink,Осминожьи Чернила
+Purple_Octopus_Ink,Octopus Ink,Осминожьи Чернила
+PURPLE_ONE_FOOT_IN_THE_GRAVE_1,"When a target has more than 2 different debuffs it takes 10% more damage for each debuff it has.","Когда на цели больше 2 разных дебаффа, цель получает на 10% больше урона за каждый дебафф."
+PURPLE_ONE_FOOT_IN_THE_GRAVE_2,"When a target has more than 2 different debuffs it takes 15% more damage for each debuff it has.","Когда на цели больше 2 разных дебаффа, цель получает на 15% больше урона за каждый дебафф."
+PURPLE_ONE_FOOT_IN_THE_GRAVE_3,"When a target has more than 2 different debuffs it takes 20% more damage for each debuff it has.","Когда на цели больше 2 разных дебаффа, цель получает на 20% больше урона за каждый дебафф."
+PURPLE_ONE_FOOT_IN_THE_GRAVE_4,"When a target has more than 2 different debuffs it takes 25% more damage for each debuff it has.","Когда на цели больше 2 разных дебаффа, цель получает на 25% больше урона за каждый дебафф."
+PURPLE_ONE_FOOT_IN_THE_GRAVE_5,"When a target has more than 2 different debuffs it takes 30% more damage for each debuff it has.","Когда на цели больше 2 разных дебаффа, цель получает на 30% больше урона за каждый дебафф."
+Passive: One Foot In The Grave,Passive: One Foot In The Grave,Пассивный Навык: Одной Ногой в Могиле
+One Foot In The Grave,One Foot In The Grave,Одной Ногой в Могиле
+Purple_One_Foot_In_The_Grave,One Foot In The Grave,Одной Ногой в Могиле
+PURPLE_UNFAIR_GAME_1,"When attacking sleeping enemies, they take additional purple damage(50% ATK).","При атаке спящих врагов, они получают дополнительный фиолетовый урон(50% ATK)."
+PURPLE_UNFAIR_GAME_2,"When attacking sleeping enemies, they take additional purple damage(60% ATK).","При атаке спящих врагов, они получают дополнительный фиолетовый урон(60% ATK)."
+PURPLE_UNFAIR_GAME_3,"When attacking sleeping enemies, they take additional purple damage(80% ATK).","При атаке спящих врагов, они получают дополнительный фиолетовый урон(80% ATK)."
+PURPLE_UNFAIR_GAME_4,"When attacking sleeping enemies, they take additional purple damage(90% ATK).","При атаке спящих врагов, они получают дополнительный фиолетовый урон(90% ATK)."
+PURPLE_UNFAIR_GAME_5,"When attacking sleeping enemies, they take additional purple damage(100% ATK).","При атаке спящих врагов, они получают дополнительный фиолетовый урон(100% ATK)."
+Passive: Unfair Game,Passive: Unfair Game,Пассивный Навык: Нечестная Игра
+Unfair Game,Unfair Game,Нечестная Игра
+Purple_Unfair_Game,Unfair Game,Нечестная Игра
+PURPLE_PANDORAS_BOX_1,"ATK and RES +8 for 3 turns.\nDeal purple damage(100% ATK) to all enemies and inflict Miasma(20) and randomly chosen debuff(Fragile(20%), Blindness(20%), Closure(10) or Silence) on them for 3 turns.","ATK и RES +8 на 3 хода.\nНанесите фиолетовый урон(100% ATK) всем врагам и наложите Миазму(20) и случайно выбранный дебафф(Уязвимость(20%),Слепота(20%),Замыкание(2) или Молчание)на них на 3 хода."
+PURPLE_PANDORAS_BOX_2,"ATK and RES +10 for 3 turns.\nDeal purple damage(130% ATK) to all enemies and inflict Miasma(30) and randomly chosen debuff(Fragile(30%), Blindness(30%), Closure(4) or Silence) on them for 3 turns.","ATK и RES +10 на 3 хода.\nНанесите фиолетовый урон(130% ATK) всем врагам и наложите Миазму(30) и случайно выбранный дебафф(Уязвимость(30%),Слепота(30%),Замыкание(4) или Молчание)на них на 3 хода."
+PURPLE_PANDORAS_BOX_3,"ATK and RES +13 for 4 turns.\nDeal purple damage(160% ATK) to all enemies and inflict Miasma(40) and randomly chosen debuff(Fragile(40%), Blindness(40%), Closure(6) or Silence) on them for 4 turns.","ATK и RES +13 на 4 хода.\nНанесите фиолетовый урон(160% ATK) всем врагам и наложите Миазму(40) и случайно выбранный дебафф(Уязвимость(40%),Слепота(40%),Замыкание(6) или Молчание)на них на 4 хода."
+PURPLE_PANDORAS_BOX_4,"ATK and RES +17 for 4 turns.\nDeal purple damage(190% ATK) to all enemies and inflict Miasma(50) and randomly chosen debuff(Fragile(50%), Blindness(50%), Closure(8) or Silence) on them for 4 turns.","ATK и RES +17 на 4 хода.\nНанесите фиолетовый урон(190% ATK) всем врагам и наложите Миазму(50) и случайно выбранный дебафф(Уязвимость(50%),Слепота(50%),Замыкание(8) или Молчание)на них на 4 хода."
+PURPLE_PANDORAS_BOX_5,"ATK and RES +22 for 5 turns.\nDeal purple damage(220% ATK) to all enemies and inflict Miasma(60) and randomly chosen debuff(Fragile(60%), Blindness(60%), Closure(10) or Silence) on them for 5 turns.","ATK и RES +22 на 5 ходов.\nНанесите фиолетовый урон(220% ATK) всем врагам и наложите Миазму(60) и случайно выбранный дебафф(Уязвимость(60%),Слепота(60%),Замыкание(10) или Молчание)на них на 5 ходов."
+Ultimate: Pandora's Box,Ultimate: Pandora's Box,Ультимейт: Ящик Пандоры
+Pandora's Box,Pandora's Box,Ящик Пандоры
+Purple_Pandoras_Box,Pandora's Box,Ящик Пандоры
+"One little misfortune is only a beginning...","One little misfortune is only a beginning...","Одна мелкая неудача это только начало..."
+PURPLE_GROWING_FRACTURE_1,"RES +8 for 3 turns.\nDeal purple damage(200% ATK) to one enemy and inflict Fragile(20%) for 2 turns. At the start of each turn target's Fragile increases by 6%(to the max of 80%).","RES +8 на 3 хода.\nНанесите фиолетовый урон(200% АТК) одному врагу и наложите Уязвимость(20%) на 2 хода. В начале каждого хода цели ее Уязвимость увеличивается на 6%(до максимума в 80%)."
+PURPLE_GROWING_FRACTURE_2,"RES +10 for 3 turns.\nDeal purple damage(200% ATK) to one enemy and inflict Fragile(30%) for 2 turns. At the start of each turn target's Fragile increases by 7%(to the max of 80%).","RES +10 на 3 хода.\nНанесите фиолетовый урон(200% АТК) одному врагу и наложите Уязвимость(30%) на 2 хода. В начале каждого хода цели ее Уязвимость увеличивается на 7%(до максимума в 80%)."
+PURPLE_GROWING_FRACTURE_3,"RES +13 for 4 turns.\nDeal purple damage(200% ATK) to one enemy and inflict Fragile(40%) for 3 turns. At the start of each turn target's Fragile increases by 8%(to the max of 80%).","RES +13 на 4 хода.\nНанесите фиолетовый урон(200% АТК) одному врагу и наложите Уязвимость(40%) на 3 хода. В начале каждого хода цели ее Уязвимость увеличивается на 8%(до максимума в 80%)."
+PURPLE_GROWING_FRACTURE_4,"RES +17 for 4 turns.\nDeal purple damage(200% ATK) to one enemy and inflict Fragile(50%) for 3 turns. At the start of each turn target's Fragile increases by 9%(to the max of 80%).","RES +17 на 4 хода.\nНанесите фиолетовый урон(200% АТК) одному врагу и наложите Уязвимость(50%) на 3 хода. В начале каждого хода цели ее Уязвимость увеличивается на 9%(до максимума в 80%)."
+PURPLE_GROWING_FRACTURE_5,"RES +22 for 5 turns.\nDeal purple damage(200% ATK) to one enemy and inflict Fragile(60%) for 4 turns. At the start of each turn target's Fragile increases by 10%(to the max of 80%).","RES +22 на 5 ходов.\nНанесите фиолетовый урон(200% АТК) одному врагу и наложите Уязвимость(60%) на 4 хода. В начале каждого хода цели ее Уязвимость увеличивается на 10%(до максимума в 80%)."
+Ultimate: Growing Fracture,Ultimate: Growing Fracture,Ультимейт: Растущая Трещина
+Growing Fracture,Growing Fracture,Растущая Трещина
+Purple_Growing_Fracture,Growing Fracture,Растущая Трещина
+"From now on your wounds will only get bigger","From now on your wounds will only get bigger","С сего момента твои раны будут только расти"
+WHITE_COLORFUL_SPLASH_1,"Hit enemies 5 times, each time targeting a random enemy and dealing damage(60% ATK) or a random type.","Атакуйте врагов 5 раз, каждый раз атакуя случайного врага и нанося урон(60% АТК) случайного типа."
+WHITE_COLORFUL_SPLASH_2,"Hit enemies 6 times, each time targeting a random enemy and dealing damage(70% ATK) or a random type.","Атакуйте врагов 6 раз, каждый раз атакуя случайного врага и нанося урон(70% АТК) случайного типа."
+WHITE_COLORFUL_SPLASH_3,"Hit enemies 7 times, each time targeting a random enemy and dealing damage(80% ATK) or a random type.","Атакуйте врагов 7 раз, каждый раз атакуя случайного врага и нанося урон(80% АТК) случайного типа."
+WHITE_COLORFUL_SPLASH_4,"Hit enemies 8 times, each time targeting a random enemy and dealing damage(90% ATK) or a random type.","Атакуйте врагов 8 раз, каждый раз атакуя случайного врага и нанося урон(90% АТК) случайного типа."
+WHITE_COLORFUL_SPLASH_5,"Hit enemies 9 times, each time targeting a random enemy and dealing damage(100% ATK) or a random type.","Атакуйте врагов 9 раз, каждый раз атакуя случайного врага и нанося урон(100% АТК) случайного типа."
+Colorful Splash,Colorful Splash,Всплеск Красок
+White_Colorful_Splash,Colorful Splash,Всплеск Красок
+WHITE_PAINFUL_BLOOM_1,"Burst Miasma and Spread on all enemies. For each 10% of Miasma and Spread on enemy deal 5% ATK damage to the target. Damage dealt if purple if percantage of Miasma is bigger and green otherwise.","Ускорьте Миазму и Разрастание на всех врагах. За каждые 10% Миазмы и Разрастания, нанесите 5% урона цели. Тип нанесенного урона фиолетовый, если процент Миазмы больше, чем Разрастания, и зеленый в ином случае."
+WHITE_PAINFUL_BLOOM_2,"Burst Miasma and Spread on all enemies. For each 10% of Miasma and Spread on enemy deal 7% ATK damage to the target. Damage dealt if purple if percantage of Miasma is bigger and green otherwise.","Ускорьте Миазму и Разрастание на всех врагах. За каждые 10% Миазмы и Разрастания, нанесите 7% урона цели. Тип нанесенного урона фиолетовый, если процент Миазмы больше, чем Разрастания, и зеленый в ином случае."
+WHITE_PAINFUL_BLOOM_3,"Burst Miasma and Spread on all enemies. For each 10% of Miasma and Spread on enemy deal 10% ATK damage to the target. Damage dealt if purple if percantage of Miasma is bigger and green otherwise.","Ускорьте Миазму и Разрастание на всех врагах. За каждые 10% Миазмы и Разрастания, нанесите 10% урона цели. Тип нанесенного урона фиолетовый, если процент Миазмы больше, чем Разрастания, и зеленый в ином случае."
+WHITE_PAINFUL_BLOOM_4,"Burst Miasma and Spread on all enemies. For each 10% of Miasma and Spread on enemy deal 14% ATK damage to the target. Damage dealt if purple if percantage of Miasma is bigger and green otherwise.","Ускорьте Миазму и Разрастание на всех врагах. За каждые 10% Миазмы и Разрастания, нанесите 14% урона цели. Тип нанесенного урона фиолетовый, если процент Миазмы больше, чем Разрастания, и зеленый в ином случае."
+WHITE_PAINFUL_BLOOM_5,"Burst Miasma and Spread on all enemies. For each 10% of Miasma and Spread on enemy deal 20% ATK damage to the target. Damage dealt if purple if percantage of Miasma is bigger and green otherwise.","Ускорьте Миазму и Разрастание на всех врагах. За каждые 10% Миазмы и Разрастания, нанесите 20% урона цели. Тип нанесенного урона фиолетовый, если процент Миазмы больше, чем Разрастания, и зеленый в ином случае."
+Painful Bloom,Painful Bloom,Болезненное Цветение
+White_Painful_Bloom,Painful Bloom,Болезненное Цветение
+WHITE_ABSOLUTE_DEFENSE_1,"Gain 1 Block.","Получите 1 Блок."
+WHITE_ABSOLUTE_DEFENSE_2,"Gain 1 Block.","Получите 1 Блок."
+WHITE_ABSOLUTE_DEFENSE_3,"Gain 2 Blocks.","Получите 2 Блока."
+WHITE_ABSOLUTE_DEFENSE_4,"Gain 3 Blocks.","Получите 3 Блока."
+WHITE_ABSOLUTE_DEFENSE_5,"Gain 4 Blocks.","Получите 4 Блока."
+Absolute Defense,Absolute Defense,Абсолютная Защита
+White_Absolute_Defense,Absolute Defense,Абсолютная Защита
+WHITE_EMPTY_WELL_1,"Get rid of all debuffs and increase 1 random stat by 5 for 3 turns.\nThis skill cannot be blocked.","Снимите с себя все дебаффы и случайным образом увеличьте 1 стат на 5 на 3 хода.\nДанная способность не может быть заблокирована."
+WHITE_EMPTY_WELL_2,"Get rid of all debuffs and increase 1 random stat by 7 for 3 turns.\nThis skill cannot be blocked.","Снимите с себя все дебаффы и случайным образом увеличьте 1 стат на 7 на 3 хода.\nДанная способность не может быть заблокирована."
+WHITE_EMPTY_WELL_3,"Get rid of all debuffs and increase 2 random stats by 10 for 4 turns.\nThis skill cannot be blocked.","Снимите с себя все дебаффы и случайным образом увеличьте 2 стата на 10 на 4 хода.\nДанная способность не может быть заблокирована."
+WHITE_EMPTY_WELL_4,"Get rid of all debuffs and increase 2 random stats by 15 for 4 turns.\nThis skill cannot be blocked.","Снимите с себя все дебаффы и случайным образом увеличьте 2 стата на 15 на 4 хода.\nДанная способность не может быть заблокирована."
+WHITE_EMPTY_WELL_5,"Get rid of all debuffs and increase 3 random stats by 20 for 5 turns.\nThis skill cannot be blocked.","Снимите с себя все дебаффы и случайным образом увеличьте 3 стата на 20 на 5 ходов.\nДанная способность не может быть заблокирована."
+Empty Well,Empty Well,Пустой Колодец
+White_Empty_Well,Empty Well,Пустой Колодец
+WHITE_CHANGING_MOOD_1,"At the start of each turn increase damage dealt by a random color by 10%.","В начале каждого своего хода увеличьте урон, наносимый случайным цветом, на 10%."
+WHITE_CHANGING_MOOD_2,"At the start of each turn increase damage dealt by a random color by 15%.","В начале каждого своего хода увеличьте урон, наносимый случайным цветом, на 15%."
+WHITE_CHANGING_MOOD_3,"At the start of each turn increase damage dealt by a random color by 20%.","В начале каждого своего хода увеличьте урон, наносимый случайным цветом, на 20%."
+WHITE_CHANGING_MOOD_4,"At the start of each turn increase damage dealt by a random color by 30%.","В начале каждого своего хода увеличьте урон, наносимый случайным цветом, на 30%."
+WHITE_CHANGING_MOOD_5,"At the start of each turn increase damage dealt by a random color by 40%.","В начале каждого своего хода увеличьте урон, наносимый случайным цветом, на 40%."
+Passive: Changing Mood,Passive: Changing Mood,Пассивный Навык: Переменчивое Настроение
+Changing Mood,Changing Mood,Переменчивое Настроение
+White_Changing_Mood,Changing Mood,Переменчивое Настроение
+WHITE_ITERATIVE_PROCESS_1,"Each attack made against the same target as the last increases total damage dealt by 2%(stacks up to 5 times). This bonus resets when you choose another target or use mass attacks.","Каждая атака сделанная по той же цели, что прошлая, повышает общий наносимый урон на 2%(складывается до 5 раз). Данный бонус сбрасывается, когда вы атакуете другую цель или используете массовые атаки."
+WHITE_ITERATIVE_PROCESS_2,"Each attack made against the same target as the last increases total damage dealt by 3%(stacks up to 5 times). This bonus resets when you choose another target or use mass attacks.","Каждая атака сделанная по той же цели, что прошлая, повышает общий наносимый урон на 3%(складывается до 5 раз). Данный бонус сбрасывается, когда вы атакуете другую цель или используете массовые атаки."
+WHITE_ITERATIVE_PROCESS_3,"Each attack made against the same target as the last increases total damage dealt by 5%(stacks up to 5 times). This bonus resets when you choose another target or use mass attacks.","Каждая атака сделанная по той же цели, что прошлая, повышает общий наносимый урон на 5%(складывается до 5 раз). Данный бонус сбрасывается, когда вы атакуете другую цель или используете массовые атаки."
+WHITE_ITERATIVE_PROCESS_4,"Each attack made against the same target as the last increases total damage dealt by 7%(stacks up to 5 times). This bonus resets when you choose another target or use mass attacks.","Каждая атака сделанная по той же цели, что прошлая, повышает общий наносимый урон на 7%(складывается до 5 раз). Данный бонус сбрасывается, когда вы атакуете другую цель или используете массовые атаки."
+WHITE_ITERATIVE_PROCESS_5,"Each attack made against the same target as the last increases total damage dealt by 10%(stacks up to 5 times). This bonus resets when you choose another target or use mass attacks.","Каждая атака сделанная по той же цели, что прошлая, повышает общий наносимый урон на 10%(складывается до 5 раз). Данный бонус сбрасывается, когда вы атакуете другую цель или используете массовые атаки."
+Passive: Iterative Process,Passive: Iterative Process,Пассивный Навык: Повторяющийся Процесс
+Iterative Process,Iterative Process,Повторяющийся Процесс
+White_Iterative_Process,Iterative Process,Повторяющийся Процесс
+WHITE_WHITE_SILENCE_1,"ATK +6 for 3 turns.\nDeal damage(100% ATK) of random type to all enemies.","ATK +6 на 3 хода.\nНанесите урон(100% АТК) случайного цвета всем врагам."
+WHITE_WHITE_SILENCE_2,"ATK +8 for 3 turns.\nDeal damage(130% ATK) of random type to all enemies.","ATK +8 на 3 хода.\nНанесите урон(130% АТК) случайного цвета всем врагам."
+WHITE_WHITE_SILENCE_3,"ATK +11 for 4 turns.\nDeal damage(160% ATK) of random type to all enemies.","ATK +11 на 4 хода.\nНанесите урон(160% АТК) случайного цвета всем врагам."
+WHITE_WHITE_SILENCE_4,"ATK +15 for 4 turns.\nDeal damage(190% ATK) of random type to all enemies.","ATK +15 на 4 хода.\nНанесите урон(190% АТК) случайного цвета всем врагам."
+WHITE_WHITE_SILENCE_5,"ATK +20 for 5 turns.\nDeal damage(220% ATK) of random type to all enemies.","ATK +20 на 5 ходов.\nНанесите урон(220% АТК) случайного цвета всем врагам."
+Ultimate: White Silence,Ultimate: White Silence,Ультимейт: Белая Тишина
+White Silence,White Silence,Белая Тишина
+White_White_Silence,White Silence,Белая Тишина
+"Just disappear!","Just disappear!","Исчезните уже!"
+WHITE_REGRESSION_1,"RES and SEN +6 for 3 turns.\nType of the damage dealt by this skill is the same as the color of the last used skill(excluding white). Deal damage(150% ATK) to one enemy and weaken the target's resistance to the color of the attack by one level down for 3 turns.","RES и SEN +6 на 3 хода.\nТип урона данной способности определяется цветом прошлой использованной способности(кроме белого). Нанесите урон(150% АТК) одному противнику и понизьте его сопротивление к цвету атаки на уровень вниз на 3 хода."
+WHITE_REGRESSION_2,"RES and SEN +8 for 3 turns.\nType of the damage dealt by this skill is the same as the color of the last used skill(excluding white). Deal damage(175% ATK) to one enemy and weaken the target's resistance to the color of the attack by one level down for 3 turns.","RES и SEN +8 на 3 хода.\nТип урона данной способности определяется цветом прошлой использованной способности(кроме белого). Нанесите урон(175% АТК) одному противнику и понизьте его сопротивление к цвету атаки на уровень вниз на 3 хода."
+WHITE_REGRESSION_3,"RES and SEN +11 for 4 turns.\nType of the damage dealt by this skill is the same as the color of the last used skill(excluding white). Deal damage(200% ATK) to one enemy and weaken the target's resistance to the color of the attack by one level down for 3 turns.","RES и SEN +11 на 4 хода.\nТип урона данной способности определяется цветом прошлой использованной способности(кроме белого). Нанесите урон(200% АТК) одному противнику и понизьте его сопротивление к цвету атаки на уровень вниз на 4 хода."
+WHITE_REGRESSION_4,"RES and SEN +15 for 4 turns.\nType of the damage dealt by this skill is the same as the color of the last used skill(excluding white). Deal damage(225% ATK) to one enemy and weaken the target's resistance to the color of the attack by one level down for 3 turns.","RES и SEN +15 на 4 хода.\nТип урона данной способности определяется цветом прошлой использованной способности(кроме белого). Нанесите урон(225% АТК) одному противнику и понизьте его сопротивление к цвету атаки на уровень вниз на 4 хода."
+WHITE_REGRESSION_5,"RES and SEN +20 for 5 turns.\nType of the damage dealt by this skill is the same as the color of the last used skill(excluding white). Deal damage(250% ATK) to one enemy and weaken the target's resistance to the color of the attack by one level down for 3 turns.","RES и SEN +20 на 5 ходов.\nТип урона данной способности определяется цветом прошлой использованной способности(кроме белого). Нанесите урон(250% АТК) одному противнику и понизьте его сопротивление к цвету атаки на уровень вниз на 5 ходов."
+Ultimate: Regression,Ultimate: Regression,Ультимейт: Регрессия
+Regression,Regression,Регрессия
+White_Regression,Regression,Регрессия
+"Return to dust!","Return to dust!","Вернитесь к праху!"
+///////////////////////////DIALOGUES////////////////////////////////,.,.
+EncourageText_1,"Sometimes you just have to try again. It's OK! I know eventually you'll be able to do it!","Иногда просто нужно попробовать снова и это нормально! Я знаю однажды ты сможешь сделать это!"
+EncourageText_2,"It's OK to make mistakes. Get some rest and try again.","Совершать ошибки нормально. Отдохни и попробуй снова."
+EncourageText_3,"Even if you couldn't finish it now, eventually you'll beat this. You got some expirience and that's what counts.","Даже если ты не смог закончить свой путь сейчас, однажды ты его преодолеешь. Ты получил опыт и это важно."
+EncourageText_4,"You did fine, but now it's time to rest. One step at a time.","Ты хорошо постарался, но пора отдохнуть. Шаг за шагом все выйдет."
+EncourageText_5,"Slow and steady you'll get this, but rest comes first.","Медленно, но верно, ты все сможешь, но сейчас отдых на первом месте."
+EncourageText_6,"...","..."
+NatureOfThisPlace_1,"This place is weird...","Эта комната такая странная..."
+NatureOfThisPlace_2,"Too many chairs, the bed is too big and the TV is without wires...","Так много стульев, слишком большая кровать и телевизор без проводов..."
+NatureOfThisPlace_3,"Why two of the chairs are flying anyway?","Почему два стула вообще летают?"
+NatureOfThisPlace_4,"I don't even have so many friends to use all of the chairs!","У меня даже нет столько друзей, чтобы использовать все стулья!"
+NatureOfThisPlace_5,"Not like there's anyone besides Asya who I can take here...","Не то чтобы я мог кого-либо сюда позвать кроме Аси..."
+NatureOfThisPlace_6,"I want to get out of here...","Я хочу выбраться отсюда уже..."
+Melodramas_1,"I wonder, can this TV show me something interesting?","Интересно, этот телевизор может показать мне что-нибудь интересное?"
+Melodramas_2,"Hmm... There's not much of anything... Okay, let's check what this is.","Хмм... Тут не так много всего... Ладно, посмотрим, что тут."
+Melodramas_3,"On the TV screen for the next two minutes, the beginning of the story unfolds about a girl who came from the province to the capital.","На экране телевизора в течение следующих двух минут разворачивается начало сюжета про девушку, приехавшую из провинции в столицу."
+Melodramas_4,"Salim understands that this is a film made for housewifes.","Салим понимает, что он включил фильм для домохозяек."
+Melodramas_5,"There isn't anything else?! Damn!","Тут нет ничего другого?! Да блин!"
+Melodramas_6,"I must watch this in my spare time while I locked here...?","Неужели пока я заперт тут я вынужден смотреть это в свободное время...?"
+Melodramas_7,"Half an hour later.","Спустя полчаса."
+Melodramas_8,"No, he's a dick, damn, don't talk to him!","Нет, он мудак, ну блин, ну не надо с ним говорить!"
+Melodramas_9,"There's a man of the dreams right beside you, stupidhead, you can spend your whole life with him!","Вот тут вот рядом есть мужчина мечты, с которым не грех провести всю свою жизнь, дура!"
+Melodramas_10,"Just look at him, anyone would dream about husband like this!","Просто посмотри на его тело, ну любой мечтает о таком муже!"
+Melodramas_11,"Maybe this was... redundant...","Возможно это было... лишним..."
+Melodramas_12,"Another hour later.","Спустя еще час."
+Melodramas_13,"'I am so happy to see you again, son!'","'Сын, я так рада увидеть тебя снова!'"
+Melodramas_14,"'Mom, will uncle Vanya be with us?'","'Мама, я дядя Ваня останется с нами?'"
+Melodramas_15,"*sobbing* Of course!","*хнычет* Конечно!"
+Melodramas_16,"'Of course!'","'Конечено!'"
+Melodramas_17,"Finally she has found a perfect man...","Наконец-то она нашла идеального мужчину..."
+Melodramas_18,"Wow! How much time I spent here?","Ух! Как много времени я потратил на это?"
+Melodramas_19,"This film was a mistake...","Этот фильм был ошибкой..."
+Repeat_1,"I passed out and woke up here again. I will go out again and I will end up here again.","Я отключился снова и появился здесь. Я выйду снова и снова окажусь здесь в конце."
+Repeat_2,"It all feels familiar, but I can't put it right...","Все это ощущается знакомо, но я не могу сформулировать мысль..."
+Repeat_3,"I guess it's not important for now. All I should do - bring back my memories.","Полагаю это не так важно сейчас. Все что я должен сделать - вернуть себе воспоминания."
+Repeat_4,"If only while I'm on it, everyone around wouldn't try to beat me up...","Вот бы пока я пытался это делать меня не пытались избить до бессознательного состояния все вокруг..."
+Repeat_5,"Maybe I should start talking more to my enemies, huh?","Может мне стоит начать говорить с врагами, хм?"
+Repeat_6,"'Hey, sir with camera-head, why won't we drink some tea and discuss our problems?","'Хей мистер с камерой вместо башки, почему бы нам не выпить чаю и не обсудить наши проблемы?'"
+Repeat_7,"How will he be drinking tea if he doesn't have a mouth?","Хотя как он будет пить чай, если у него нет рта?"
+Repeat_8,"Is it even 'he', what if this is 'she'? What if I misgender... them?","'Он' ли это вообще? Что если это будет 'она'? Что если я неправильно обращусь к... ним?"
+Repeat_9,"Well, I'll try to talk with them later...","Ладно, отложу план говорить с ними на потом..."
+Repeat_10,"For now I just should prepare better.","На пока что лучше просто подготовиться получше."
+TheRoom_1,"Wherever I am in this world I'm very uncomfortable.","Где бы я не находился в этом мире, я чувствую себя некомфортно."
+TheRoom_2,"Feels like someone's watching me...","Будто за мной наблюдают..."
+TheRoom_3,"Wherever aside from this room. I feel myself calm only here.","Везде кроме этой комнаты. Только здесь я чувствую себя спокойно."
+TheRoom_4,"I kinda don't even want to go out of here...","Мне даже не хочется выходить отсюда..."
+TheRoom_5,"Argh, what am I thinking?! I can't NOT go out of here, or I'll be stuck here forever!","Аргх, о чем я думаю?! Я не могу не выходить отсюда, иначе я навсегда останусь здесь!"
+TheRoom_6,"But at the same time...","Но в то же время..."
+TheRoom_7,"Nothing will hurt me here...","В этой комнате меня ничего не тронет и не ранит..."
+TheRoom_8,"'Don't leave the room, don't make the mistake', huh?","'Не выходи из комнаты, не совершай ошибку', хах?"
+TheRoom_9,"It seems I will make a lot of mistakes.","Пожалуй мне придется совершить много ошибок."
+Gatekeeper_1,"This Gatekeeper is so weird, damn him!","Этот Привратник такой странный, будь он проклят!"
+Gatekeeper_2,"Will he always keep me from moving further?","Неужели он всегда будет мешать мне пройти дальше?"
+Gatekeeper_3,"What a douchebag!","Какой же душнила!"
+Gatekeeper_4,"He just stands with that pillars and waits while I'll break them!","Стоит за своими столбами и тянет время, пока я их не сломаю!"
+Gatekeeper_5,"Can't he just fight with me face to face from the start?","Ему что, слабо просто сразу встретиться со мной лицом к лицу?"
+Gatekeeper_6,"Not like he's enjoying standing there, so why stop me?","Он все равно не получает удовольствие от того, что стоит там, зачем же мешать мне?"
+Gatekeeper_7,"Can't stand people like him - neither to themselves nor to people.","Ненавижу такой тип людей - ни себе, ни людям."
+///////////////////////////////////PROLOGUE 0 - BEFORE BATTLE/////////////////,///,///
+"Where am I?","Where am I?","Где я?"
+"Seems like you're finally awake, dear guest.","Seems like you're finally awake, dear guest.","Похоже Вы наконец-то проснулись, дорогой гость."
+"Huh? Who are you? What's going on?","Huh? Who are you? What's going on?","А? Кто вы? Что происходит?"
+"One question at a time, please.","One question at a time, please.","Задавайте вопросы по одному, пожалуйста."
+"There is no need to rush, Mr. Salim.","There is no need to rush, Mr. Salim.","Нам нет нужды спешить, мистер Салим."
+"I am glad to know you. You may call me a Host.","I am glad to know you. You may call me a Host.","Приятно познакомиться с Вами. Можете звать меня Заведующим."
+"Though I don't own the place you will be in, at least I own the place we're in now.","Though I don't own the place you will be in, at least I own the place we're in now.","Хоть я и не заведую местом, в котором Вы окажетесь, по крайней мере заведую тем, где мы сейчас."
+"I don't understand...","I don't understand...","Я не понимаю..."
+"You will come to understand everything with time.","You will come to understand everything with time.","Вы поймете все со временем."
+"You are in conflict. With yourself, with world and even with your friend.","You are in conflict. With yourself, with world and even with your friend.","Вы в конфликте. С собой, с миром и даже со своим другом."
+"Do you remember your friends?","Do you remember your friends?","Вы помните своих друзей?"
+"Are you talking about Maksud and Asya?","Are you talking about Maksud and Asya?","Вы про Максуда и Асю?"
+"Yes, you remember, this is great.","Yes, you remember, this is great.","Да, о них, вы помните, это прекрасно."
+"Why would I forget them?","Why would I forget them?","С чего бы мне их забывать?"
+"You mind is in a daze for now. I am afraid you lost some of your memory while getting here.","You mind is in a daze for now. I am afraid you lost some of your memory while getting here.","Ваш разум все еще в тумане. Я боюсь, Вы утратили часть своих воспоминаний по пути сюда."
+"But you will remember everything and will have to come to your own conclusion.","But you will remember everything and will have to come to your own conclusion.","Но Вы вспомните все и Вам придется прийти к своему умозаключению."
+"What are you talking about?","What are you talking about?","О чем вы говорите?"
+"As I said, you are in conflict. To be more exact - you are on the verge of ego death.","As I said, you are in conflict. To be more exact - you are on the verge of ego death.","Как я сказал, Вы в конфликте. Если быть точнее - Вы на грани смерти эго."
+"That's why you were welcomed to the Reflection - to resolve a conflict and to decide for yourself with clear mind what you should do.","That's why you were welcomed to the Reflection - to resolve a conflict and to decide for yourself with clear mind what you should do.","Поэтому Вы были приняты в Отражении - чтобы Вы могли разрешить свой конфликт и с чистым разумом решить для себя, что Вам нужно делать."
+"Everything about myself? Will I be able to grasp that?","Everything about myself? Will I be able to grasp that?","Все о себе? Смогу ли я познать это?"
+"Yes, my dear guest. If you wish so and if your determination is strong, you will uncover the truth.","Yes, my dear guest. If you wish so and if your determination is strong, you will uncover the truth.","Да, мой дорогой гость. Коль желаете Вы так и Ваша решимость сильна, вы доберетесь до истины."
+"You have been trapped in a delusion, to hide the truth, to save your mind.","You have been trapped in a delusion, to hide the truth, to save your mind.","Вы были заперты в наваждении, дабы утаить истину, сохранить Ваш разум."
+"But there is limits to all, and blisfullness of ignorance is not an exeption.","But there is limits to all, and blisfullness of ignorance is not an exeption.","Но у всего есть предел, и блаженство неведения тому не исключение."
+"Uncovering the truth will hurt, and the truth may not be pleasant.","Uncovering the truth will hurt, and the truth may not be pleasant.","Путь до истины ранит Вас, и истина может оказаться не из приятных."
+"But there came a time when the delusions hurt your ego.","But there came a time when the delusions hurt your ego.","Но наступило время, когда заблуждения лишь вредят Вашему эго."
+"So do you wish to run away again or to uncover the truth?","So do you wish to run away again or to uncover the truth?","Так желаете ли вы вновь убежать или достичь истины?"
+"I...","I...","Я..."
+"I don't understand many things for now. And I wish to understand them.","I don't understand many things for now. And I wish to understand them.","Я не понимаю многих вещей. И я хочу их понять."
+"If what you said is true, if I will understand everything...","If what you said is true, if I will understand everything...","Если сказанное вами правда, если я пойму все..."
+"I am willing to try.","I am willing to try.","Я готов попробовать."
+"After all, I can always stop...","After all, I can always stop...","В конце концов, я могу всегда прекратить..."
+"Of course.","Of course.","Конечно."
+"Now it seems like there is someone waiting for you, dear guest.","Now it seems like there is someone waiting for you, dear guest.","Что ж, видимо кое-кто уже ждет Вас, дорогой гость."
+"When you will feel yourself cornered, collect your resolve and channel it to form a force to help you.","When you will feel yourself cornered, collect your resolve and channel it to form a force to help you.","Когда Вы почувствуете, что Вас прижали к стене, соберите всю свою решимость и направьте ее в силу, что поможет Вам."
+"The only person who can lift you up is yourself after all.","The only person who can lift you up is yourself after all.","В конце концов, единственный, кто может Вас поднять - это Вы сам."
+"May we meet again in the end of the road.","May we meet again in the end of the road.","Да встретимся же мы в конце пути."
+"Aahh!","Aahh!","Ааааа!"
+"What is...","What is...","Что..."
+"Found you!","Found you!","Нашла тебя!"
+"Asya!?","Asya!?","Ася?!"
+"No time to explain! Run!","No time to explain! Run!","Нет времени объяснять! Побежали!"
+"Huh?","Huh?","Хах?"
+"Found him! Chase the boy down!","Found him! Chase the boy down!","Нашли его! Поймайте мальчишку!"
+"Damn this guards!","Damn this guards!","Чертовы стражи!"
+"What's going on?","What's going on?","Что происходит?"
+"Do I look like I know?","Do I look like I know?","Я выгляжу будто я знаю?"
+"Actually yes...?","Actually yes...?","На самом деле да...?"
+"They turned here!","They turned here!","Они свернули сюда!"
+"Okay, you got me!","Okay, you got me!","Ладно, ты раскусил меня!"
+"Damn, it's a dead end! Let's deal with this first!","Damn, it's a dead end! Let's deal with this first!","Черт, тупик! Давай разберемся сначала с этим!"
+"H-how do you want me to deal with this?","H-how do you want me to deal with this?","К-как ты хочешь, чтобы я с этим разобрался?"
+"How would you like to deal with it? I am not allowed help in a fight you unfortunately!","How would you like to deal with it? I am not allowed help in a fight you unfortunately!","Как бы тебе хотелось? К сожалению, мне не позволено помогать тебе в бою!"
+"I don't know...? I just woke up!","I don't know...? I just woke up!","Я не знаю...? Я только проснулся!"
+"What do you need me for anyway?","What do you need me for anyway?","Зачем я вам вообще нужен?"
+"Don't play dumb! We both know you bear the curse!","Don't play dumb! We both know you bear the curse!","Не коси под тупого! Мы оба знаем, что ты несешь проклятие!"
+"Curse?","Curse?","Проклятие?"
+"You hadn't told her? Sweet.","You hadn't told her? Sweet.","Ты ей не говорил? Мило."
+"Anyway, the cursed ones must be dealt with. Surrender and we'll not hurt you.","Anyway, the cursed ones must be dealt with. Surrender and we'll not hurt you.","В любом случае, с проклятыми следует разбираться. Сдавайся и мы не навредим тебе."
+"Not more than needed anyway, ha-ha!","Not more than needed anyway, ha-ha!","Не больше чем нужно по крайней мере, ха-ха!"
+"What about her?","What about her?","Что насчет нее?"
+"Hey! Do you really want to do this?!","Hey! Do you really want to do this?!","Хей, ты реально собираешься сделать это?!"
+"We'll not touch her if she'll not interviere.","We'll not touch her if she'll not interviere.","Мы не тронем ее, если она не будет вмешиваться."
+"Asya...","Asya...","Ася..."
+"Salim, no! Don't you dare do this!","Salim, no! Don't you dare do this!","Салим, нет! Не смей!"
+"We're cornered. At least I'll save you.","We're cornered. At least I'll save you.","Нас прижали. Хотя бы я спасу тебя."
+"After all...","After all...","В конце концов..."
+"...I'm cursed. This will be better for you.","...I'm cursed. This will be better for you.","...я проклят. Так будет лучше для тебя."
+"It won't!","It won't!","Нет, не будет!"
+"When you will feel yourself cornered, collect your resolve and channel it to form a force to help you.","'When you will feel yourself cornered, collect your resolve and channel it to form a force to help you.'","'Когда Вы почувствуете, что Вас прижали к стене, соберите всю свою решимость и направьте ее в силу, что поможет Вам.'"
+"Host... Right...","Host... Right...","Заведующий... Точно..."
+"I have to try... I have to break free in the end.","I have to try... I have to break free in the end.","Я обязан попробовать... Я обязан освободиться в конце."
+"I have to reach the end!","I have to reach the end!","Я обязан достичь конца пути!"
+"You did it! You formed a weapon!","You did it! You formed a weapon!","Ты сделал это! Ты создал оружие!"
+"What...?","What...?","Что...?"
+"What?!","What?!","Что?!"
+"No time for questions now, firstly...","No time for questions now, firstly...","Сейчас не время для вопросов, сначала..."
+"Get their asses!","Get their asses!","Угандошь их!"
+"R-right!","R-right!","Т-точно!"
+///////////////////////////////////PROLOGUE 0 - BATTLE/////////////////,///,///
+"As I said I can't help you in a fight by the rules of this place, but I may teach you what to do.","As I said I can't help you in a fight by the rules of this place, but I may teach you what to do.","Как я уже сказала, я не могу помочь тебе в бою из-за правил этого места, но я могу рассказать, что делаь."
+"Rules of this place?","Rules of this place?","Правила этого места?"
+"Later.","Later.","Потом."
+"So, as you may feel there's a surge of energy inside you. It's your emotions and mind manifested.","So, as you may feel there's a surge of energy inside you. It's your emotions and mind manifested.","Итак, как ты можешь почувствовать, внутри тебя всплеск энергии. Это манифестация твоих эмоций и разума."
+"This bat in your hands is your main weapon, but also you may use different abilities in battle.","This bat in your hands is your main weapon, but also you may use different abilities in battle.","Бита в твоих руках - твое главное оружие, но ты можешь использовать разные способности в бою."
+"They are separated by color. Whenever you use skills or just attack with the bat, you'll get energy.","They are separated by color. Whenever you use skills or just attack with the bat, you'll get energy.","Они разделены по цветам. Когда ты используешь навыки или атакуешь битой, ты получаешь энергию."
+"Hold on, why are they separated by color in the first place?","Hold on, why are they separated by color in the first place?","Погоди, почему они разделены по цветам вообще?"
+"Think of each color as of different aspect or emotional spectrum.","Think of each color as of different aspect or emotional spectrum.","Думай о каждом цвете как об отдельном аспекте или эмоциональном спектре."
+"Got it.","Got it.","Понял."
+"Anyway, when you'll get enough energy you may release it at once using powerful ability.","Anyway, when you'll get enough energy you may release it at once using powerful ability.","В любом случае, когда у тебя достаточно энергии, ты можешь выпустить ее всю, используя мощную способность."
+"Also pay close attention to each enemy and what color are they weak to. You have limited amount of actions per turn and you may get more if you make enemy Weak by hitting their weakness.","Also pay close attention to each enemy and what color are they weak to. You have limited amount of actions per turn and you may get more if you make enemy Weak by hitting their weakness.","Еще, обращай особое внимание на каждого врага и к какому цвету они слабы. У тебя ограниченное количество действий в ход и ты можешь получить больше, если будешь ослаблять врагов, атакуя их слабости."
+"You also have weakness and enemies can use it to their advantage.","You also have weakness and enemies can use it to their advantage.","У тебя тоже есть слабости и враги могут использовать их."
+"I think I got the basics.","I think I got the basics.","Думаю я понял основы."
+"Good. Also, enemies too gather energy and may use skills.","Good. Also, enemies too gather energy and may use skills.","Отлично. Еще, враги тоже могут собирать энергию и использовать навыки."
+"Ugh, not fair!","Ugh, not fair!","Агх, не честно!"
+"Maybe. If you'll want to get more info, check out the index!","Maybe. If you'll want to get more info, check out the index!","Возможно. Если захочешь узнать больше, проверь Указатель!"
+"What index?","What index?","Что за Указатель?"
+"I forgot you just woke up... Well then, later!","I forgot you just woke up... Well then, later!","Я забыла, что ты только встал... Что ж, потом!"
+"OK! I guess I can win this!","OK! I guess I can win this!","Окей! Я полагаю я могу выиграть!"
+"That's the spirit! Glad to see you like this again.","That's the spirit! Glad to see you like this again.","Верный настрой! Рада снова видеть тебя таким."
+"Also don't worry about killing them, they aren't real to begin with.","Also don't worry about killing them, they aren't real to begin with.","К слову, не переживай если убьешь их, они никогда не были живыми."
+"Later! Go!","Later! Go!","Потом! Вперед!"
+///////////////////////////////////PROLOGUE 0 - AFTER BATTLE/////////////////,///,///
+"How are you?","How are you?","Как ты?"
+"Well.. Better then them...","Well.. Better then them...","Ну... Лучше чем они..."
+"Great. Now let's get out of here!","Great. Now let's get out of here!","Отлично. Теперь давай уходить отсюда!"
+"Okay, but not before I'll get my answers. You seem like you know more than me.","Okay, but not before I'll get my answers. You seem like you know more than me.","Окей, но не раньше чем я получу ответы. Похоже ты знаешь больше, чем я."
+"And I do. And also we can talk while walking, chop-chop! Or someone might find us again.","And I do. And also we can talk while walking, chop-chop! Or someone might find us again.","И ты прав. И еще, мы можем говорить, пока идем, топ-топ! Или нас могут снова найти."
+"Right.","Right.","Точно."
+"Long story short - we're now not in real world. Think of this place as of simulation.","Long story short - we're now not in real world. Think of this place as of simulation.","Короче - мы не в реальном мире. Думай об этом месте, будто это симуляция."
+"Already figured it after talking with Host.","Already figured it after talking with Host.","Уже понял это после разговора с Заведующим."
+"Oh so you too met him?","Oh so you too met him?","О, так ты тоже встретил его?"
+"Yes. But I don't seem to remember the details about our conversation. Just what I need to do.","Yes. But I don't seem to remember the details about our conversation. Just what I need to do.","Да. Но видимо я не могу вспомнить детали нашего разговора. Только то, что мне нужно сделать."
+"Same for me. I guess Maksud won't tell us much too if we'll find him.","Same for me. I guess Maksud won't tell us much too if we'll find him.","То же самое. Я полагаю Максуд тоже нам не расскажет много чего, если мы найдем его."
+"Wait, Maksud is here?! W-where?","Wait, Maksud is here?! W-where?","Погоди, Максуд тут?! Г-где?"
+"Defenetly not on this floor.","Defenetly not on this floor.","Явно не на этом этаже."
+"Floor?","Floor?","Этаже?"
+"Yes. This place is made up of different floors, and we are now on the floor zero.","Yes. This place is made up of different floors, and we are now on the floor zero.","Да. Это место построено из разных этажей, мы сейчас на нулевом."
+"Okay...","Okay...","Окей..."
+"You're alright?","You're alright?","Ты в порядке?"
+"Yeah it's just... I'm happy Maksud is here...","Yeah it's just... I'm happy Maksud is here...","Да, просто... Я рад, что Максуд тут..."
+"You don't seem very happy. Wanna talk about it?","You don't seem very happy. Wanna talk about it?","Ты не выглядишь особо обрадованным. Хочешь поговорить об этом?"
+"Not now... Maybe later, but thanks.","Not now... Maybe later, but thanks.","Не сейчас... Может позже, но спасибо."
+"Right...","Right...","Хорошо..."
+"Sorry, you may continue talking, just... how do you know all of this?","Sorry, you may continue talking, just... how do you know all of this?","Прости, можешь продолжать, просто... Как ты вообще знаешь это все?"
+"Let's say I've been here before.","Let's say I've been here before.","Скажем так, я была тут раньше."
+"Or to put it in better words - I've got here before you. Around a day ago. But time is strange here so I'm not sure.","Or to put it in better words - I've got here before you. Around a day ago. But time is strange here so I'm not sure.","Или вернее сказать - я попала сюда раньше тебя. Около дня назад. Но время странно работает здесь, я не уверена."
+"You know, maybe I got here at the same time as you, but you just were sleeping all this time.","You know, maybe I got here at the same time as you, but you just were sleeping all this time.","Знаешь, может мы попали сюда одновременно, просто ты спал все время."
+"Sorry...","Sorry...","Прости..."
+"Don't be, it's not your fault you've slept all this time! About that... How's your head?","Don't be, it's not your fault you've slept all this time! About that... How's your head?","Не извиняйся, это не твоя вина! Об этом... Как твоя голова?"
+"I don't know... I feel like I missed some of my memories, mostly unimportant ones... and the ones about the details of past few days...","I don't know... I feel like I missed some of my memories, mostly unimportant ones... and the ones about the details of past few days...","Не знаю... Ощущение, будто я потерял некоторые свои воспоминания, в основном не особо важные... и те с деталями о последних нескольких днях..."
+"Well, I guess I missed a few too. For example, I have no idea about the curse you were talking about.","Well, I guess I missed a few too. For example, I have no idea about the curse you were talking about.","Ну, видимо я тоже потеряла некоторые. Например, у меня нет понятия об этом проклятии."
+"Really? That's kind of an important information.","Really? That's kind of an important information.","Серьезно? Это в неком смысле важная информация."
+"Yeah, so will you be so kind to tell me?","Yeah, so will you be so kind to tell me?","Да, поэтому будешь добр посвятить меня?"
+"Of course if you're comfortable.","Of course if you're comfortable.","Естественно, если тебе комфортно."
+"I am. Just... Guess there's no point hiding it. I am cursed. And it's best not to be around me.","I am. Just... Guess there's no point hiding it. I am cursed. And it's best not to be around me.","Мне нормально. Просто... Думаю нет смысла скрывать. Я проклят. Лучше не находиться рядом со мной."
+"Why?","Why?","Почему?"
+"I don't know... Or don't remember... All I know is that cursed ones like me can spread it and it affects lifes...","I don't know... Or don't remember... All I know is that cursed ones like me can spread it and it affects lifes...","Я не знаю... Или не помню... Все, что я знаю - проклятые как я могут распространять проклятие и оно затрагивает жизни..."
+"Okay. I'm sorry about this.","Okay. I'm sorry about this.","Окей. Мне жаль."
+"Huh? That's all?","Huh? That's all?","Хах? Это все?"
+"Well, I remembered something, still not like I care about this curse. You seem fine to me.","Well, I remembered something, still not like I care about this curse. You seem fine to me.","Ну, я вспомнила кое-что, все еще не то чтобы мне есть дело до этого проклятия. Ты кажешься нормальным мне."
+"But...","But...","Но..."
+"Sh-h-h. Listen: we are in kind of simulation. Curses can't spread here anyway.","Sh-h-h. Listen: we are in kind of simulation. Curses can't spread here anyway.","Ш-ш-ш. Послушай: мы в типа симуляции. Проклятия не могут здесь распространяться."
+"I guess it's true...","I guess it's true...","Полагаю это верно..."
+"And I guess it's time to tell you what I learned about this place. It might help.","And I guess it's time to tell you what I learned about this place. It might help.","И я полагаю время рассказать тебе, что я узнала об этом месте. Может поможет."
+"As I mentioned before - I can't fight here to help you. I am not allowed by Host to fight alongside you, but I am allowed to do everything else, so I'll figure how to help you...","As I mentioned before - I can't fight here to help you. I am not allowed by Host to fight alongside you, but I am allowed to do everything else, so I'll figure how to help you...","Как я сказала ранее - я не могу сражаться здесь, чтобы помочь тебе. Мне не позволено Заведующим сражаться вместе с тобой, но я могу делать что угодно еще, поэтому я придумаю как помочь тебе..."
+"You will have to fight your way up to the fifth floor and find Maksud along the way.","You will have to fight your way up to the fifth floor and find Maksud along the way.","Тебе придется пробить себе путь до пятого этажа и найти Максуда по пути."
+"After all we've got here after...","After all we've got here after...","В конце концов мы попали сюда после..."
+"...our fight with him...","...our fight with him...","...нашей с ним ссоры..."
+"Yes...","Yes...","Да..."
+"I see. So this place is here to help us reconcile or what?","I see. So this place is here to help us reconcile or what?","Понял. Так это место существует, чтобы помочь нам помириться или что?"
+"I guess. I was given access to any floor that you were on, to help you.","I guess. I was given access to any floor that you were on, to help you.","Полагаю да. Мне был дан доступ в любым этажам, на которых ты был, чтобы помочь тебе."
+"And Maksud?","And Maksud?","А Максуд?"
+"I don't know. I didn't find him, but I know he's here on the upper floors.","I don't know. I didn't find him, but I know he's here on the upper floors.","Я не знаю. Я не нашла его, но я знаю, что он на верхних этажах."
+"Okay... Let me think about this...","Okay... Let me think about this...","Окей... Дай мне переварить это..."
+"I know that's a lot to take in...","I know that's a lot to take in...","Я знаю это много всего сразу..."
+"A little bit...","A little bit...","Немного да..."
+"Not like you have to do this.","Not like you have to do this.","Не то чтобы ты обязан это делать."
+"Oh no, it's him!","Oh no, it's him!","О нет, это он!"
+"I'm not here to hurt you, prisoners of the Reflection.","I'm not here to hurt you, prisoners of the Reflection.","Я здесь не чтобы навредить вам, пленники Отражения."
+"I'm here to merely observe. And maybe to guide you to an easier solution of your problems.","I'm here to merely observe. And maybe to guide you to an easier solution of your problems.","Я здесь лишь чтобы наблюдать. И направить вас к более легкому решению проблем."
+"For example...?","For example...?","Например...?"
+"For example - to stay.","For example - to stay.","Например - остаться."
+"It's a heavy burden to be responsible for the lives of your friends.","It's a heavy burden to be responsible for the lives of your friends.","Ноша быть ответственным за жизни твоих друзей весьма тяжела."
+"If you still consider them as such.","If you still consider them as such.","Если ты еще считаешь их друзьями."
+"Shut up!","Shut up!","Завались!"
+"But to stay here is not as bad of an option.","But to stay here is not as bad of an option.","Но остаться тут не такая уж и плохая опция."
+"The path ahead will lead you to the truth. And truth will hurt.","The path ahead will lead you to the truth. And truth will hurt.","Дорога впереди ведет к истине. И она явно ранит."
+"So here's the solution - don't go. Why trouble yourself with that?","So here's the solution - don't go. Why trouble yourself with that?","Так вот решение - не идти. Зачем мучать себя этим?"
+"You can stay here. And live in peace, not having to worry about things.","You can stay here. And live in peace, not having to worry about things.","Вы можете остаться здесь. Жить в мире, не беспокоиться ни о чем."
+"But, aren't we prisoners here...?","But, aren't we prisoners here...?","Но разве мы тут не заключенные...?"
+"Yes. But isn't the prison a right place for the likes of you?","Yes. But isn't the prison a right place for the likes of you?","Да. Но разве тюрьма не подходящее место для таких как ты?"
+"Leave us alone! Why are you here?","Leave us alone! Why are you here?","Оставь нас в покое! Почему ты здесь?"
+"To welcome the main lead of course. After all, he is my worst enemy and my greatest friend.","To welcome the main lead of course. After all, he is my worst enemy and my greatest friend.","Чтобы встретить главного, конечно же. В конце концов, он мой злейший враг и мой дражайший друг."
+"Salim...","Salim...","Салим..."
+"You can go further. And I hope you'll understand how meaningless it is.","You can go further. And I hope you'll understand how meaningless it is.","Ты можешь пройти дальше. И я надеюсь ты поймешь как это бессмысленно."
+"Since to get out, you'll have to make me let you out.","Since to get out, you'll have to make me let you out.","Так как чтобы выбраться отсюда, тебе придется убедить меня выпустить тебя."
+"And I will never allow that.","And I will never allow that.","И я никогда этого не позволю."
+"He's gone...","He's gone...","Он ушел..."
+"Yes...","Yes...","Да..."
+"I hope you didn't listen to him. He's not important!","I hope you didn't listen to him. He's not important!","Я надеюсьты не слушал его. Он не важен!"
+"But... What if he's right?","But... What if he's right?","Но... Что если он прав?"
+"And what if he's not?","And what if he's not?","И что если нет?"
+"...I don't know...","...I don't know...","...Я не знаю..."
+"*sigh* Okay you know what? Let's make a deal.","*sigh* Okay you know what? Let's make a deal.","*вздох* Окей, знаешь что? Давай заключим сделку."
+"I'll help you get to the truth, and we'll discover it both. In the end it's up to you what you will do.","I'll help you get to the truth, and we'll discover it both. In the end it's up to you what you will do.","Я помогу тебе найти истину, и мы оба ее узнаем. В конце что делать - твой выбор."
+"But please, at least try. You shouldn't give up without trying...","But please, at least try. You shouldn't give up without trying...","Но пожалуйста, хотя бы попытайся. Ты не должен сдаваться сразу..."
+"Not for my sake. But for yours.","Not for my sake. But for yours.","Не ради меня. А ради себя."
+"Huh... You sound like a Host.","Huh... You sound like a Host.","Хах... Ты звучишь как Заведующий."
+"But I will try. Don't worry. And thank you.","But I will try. Don't worry. And thank you.","Но я попробую. Не переживай. И спасибо."
+"You're welcome. I am your friend after all.","You're welcome. I am your friend after all.","Всегда пожалуйста. В конце концов, я твоя подруга."
+"Don't forget it, okay?","Don't forget it, okay?","Не забывай об этом, хорошо?"
+"Okay...","Okay...","Окей..."
+"I am still lost, but... At least I know I can trust you.","I am still lost, but... At least I know I can trust you.","Я все еще запутан, но... По крайней мере я знаю, я могу довериться тебе."
+"Right. Oh, look, the door is here!","Right. Oh, look, the door is here!","Верно. О, смотри, дверь тут!"
+"The door?","The door?","Дверь?"
+"Yeah, it leads to the room you'll be resting. And I guess you'll wake up here in case you'll be knocked off...","Yeah, it leads to the room you'll be resting. And I guess you'll wake up here in case you'll be knocked off...","Да, она ведет к комнате, где ты будешь отдыхать. И я полагаю где ты проснешься, когда тебя вырубят..."
+"Well... Great... I hope it won't be too often...","Well... Great... I hope it won't be too often...","Ну... Прекрасно... Надеюсь это не будет происходить слишком часто..."
+"How do you know it?","How do you know it?","Как ты это знаешь?"
+"Oh! I almost forgot!","Oh! I almost forgot!","О! Я почти забыла!"
+"Reach into your pocket and get the index out of there.","Reach into your pocket and get the index out of there.","Поищи в кармане и достань оттуда Указатель."
+"Inde-- What?! How is it here?","Inde-- What?! How is it here?","Указ-- Что?! Как он оказался тут?"
+"Don't know but I got one and there are some basic information about everything, but also we can add info.","Don't know but I got one and there are some basic information about everything, but also we can add info.","Не знаю, но я получила тако и здесь записана базовая информация обо всем, но мы также можем добавить записи."
+"Let me see... Looks like the index is shared between both of us, since we've met.","Let me see... Looks like the index is shared between both of us, since we've met.","Дай-ка глянуть... Похоже Указатель разделен между нами с тех пор, как мы встретились."
+"It says Maksud is connected to the Network, but we can't see his index, while we hadn't reached him...","It says Maksud is connected to the Network, but we can't see his index, while we hadn't reached him...","Тут говорится, что Максуд в Сети, но мы не можем увидеть его Указатель, пока не найдем его..."
+"Yeah...","Yeah...","Да..."
+"Anyway, Salim. I'll go the other way through this maze to find out more about things.","Anyway, Salim. I'll go the other way through this maze to find out more about things.","В любом случае, Салим. Я пойду в другую сторону через этот лабиринт, чтобы изучить побольше."
+"Right. And I will go inside and begin my ascend to upper floors.","Right. And I will go inside and begin my ascend to upper floors.","Верно. И я пойду внутрь и начну подниматься по этажам."
+"Yes. I hope you'll be fine if I'll drop by your room?","Yes. I hope you'll be fine if I'll drop by your room?","Ага. Я надеюсь ты не против, если я буду заглядывать к тебе в комнату?"
+"Of course!","Of course!","Конечно!"
+"Great! Good luck!","Great! Good luck!","Отлично! Удачи!"
+"To you too!","To you too!","Тебе тоже!"
+///////////////////////////////////FLOOR 1/////////////////,///,///
+///////////////////////////////////FLOOR 1 - BEFORE BATTLE WITH GATEKEEPER/////////////////,///,///
+"Index says it's the final room of the floor.","Index says it's the final room of the floor.","Судя по Указателю, это последняя комната на этаже."
+"I finally made it here after all...","I finally made it here after all...","Все-таки я наконец добрался сюда..."
+"Don't be afraid. I won't harm you unless you want to get past the gates.","Don't be afraid. I won't harm you unless you want to get past the gates.","Не бойся. Я не трону тебя, разве что ты хочешь пройти через врата."
+"Actually...","Actually...","Вообще-то..."
+"Ugh, what a nuance. Looks like you really want to go up, after all.","Ugh, what a nuance. Looks like you really want to go up, after all.","Агх, проблема. Похоже ты все-таки реально хочешь подняться наверх."
+"Yeah, sorry. Who are you?","Yeah, sorry. Who are you?","Ага, прошу прощения. Кто ты?"
+"I am gatekeeper.","I am gatekeeper.","Я привратник."
+"I got it, but what's your name?","I got it, but what's your name?","Я понял это, но как тебя звать?"
+"Call me Gatekeeper.","Call me Gatekeeper.","Зови меня Привратником."
+"My name is of no importance. All I am is just what I am doing.","My name is of no importance. All I am is just what I am doing.","Мое имя не важно. Я это лишь то, чем я занимаюсь."
+"Guarding the gates from you.","Guarding the gates from you.","Сторожу врата от тебя."
+"Why are you doing this?","Why are you doing this?","Зачем ты это делаешь?"
+"Curious one, aren't you?","Curious one, aren't you?","Ты любопытный, не так ли?"
+"Looks like you still wish to understand the world around. I thought you'll be more like me.","Looks like you still wish to understand the world around. I thought you'll be more like me.","Похоже ты все еще хочешь понять мир. Я думал ты будешь больше как я."
+"It's a shame, I've been given the wrong intel.","It's a shame, I've been given the wrong intel.","Жаль, мне дали ложную информацию."
+"What intel? Why were you expecting to be... like you? Whaterver this means....","What intel? Why were you expecting to be... like you? Whaterver this means....","Какая информация? Почему ты ожидал, что я буду... как ты? Что бы это ни значило..."
+"Intel about your past. Looks like Host did a good job picking you up.","Intel about your past. Looks like Host did a good job picking you up.","Информация о твоем прошлом. Похоже Заведующий справился с тем, чтобы поднять твой дух."
+"You might not remember, but you were different. A slothful person, tired of it all.","You might not remember, but you were different. A slothful person, tired of it all.","Ты можешь не помнить, но ты был иным. Ленивый человек, уставший от всего."
+"I hoped you'd still be the same person when I meet you. At least I wouldn't have to work.","I hoped you'd still be the same person when I meet you. At least I wouldn't have to work.","Я надеялся ты все еще будешь таким же при нашей встрече. Так мне не пришлось бы работать."
+"Maybe I was like this... But I decided to begin to change.","Maybe I was like this... But I decided to begin to change.","Может я и был таким... Но я решил начать меняться."
+"To change? Ha-ha-ha!","To change? Ha-ha-ha!","Меняться? Ха-ха-ха!"
+"You and "change"... The mere idea to change your life is impossible.","You and "change"... The mere idea to change your life is impossible.","Ты и 'изменения'... Сама идея изменить твою жизнь невозможна."
+"No matter how hard you try, you'll be kicked down into yet another cycle.","No matter how hard you try, you'll be kicked down into yet another cycle.","Как бы ты не пытался, ты будешь отброшен в очередной цикл."
+"Cycle?","Cycle?","Цикл?"
+"The neverending one. And when you think you're about to break free from it, it morphs, bringing you back to darkness.","The neverending one. And when you think you're about to break free from it, it morphs, bringing you back to darkness.","Нескончаемый цикл. И когда ты думаешь о том, что вот-вот ты освободишься от него, он меняется, возвращая тебя во тьму."
+"Remember it... As the days go on... and on... and on... And you repeat the same things as you did before.","Remember it... As the days go on... and on... and on... And you repeat the same things as you did before.","Вспомни... Как дни идут... и идут... и идут... И ты повторяешь все то же, что раньше."
+"Remember...","Remember...","Вспомни..."
+"Right...","Right...","Верно..."
+"The day begins, and I wake up.","The day begins, and I wake up.","День начинается, и я просыпаюсь."
+"The things I don't really want to do, but I have to...","The things I don't really want to do, but I have to...","Вещи, которые я не особо хочу делать, но нужно..."
+"Well, it will end soon, I just have to wait a bit. Soon I'll be free from classes!","Well, it will end soon, I just have to wait a bit. Soon I'll be free from classes!","Ну, это скоро закончится, мне нужно просто еще подождать. Скоро я буду свободен от занятий!"
+"It's just a bit of studying, and then I'll work on my project and chill, great.","It's just a bit of studying, and then I'll work on my project and chill, great.","Просто немного поучиться и затем я смогу работать над своим проектом и расслабиться, отлично."
+"'Have you checked the news? It's a bit disturbing...'","'Have you checked the news? It's a bit disturbing...'","'Ты читал новости? Они немного тревожные...'"
+"'You're talking about that murder of a cursed person...?'","'You're talking about that murder of a cursed person...?'","'Ты говоришь об убийстве проклятого...?'"
+"'Yeah... The guy got what was coming for him, but still... It's so brutal...'","'Yeah... The guy got what was coming for him, but still... It's so brutal...'","'Да... Парень конечно получил по заслугам, но все еще...'"
+"Better not to think about this too much.","Better not to think about this too much.","Лучше не думать об этом слишком много."
+"Try not to think.","Try not to think.","Попытайся не думать."
+"What time is it? Huh?!","What time is it? Huh?!","Сколько времени уже? А?!"
+"I spent an hour just reading socials... I should stop...","I spent an hour just reading socials... I should stop...","Я потратил час только на чтение соцсетей... Нужно остановиться..."
+"I am a bit anxious...","I am a bit anxious...","Мне тревожно..."
+"Forget about it. Don't think. I am tired, so...","Forget about it. Don't think. I am tired, so...","Забудь об этом. Не думай. Я устал так что..."
+"Well, it will end soon, I just have to wait a bit.","Well, it will end soon, I just have to wait a bit.","Ну, это скоро закончится, мне нужно просто еще подождать."
+"'You've seen the last news? This show is coming to a close...'","'You've seen the last news? This show is coming to a close...'","'Читали последние новости? Этот сериал закрывают...'"
+"'It's not that bad of a news actually. I've stopped watching it when they put a cursed character in it.'","'It's not that bad of a news actually. I've stopped watching it when they put a cursed character in it.'","'Не такие уж и плохие новости. Я прекратил его смотреть, когда они засунули туда персонажа-проклятого.'"
+"'Yeah, but I still was a fan of a show... It's something you can just ignore.'","'Yeah, but I still was a fan of a show... It's something you can just ignore.'","'Да, но сериал все еще был веселым... Это не что-то, что можно просто игнорировать.'"
+"I just have to wait untill the classes are done.","I just have to wait untill the classes are done.","Просто нужно подождать до конца занятий."
+"Oh, it's midnight already? I spent too much time procastinating....","Oh, it's midnight already? I spent too much time procastinating....","О, уже полночь? Я потратил слишком много времени прокастинируя..."
+"At least I did something today... I'm just gonna check the news.","At least I did something today... I'm just gonna check the news.","По крайней мере сегодня я сделал что-то... Надо глянуть новости."
+"Don't think about it.","Don't think about it.","Не думай об этом."
+"Well, it will end soon, I just have to wait a bit...","Well, it will end soon, I just have to wait a bit...","Ну, это скоро закончится, мне нужно просто еще подождать..."
+"Soon it will get bette-","Soon it will get bette-","Скоро все станет луч-"
+"The news are just the same...","The news are just the same...","Новости все те же..."
+"Will it even get better for me?","Will it even get better for me?","Станет ли вообще лучше?"
+"The day begins, and I have to wake up...","The day begins, and I have to wake up...","День начинается и мне приходится вставать..."
+"Soon...","Soon...","Скоро..."
+"It will never change?","It will never change?","Ничего никогда не изменится?"
+"The day begins...","The day begins...","День начинается..."
+"It just repeats...","It just repeats...","Все повторяется..."
+"The day begins... again...","The day begins... again...","День начинается... снова..."
+"I don't want to go today... Just one day, I'll call sick.","I don't want to go today... Just one day, I'll call sick.","Не хочу никуда идти... Лишь один день, скажу, что заболел."
+"Is it noon already? How much I slept?","Is it noon already? How much I slept?","Уже полдень? Как долго я спал?"
+"I remembered...","I remembered...","Я вспомнил..."
+"No... I always remembered...","No... I always remembered...","Нет... Я всегда помнил..."
+"I just hoped it would change, but since I got there nothing changed.","I just hoped it would change, but since I got there nothing changed.","Я просто надеялся измениться, но с тех пор, как я попал сюда, ничего не изменилось."
+"I am still in cycle. Repeating all again and again.","I am still in cycle. Repeating all again and again.","Я все еще живу в цикле. Повторяя все снова и снова."
+"Waking up, doing things I don't really want to, but have to, and living in a world that's not for me.","Waking up, doing things I don't really want to, but have to, and living in a world that's not for me.","Просыпаясь, делая то, что не особо хочу делать, но вынужден, и живя в мире, где мне нет места."
+"Is it all there is to my life?","Is it all there is to my life?","Неужели это вся моя жизнь?"
+"To wake up, waste a day and to not change a thing?","To wake up, waste a day and to not change a thing?","Просыпаться, тратить день впустую и ничего не менять?"
+"To be a parasite, unable to do anything.","To be a parasite, unable to do anything.","Быть паразитом, что не может ничего сделать."
+"To be afraid of the world...","To be afraid of the world...","Бояться мира..."
+"It repeats...","It repeats...","Все повторяется..."
+"My memories... There is more...","My memories... There is more...","Мои воспоминания... Есть еще что-то..."
+"How's your project?","How's your project?","Как твой проект?"
+"I don't know... I'm kinda got tired of it all...","I don't know... I'm kinda got tired of it all...","Не знаю... Я как-то устал от всего этого..."
+"I just wait for uni to end, it's so boring...","I just wait for uni to end, it's so boring...","Просто жду, пока универ кончится, это так скучно..."
+"Oh, I get it, ugh...","Oh, I get it, ugh...","О, понимаю, эх..."
+"But, I believe you can do this!","But, I believe you can do this!","Но я верю ты сможешь все сделать!"
+"I mean, you just have to do something else for now and then go back to work.","I mean, you just have to do something else for now and then go back to work.","Как бы, тебе просто нужно заняться чем-нибудь другим сейчас и потом вернуться к работе."
+"Maybe...","Maybe...","Возможно..."
+"I'm actually a bit bored of my classes too... A waste of time...","I'm actually a bit bored of my classes too... A waste of time...","На самом деле я тоже устал от своих занятий... Трата времени..."
+"Huh, seems like it's universal thing!","Huh, seems like it's universal thing!","Хах, похоже это общее у всех!"
+"Yeah. Anyway, have you seen this show?","Yeah. Anyway, have you seen this show?","Ага. К слову, ты смотрел этот сериал?"
+"Wasn't it closed? I overheard my classmates talking about it one day.","Wasn't it closed? I overheard my classmates talking about it one day.","Разве его не закрыли? Я слышал мои одногруппники говорили о нем один день."
+"Yeah, fortunately they decided to make a final season and not just cut it!","Yeah, fortunately they decided to make a final season and not just cut it!","Да, но к счастью они решили сделать последний сезон, а не просто прекратить съемки."
+"It's really good, you should watch it!","It's really good, you should watch it!","Он действительно хорош, тебе стоит посмотреть его!"
+"Maybe I'll give it a try, tho I heard there is some bad character writing...","Maybe I'll give it a try, tho I heard there is some bad character writing...","Может я посмотрю, хотя я слышал там плохо прописывают персонажей..."
+"Don't know, it's great!","Don't know, it's great!","Не знаю, здесь все прекрасно!"
+"Oh, look, who's finally here!","Oh, look, who's finally here!","О, посмотри кто наконец-то явилась!"
+"Sorry guys! I ran out of luck and all lights were red on my way here...","Sorry guys! I ran out of luck and all lights were red on my way here...","Простите, ребята! У меня будто кончилась вся удача и все светофоры по пути были красными..."
+"But! I brought new tabletop game as promised!","But! I brought new tabletop game as promised!","Но! Как я и обещала, я принесла новую настолку!"
+"Great!","Great!","Прекрасно!"
+"Let me see!","Let me see!","Дайте взглянуть!"
+"I see.","I see.","Я понял."
+"How could I be so stupid? How did I miss this?","How could I be so stupid? How did I miss this?","Как я мог быть таким глупцом? Как я упустил это?"
+"You remembered it seems...","You remembered it seems...","Видимо ты вспомнил..."
+"Do you still wish to struggle?","Do you still wish to struggle?","Ты все еще хочешь продолжать борьбу?"
+"Yes.","Yes.","Да."
+"It all repeats... Nothing gets better on a global scale...","It all repeats... Nothing gets better on a global scale...","Все повторяется... Ничего не становится лучше глобально..."
+"I am forced to wake up again and again, to do what I don't want.","I am forced to wake up again and again, to do what I don't want.","Я вынужден просыпаться снова и снова, чтобы делать то, что я не хочу."
+"Even here it's all the same.","Even here it's all the same.","Даже здесь, все так же."
+"And I got swayed by it all, to the point where I stopped trying.","And I got swayed by it all, to the point where I stopped trying.","И меня унесло из-за этого, так что я перестал пытаться."
+"Because there is no point in trying.","Because there is no point in trying.","Потому что нет смысла пытаться."
+"Or so I thought. But after getting here I decided to try once again.","Or so I thought. But after getting here I decided to try once again.","Или я так считал. Но когда я попал сюда, я решил попробовать снова."
+"And long ago I tried alone, to change my life and focused on all the wrong things.","And long ago I tried alone, to change my life and focused on all the wrong things.","И давным давно я пробовал изменить свою жизнь один и думал не о тех вещах."
+"It will repeat. My life, my days.","It will repeat. My life, my days.","Все повторится. Моя жизнь, мои дни."
+"But I will make it so that in this reapetition will be a place for things that bring me joy.","But I will make it so that in this reapetition will be a place for things that bring me joy.","Но я сделаю так, чтобы в этом повторении было место вещам, которые приносят мне радость."
+"And I will make sure that even so I'll change at least something every time.","And I will make sure that even so I'll change at least something every time.","И я удостоверюсь в том, что раз на то пошло, я с каждым разом буду менть хоть что-то."
+"There is nothing that can't be changed, even if we all live in cycles.","There is nothing that can't be changed, even if we all live in cycles.","Нет ничего, что нельзя изменить, даже если мы все живем в циклах."
+"I see...","I see...","Понятно..."
+"I'm sorry... But I can't let you go...","I'm sorry... But I can't let you go...","Мне жаль... Но я не могу пропустить тебя..."
+"My job is to make you repeat it all again and again. Until you break.","My job is to make you repeat it all again and again. Until you break.","Моя работа заключается в том, чтобы заставить тебя повторять все снова и снова. Пока ты не сломаешься."
+"I have a feeling I will repeat it anyway. But even so, I will not let it break me this time!","I have a feeling I will repeat it anyway. But even so, I will not let it break me this time!","Я чувствую, что я повторю все в любом случае. Но даже так, я не повзолю этому сломить меня на этот раз!"
+"I will live in my own cycle, by my rules from now on!","I will live in my own cycle, by my rules from now on!","С этого момента я буду жить в своем цикле, со своими правилами!"
+"Bring it on!","Bring it on!","Нападай!"
+///////////////////////////////////FLOOR 1 - AFTER BATTLE WITH GATEKEEPER/////////////////,///,///
+"You may go... But remember...","You may go... But remember...","Ты можешь идти... Но помни..."
+"You will return here... And I will be awaiting you again...","You will return here... And I will be awaiting you again...","Ты вернешься... И я буду ждать тебя снова..."
+"And I will beat you once again. I love that repetition!","And I will beat you once again. I love that repetition!","И я снова одержу верх. Мне нравится это повторение!"
+"Huh... You're funny...","Huh... You're funny...","Хах... Ты забавный..."
+"It's time to go.","It's time to go.","Время двигаться дальше."
+"It looks like an elevator, interesting... I can go only up to second floor, ugh...","It looks like an elevator, interesting... I can go only up to second floor, ugh...","Похоже на лифт, интересно... Я могу подняться только на второй этаж, эх..."
+"Well, one step at a time, I guess.","Well, one step at a time, I guess.","Ну, маленькими шажками ближе к цели."
+"I am suprised.","I am suprised.","Я удивлен."
+"Huh?! You!","Huh?! You!","А?! Ты!"
+"Don't worry, I won't stop you. I just wanna talk.","Don't worry, I won't stop you. I just wanna talk.","Не переживай, я не собираюсь останавливать тебя. Я просто хочу поговорить."
+"Fine then, talk...","Fine then, talk...","Ладно, говори..."
+"Why did you decide to oppose Gatekeeper and go forward? Life won't change that easy, you know that.","Why did you decide to oppose Gatekeeper and go forward? Life won't change that easy, you know that.","Почему ты решил противиться Привратнику и пройти дальше?"
+"You're annoying, you know? I thought you can see and hear everything.","You're annoying, you know? I thought you can see and hear everything.","Ты надоедливый, знаешь? Мне казалось ты можешь видеть и слышать все."
+"I want to hear your answer myself.","I want to hear your answer myself.","Я хочу услышать это лично."
+"...Fine. But, you will answer my question after this.","...Fine. But, you will answer my question after this.","...Ладно. Но ты ответишь на мой вопрос после этого."
+"Interesting. Fine, I'll answer one question in exchange for one answer from you.","Interesting. Fine, I'll answer one question in exchange for one answer from you.","Интересно. Хорошо. Я отвечу на один вопрос в обмен на один ответ от тебя."
+"Good.","Good.","Хорошо."
+"I know that my life won't change so easily. It would be stupid to believe that I can break from these cycles just when I wish to.","I know that my life won't change so easily. It would be stupid to believe that I can break from these cycles just when I wish to.","Я понимаю, что изменить жизнь не так легко. Было бы глупо верить, что я могу выбраться из циклов по желанию."
+"But I can begin to change my life little by little, so that it's not that boring or uncomfortable to me.","But I can begin to change my life little by little, so that it's not that boring or uncomfortable to me.","Но я могу начать менять свою жизнь по чуть-чуть, чтобы она была не такой скучной и некомфортной для меня."
+"And one day I will be surrounded by the people and things I love.","And one day I will be surrounded by the people and things I love.","И однажды я буду окружен людьми и вещами, что люблю."
+"Besides, I already have people that I love, that can support me. I just was too centered around how miserable my life is to notice it in the moment.","Besides, I already have people that I love, that can support me. I just was too centered around how miserable my life is to notice it in the moment.","Помимо того, у меня уже есть люди, которых я люблю, которые могут поддержать меня. Я просто слишком зациклился на том как убога моя жизнь, чтобы заметить это тогда."
+"When it all adds up, it's hard to notice the good things in life. I want to change it.","When it all adds up, it's hard to notice the good things in life. I want to change it.","Когда все накатывает, тяжело заметить хорошие вещи в жизни. Я хочу изменить это."
+"Oh, but I though you and Maksud aren't in the best relationships by now, so do you still have the 'people' who you love around you or it's just Asya?","Oh, but I though you and Maksud aren't in the best relationships by now, so do you still have the 'people' who you love around you or it's just Asya?","О, но мне казалось ты и Максуд не в лучших отношениях сейчас, так у тебя все еще есть 'люди', которых любишь рядом или это только Ася?"
+"The deal was about only one question.","The deal was about only one question.","Сделка была только на один вопрос."
+"Ha-ha-ha, I see.","Ha-ha-ha, I see.","Ха-ха-ха, понял."
+"Then ask me what you want, go on.","Then ask me what you want, go on.","Тогда спрашивай меня, что хочешь, давай."
+"What do you want from me? Like, what's your problem with me, why are you so set on not letting me go?","What do you want from me? Like, what's your problem with me, why are you so set on not letting me go?","Что тебе нужно от меня? Типа, в чем проблема со мной, почему ты так сильно не хочешь выпустить меня?"
+"Because you're a bug.","Because you're a bug.","Потому что ты баг."
+"The program one or the colorado one?","The program one or the colorado one?","Программный что-ли?"
+"The system one. You are the bug in the system of the world.","The system one. You are the bug in the system of the world.","Системный. Ты - баг в системе мира."
+"To me you're just an error, like many 'cursed', as you call yourself.","To me you're just an error, like many 'cursed', as you call yourself.","Для меня ты лишь ошибка, как и многие 'проклятые', как ты себя называешь."
+"But the real world isn't a computer system!","But the real world isn't a computer system!","Но реальный мир это не компьютерная система!"
+"It is still a system. The one that works, like it or not, on a set of rules.","It is still a system. The one that works, like it or not, on a set of rules.","Он все еще система. Система, которая работает, нравится тебе или нет, на наборе правил."
+"Everyone who deviates from the set rules and expectations are bugs or 'cursed'.","Everyone who deviates from the set rules and expectations are bugs or 'cursed'.","Все, кто отклоняются от данных правил и ожиданий - баги или 'проклятые'."
+"Your mere existence shows that system isn't perfect if it can give birth to the likes of you.","Your mere existence shows that system isn't perfect if it can give birth to the likes of you.","Само ваше существование показывает, что система не идеальна, если она может позволить вам родиться."
+"What's more important, you can spread the errors like the virus and make other parts of the system broken.","What's more important, you can spread the errors like the virus and make other parts of the system broken.","Что важнее - вы можете распространять свою ошибку как вирус, ломая другие части системы."
+"The world works perfect without people like you. To adapt the system to you, we'll need a lot of time and it's a collossal effort.","The world works perfect without people like you. To adapt the system to you, we'll need a lot of time and it's a collossal effort.","Мир идеально работает без таких людей как ты. Чтобы адаптировать систему под вас, нам понадобится слишком много усилий и времени."
+"No one would accept this.","No one would accept this.","Никто бы не принял это."
+"That's an answer.","That's an answer.","Вот весь ответ."
+"Is there no other way to co-existing?","Is there no other way to co-existing?","Неужели нет способса сосуществовать?"
+"Ugh...","Ugh...","Агх..."
+"So long. If you'll make it to the elevator on this floor, we'll meet again and make another deal.","So long. If you'll make it to the elevator on this floor, we'll meet again and make another deal.","До встречи. Если ты дойдешь до лифта на этом этаже, мы встретимся снова и совершим еще одну сделку."
+"Though I hope you won't make it there.","Though I hope you won't make it there.","Хотя я надеюсь, ты не доберешься туда."
+"Go away already!","Go away already!","Уходи уже!"
+"Well, second floor... Here I go!","Well, second floor... Here I go!","Что ж, второй этаж... Вот и я!"

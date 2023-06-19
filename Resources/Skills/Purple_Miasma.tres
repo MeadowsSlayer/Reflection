@@ -1,0 +1,15 @@
+[gd_resource type="Resource" load_steps=2 format=2]
+
+[ext_resource path="res://Scripts/Skills/SkillResource.gd" type="Script" id=1]
+
+[resource]
+script = ExtResource( 1 )
+color = "Purple"
+CD = 2
+actions = 1
+description = "PURPLE_MIASMA"
+skill_name = "Miasma"
+type = "enemy"
+icon = "res://Sprites/UI/Skills/Purple/Purple_Miasma.png"
+en = 2
+skill_code = "Purple_Miasma"

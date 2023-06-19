@@ -1,0 +1,15 @@
+[gd_resource type="Resource" load_steps=2 format=2]
+
+[ext_resource path="res://Scripts/Skills/SkillResource.gd" type="Script" id=1]
+
+[resource]
+script = ExtResource( 1 )
+color = "White"
+CD = 7
+actions = 2
+description = "WHITE_PAINFUL_BLOOM"
+skill_name = "Painful Bloom"
+type = "all enemies"
+icon = "res://Sprites/UI/Skills/White/White_Painful_Bloom.png"
+en = 5
+skill_code = "White_Painful_Bloom"

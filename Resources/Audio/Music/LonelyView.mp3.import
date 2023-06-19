@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/LonelyView.mp3-346d838e7778554b595553a705ddf93e.mp3str"
+
+[deps]
+
+source_file="res://Resources/Audio/Music/LonelyView.mp3"
+dest_files=[ "res://.import/LonelyView.mp3-346d838e7778554b595553a705ddf93e.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

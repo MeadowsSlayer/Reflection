@@ -1,0 +1,322 @@
+[gd_scene load_steps=11 format=2]
+
+[ext_resource path="res://Prefabs/UI/TV.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Resources/Shaders/TV.gdshader" type="Shader" id=2]
+[ext_resource path="res://Prefabs/Test/TVBGTest.gd" type="Script" id=3]
+[ext_resource path="res://Resources/Fonts/EncounterTextMedium.tres" type="DynamicFont" id=4]
+[ext_resource path="res://Resources/Images/white.png" type="Texture" id=5]
+
+[sub_resource type="Animation" id=2]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:percent_visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 0.0 ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("../Label2:percent_visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 0.0 ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath(".:text")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ "curHP = save.get(\"curHP\")
+	curEN = save.get(\"curEN\")
+	HP_mod = save.get(\"HP_mod\")
+	abs_max_axtions = save.get(\"max_actions\")
+	
+	Base_ATK = save.get(\"Base_ATK\")
+	Base_END = save.get(\"Base_END\")
+	Base_DEF = save.get(\"Base_DEF\")
+	Base_SEN = save.get(\"Base_SEN\")
+	Base_SPD = save.get(\"Base_SPD\")
+	Base_ENR = save.get(\"Base_ENR\")
+	SPD = Base_SPD
+	
+	red_res = save.get(\"red_res\")
+	green_res = save.get(\"green_res\")
+	blue_res = save.get(\"blue_res\")
+	purple_res = save.get(\"purple_res\")
+	yellow_res = save.get(\"yellow_res\")
+	orange_res = save.get(\"orange_res\")" ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("../ColorRect:color")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Color( 0.0196078, 0.0196078, 0.0196078, 1 ) ]
+}
+
+[sub_resource type="Animation" id=3]
+resource_name = "Start"
+length = 65.0
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:percent_visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 30, 34.9, 35, 65 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ 0.0, 1.0, 1.0, 0.0, 1.0 ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("../Label2:percent_visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 45, 65 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ 0.0, 1.0, 1.0 ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath(".:text")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0, 35 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ "curHP = save.get(\"curHP\")
+	curEN = save.get(\"curEN\")
+	HP_mod = save.get(\"HP_mod\")
+	abs_max_axtions = save.get(\"max_actions\")
+	
+	Base_ATK = save.get(\"Base_ATK\")
+	Base_END = save.get(\"Base_END\")
+	Base_DEF = save.get(\"Base_DEF\")
+	Base_SEN = save.get(\"Base_SEN\")
+	Base_SPD = save.get(\"Base_SPD\")
+	Base_ENR = save.get(\"Base_ENR\")
+	SPD = Base_SPD
+	
+	red_res = save.get(\"red_res\")
+	green_res = save.get(\"green_res\")
+	blue_res = save.get(\"blue_res\")
+	purple_res = save.get(\"purple_res\")
+	yellow_res = save.get(\"yellow_res\")
+	orange_res = save.get(\"orange_res\")", "func SaveData():
+	save.set(\"curHP\", curHP)
+	save.set(\"curEN\", curEN)
+	save.save_run()
+	
+func Start():
+	already_in = true
+	match global.get(\"save\"):
+		1:
+			save_data_path = \"res://Saves/Save1.tres\"
+		2:
+			save_data_path = \"res://Saves/Save2.tres\"
+		3:
+			save_data_path = \"res://Saves/Save3.tres\"
+	save_data = load(save_data_path)
+	$AnimationPlayer.play(\"Idle\")
+	gen.randomize()
+	get_node(\"../../CanvasLayer/Control/SelfTarget/AnimationPlayer\").play(\"Active\")
+	LoadRunData()
+	Set_CDs()" ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("../ColorRect:color")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0, 64.6 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ Color( 0.0196078, 0.0196078, 0.0196078, 1 ), Color( 1, 0, 0, 1 ) ]
+}
+
+[sub_resource type="Shader" id=4]
+code = "/*
+	Glitch Effect Shader by Yui Kinomoto @arlez80
+
+	MIT License
+*/
+
+shader_type canvas_item;
+
+// 振動の強さ
+uniform float shake_power = 0.03;
+// 振動率
+uniform float shake_rate : hint_range( 0.0, 1.0 ) = 0.2;
+// 振動速度
+uniform float shake_speed = 5.0;
+// 振動ブロックサイズ
+uniform float shake_block_size = 30.5;
+// 色の分離率
+uniform float shake_color_rate : hint_range( 0.0, 1.0 ) = 0.01;
+
+float random( float seed )
+{
+	return fract( 543.2543 * sin( dot( vec2( seed, seed ), vec2( 3525.46, -54.3415 ) ) ) );
+}
+
+void fragment( )
+{
+	float enable_shift = float(
+		random( trunc( TIME * shake_speed ) )
+	<	shake_rate
+	);
+
+	vec2 fixed_uv = SCREEN_UV;
+	fixed_uv.x += (
+		random(
+			( trunc( SCREEN_UV.y * shake_block_size ) / shake_block_size )
+		+	TIME
+		) - 0.5
+	) * shake_power * enable_shift;
+
+	vec4 pixel_color = textureLod( SCREEN_TEXTURE, fixed_uv, 0.0 );
+	pixel_color.r = mix(
+		pixel_color.r
+	,	textureLod( SCREEN_TEXTURE, fixed_uv + vec2( shake_color_rate, 0.0 ), 0.0 ).r
+	,	enable_shift
+	);
+	pixel_color.b = mix(
+		pixel_color.b
+	,	textureLod( SCREEN_TEXTURE, fixed_uv + vec2( -shake_color_rate, 0.0 ), 0.0 ).b
+	,	enable_shift
+	);
+	COLOR = pixel_color;
+}
+"
+
+[sub_resource type="ShaderMaterial" id=5]
+resource_local_to_scene = true
+shader = SubResource( 4 )
+shader_param/shake_power = 0.03
+shader_param/shake_rate = 0.2
+shader_param/shake_speed = 1.0
+shader_param/shake_block_size = 30.5
+shader_param/shake_color_rate = 0.017
+
+[sub_resource type="ShaderMaterial" id=1]
+resource_local_to_scene = true
+shader = ExtResource( 2 )
+shader_param/overlay = true
+shader_param/scanlines_opacity = 0.118
+shader_param/scanlines_width = 0.06
+shader_param/grille_opacity = 0.079
+shader_param/resolution = Vector2( 640, 480 )
+shader_param/pixelate = false
+shader_param/roll = true
+shader_param/roll_speed = 8.0
+shader_param/roll_size = 48.139
+shader_param/roll_variation = 2.139
+shader_param/distort_intensity = 0.007
+shader_param/noise_opacity = 0.077
+shader_param/noise_speed = 5.0
+shader_param/static_noise_intensity = 0.1
+shader_param/aberration = 0.0
+shader_param/brightness = 1.4
+shader_param/discolor = false
+shader_param/warp_amount = 0.04
+shader_param/clip_warp = false
+shader_param/vignette_intensity = 0.222
+shader_param/vignette_opacity = 0.075
+
+[node name="Control" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+script = ExtResource( 3 )
+
+[node name="ColorRect" type="ColorRect" parent="."]
+margin_right = 1920.0
+margin_bottom = 1080.0
+mouse_filter = 2
+color = Color( 0.0196078, 0.0196078, 0.0196078, 1 )
+
+[node name="Label2" type="Label" parent="."]
+modulate = Color( 1, 1, 1, 0.411765 )
+margin_right = 2040.0
+margin_bottom = 1080.0
+text = "01100011 01110101 01110010 01001000 01010000 00100000 00111101 00100000 01110011 01100001 01110110 01100101 00101110 01100111 01100101 01110100 00101000 00100010 01100011 01110101 01110010 01001000 01010000 00100010 00101001 00001010 00001001 01100011 01110101 01110010 01000101 01001110 00100000 00111101 00100000 01110011 01100001 01110110 01100101 00101110 01100111 01100101 01110100 00101000 00100010 01100011 01110101 01110010 01000101 01001110 00100010 00101001 00001010 00001001 01001000 01010000 01011111 01101101 01101111 01100100 00100000 00111101 00100000 01110011 01100001 01110110 01100101 00101110 01100111 01100101 01110100 00101000 00100010 01001000 01010000 01011111 01101101 01101111 01100100 00100010 00101001 00001010 00001001 01100001 01100010 01110011 01011111 01101101 01100001 01111000 01011111 01100001 01111000 01110100 01101001 01101111 01101110 01110011 00100000 00111101 00100000 01110011 01100001 01110110 01100101 00101110 01100111 01100101 01110100 00101000 00100010 01101101 01100001 01111000 01011111 01100001 01100011 01110100 01101001 01101111 01101110 01110011 00100010 00101001 00001010 00001001 00001010 00001001 01000010 01100001 01110011 01100101 01011111 01000001 01010100 01001011 00100000 00111101 00100000 01110011 01100001 01110110 01100101 00101110 01100111 01100101 01110100 00101000 00100010 01000010 01100001 01110011 01100101 01011111 01000001 01010100 01001011 00100010 00101001 00001010 00001001 01000010 01100001 01110011 01100101 01011111 01000101 01001110 01000100 00100000 00111101 00100000 01110011 01100001 01110110 01100101 00101110 01100111 01100101 01110100 00101000 00100010 01000010 01100001 01110011 01100101 01011111 01000101 01001110 01000100 00100010 00101001 00001010 00001001 01000010 01100001 01110011 01100101 01011111 01000100 01000101 01000110 00100000 00111101 00100000 01110011 01100001 01110110 01100101 00101110 01100111 01100101 01110100 00101000 00100010 01000010 01100001 01110011 01100101 01011111 01000100 01000101 01000110 00100010 00101001 00001010 00001001 01000010 01100001"
+autowrap = true
+clip_text = true
+percent_visible = 0.0
+
+[node name="Label" type="Label" parent="."]
+margin_left = 64.0
+margin_top = 64.0
+margin_right = 1876.0
+margin_bottom = 1066.0
+custom_fonts/font = ExtResource( 4 )
+text = "curHP = save.get(\"curHP\")
+	curEN = save.get(\"curEN\")
+	HP_mod = save.get(\"HP_mod\")
+	abs_max_axtions = save.get(\"max_actions\")
+	
+	Base_ATK = save.get(\"Base_ATK\")
+	Base_END = save.get(\"Base_END\")
+	Base_DEF = save.get(\"Base_DEF\")
+	Base_SEN = save.get(\"Base_SEN\")
+	Base_SPD = save.get(\"Base_SPD\")
+	Base_ENR = save.get(\"Base_ENR\")
+	SPD = Base_SPD
+	
+	red_res = save.get(\"red_res\")
+	green_res = save.get(\"green_res\")
+	blue_res = save.get(\"blue_res\")
+	purple_res = save.get(\"purple_res\")
+	yellow_res = save.get(\"yellow_res\")
+	orange_res = save.get(\"orange_res\")"
+autowrap = true
+clip_text = true
+percent_visible = 0.0
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Label"]
+anims/RESET = SubResource( 2 )
+anims/Start = SubResource( 3 )
+
+[node name="TextureRect" type="TextureRect" parent="."]
+visible = false
+material = SubResource( 5 )
+margin_left = 480.0
+margin_top = 280.0
+margin_right = 632.0
+margin_bottom = 368.0
+texture = ExtResource( 5 )
+expand = true
+
+[node name="TV" parent="." instance=ExtResource( 1 )]
+material = SubResource( 1 )

@@ -1,0 +1,160 @@
+{
+	"events": [
+		{
+			"background": "res://Sprites/UI/Longe/Room/Lobby.png",
+			"event_id": "dialogic_021",
+			"fade_duration": 0.1
+		},
+		{
+			"animation": "[Default]",
+			"animation_length": 0,
+			"change_mirror_portrait": false,
+			"change_z_index": false,
+			"character": "character-1673695181.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"portrait": "SalimConfused",
+			"portrait_definition": "",
+			"position": {
+				"0": true,
+				"1": false,
+				"2": false,
+				"3": false,
+				"4": false
+			},
+			"type": 0,
+			"z_index": 0
+		},
+		{
+			"character": "character-1673695181.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Melodramas_1\nMelodramas_2"
+		},
+		{
+			"character": "character-1682020549.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Melodramas_3\nMelodramas_4"
+		},
+		{
+			"character": "character-1673695181.json",
+			"event_id": "dialogic_001",
+			"portrait": "SalimDissapointed",
+			"text": "..."
+		},
+		{
+			"character": "character-1673695181.json",
+			"event_id": "dialogic_001",
+			"portrait": "SalimAngry",
+			"text": "Melodramas_5"
+		},
+		{
+			"character": "character-1673695181.json",
+			"event_id": "dialogic_001",
+			"portrait": "SalimConfused",
+			"text": "Melodramas_6"
+		},
+		{
+			"background": "res://Sprites/Backround/BlackScreen.png",
+			"event_id": "dialogic_021",
+			"fade_duration": 0.1
+		},
+		{
+			"character": "character-1682020549.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Melodramas_7"
+		},
+		{
+			"background": "res://Sprites/UI/Longe/Room/Lobby.png",
+			"event_id": "dialogic_021",
+			"fade_duration": 0.1
+		},
+		{
+			"character": "character-1673695181.json",
+			"event_id": "dialogic_001",
+			"portrait": "SalimAngry",
+			"text": "Melodramas_8"
+		},
+		{
+			"character": "character-1673695181.json",
+			"event_id": "dialogic_001",
+			"portrait": "(Don't change)",
+			"text": "Melodramas_9"
+		},
+		{
+			"character": "character-1673695181.json",
+			"event_id": "dialogic_001",
+			"portrait": "Default",
+			"text": "Melodramas_10"
+		},
+		{
+			"character": "character-1673695181.json",
+			"event_id": "dialogic_001",
+			"portrait": "SalimDissapointed",
+			"text": "...\nMelodramas_11"
+		},
+		{
+			"background": "res://Sprites/Backround/BlackScreen.png",
+			"event_id": "dialogic_021",
+			"fade_duration": 0.1
+		},
+		{
+			"character": "character-1682020549.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Melodramas_12\nMelodramas_13\nMelodramas_14"
+		},
+		{
+			"background": "res://Sprites/UI/Longe/Room/Lobby.png",
+			"event_id": "dialogic_021",
+			"fade_duration": 0.1
+		},
+		{
+			"character": "character-1673695181.json",
+			"event_id": "dialogic_001",
+			"portrait": "SalimPositive",
+			"text": "Melodramas_15"
+		},
+		{
+			"character": "character-1682020549.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Melodramas_16"
+		},
+		{
+			"character": "character-1673695181.json",
+			"event_id": "dialogic_001",
+			"portrait": "Default",
+			"text": "Melodramas_17"
+		},
+		{
+			"character": "character-1673695181.json",
+			"event_id": "dialogic_001",
+			"portrait": "SalimConfused",
+			"text": "Melodramas_18"
+		},
+		{
+			"character": "character-1673695181.json",
+			"event_id": "dialogic_001",
+			"portrait": "SalimDissapointed",
+			"text": "..."
+		},
+		{
+			"character": "character-1673695181.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Melodramas_19"
+		},
+		{
+			"event_id": "dialogic_022",
+			"transition_duration": 0.2
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.4.5",
+		"file": "timeline-1682020539.json",
+		"name": "Melodramas"
+	}
+}

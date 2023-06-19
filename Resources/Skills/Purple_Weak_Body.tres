@@ -1,0 +1,15 @@
+[gd_resource type="Resource" load_steps=2 format=2]
+
+[ext_resource path="res://Scripts/Skills/SkillResource.gd" type="Script" id=1]
+
+[resource]
+script = ExtResource( 1 )
+color = "Purple"
+CD = 6
+actions = 2
+description = "PURPLE_WEAK_BODY"
+skill_name = "Weak Body"
+type = "enemy"
+icon = "res://Sprites/UI/Skills/Purple/Purple_Weak_Body.png"
+en = 4
+skill_code = "Purple_Weak_Body"

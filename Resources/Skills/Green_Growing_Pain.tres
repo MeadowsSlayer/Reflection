@@ -1,0 +1,15 @@
+[gd_resource type="Resource" load_steps=2 format=2]
+
+[ext_resource path="res://Scripts/Skills/SkillResource.gd" type="Script" id=1]
+
+[resource]
+script = ExtResource( 1 )
+color = "Green"
+CD = 11
+actions = 0
+description = "GREEN_GROWING_PAIN"
+skill_name = "Growing Pain"
+type = "enemy"
+icon = "res://Sprites/UI/Skills/Green/Green_Growing_Pain.png"
+en = 35
+skill_code = "Green_Growing_Pain"

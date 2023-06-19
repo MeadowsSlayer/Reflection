@@ -1,0 +1,15 @@
+[gd_resource type="Resource" load_steps=2 format=2]
+
+[ext_resource path="res://Scripts/Skills/SkillResource.gd" type="Script" id=1]
+
+[resource]
+script = ExtResource( 1 )
+color = "White"
+CD = 9
+actions = 3
+description = "WHITE_ABSOLUTE_DEFENSE"
+skill_name = "Absolute Defense"
+type = "self"
+icon = "res://Sprites/UI/Skills/White/White_Absolute_Defense.png"
+en = 8
+skill_code = "White_Absolute_Defense"

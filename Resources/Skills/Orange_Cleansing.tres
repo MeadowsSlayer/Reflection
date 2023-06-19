@@ -1,0 +1,15 @@
+[gd_resource type="Resource" load_steps=2 format=2]
+
+[ext_resource path="res://Scripts/Skills/SkillResource.gd" type="Script" id=1]
+
+[resource]
+script = ExtResource( 1 )
+color = "Orange"
+CD = 6
+actions = 2
+description = "ORANGE_CLEANSING"
+skill_name = "Cleansing"
+type = "self"
+icon = "res://Sprites/UI/Skills/Orange/Orange_Cleansing.png"
+en = 4
+skill_code = "Orange_Cleansing"

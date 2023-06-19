@@ -1,0 +1,23 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/mixkit-electric-low-buzzer-2961.wav-8ca0802a0980b68c0332d27cc9a4ab4f.sample"
+
+[deps]
+
+source_file="res://Resources/Audio/SoundEffects/Sounds/mixkit-electric-low-buzzer-2961.wav"
+dest_files=[ "res://.import/mixkit-electric-low-buzzer-2961.wav-8ca0802a0980b68c0332d27cc9a4ab4f.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

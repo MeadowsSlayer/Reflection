@@ -1,0 +1,15 @@
+[gd_resource type="Resource" load_steps=2 format=2]
+
+[ext_resource path="res://Scripts/Skills/SkillResource.gd" type="Script" id=1]
+
+[resource]
+script = ExtResource( 1 )
+color = "Orange"
+CD = 11
+actions = 0
+description = "ORANGE_ADAPTATION"
+skill_name = "Adaptation"
+type = "all enemies"
+icon = "res://Sprites/UI/Skills/Orange/Orange_Adaptation.png"
+en = 30
+skill_code = "Orange_Adaptation"

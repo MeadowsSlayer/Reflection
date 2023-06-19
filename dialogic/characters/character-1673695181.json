@@ -1,0 +1,45 @@
+{
+	"color": "#ff00b7ff",
+	"description": "",
+	"display_name": "",
+	"display_name_bool": false,
+	"id": "character-1673695181.json",
+	"mirror_portraits": false,
+	"name": "Salim",
+	"nickname": "&&&",
+	"nickname_bool": false,
+	"offset_x": 0,
+	"offset_y": 0,
+	"portraits": [
+		{
+			"name": "Default",
+			"path": "res://Sprites/Characters/Salim/SalimNormal.png"
+		},
+		{
+			"name": "SalimAngry",
+			"path": "res://Sprites/Characters/Salim/SalimAngry.png"
+		},
+		{
+			"name": "SalimConfused",
+			"path": "res://Sprites/Characters/Salim/SalimConfused.png"
+		},
+		{
+			"name": "SalimDissapointed",
+			"path": "res://Sprites/Characters/Salim/SalimDissapointed.png"
+		},
+		{
+			"name": "SalimMad",
+			"path": "res://Sprites/Characters/Salim/SalimMad.png"
+		},
+		{
+			"name": "SalimPositive",
+			"path": "res://Sprites/Characters/Salim/SalimPositive.png"
+		},
+		{
+			"name": "SalimSad",
+			"path": "res://Sprites/Characters/Salim/SalimSad.png"
+		}
+	],
+	"scale": 40,
+	"theme": "theme-1673704301.cfg"
+}

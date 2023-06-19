@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/2019-01-10_-_Land_of_8_Bits_-_Stephen_Bennett.mp3-2d8807b027f6e548b1c12e4cd9fca8b3.mp3str"
+
+[deps]
+
+source_file="res://Resources/Audio/Music/2019-01-10_-_Land_of_8_Bits_-_Stephen_Bennett.mp3"
+dest_files=[ "res://.import/2019-01-10_-_Land_of_8_Bits_-_Stephen_Bennett.mp3-2d8807b027f6e548b1c12e4cd9fca8b3.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

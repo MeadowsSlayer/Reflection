@@ -1,0 +1,11 @@
+[gd_resource type="Resource" load_steps=2 format=2]
+
+[ext_resource path="res://Scripts/RoomGeneration.gd" type="Script" id=1]
+
+[resource]
+script = ExtResource( 1 )
+current_room_reward1 = ""
+current_room_reward2 = ""
+next_room_door1 = ""
+next_room_door2 = ""
+next_room_door3 = ""

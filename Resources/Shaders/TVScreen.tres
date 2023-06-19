@@ -1,0 +1,28 @@
+[gd_resource type="ShaderMaterial" load_steps=2 format=2]
+
+[ext_resource path="res://Resources/Shaders/TV.gdshader" type="Shader" id=1]
+
+[resource]
+resource_local_to_scene = true
+shader = ExtResource( 1 )
+shader_param/overlay = true
+shader_param/scanlines_opacity = 0.118
+shader_param/scanlines_width = 0.06
+shader_param/grille_opacity = 0.079
+shader_param/resolution = Vector2( 640, 480 )
+shader_param/pixelate = false
+shader_param/roll = true
+shader_param/roll_speed = 8.0
+shader_param/roll_size = 48.139
+shader_param/roll_variation = 2.139
+shader_param/distort_intensity = 0.007
+shader_param/noise_opacity = 0.077
+shader_param/noise_speed = 5.0
+shader_param/static_noise_intensity = 0.1
+shader_param/aberration = 0.0
+shader_param/brightness = 1.4
+shader_param/discolor = false
+shader_param/warp_amount = 0.04
+shader_param/clip_warp = false
+shader_param/vignette_intensity = 0.222
+shader_param/vignette_opacity = 0.075

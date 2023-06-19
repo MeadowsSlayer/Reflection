@@ -1,0 +1,15 @@
+[gd_resource type="Resource" load_steps=2 format=2]
+
+[ext_resource path="res://Scripts/Skills/SkillResource.gd" type="Script" id=1]
+
+[resource]
+script = ExtResource( 1 )
+color = "White"
+CD = 13
+actions = 4
+description = "WHITE_EMPTY_WELL"
+skill_name = "Empty Well"
+type = "self"
+icon = "res://Sprites/UI/Skills/White/White_Empty_Well.png"
+en = 5
+skill_code = "White_Empty_Well"

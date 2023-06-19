@@ -1,0 +1,21 @@
+{
+	"color": "#ffff0000",
+	"description": "",
+	"display_name": "Observer",
+	"display_name_bool": true,
+	"id": "character-1673704341.json",
+	"mirror_portraits": false,
+	"name": "DarkSalim",
+	"nickname": "???",
+	"nickname_bool": true,
+	"offset_x": 0,
+	"offset_y": 0,
+	"portraits": [
+		{
+			"name": "Default",
+			"path": ""
+		}
+	],
+	"scale": 100,
+	"theme": "theme-1673704315.cfg"
+}

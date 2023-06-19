@@ -1,0 +1,119 @@
+[gd_scene load_steps=9 format=2]
+
+[ext_resource path="res://Prefabs/UI/TV.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Recources/Shaders/TV.tres" type="Shader" id=2]
+[ext_resource path="res://Prefabs/UI/Target/Target.gd" type="Script" id=3]
+[ext_resource path="res://Recources/Images/white.png" type="Texture" id=4]
+[ext_resource path="res://Sprites/UI/Skills/NoSkill.png" type="Texture" id=5]
+
+[sub_resource type="ShaderMaterial" id=3]
+resource_local_to_scene = true
+shader = ExtResource( 2 )
+shader_param/overlay = true
+shader_param/scanlines_opacity = 0.036
+shader_param/scanlines_width = 0.067
+shader_param/grille_opacity = 0.055
+shader_param/resolution = Vector2( 640, 480 )
+shader_param/pixelate = false
+shader_param/roll = true
+shader_param/roll_speed = 2.0
+shader_param/roll_size = 29.396
+shader_param/roll_variation = 2.106
+shader_param/distort_intensity = 0.003
+shader_param/noise_opacity = 0.021
+shader_param/noise_speed = 5.0
+shader_param/static_noise_intensity = 0.019
+shader_param/aberration = 0.0
+shader_param/brightness = 1.1
+shader_param/discolor = true
+shader_param/warp_amount = 0.033
+shader_param/clip_warp = false
+shader_param/vignette_intensity = -0.173
+shader_param/vignette_opacity = 0.09
+
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 31.9999, 32 )
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 12, 1 )
+
+[node name="Target" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="TV" parent="." instance=ExtResource( 1 )]
+material = SubResource( 3 )
+
+[node name="Rod" type="Node2D" parent="."]
+position = Vector2( 952, 223 )
+
+[node name="Good" type="Sprite" parent="Rod"]
+self_modulate = Color( 0.878431, 0.968627, 0.92549, 1 )
+position = Vector2( 22.5, 322.5 )
+scale = Vector2( 0.546875, 12.4531 )
+texture = ExtResource( 4 )
+
+[node name="Good" type="Area2D" parent="Rod/Good"]
+
+[node name="Good" type="CollisionShape2D" parent="Rod/Good/Good"]
+position = Vector2( 0, 1.14441e-05 )
+shape = SubResource( 2 )
+
+[node name="Mid" type="Sprite" parent="Rod"]
+self_modulate = Color( 0.972549, 0.803922, 0.639216, 1 )
+position = Vector2( 22.5, 253 )
+scale = Vector2( 0.546875, 5.59375 )
+texture = ExtResource( 4 )
+
+[node name="Mid" type="Area2D" parent="Rod/Mid"]
+
+[node name="Mid" type="CollisionShape2D" parent="Rod/Mid/Mid"]
+position = Vector2( 0, 7.62939e-06 )
+shape = SubResource( 2 )
+
+[node name="Great" type="Sprite" parent="Rod"]
+self_modulate = Color( 0.980392, 0.564706, 0.160784, 1 )
+position = Vector2( -225.999, 328 )
+scale = Vector2( 0.546874, 2.5 )
+texture = ExtResource( 4 )
+offset = Vector2( 454.399, -22.4 )
+
+[node name="Great" type="Area2D" parent="Rod/Great"]
+
+[node name="Great" type="CollisionShape2D" parent="Rod/Great/Great"]
+position = Vector2( 454.399, -22.4 )
+shape = SubResource( 2 )
+
+[node name="Perfect" type="Sprite" parent="Rod"]
+self_modulate = Color( 0.882353, 0.027451, 0.027451, 1 )
+position = Vector2( 22.5, 273 )
+scale = Vector2( 0.546876, 0.5 )
+texture = ExtResource( 4 )
+
+[node name="Perfect" type="Area2D" parent="Rod/Perfect"]
+
+[node name="Perfect" type="CollisionShape2D" parent="Rod/Perfect/Perfect"]
+shape = SubResource( 2 )
+
+[node name="Target" type="KinematicBody2D" parent="."]
+position = Vector2( 974, 156 )
+script = ExtResource( 3 )
+
+[node name="Sprite" type="Sprite" parent="Target"]
+position = Vector2( 0.374999, 0 )
+scale = Vector2( 0.644532, 0.25 )
+texture = ExtResource( 5 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Target"]
+shape = SubResource( 1 )
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 0.1
+
+[connection signal="body_entered" from="Rod/Mid/Mid" to="Target" method="_on_Mid_body_entered"]
+[connection signal="body_exited" from="Rod/Mid/Mid" to="Target" method="_on_Mid_body_exited"]
+[connection signal="body_entered" from="Rod/Great/Great" to="Target" method="_on_Great_body_entered"]
+[connection signal="body_exited" from="Rod/Great/Great" to="Target" method="_on_Great_body_exited"]
+[connection signal="body_entered" from="Rod/Perfect/Perfect" to="Target" method="_on_Perfect_body_entered"]
+[connection signal="body_exited" from="Rod/Perfect/Perfect" to="Target" method="_on_Perfect_body_exited"]
+[connection signal="timeout" from="Timer" to="Target" method="_on_Timer_timeout"]

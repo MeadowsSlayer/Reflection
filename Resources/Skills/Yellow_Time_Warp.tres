@@ -1,0 +1,15 @@
+[gd_resource type="Resource" load_steps=2 format=2]
+
+[ext_resource path="res://Scripts/Skills/SkillResource.gd" type="Script" id=1]
+
+[resource]
+script = ExtResource( 1 )
+color = "Yellow"
+CD = 11
+actions = 0
+description = "YELLOW_TIME_WARP"
+skill_name = "Time Warp"
+type = "all enemies"
+icon = "res://Sprites/UI/Skills/Yellow/Yellow_Time_Warp.png"
+en = 40
+skill_code = "Yellow_Time_Warp"

@@ -1,0 +1,661 @@
+{
+	"events": [
+		{
+			"background": "res://Prefabs/Test/TVBGTest.tscn",
+			"event_id": "dialogic_021",
+			"fade_duration": 0
+		},
+		{
+			"audio_bus": "Music",
+			"background-music": "play",
+			"event_id": "dialogic_031",
+			"event_name": "BackgroundMusic",
+			"fade_length": 1,
+			"file": "res://Resources/Audio/Music/OfFarDifferentNature/Of Far Different Nature - Eternal Explorer (CC-BY 4.0).ogg",
+			"volume": 0
+		},
+		{
+			"character": "character-1673695181.json",
+			"event_id": "dialogic_001",
+			"portrait": "(Don't change)",
+			"text": "...\nWhere am I?"
+		},
+		{
+			"animation": "[Default]",
+			"animation_length": 0,
+			"animation_wait": false,
+			"change_mirror_portrait": false,
+			"change_z_index": false,
+			"character": "character-1683234416.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"portrait": "Default",
+			"portrait_definition": "",
+			"position": {
+				"0": false,
+				"1": false,
+				"2": true,
+				"3": false,
+				"4": false
+			},
+			"type": 0,
+			"z_index": 0
+		},
+		{
+			"character": "character-1683234416.json",
+			"event_id": "dialogic_001",
+			"portrait": "(Don't change)",
+			"text": "Seems like you're finally awake, dear guest."
+		},
+		{
+			"character": "character-1673695181.json",
+			"event_id": "dialogic_001",
+			"portrait": "(Don't change)",
+			"text": "Huh? Who are you? What's going on?\nWhere am I?"
+		},
+		{
+			"character": "character-1683234416.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "One question at a time, please.\nThere is no need to rush, Mr. Salim.\nI am glad to know you. You may call me a Host."
+		},
+		{
+			"animation": "[Default]",
+			"animation_length": 0,
+			"change_mirror_portrait": false,
+			"change_z_index": false,
+			"character": "character-1683234416.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"portrait": "",
+			"portrait_definition": "",
+			"position": {
+				"0": false,
+				"1": false,
+				"2": false,
+				"3": false,
+				"4": false
+			},
+			"type": 1,
+			"z_index": 0
+		},
+		{
+			"animation": "[Default]",
+			"animation_length": 0,
+			"change_mirror_portrait": false,
+			"change_z_index": false,
+			"character": "character-1683234361.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"portrait": "Default",
+			"portrait_definition": "",
+			"position": {
+				"0": false,
+				"1": false,
+				"2": true,
+				"3": false,
+				"4": false
+			},
+			"type": 0,
+			"z_index": 0
+		},
+		{
+			"character": "character-1683234361.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Though I don't own the place you will be in, at least I own the place we're in now."
+		},
+		{
+			"character": "character-1673695181.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "I don't understand..."
+		},
+		{
+			"character": "character-1683234361.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "You will come to understand everything with time.\nYou are in conflict. With yourself, with world and even with your friend.\nDo you remember your friends?"
+		},
+		{
+			"character": "character-1673695181.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Are you talking about Maksud and Asya?"
+		},
+		{
+			"character": "character-1683234361.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Yes, you remember, this is great."
+		},
+		{
+			"character": "character-1673695181.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Why would I forget them?"
+		},
+		{
+			"character": "character-1683234361.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "You mind is in a daze for now. I am afraid you lost some of your memory while getting here.\nBut you will remember everything and will have to come to your own conclusion."
+		},
+		{
+			"character": "character-1673695181.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "What are you talking about?"
+		},
+		{
+			"character": "character-1683234361.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "As I said, you are in conflict. To be more exact - you are on the verge of ego death.\nThat's why you were welcomed to the Reflection - to resolve a conflict and to decide for yourself with clear mind what you should do.\nYou will embark on a short journey, if I can call it that, to recover lost memories and understand eveything."
+		},
+		{
+			"character": "character-1673695181.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "...\nEverything about myself? Will I be able to grasp that?"
+		},
+		{
+			"character": "character-1683234361.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Yes, my dear guest. If you wish so and if your determination is strong, you will uncover the truth.\nYou have been trapped in a delusion, to hide the truth, to save your mind.\nBut there is limits to all, and blisfullness of ignorance is not an exeption.\nUncovering the truth will hurt, and the truth may not be pleasant.\nBut there came a time when the delusions hurt your ego.\nSo do you wish to run away again or to uncover the truth?"
+		},
+		{
+			"character": "character-1673695181.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "...\nI...\nI don't understand many things for now. And I wish to understand them.\nIf what you said is true, if I will understand everything...\nI am willing to try.\nAfter all, I can always stop..."
+		},
+		{
+			"character": "character-1683234361.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Of course.\nNow it seems like there is someone waiting for you, dear guest.\nWhen you will feel yourself cornered, collect your resolve and channel it to form a force to help you.\nThe only person who can lift you up is yourself after all.\nMay we meet again in the end of the road."
+		},
+		{
+			"animation": "[Default]",
+			"animation_length": 0,
+			"change_mirror_portrait": false,
+			"change_z_index": false,
+			"character": "character-1683234361.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"portrait": "Default",
+			"portrait_definition": "",
+			"position": {
+				"0": false,
+				"1": false,
+				"2": false,
+				"3": false,
+				"4": false
+			},
+			"type": 1,
+			"z_index": 0
+		},
+		{
+			"background": "res://Sprites/Backround/BlackScreen.png",
+			"event_id": "dialogic_021",
+			"fade_duration": 0
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "..."
+		},
+		{
+			"background": "res://Sprites/Backround/First Floor/BackgroundFirstFloor.png",
+			"event_id": "dialogic_021",
+			"fade_duration": 0
+		},
+		{
+			"animation": "[Default]",
+			"animation_length": 0,
+			"change_mirror_portrait": false,
+			"change_z_index": false,
+			"character": "character-1673695181.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"portrait": "SalimConfused",
+			"portrait_definition": "",
+			"position": {
+				"0": true,
+				"1": false,
+				"2": false,
+				"3": false,
+				"4": false
+			},
+			"type": 0,
+			"z_index": 0
+		},
+		{
+			"character": "character-1673695181.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Aahh!\nWhere am I?\nWhat is..."
+		},
+		{
+			"character": "character-1683234416.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Found you!"
+		},
+		{
+			"animation": "[Default]",
+			"animation_length": 0,
+			"change_mirror_portrait": false,
+			"change_z_index": false,
+			"character": "character-1680338876.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"portrait": "Default",
+			"portrait_definition": "",
+			"position": {
+				"0": false,
+				"1": false,
+				"2": false,
+				"3": false,
+				"4": true
+			},
+			"type": 0,
+			"z_index": 0
+		},
+		{
+			"character": "character-1673695181.json",
+			"event_id": "dialogic_001",
+			"portrait": "Default",
+			"text": "!!!\nAsya!?"
+		},
+		{
+			"animation": "[Default]",
+			"animation_length": 0,
+			"change_mirror_portrait": false,
+			"change_position": true,
+			"change_z_index": false,
+			"character": "character-1680338876.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"portrait": "(Don't change)",
+			"portrait_definition": "",
+			"position": {
+				"0": true,
+				"1": false,
+				"2": false,
+				"3": false,
+				"4": false
+			},
+			"type": 2,
+			"z_index": 0
+		},
+		{
+			"animation": "[Default]",
+			"animation_length": 0,
+			"change_mirror_portrait": false,
+			"change_position": true,
+			"change_z_index": false,
+			"character": "character-1673695181.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"portrait": "(Don't change)",
+			"portrait_definition": "",
+			"position": {
+				"0": false,
+				"1": true,
+				"2": false,
+				"3": false,
+				"4": false
+			},
+			"type": 2,
+			"z_index": 0
+		},
+		{
+			"audio_bus": "Music",
+			"background-music": "play",
+			"event_id": "dialogic_031",
+			"event_name": "BackgroundMusic",
+			"fade_length": 2,
+			"file": "res://Resources/Audio/Music/OfFarDifferentNature/Of Far Different Nature - Hurry! (CC-BY).ogg",
+			"volume": 0
+		},
+		{
+			"character": "character-1680338876.json",
+			"event_id": "dialogic_001",
+			"portrait": "AsyaHappy",
+			"text": "No time to explain! Run!"
+		},
+		{
+			"character": "character-1673695181.json",
+			"event_id": "dialogic_001",
+			"portrait": "SalimConfused",
+			"text": "Huh?"
+		},
+		{
+			"character": "character-1683234416.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Found him! Chase the boy down!"
+		},
+		{
+			"character": "character-1680338876.json",
+			"event_id": "dialogic_001",
+			"portrait": "AsyaAngry",
+			"text": "Damn this guards!"
+		},
+		{
+			"character": "character-1673695181.json",
+			"event_id": "dialogic_001",
+			"portrait": "SalimConfused",
+			"text": "What's going on?"
+		},
+		{
+			"character": "character-1680338876.json",
+			"event_id": "dialogic_001",
+			"portrait": "AsyaDissapointed",
+			"text": "Do I look like I know?"
+		},
+		{
+			"character": "character-1673695181.json",
+			"event_id": "dialogic_001",
+			"portrait": "Default",
+			"text": "Actually yes...?"
+		},
+		{
+			"character": "character-1683287737.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "They turned here!"
+		},
+		{
+			"character": "character-1680338876.json",
+			"event_id": "dialogic_001",
+			"portrait": "Default",
+			"text": "Okay, you got me!\nDamn, it's a dead end! Let's deal with this first!"
+		},
+		{
+			"character": "character-1673695181.json",
+			"event_id": "dialogic_001",
+			"portrait": "SalimConfused",
+			"text": "H-how do you want me to deal with this?"
+		},
+		{
+			"character": "character-1680338876.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "How would you like to deal with it? I am not allowed help in a fight you unfortunately!"
+		},
+		{
+			"character": "character-1673695181.json",
+			"event_id": "dialogic_001",
+			"portrait": "SalimAngry",
+			"text": "I don't know...? I just woke up!\nWhat do you need me for anyway?"
+		},
+		{
+			"character": "character-1683287737.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Don't play dumb! We both know you bear the curse!"
+		},
+		{
+			"character": "character-1680338876.json",
+			"event_id": "dialogic_001",
+			"portrait": "AsyaAngry",
+			"text": "Curse?"
+		},
+		{
+			"character": "character-1673695181.json",
+			"event_id": "dialogic_001",
+			"portrait": "SalimDissapointed",
+			"text": "..."
+		},
+		{
+			"character": "character-1683287737.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "You hadn't told her? Sweet.\nAnyway, the cursed ones must be dealt with. Surrender and we'll not hurt you.\nNot more than needed anyway, ha-ha!"
+		},
+		{
+			"character": "character-1673695181.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "...\nWhat about her?"
+		},
+		{
+			"character": "character-1680338876.json",
+			"event_id": "dialogic_001",
+			"portrait": "AsyaAngry",
+			"text": "Hey! Do you really want to do this?!"
+		},
+		{
+			"character": "character-1683287737.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "We'll not touch her if she'll not interviere."
+		},
+		{
+			"character": "character-1673695181.json",
+			"event_id": "dialogic_001",
+			"portrait": "SalimDissapointed",
+			"text": "Asya..."
+		},
+		{
+			"character": "character-1680338876.json",
+			"event_id": "dialogic_001",
+			"portrait": "AsyaAngry",
+			"text": "Salim, no! Don't you dare do this!"
+		},
+		{
+			"character": "character-1673695181.json",
+			"event_id": "dialogic_001",
+			"portrait": "SalimAngry",
+			"text": "We're cornered. At least I'll save you."
+		},
+		{
+			"character": "character-1673695181.json",
+			"event_id": "dialogic_001",
+			"portrait": "SalimDissapointed",
+			"text": "After all...\n...I'm cursed. This will be better for you."
+		},
+		{
+			"character": "character-1680338876.json",
+			"event_id": "dialogic_001",
+			"portrait": "AsyaAngry",
+			"text": "It won't!"
+		},
+		{
+			"background": "res://Sprites/Backround/BlackScreen.png",
+			"event_id": "dialogic_021",
+			"fade_duration": 0
+		},
+		{
+			"animation": "[Default]",
+			"animation_length": 0,
+			"change_mirror_portrait": false,
+			"change_z_index": false,
+			"character": "character-1673695181.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"portrait": "",
+			"portrait_definition": "",
+			"position": {
+				"0": false,
+				"1": false,
+				"2": false,
+				"3": false,
+				"4": false
+			},
+			"type": 1,
+			"z_index": 0
+		},
+		{
+			"animation": "[Default]",
+			"animation_length": 0,
+			"change_mirror_portrait": false,
+			"change_z_index": false,
+			"character": "character-1680338876.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"portrait": "",
+			"portrait_definition": "",
+			"position": {
+				"0": false,
+				"1": false,
+				"2": false,
+				"3": false,
+				"4": false
+			},
+			"type": 1,
+			"z_index": 0
+		},
+		{
+			"animation": "[Default]",
+			"animation_length": 0,
+			"change_mirror_portrait": false,
+			"change_z_index": false,
+			"character": "character-1683234361.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"portrait": "Default",
+			"portrait_definition": "",
+			"position": {
+				"0": false,
+				"1": false,
+				"2": true,
+				"3": false,
+				"4": false
+			},
+			"type": 0,
+			"z_index": 0
+		},
+		{
+			"character": "character-1683234361.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "When you will feel yourself cornered, collect your resolve and channel it to form a force to help you."
+		},
+		{
+			"character": "character-1673695181.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Huh?\nHost... Right...\nI have to try... I have to break free in the end.\nI have to reach the end!"
+		},
+		{
+			"background": "res://Sprites/Backround/First Floor/BackgroundFirstFloor.png",
+			"event_id": "dialogic_021",
+			"fade_duration": 0.5
+		},
+		{
+			"animation": "[Default]",
+			"animation_length": 0,
+			"change_mirror_portrait": false,
+			"change_z_index": false,
+			"character": "character-1683234361.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"portrait": "",
+			"portrait_definition": "",
+			"position": {
+				"0": false,
+				"1": false,
+				"2": false,
+				"3": false,
+				"4": false
+			},
+			"type": 1,
+			"z_index": 0
+		},
+		{
+			"animation": "[Default]",
+			"animation_length": 0,
+			"change_mirror_portrait": false,
+			"change_z_index": false,
+			"character": "character-1680338876.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"portrait": "Default",
+			"portrait_definition": "",
+			"position": {
+				"0": false,
+				"1": false,
+				"2": false,
+				"3": false,
+				"4": true
+			},
+			"type": 0,
+			"z_index": 0
+		},
+		{
+			"animation": "[Default]",
+			"animation_length": 0,
+			"change_mirror_portrait": false,
+			"change_z_index": false,
+			"character": "character-1673695181.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"portrait": "SalimDissapointed",
+			"portrait_definition": "",
+			"position": {
+				"0": true,
+				"1": false,
+				"2": false,
+				"3": false,
+				"4": false
+			},
+			"type": 0,
+			"z_index": 0
+		},
+		{
+			"character": "character-1680338876.json",
+			"event_id": "dialogic_001",
+			"portrait": "AsyaHappy",
+			"text": "You did it! You formed a weapon!"
+		},
+		{
+			"character": "character-1673695181.json",
+			"event_id": "dialogic_001",
+			"portrait": "SalimConfused",
+			"text": "What...?"
+		},
+		{
+			"character": "character-1683287737.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "What?!"
+		},
+		{
+			"character": "character-1680338876.json",
+			"event_id": "dialogic_001",
+			"portrait": "Default",
+			"text": "No time for questions now, firstly...\nGet their asses!"
+		},
+		{
+			"character": "character-1673695181.json",
+			"event_id": "dialogic_001",
+			"portrait": "SalimAngry",
+			"text": "R-right!"
+		},
+		{
+			"call_node": {
+				"arguments": [
+
+				],
+				"method_name": "Finish",
+				"target_node_path": "/root/DialogueGameStart"
+			},
+			"event_id": "dialogic_042"
+		},
+		{
+			"event_id": "dialogic_022",
+			"transition_duration": 0
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.4.5",
+		"file": "timeline-1675779428.json",
+		"name": "0.Prologue - Before Fight"
+	}
+}

@@ -1,0 +1,115 @@
+[gd_scene load_steps=18 format=2]
+
+[ext_resource path="res://Resources/Audio/Music/OfFarDifferentNature/Of Far Different Nature - Another Step Back [v2] (CC-BY 4.0).ogg" type="AudioStream" id=1]
+[ext_resource path="res://Resources/Audio/Music/OfFarDifferentNature/Of Far Different Nature - Largo (CC-BY).ogg" type="AudioStream" id=2]
+[ext_resource path="res://Resources/Audio/SoundEffects/Effects/Hit2.wav" type="AudioStream" id=3]
+[ext_resource path="res://Resources/Audio/SoundEffects/Sounds/mixkit-falling-hit-757.wav" type="AudioStream" id=4]
+[ext_resource path="res://Resources/Audio/SoundEffects/SoundPlayer.gd" type="Script" id=5]
+[ext_resource path="res://Resources/Audio/SoundEffects/Keyboard Noises/typing1.wav" type="AudioStream" id=6]
+[ext_resource path="res://Resources/Audio/SoundEffects/Effects/click.wav" type="AudioStream" id=7]
+[ext_resource path="res://Resources/Audio/Music/LonelyView.mp3" type="AudioStream" id=8]
+[ext_resource path="res://Resources/Audio/SoundEffects/Sounds/mixkit-arrow-whoosh-1491.wav" type="AudioStream" id=9]
+[ext_resource path="res://Resources/Audio/SoundEffects/Sounds/mixkit-rewind-magic-spell-1085.wav" type="AudioStream" id=10]
+[ext_resource path="res://Resources/Audio/SoundEffects/Sounds/mixkit-light-spell-873.wav" type="AudioStream" id=11]
+[ext_resource path="res://Resources/Audio/SoundEffects/Sounds/mixkit-quick-knife-slice-cutting-2152.mp3" type="AudioStream" id=12]
+[ext_resource path="res://Resources/Audio/SoundEffects/Sounds/mixkit-horror-lose-2028.wav" type="AudioStream" id=13]
+[ext_resource path="res://Resources/Audio/SoundEffects/Sounds/mixkit-sea-waves-loop-1196.wav" type="AudioStream" id=14]
+[ext_resource path="res://Resources/Audio/SoundEffects/Sounds/mixkit-slow-tram-passing-3019.wav" type="AudioStream" id=15]
+[ext_resource path="res://Resources/Audio/SoundEffects/Sounds/mixkit-quick-magic-sword-slice-2793.wav" type="AudioStream" id=16]
+[ext_resource path="res://Resources/Audio/SoundEffects/Sounds/ThunderClap4HvyC SDT2042602.mp3" type="AudioStream" id=17]
+
+[node name="SoundPlayer" type="Node"]
+pause_mode = 2
+script = ExtResource( 5 )
+
+[node name="AudioPlayers" type="Node" parent="."]
+pause_mode = 1
+
+[node name="Hurt" type="AudioStreamPlayer" parent="AudioPlayers"]
+stream = ExtResource( 3 )
+volume_db = -10.296
+bus = "SoundEffects"
+
+[node name="Heal" type="AudioStreamPlayer" parent="AudioPlayers"]
+stream = ExtResource( 11 )
+pitch_scale = 0.72
+bus = "SoundEffects"
+
+[node name="Death" type="AudioStreamPlayer" parent="AudioPlayers"]
+stream = ExtResource( 4 )
+volume_db = -9.044
+bus = "SoundEffects"
+
+[node name="Click" type="AudioStreamPlayer" parent="AudioPlayers"]
+stream = ExtResource( 6 )
+bus = "SoundEffects"
+
+[node name="Change" type="AudioStreamPlayer" parent="AudioPlayers"]
+stream = ExtResource( 7 )
+volume_db = -5.149
+bus = "SoundEffects"
+
+[node name="Blunt Hit" type="AudioStreamPlayer" parent="AudioPlayers"]
+stream = ExtResource( 3 )
+volume_db = -8.239
+pitch_scale = 1.39
+bus = "SoundEffects"
+
+[node name="Miss" type="AudioStreamPlayer" parent="AudioPlayers"]
+stream = ExtResource( 9 )
+bus = "SoundEffects"
+
+[node name="Slice" type="AudioStreamPlayer" parent="AudioPlayers"]
+stream = ExtResource( 12 )
+bus = "SoundEffects"
+
+[node name="TimeRewind" type="AudioStreamPlayer" parent="AudioPlayers"]
+stream = ExtResource( 10 )
+volume_db = -12.356
+pitch_scale = 0.72
+bus = "SoundEffects"
+
+[node name="Sea" type="AudioStreamPlayer" parent="AudioPlayers"]
+stream = ExtResource( 14 )
+bus = "SoundEffects"
+
+[node name="Train" type="AudioStreamPlayer" parent="AudioPlayers"]
+stream = ExtResource( 15 )
+bus = "SoundEffects"
+
+[node name="Crit" type="AudioStreamPlayer" parent="AudioPlayers"]
+stream = ExtResource( 4 )
+pitch_scale = 2.19
+bus = "SoundEffects"
+
+[node name="Shield" type="AudioStreamPlayer" parent="AudioPlayers"]
+stream = ExtResource( 16 )
+
+[node name="Thunder" type="AudioStreamPlayer" parent="AudioPlayers"]
+stream = ExtResource( 17 )
+volume_db = -22.653
+bus = "SoundEffects"
+
+[node name="Music" type="Node" parent="."]
+
+[node name="Lose" type="AudioStreamPlayer" parent="Music"]
+stream = ExtResource( 13 )
+
+[node name="MainMenu" type="AudioStreamPlayer" parent="Music"]
+stream = ExtResource( 8 )
+bus = "Music"
+
+[node name="Dynamic" type="AudioStreamPlayer" parent="Music"]
+stream = ExtResource( 2 )
+volume_db = -15.072
+bus = "Music"
+
+[node name="BetweenBattles" type="AudioStreamPlayer" parent="Music"]
+stream = ExtResource( 2 )
+volume_db = -15.072
+bus = "Music"
+
+[node name="Battle" type="AudioStreamPlayer" parent="Music"]
+stream = ExtResource( 1 )
+volume_db = -14.171
+bus = "Music"

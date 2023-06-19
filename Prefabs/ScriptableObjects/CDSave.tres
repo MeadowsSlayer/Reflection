@@ -1,0 +1,13 @@
+[gd_resource type="Resource" load_steps=2 format=2]
+
+[ext_resource path="res://Scripts/CDSave.gd" type="Script" id=1]
+
+[resource]
+script = ExtResource( 1 )
+skills_cd = [ 0, 0, 0, 0, 0, 0 ]
+ult_cd = 0
+shield_cur_HP = 0
+shield_max_HP = 0
+num_of_shields = 1
+num_of_ults = 1
+num_of_crits = 0

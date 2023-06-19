@@ -1,0 +1,638 @@
+{
+	"events": [
+		{
+			"animation": "[Default]",
+			"animation_length": 0,
+			"change_mirror_portrait": false,
+			"change_z_index": false,
+			"character": "character-1673695181.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"portrait": "SalimDissapointed",
+			"portrait_definition": "",
+			"position": {
+				"0": true,
+				"1": false,
+				"2": false,
+				"3": false,
+				"4": false
+			},
+			"type": 0,
+			"z_index": 0
+		},
+		{
+			"animation": "[Default]",
+			"animation_length": 0,
+			"change_mirror_portrait": false,
+			"change_z_index": false,
+			"character": "character-1680338876.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"portrait": "Default",
+			"portrait_definition": "",
+			"position": {
+				"0": false,
+				"1": false,
+				"2": false,
+				"3": false,
+				"4": true
+			},
+			"type": 0,
+			"z_index": 0
+		},
+		{
+			"background": "res://Sprites/Backround/First Floor/BackgroundFirstFloor.png",
+			"event_id": "dialogic_021",
+			"fade_duration": 0
+		},
+		{
+			"character": "character-1680338876.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "How are you?"
+		},
+		{
+			"character": "character-1673695181.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Well.. Better then them..."
+		},
+		{
+			"character": "character-1680338876.json",
+			"event_id": "dialogic_001",
+			"portrait": "AsyaHappy",
+			"text": "Great. Now let's get out of here!"
+		},
+		{
+			"character": "character-1673695181.json",
+			"event_id": "dialogic_001",
+			"portrait": "SalimConfused",
+			"text": "Okay, but not before I'll get my answers. You seem like you know more than me."
+		},
+		{
+			"character": "character-1680338876.json",
+			"event_id": "dialogic_001",
+			"portrait": "Default",
+			"text": "And I do. And also we can talk while walking, chop-chop! Or someone might find us again."
+		},
+		{
+			"character": "character-1673695181.json",
+			"event_id": "dialogic_001",
+			"portrait": "Default",
+			"text": "Right."
+		},
+		{
+			"character": "character-1680338876.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Long story short - we're now not in real world. Think of this place as of simulation."
+		},
+		{
+			"character": "character-1673695181.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Already figured it after talking with Host."
+		},
+		{
+			"character": "character-1680338876.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Oh so you too met him?"
+		},
+		{
+			"character": "character-1673695181.json",
+			"event_id": "dialogic_001",
+			"portrait": "SalimDissapointed",
+			"text": "Yes. But I don't seem to remember the details about our conversation. Just what I need to do."
+		},
+		{
+			"character": "character-1680338876.json",
+			"event_id": "dialogic_001",
+			"portrait": "AsyaDissapointed",
+			"text": "Same for me. I guess Maksud won't tell us much too if we'll find him."
+		},
+		{
+			"character": "character-1673695181.json",
+			"event_id": "dialogic_001",
+			"portrait": "SalimConfused",
+			"text": "Wait, Maksud is here?! W-where?"
+		},
+		{
+			"character": "character-1680338876.json",
+			"event_id": "dialogic_001",
+			"portrait": "Default",
+			"text": "Defenetly not on this floor."
+		},
+		{
+			"character": "character-1673695181.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Floor?"
+		},
+		{
+			"character": "character-1680338876.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Yes. This place is made up of different floors, and we are now on the floor zero."
+		},
+		{
+			"character": "character-1673695181.json",
+			"event_id": "dialogic_001",
+			"portrait": "SalimDissapointed",
+			"text": "Okay..."
+		},
+		{
+			"character": "character-1680338876.json",
+			"event_id": "dialogic_001",
+			"portrait": "Default",
+			"text": "You're alright?"
+		},
+		{
+			"character": "character-1673695181.json",
+			"event_id": "dialogic_001",
+			"portrait": "Default",
+			"text": "Yeah it's just... I'm happy Maksud is here..."
+		},
+		{
+			"character": "character-1680338876.json",
+			"event_id": "dialogic_001",
+			"portrait": "AsyaDissapointed",
+			"text": "You don't seem very happy. Wanna talk about it?"
+		},
+		{
+			"character": "character-1673695181.json",
+			"event_id": "dialogic_001",
+			"portrait": "SalimDissapointed",
+			"text": "..."
+		},
+		{
+			"character": "character-1673695181.json",
+			"event_id": "dialogic_001",
+			"portrait": "Default",
+			"text": "Not now... Maybe later, but thanks."
+		},
+		{
+			"character": "character-1680338876.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Right..."
+		},
+		{
+			"character": "character-1673695181.json",
+			"event_id": "dialogic_001",
+			"portrait": "SalimConfused",
+			"text": "Sorry, you may continue talking, just... how do you know all of this?"
+		},
+		{
+			"character": "character-1680338876.json",
+			"event_id": "dialogic_001",
+			"portrait": "Default",
+			"text": "Let's say I've been here before.\nOr to put it in better words - I've got here before you. Around a day ago. But time is strange here so I'm not sure.\nYou know, maybe I got here at the same time as you, but you just were sleeping all this time."
+		},
+		{
+			"character": "character-1673695181.json",
+			"event_id": "dialogic_001",
+			"portrait": "SalimDissapointed",
+			"text": "Sorry..."
+		},
+		{
+			"character": "character-1680338876.json",
+			"event_id": "dialogic_001",
+			"portrait": "Default",
+			"text": "Don't be, it's not your fault you've slept all this time! About that... How's your head?"
+		},
+		{
+			"character": "character-1673695181.json",
+			"event_id": "dialogic_001",
+			"portrait": "SalimDissapointed",
+			"text": "I don't know... I feel like I missed some of my memories, mostly unimportant ones... and the ones about the details of past few days..."
+		},
+		{
+			"character": "character-1680338876.json",
+			"event_id": "dialogic_001",
+			"portrait": "AsyaAnnoyed",
+			"text": "Well, I guess I missed a few too. For example, I have no idea about the curse you were talking about."
+		},
+		{
+			"character": "character-1673695181.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "..."
+		},
+		{
+			"character": "character-1673695181.json",
+			"event_id": "dialogic_001",
+			"portrait": "SalimConfused",
+			"text": "Really? That's kind of an important information."
+		},
+		{
+			"character": "character-1680338876.json",
+			"event_id": "dialogic_001",
+			"portrait": "Default",
+			"text": "Yeah, so will you be so kind to tell me?"
+		},
+		{
+			"character": "character-1673695181.json",
+			"event_id": "dialogic_001",
+			"portrait": "SalimDissapointed",
+			"text": "..."
+		},
+		{
+			"character": "character-1680338876.json",
+			"event_id": "dialogic_001",
+			"portrait": "AsyaDissapointed",
+			"text": "Of course if you're comfortable."
+		},
+		{
+			"character": "character-1673695181.json",
+			"event_id": "dialogic_001",
+			"portrait": "SalimDissapointed",
+			"text": "I am. Just... Guess there's no point hiding it. I am cursed. And it's best not to be around me."
+		},
+		{
+			"character": "character-1680338876.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Why?"
+		},
+		{
+			"character": "character-1673695181.json",
+			"event_id": "dialogic_001",
+			"portrait": "SalimConfused",
+			"text": "I don't know... Or don't remember... All I know is that cursed ones like me can spread it and it affects lifes..."
+		},
+		{
+			"character": "character-1673695181.json",
+			"event_id": "dialogic_001",
+			"portrait": "SalimDissapointed",
+			"text": "..."
+		},
+		{
+			"character": "character-1680338876.json",
+			"event_id": "dialogic_001",
+			"portrait": "AsyaDissapointed",
+			"text": "Okay. I'm sorry about this."
+		},
+		{
+			"character": "character-1673695181.json",
+			"event_id": "dialogic_001",
+			"portrait": "SalimConfused",
+			"text": "Huh? That's all?"
+		},
+		{
+			"character": "character-1680338876.json",
+			"event_id": "dialogic_001",
+			"portrait": "Default",
+			"text": "Well, I remembered something, still not like I care about this curse. You seem fine to me."
+		},
+		{
+			"character": "character-1673695181.json",
+			"event_id": "dialogic_001",
+			"portrait": "SalimDissapointed",
+			"text": "But..."
+		},
+		{
+			"character": "character-1680338876.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Sh-h-h. Listen: we are in kind of simulation. Curses can't spread here anyway."
+		},
+		{
+			"character": "character-1673695181.json",
+			"event_id": "dialogic_001",
+			"portrait": "Default",
+			"text": "I guess it's true..."
+		},
+		{
+			"character": "character-1680338876.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "And I guess it's time to tell you what I learned about this place. It might help.\nAs I mentioned before - I can't fight here to help you. I am not allowed by Host to fight alongside you, but I am allowed to do everything else, so I'll figure how to help you...\nYou will have to fight your way up to the fifth floor and find Maksud along the way."
+		},
+		{
+			"character": "character-1680338876.json",
+			"event_id": "dialogic_001",
+			"portrait": "AsyaDissapointed",
+			"text": "After all we've got here after..."
+		},
+		{
+			"character": "character-1673695181.json",
+			"event_id": "dialogic_001",
+			"portrait": "SalimDissapointed",
+			"text": "...our fight with him..."
+		},
+		{
+			"character": "character-1680338876.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Yes..."
+		},
+		{
+			"character": "character-1673695181.json",
+			"event_id": "dialogic_001",
+			"portrait": "SalimConfused",
+			"text": "I see. So this place is here to help us reconcile or what?"
+		},
+		{
+			"character": "character-1680338876.json",
+			"event_id": "dialogic_001",
+			"portrait": "Default",
+			"text": "I guess. I was given access to any floor that you were on, to help you."
+		},
+		{
+			"character": "character-1673695181.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "And Maksud?"
+		},
+		{
+			"character": "character-1680338876.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "I don't know. I didn't find him, but I know he's here on the upper floors."
+		},
+		{
+			"character": "character-1673695181.json",
+			"event_id": "dialogic_001",
+			"portrait": "SalimDissapointed",
+			"text": "Okay... Let me think about this..."
+		},
+		{
+			"character": "character-1680338876.json",
+			"event_id": "dialogic_001",
+			"portrait": "AsyaDissapointed",
+			"text": "I know that's a lot to take in..."
+		},
+		{
+			"character": "character-1673695181.json",
+			"event_id": "dialogic_001",
+			"portrait": "Default",
+			"text": "A little bit..."
+		},
+		{
+			"character": "character-1683234416.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Not like you have to do this."
+		},
+		{
+			"character": "character-1680338876.json",
+			"event_id": "dialogic_001",
+			"portrait": "AsyaMad",
+			"text": "Oh no, it's him!"
+		},
+		{
+			"character": "character-1673695181.json",
+			"event_id": "dialogic_001",
+			"portrait": "SalimAngry",
+			"text": "Huh?"
+		},
+		{
+			"character": "character-1683234416.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "I'm not here to hurt you, prisoners of the Reflection."
+		},
+		{
+			"character": "character-1673704341.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "I'm here to merely observe. And maybe to guide you to an easier solution of your problems."
+		},
+		{
+			"character": "character-1673695181.json",
+			"event_id": "dialogic_001",
+			"portrait": "SalimConfused",
+			"text": "For example...?"
+		},
+		{
+			"character": "character-1673704341.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "For example - to stay.\nIt's a heavy burden to be responsible for the lives of your friends.\nIf you still consider them as such."
+		},
+		{
+			"character": "character-1680338876.json",
+			"event_id": "dialogic_001",
+			"portrait": "AsyaMad",
+			"text": "Shut up!"
+		},
+		{
+			"character": "character-1673704341.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "But to stay here is not as bad of an option.\nThe path ahead will lead you to the truth. And truth will hurt.\nSo here's the solution - don't go. Why trouble yourself with that?\nYou can stay here. And live in peace, not having to worry about things."
+		},
+		{
+			"character": "character-1673695181.json",
+			"event_id": "dialogic_001",
+			"portrait": "SalimAngry",
+			"text": "But, aren't we prisoners here...?"
+		},
+		{
+			"character": "character-1673704341.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Yes. But isn't the prison a right place for the likes of you?"
+		},
+		{
+			"character": "character-1673695181.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "..."
+		},
+		{
+			"character": "character-1680338876.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Leave us alone! Why are you here?"
+		},
+		{
+			"character": "character-1673704341.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "To welcome the main lead of course. After all, he is my worst enemy and my greatest friend.\nSalim...\nYou can go further. And I hope you'll understand how meaningless it is.\nSince to get out, you'll have to make me let you out.\nAnd I will never allow that."
+		},
+		{
+			"character": "character-1673695181.json",
+			"event_id": "dialogic_001",
+			"portrait": "SalimAngry",
+			"text": "!!!\nHe's gone..."
+		},
+		{
+			"character": "character-1680338876.json",
+			"event_id": "dialogic_001",
+			"portrait": "AsyaAngry",
+			"text": "Yes...\nI hope you didn't listen to him. He's not important!"
+		},
+		{
+			"character": "character-1673695181.json",
+			"event_id": "dialogic_001",
+			"portrait": "SalimConfused",
+			"text": "But... What if he's right?"
+		},
+		{
+			"character": "character-1680338876.json",
+			"event_id": "dialogic_001",
+			"portrait": "AsyaDissapointed",
+			"text": "And what if he's not?"
+		},
+		{
+			"character": "character-1673695181.json",
+			"event_id": "dialogic_001",
+			"portrait": "SalimDissapointed",
+			"text": "...I don't know..."
+		},
+		{
+			"character": "character-1680338876.json",
+			"event_id": "dialogic_001",
+			"portrait": "AsyaDissapointed",
+			"text": "*sigh* Okay you know what? Let's make a deal."
+		},
+		{
+			"character": "character-1680338876.json",
+			"event_id": "dialogic_001",
+			"portrait": "AsyaAngry",
+			"text": "I'll help you get to the truth, and we'll discover it both. In the end it's up to you what you will do.\nBut please, at least try. You shouldn't give up without trying...\nNot for my sake. But for yours."
+		},
+		{
+			"character": "character-1673695181.json",
+			"event_id": "dialogic_001",
+			"portrait": "SalimDissapointed",
+			"text": "Huh... You sound like a Host.\nBut I will try. Don't worry. And thank you."
+		},
+		{
+			"character": "character-1680338876.json",
+			"event_id": "dialogic_001",
+			"portrait": "Default",
+			"text": "You're welcome. I am your friend after all."
+		},
+		{
+			"character": "character-1673695181.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "..."
+		},
+		{
+			"character": "character-1680338876.json",
+			"event_id": "dialogic_001",
+			"portrait": "Default",
+			"text": "Don't forget it, okay?"
+		},
+		{
+			"character": "character-1673695181.json",
+			"event_id": "dialogic_001",
+			"portrait": "Default",
+			"text": "Okay...\nI am still lost, but... At least I know I can trust you."
+		},
+		{
+			"character": "character-1680338876.json",
+			"event_id": "dialogic_001",
+			"portrait": "Default",
+			"text": "Right. Oh, look, the door is here!"
+		},
+		{
+			"character": "character-1673695181.json",
+			"event_id": "dialogic_001",
+			"portrait": "SalimConfused",
+			"text": "The door?"
+		},
+		{
+			"character": "character-1680338876.json",
+			"event_id": "dialogic_001",
+			"portrait": "Default",
+			"text": "Yeah, it leads to the room you'll be resting. And I guess you'll wake up here in case you'll be knocked off..."
+		},
+		{
+			"character": "character-1673695181.json",
+			"event_id": "dialogic_001",
+			"portrait": "SalimDissapointed",
+			"text": "Well... Great... I hope it won't be too often..."
+		},
+		{
+			"character": "character-1673695181.json",
+			"event_id": "dialogic_001",
+			"portrait": "SalimConfused",
+			"text": "How do you know it?"
+		},
+		{
+			"character": "character-1680338876.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Oh! I almost forgot!\nReach into your pocket and get the index out of there."
+		},
+		{
+			"character": "character-1673695181.json",
+			"event_id": "dialogic_001",
+			"portrait": "SalimConfused",
+			"text": "Inde-- What?! How is it here?"
+		},
+		{
+			"character": "character-1680338876.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Don't know but I got one and there are some basic information about everything, but also we can add info.\nLet me see... Looks like the index is shared between both of us, since we've met."
+		},
+		{
+			"character": "character-1673695181.json",
+			"event_id": "dialogic_001",
+			"portrait": "SalimAngry",
+			"text": "It says Maksud is connected to the Network, but we can't see his index, while we hadn't reached him..."
+		},
+		{
+			"character": "character-1680338876.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Yeah...\nAnyway, Salim. I'll go the other way through this maze to find out more about things."
+		},
+		{
+			"character": "character-1673695181.json",
+			"event_id": "dialogic_001",
+			"portrait": "Default",
+			"text": "Right. And I will go inside and begin my ascend to upper floors."
+		},
+		{
+			"character": "character-1680338876.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Yes. I hope you'll be fine if I'll drop by your room?"
+		},
+		{
+			"character": "character-1673695181.json",
+			"event_id": "dialogic_001",
+			"portrait": "SalimPositive",
+			"text": "Of course!"
+		},
+		{
+			"character": "character-1680338876.json",
+			"event_id": "dialogic_001",
+			"portrait": "AsyaHappy",
+			"text": "Great! Good luck!"
+		},
+		{
+			"character": "character-1673695181.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "To you too!"
+		},
+		{
+			"call_node": {
+				"arguments": [
+
+				],
+				"method_name": "Finish",
+				"target_node_path": "/root/DialogueAfterTutorial"
+			},
+			"event_id": "dialogic_042"
+		},
+		{
+			"event_id": "dialogic_022",
+			"transition_duration": 0
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.4.5",
+		"file": "timeline-1683446942.json",
+		"name": "0.Prologue - After Battle"
+	}
+}

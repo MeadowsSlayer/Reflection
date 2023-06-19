@@ -1,0 +1,15 @@
+[gd_resource type="Resource" load_steps=2 format=2]
+
+[ext_resource path="res://Scripts/Skills/SkillResource.gd" type="Script" id=1]
+
+[resource]
+script = ExtResource( 1 )
+color = "Red"
+CD = 16
+actions = 0
+description = "RED_BLOOD_MOON"
+skill_name = "Blood Moon"
+type = "self"
+icon = "res://Sprites/UI/Skills/Red/Red_Blood_Moon.png"
+en = 50
+skill_code = "Red_Blood_Moon"

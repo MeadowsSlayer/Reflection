@@ -1,0 +1,15 @@
+[gd_resource type="Resource" load_steps=2 format=2]
+
+[ext_resource path="res://Scripts/Skills/SkillResource.gd" type="Script" id=1]
+
+[resource]
+script = ExtResource( 1 )
+color = "Yellow"
+CD = 2
+actions = 1
+description = "YELLOW_LIGHTNING_STRIKE"
+skill_name = "Lightning Strike"
+type = "enemy"
+icon = "res://Sprites/UI/Skills/Yellow/Yellow_Lightning_Strike.png"
+en = 2
+skill_code = "Yellow_Lightning_Strike"

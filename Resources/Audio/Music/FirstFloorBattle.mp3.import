@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/FirstFloorBattle.mp3-718fcf18740db03be626b873fefd23cf.mp3str"
+
+[deps]
+
+source_file="res://Resources/Audio/Music/FirstFloorBattle.mp3"
+dest_files=[ "res://.import/FirstFloorBattle.mp3-718fcf18740db03be626b873fefd23cf.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

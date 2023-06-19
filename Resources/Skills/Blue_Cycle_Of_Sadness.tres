@@ -1,0 +1,15 @@
+[gd_resource type="Resource" load_steps=2 format=2]
+
+[ext_resource path="res://Scripts/Skills/SkillResource.gd" type="Script" id=1]
+
+[resource]
+script = ExtResource( 1 )
+color = "Blue"
+CD = 9
+actions = 0
+description = "BLUE_CYCLE_OF_SADNESS"
+skill_name = "Cycle of Sadness"
+type = "enemy"
+icon = "res://Sprites/UI/Skills/Blue/Blue_Cycle_Of_Sadness.png"
+en = 40
+skill_code = "Blue_Cycle_Of_Sadness"

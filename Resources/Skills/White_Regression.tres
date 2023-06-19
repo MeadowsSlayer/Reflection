@@ -1,0 +1,15 @@
+[gd_resource type="Resource" load_steps=2 format=2]
+
+[ext_resource path="res://Scripts/Skills/SkillResource.gd" type="Script" id=1]
+
+[resource]
+script = ExtResource( 1 )
+color = "White"
+CD = 7
+actions = 0
+description = "WHITE_REGRESSION"
+skill_name = "White Silence"
+type = "enemy"
+icon = "res://Sprites/UI/Skills/White/White_Regression.png"
+en = 50
+skill_code = "White_Regression"

@@ -1,0 +1,15 @@
+[gd_resource type="Resource" load_steps=2 format=2]
+
+[ext_resource path="res://Scripts/Skills/SkillResource.gd" type="Script" id=1]
+
+[resource]
+script = ExtResource( 1 )
+color = "Purple"
+CD = 11
+actions = 3
+description = "PURPLE_SWEET_DREAMS"
+skill_name = "Sweet Dreams"
+type = "enemy"
+icon = "res://Sprites/UI/Skills/Purple/Purple_Sweet_Dreams.png"
+en = 5
+skill_code = "Purple_Sweet_Dreams"

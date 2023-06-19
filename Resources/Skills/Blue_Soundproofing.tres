@@ -1,0 +1,15 @@
+[gd_resource type="Resource" load_steps=2 format=2]
+
+[ext_resource path="res://Scripts/Skills/SkillResource.gd" type="Script" id=1]
+
+[resource]
+script = ExtResource( 1 )
+color = "Blue"
+CD = 9
+actions = 2
+description = "BLUE_SOUNDPROOFING"
+skill_name = "Soundproofing"
+type = "enemy"
+icon = "res://Sprites/UI/Skills/Blue/Blue_Soundproofing.png"
+en = 5
+skill_code = "Blue_Soundproofing"

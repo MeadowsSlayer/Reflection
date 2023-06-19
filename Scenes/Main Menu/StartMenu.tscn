@@ -1,0 +1,64 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://Resources/Images/white.png" type="Texture" id=1]
+[ext_resource path="res://Scenes/Main Menu/StartMenu.gd" type="Script" id=2]
+[ext_resource path="res://Resources/Shaders/Pixelate.tres" type="Material" id=3]
+[ext_resource path="res://Scenes/Main Menu/GameMainMenu.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Prefabs/UI/TV.tscn" type="PackedScene" id=5]
+[ext_resource path="res://Resources/Shaders/TV.gdshader" type="Shader" id=6]
+
+[sub_resource type="ShaderMaterial" id=1]
+resource_local_to_scene = true
+shader = ExtResource( 6 )
+shader_param/overlay = true
+shader_param/scanlines_opacity = 0.036
+shader_param/scanlines_width = 0.067
+shader_param/grille_opacity = 0.055
+shader_param/resolution = Vector2( 640, 480 )
+shader_param/pixelate = false
+shader_param/roll = true
+shader_param/roll_speed = 2.0
+shader_param/roll_size = 29.396
+shader_param/roll_variation = 2.106
+shader_param/distort_intensity = 0.003
+shader_param/noise_opacity = 0.021
+shader_param/noise_speed = 5.0
+shader_param/static_noise_intensity = 0.019
+shader_param/aberration = 0.0
+shader_param/brightness = 1.1
+shader_param/discolor = false
+shader_param/warp_amount = 0.033
+shader_param/clip_warp = false
+shader_param/vignette_intensity = -0.173
+shader_param/vignette_opacity = 0.09
+
+[node name="StartMenu" type="Node2D"]
+script = ExtResource( 2 )
+camera = NodePath("Camera2D")
+
+[node name="TVCanvas" type="CanvasLayer" parent="."]
+
+[node name="TV" parent="TVCanvas" instance=ExtResource( 5 )]
+material = SubResource( 1 )
+
+[node name="Pixelated" type="ColorRect" parent="TVCanvas"]
+visible = false
+material = ExtResource( 3 )
+margin_right = 1919.0
+margin_bottom = 1079.0
+
+[node name="Black" type="TextureRect" parent="TVCanvas/Pixelated"]
+modulate = Color( 0, 0, 0, 1 )
+margin_right = 1922.0
+margin_bottom = 1080.0
+texture = ExtResource( 1 )
+expand = true
+
+[node name="MainMenu" parent="." instance=ExtResource( 4 )]
+
+[node name="Camera2D" type="Camera2D" parent="."]
+anchor_mode = 0
+current = true
+smoothing_enabled = true
+
+[connection signal="settings" from="MainMenu" to="." method="_on_MainMenu_settings"]

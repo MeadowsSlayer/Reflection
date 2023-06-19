@@ -1,0 +1,15 @@
+[gd_resource type="Resource" load_steps=2 format=2]
+
+[ext_resource path="res://Scripts/Skills/SkillResource.gd" type="Script" id=1]
+
+[resource]
+script = ExtResource( 1 )
+color = "None"
+CD = 0
+actions = 1
+description = "NORMAL_ATTACK"
+skill_name = "Attack"
+type = "enemy"
+icon = "res://Sprites/UI/Skills/Normal_Attack.png"
+en = 1
+skill_code = "Normal_Attack"

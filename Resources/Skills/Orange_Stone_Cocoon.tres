@@ -1,0 +1,15 @@
+[gd_resource type="Resource" load_steps=2 format=2]
+
+[ext_resource path="res://Scripts/Skills/SkillResource.gd" type="Script" id=1]
+
+[resource]
+script = ExtResource( 1 )
+color = "Orange"
+CD = 15
+actions = 0
+description = "ORANGE_STONE_COCOON"
+skill_name = "Stone Cocoon"
+type = "all enemies"
+icon = "res://Sprites/UI/Skills/Orange/Orange_Stone_Shield.png"
+en = 45
+skill_code = "Orange_Stone_Cocoon"

@@ -1,0 +1,171 @@
+{
+	"events": [
+		{
+			"animation": "[Default]",
+			"animation_length": 0,
+			"change_mirror_portrait": false,
+			"change_z_index": false,
+			"character": "character-1680338876.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"portrait": "Default",
+			"portrait_definition": "",
+			"position": {
+				"0": false,
+				"1": false,
+				"2": false,
+				"3": false,
+				"4": true
+			},
+			"type": 0,
+			"z_index": 0
+		},
+		{
+			"animation": "[Default]",
+			"animation_length": 0,
+			"change_mirror_portrait": false,
+			"change_z_index": false,
+			"character": "character-1673695181.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"portrait": "Default",
+			"portrait_definition": "",
+			"position": {
+				"0": true,
+				"1": false,
+				"2": false,
+				"3": false,
+				"4": false
+			},
+			"type": 0,
+			"z_index": 0
+		},
+		{
+			"character": "character-1680338876.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "As I said I can't help you in a fight by the rules of this place, but I may teach you what to do."
+		},
+		{
+			"character": "character-1673695181.json",
+			"event_id": "dialogic_001",
+			"portrait": "SalimConfused",
+			"text": "Rules of this place?"
+		},
+		{
+			"character": "character-1680338876.json",
+			"event_id": "dialogic_001",
+			"portrait": "AsyaDissapointed",
+			"text": "Later."
+		},
+		{
+			"character": "character-1680338876.json",
+			"event_id": "dialogic_001",
+			"portrait": "Default",
+			"text": "So, as you may feel there's a surge of energy inside you. It's your emotions and mind manifested.\nThis bat in your hands is your main weapon, but also you may use different abilities in battle.\nThey are separated by color. Whenever you use skills or just attack with the bat, you'll get energy."
+		},
+		{
+			"character": "character-1673695181.json",
+			"event_id": "dialogic_001",
+			"portrait": "SalimConfused",
+			"text": "Hold on, why are they separated by color in the first place?"
+		},
+		{
+			"character": "character-1680338876.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Think of each color as of different aspect or emotional spectrum."
+		},
+		{
+			"character": "character-1673695181.json",
+			"event_id": "dialogic_001",
+			"portrait": "Default",
+			"text": "Got it."
+		},
+		{
+			"character": "character-1680338876.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Anyway, when you'll get enough energy you may release it at once using powerful ability.\nAlso pay close attention to each enemy and what color are they weak to. You have limited amount of actions per turn and you may get more if you make enemy Weak by hitting their weakness.\nYou also have weakness and enemies can use it to their advantage."
+		},
+		{
+			"character": "character-1673695181.json",
+			"event_id": "dialogic_001",
+			"portrait": "SalimAngry",
+			"text": "I think I got the basics."
+		},
+		{
+			"character": "character-1680338876.json",
+			"event_id": "dialogic_001",
+			"portrait": "AsyaHappy",
+			"text": "Good. Also, enemies too gather energy and may use skills."
+		},
+		{
+			"character": "character-1673695181.json",
+			"event_id": "dialogic_001",
+			"portrait": "SalimDissapointed",
+			"text": "Ugh, not fair!"
+		},
+		{
+			"character": "character-1680338876.json",
+			"event_id": "dialogic_001",
+			"portrait": "Default",
+			"text": "Maybe. If you'll want to get more info, check out the index!"
+		},
+		{
+			"character": "character-1673695181.json",
+			"event_id": "dialogic_001",
+			"portrait": "SalimConfused",
+			"text": "What index?"
+		},
+		{
+			"character": "character-1680338876.json",
+			"event_id": "dialogic_001",
+			"portrait": "Default",
+			"text": "...\nI forgot you just woke up... Well then, later!"
+		},
+		{
+			"character": "character-1673695181.json",
+			"event_id": "dialogic_001",
+			"portrait": "SalimDissapointed",
+			"text": "OK! I guess I can win this!"
+		},
+		{
+			"character": "character-1680338876.json",
+			"event_id": "dialogic_001",
+			"portrait": "AsyaHappy",
+			"text": "That's the spirit! Glad to see you like this again.\nAlso don't worry about killing them, they aren't real to begin with."
+		},
+		{
+			"character": "character-1673695181.json",
+			"event_id": "dialogic_001",
+			"portrait": "SalimConfused",
+			"text": "Huh?"
+		},
+		{
+			"character": "character-1680338876.json",
+			"event_id": "dialogic_001",
+			"portrait": "Default",
+			"text": "Later! Go!"
+		},
+		{
+			"call_node": {
+				"arguments": [
+
+				],
+				"method_name": "Start",
+				"target_node_path": "/root/FirstFloor"
+			},
+			"event_id": "dialogic_042"
+		},
+		{
+			"event_id": "dialogic_022",
+			"transition_duration": 0
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.4.5",
+		"file": "timeline-1683297231.json",
+		"name": "0.Prologue - Tutorial"
+	}
+}

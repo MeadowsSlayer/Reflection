@@ -1,0 +1,15 @@
+[gd_resource type="Resource" load_steps=2 format=2]
+
+[ext_resource path="res://Scripts/Skills/SkillResource.gd" type="Script" id=1]
+
+[resource]
+script = ExtResource( 1 )
+color = "Green"
+CD = 7
+actions = 2
+description = "GREEN_LIFE_CIRCULATION"
+skill_name = "Life Circulation"
+type = "enemy"
+icon = "res://Sprites/UI/Skills/Green/Green_Life_Circulation.png"
+en = 4
+skill_code = "Green_Life_Circulation"

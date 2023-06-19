@@ -1,0 +1,15 @@
+[gd_resource type="Resource" load_steps=2 format=2]
+
+[ext_resource path="res://Scripts/Skills/SkillResource.gd" type="Script" id=1]
+
+[resource]
+script = ExtResource( 1 )
+color = "Red"
+CD = 6
+actions = 2
+description = "RED_BLOOD_EXCHANGE"
+skill_name = "Blood Exchange"
+type = "self"
+icon = "res://Sprites/UI/Skills/Red/Red_Blood_Exchange.png"
+en = 4
+skill_code = "Red_Blood_Exchange"

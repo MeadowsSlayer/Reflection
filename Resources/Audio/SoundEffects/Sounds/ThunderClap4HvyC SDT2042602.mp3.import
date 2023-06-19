@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/ThunderClap4HvyC SDT2042602.mp3-8594109fdc65340eae88f604172d1ac2.mp3str"
+
+[deps]
+
+source_file="res://Resources/Audio/SoundEffects/Sounds/ThunderClap4HvyC SDT2042602.mp3"
+dest_files=[ "res://.import/ThunderClap4HvyC SDT2042602.mp3-8594109fdc65340eae88f604172d1ac2.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0
