@@ -1923,9 +1923,9 @@ margin_bottom = 1128.0
 [node name="Round" type="NinePatchRect" parent="CanvasLayer/Control/Round"]
 anchor_left = 0.5
 anchor_right = 0.5
-margin_left = -440.0
+margin_left = 520.0
 margin_top = 176.0
-margin_right = 440.0
+margin_right = 1400.0
 margin_bottom = 280.0
 texture = ExtResource( 13 )
 patch_margin_left = 15
@@ -3543,8 +3543,8 @@ pause_mode = 1
 visible = false
 margin_left = 480.0
 margin_top = 270.0
-margin_right = 223200.0
-margin_bottom = 125550.0
+margin_right = 230880.0
+margin_bottom = 129870.0
 
 [node name="Info" parent="CanvasLayer" instance=ExtResource( 30 )]
 visible = false

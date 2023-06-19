@@ -37,3 +37,8 @@ func _on_SalimSits_pressed():
 		save.save_game(save_path)
 	var new_dialog = Dialogic.start(dialog)
 	get_node("../../Dialog").add_child(new_dialog)
+	$"../../CanvasLayer/Skip".visible = true
+
+func Finish():
+	$"../../CanvasLayer/Skip".visible = false
+	$"../../Dialog".get_child(0).queue_free()

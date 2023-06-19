@@ -55,11 +55,14 @@ func StartDialogue():
 	$CanvasLayer.visible = false
 	var new_dialog = Dialogic.start("0.Prologue - Tutorial")
 	get_node("Dialog").add_child(new_dialog)
+	$CanvasLayer2.visible = true
 
 func Start():
 	$CanvasLayer.visible = true
 	get_node("BattleOrder").Start()
 	get_node("CanvasLayer/Control/SkillSet").visible = true
+	$Dialog.get_child(0).queue_free()
+	$CanvasLayer2.visible = false
 
 func End():
 	get_tree().change_scene("res://Scenes/Dialogues/Prologue/DialogueAfterTutorial.tscn")

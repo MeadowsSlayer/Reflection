@@ -1403,6 +1403,15 @@ margin_bottom = 40.0
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
+[node name="Skip" type="Button" parent="CanvasLayer"]
+visible = false
+margin_left = 1768.0
+margin_top = 16.0
+margin_right = 1904.0
+margin_bottom = 79.0
+custom_fonts/font = ExtResource( 6 )
+text = "Skip"
+
 [node name="Pause" type="Control" parent="CanvasLayer"]
 pause_mode = 2
 visible = false
@@ -1510,5 +1519,6 @@ flat = true
 [connection signal="pressed" from="Upgrades/ThirdStep/Navigator" to="Upgrades/Description" method="_on_Navigator_pressed"]
 [connection signal="pressed" from="Upgrades/Description/Upgrade" to="Upgrades/Description" method="_on_Upgrade_pressed"]
 [connection signal="pressed" from="Upgrades/Description/Close" to="Upgrades/Description" method="_on_Close_pressed"]
+[connection signal="pressed" from="CanvasLayer/Skip" to="MainRoom/SalimSits" method="Finish"]
 [connection signal="pressed" from="CanvasLayer/Pause/CenterContainer/VBoxContainer/Continue" to="MainRoom" method="_on_Continue_pressed"]
 [connection signal="pressed" from="CanvasLayer/Pause/CenterContainer/VBoxContainer/Exit" to="MainRoom" method="_on_Exit_pressed"]

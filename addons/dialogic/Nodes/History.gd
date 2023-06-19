@@ -62,6 +62,7 @@ func handle_scrollbar_changed():
 func initalize_history():
 	if get_parent().settings.get_value('history', 'enable_open_button', true):
 		HistoryButton = HistoryOpenButton.instance()
+		HistoryButton.add_font_override("font", load("res://Resources/Fonts/EncounterSmallText.tres"))
 		add_child(HistoryButton)
 		HistoryButton.connect("pressed", self, '_on_toggle_history')
 		HistoryButton.connect("mouse_entered", self, '_on_HistoryButton_mouse_entered')
@@ -71,6 +72,7 @@ func initalize_history():
 	
 	if get_parent().settings.get_value('history', 'enable_close_button', true):
 		CloseButton = HistoryCloseButton.instance()
+		CloseButton.add_font_override("font", load("res://Resources/Fonts/EncounterSmallText.tres"))
 		add_child(CloseButton)
 		CloseButton.connect("pressed", self, '_on_toggle_history')
 		CloseButton.disabled = true
@@ -123,8 +125,8 @@ func initalize_history():
 		# Top Left
 		if button_anchor == 0:
 			anchor_values = [0, 0, 0, 0]
-			position_offset.x = 0
-			position_offset.y = 0
+			position_offset.x = 16
+			position_offset.y = 16
 		# Top Center
 		elif button_anchor == 1:
 			anchor_values = [.5, 0, .5, 0]
