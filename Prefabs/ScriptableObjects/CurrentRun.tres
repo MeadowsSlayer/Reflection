@@ -4,8 +4,8 @@
 
 [resource]
 script = ExtResource( 1 )
-room = 1
-all_rooms = 1
+room = 4
+all_rooms = 4
 floor_num = 1
 shops_per_floor = 1
 shop_slots = 4
@@ -16,14 +16,14 @@ yellow_res = 1
 green_res = 0.5
 blue_res = 0.5
 purple_res = 1
-skill1_name = ""
-skill2_name = ""
-skill3_name = ""
+skill1_name = "Green_Healing"
+skill2_name = "Orange_Stone_Shield"
+skill3_name = "Blue_Energy_Vampire"
 skill4_name = ""
 skill5_name = ""
 skill6_name = ""
 ult_name = "White_White_Silence"
-skills = [ "", "", "", "White_White_Silence" ]
+skills = [ "Green_Healing", "Orange_Stone_Shield", "Blue_Energy_Vampire", "White_White_Silence" ]
 skills_lvls = [ 1, 1, 1, 1 ]
 passives = [  ]
 passive_lvls = [  ]

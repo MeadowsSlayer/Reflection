@@ -8,9 +8,9 @@ export var green_res = 1
 export var blue_res = 1
 export var purple_res = 1
 
-export var skill1_name = ""
-export var skill2_name = ""
-export var skill3_name = ""
+export var skill1_name = "Green_Healing"
+export var skill2_name = "Orange_Spiked_Shield"
+export var skill3_name = "Blue_Energy_Vampire"
 export var skill4_name = ""
 export var skill5_name = ""
 export var skill6_name = ""

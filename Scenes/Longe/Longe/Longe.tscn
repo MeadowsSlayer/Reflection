@@ -267,7 +267,7 @@ texture_focused = ExtResource( 26 )
 self_modulate = Color( 1, 1, 1, 0.847059 )
 margin_left = 68.0
 margin_top = 44.0
-margin_right = 185.0
+margin_right = 192.0
 margin_bottom = 84.0
 texture = ExtResource( 28 )
 patch_margin_left = 15
@@ -282,7 +282,7 @@ margin_right = 118.0
 margin_bottom = 60.0
 rect_scale = Vector2( 2, 2 )
 custom_fonts/font = ExtResource( 29 )
-text = "Start Run"
+text = "Begin Escape"
 
 [node name="TV" type="TextureButton" parent="MainRoom"]
 margin_left = 1387.0
@@ -297,9 +297,9 @@ texture_focused = ExtResource( 23 )
 
 [node name="Label" type="NinePatchRect" parent="MainRoom/TV"]
 self_modulate = Color( 1, 1, 1, 0.847059 )
-margin_left = 26.5
+margin_left = 27.0
 margin_top = 88.0
-margin_right = 232.5
+margin_right = 135.0
 margin_bottom = 128.0
 texture = ExtResource( 28 )
 patch_margin_left = 15
@@ -310,11 +310,11 @@ patch_margin_bottom = 15
 [node name="Name" type="Label" parent="MainRoom/TV"]
 margin_left = 34.0
 margin_top = 88.0
-margin_right = 125.0
+margin_right = 78.0
 margin_bottom = 104.0
 rect_scale = Vector2( 2, 2 )
 custom_fonts/font = ExtResource( 29 )
-text = "Upgrades and Trades"
+text = "Upgrades"
 
 [node name="Chest" type="TextureButton" parent="MainRoom"]
 margin_left = 352.0
