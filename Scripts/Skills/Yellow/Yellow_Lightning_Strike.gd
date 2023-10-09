@@ -37,7 +37,8 @@ func Action():
 			duration = 4
 		
 		enemy.Taking_Damage(attack, DMG_Mod, "yellow", CRIT, DMG_add)
-		enemy.get_node("EffectsSpecial").animation = "None"
+		enemy.get_node("EffectsSpecial").animation = "Light"
+		enemy.get_node("EffectsSpecial").modulate = Color8(255, 255, 255)
 		get_parent().skills_cd_rest_mod = reset
 		
 		get_parent().EN_Plus(2)

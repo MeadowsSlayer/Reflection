@@ -50,7 +50,8 @@ func Action():
 			enemy.WakeUp()
 		enemy.Taking_Damage(attack, DMG_Mod, "blue", CRIT, DMG_add)
 		enemy.Comatose(energy, duration)
-		enemy.get_node("EffectsSpecial").animation = "None"
+		enemy.get_node("EffectsSpecial").animation = "Reverse Ice"
+		enemy.get_node("EffectsSpecial").modulate = Color8(255, 255, 255)
 		status_effects.WarningStrike_OFF()
 		status_effects.WaitingGameNULL()
 		get_parent().EN_Plus(taken + 2 + get_parent().blue_skills_en_boost)

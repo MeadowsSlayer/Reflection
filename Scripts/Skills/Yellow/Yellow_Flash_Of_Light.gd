@@ -48,6 +48,7 @@ func Action():
 			enemy.WakeUp()
 		enemy.Taking_Damage(attack, DMG_Mod, "yellow", CRIT, DMG_add)
 		enemy.get_node("EffectsSpecial").animation = "Star"
+		enemy.get_node("EffectsSpecial").modulate = Color8(255, 255, 255)
 		enemy.Status_Effects("blind", blind_power, duration)
 		
 		get_parent().EN_Plus(5)

@@ -12,11 +12,9 @@ func _ready():
 func _input(event):
 	if (event.is_action_pressed("menu")):
 		if (get_tree().paused == false):
-			get_node("../CanvasLayer/Pause").visible = true
-			get_tree().paused = true
+			get_node("../CanvasLayer/Pause").Pause(false)
 		else:
-			get_node("../CanvasLayer/Pause").visible = false
-			get_tree().paused = false
+			get_node("../CanvasLayer/Pause").Unpause()
 
 func _on_TV_pressed():
 	SoundPlayer.play_sound("Click")
@@ -43,13 +41,3 @@ func _on_ChestBG_gui_input(event):
 		if event.button_index == BUTTON_LEFT and event.pressed:
 			SoundPlayer.play_sound("Click")
 			get_node("../Chest").visible = false
-
-func _on_Exit_pressed():
-	SoundPlayer.play_sound("Click")
-	get_tree().paused = false
-	get_tree().change_scene("res://Scenes/Main Menu/StartMenu.tscn")
-
-func _on_Continue_pressed():
-	SoundPlayer.play_sound("Click")
-	get_node("../CanvasLayer/Pause").visible = false
-	get_tree().paused = false

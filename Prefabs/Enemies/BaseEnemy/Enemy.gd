@@ -311,6 +311,7 @@ func ActualTurn():
 func MentalProtectionActivated():
 	mentalprotection_duration = 3
 	mentalprotection_buff = 20
+	$EffectsAnimator.play("Defensive")
 	RES()
 	get_node("Control/StatusEffects/HBoxContainer/MentalProtection").visible = true
 	get_node("Control/StatusEffects/HBoxContainer/MentalProtection/Time").text = str(mentalprotection_duration)
@@ -319,6 +320,7 @@ func MentalProtectionActivated():
 func ProtectTheArtActivated():
 	protecttheart_duration = 3
 	protecttheart_buff = 10
+	$EffectsAnimator.play("Defensive")
 	DEF()
 	get_node("Control/StatusEffects/HBoxContainer/ProtectTheArt").visible = true
 	get_node("Control/StatusEffects/HBoxContainer/ProtectTheArt/Time").text = str(protecttheart_duration)
@@ -328,6 +330,7 @@ func BurstOfEnergyActivated():
 	curEN = maxEN
 	burstofenergy_duration = 3
 	burstofenergy_buff = 20
+	$EffectsAnimator.play("Buff")
 	get_node("Control/StatusEffects/HBoxContainer/BurstOfEnergy").visible = true
 	get_node("Control/StatusEffects/HBoxContainer/BurstOfEnergy/Time").text = str(burstofenergy_duration)
 	get_node("Control/StatusEffects/HBoxContainer/BurstOfEnergy/Potency").text = str(20)
@@ -337,6 +340,7 @@ func ScorchingHeatActivated():
 	scorchingheat_buff = 10
 	Healing("max")
 	ATK()
+	$EffectsAnimator.play("Buff")
 	get_node("Control/StatusEffects/HBoxContainer/ScorchingHeat").visible = true
 	get_node("Control/StatusEffects/HBoxContainer/ScorchingHeat/Time").text = str(scorchingheat_duration)
 	get_node("Control/StatusEffects/HBoxContainer/ScorchingHeat/Potency").text = str(10)
@@ -350,6 +354,7 @@ func Healing(num):
 			num = maxHP - curHP
 	curHP += num
 	$AnimationPlayer.play("Healing")
+	$EffectsAnimator.play("Healing")
 	var heal_instance = heal_num.instance()
 	heal_instance.text = str("+", num)
 	heal_instance.set_position(Vector2(gen.randi_range(0, -36), gen.randi_range(0, -23)))
@@ -361,6 +366,7 @@ func DamageSound():
 	SoundPlayer.play_sound("Hurt")
 
 func ClearPositiveEffects():
+	$EffectsAnimator.play("Debuff")
 	if mentalprotection_duration > 0:
 		mentalprotection_duration = 0
 		RES -= 20
@@ -404,24 +410,16 @@ func Taking_Pure_Damage(cur_DMG, type, on_attack):
 		cur_DMG += int(cur_DMG * (0.05 + 0.05 * player.ofitg_lvl)) * num_of_neg_al
 	if (type == "red"):
 		cur_DMG = int(cur_DMG * red_res)
-		get_node("Particles2D").self_modulate = Color8(255, 0, 0)
 	if (type == "orange"):
 		cur_DMG = int(cur_DMG * orange_res)
-		get_node("Particles2D").self_modulate = Color8(255, 117, 0)
 	if (type == "yellow"):
 		cur_DMG = int(cur_DMG * yellow_res)
-		get_node("Particles2D").self_modulate = Color8(255, 255, 0)
 	if (type == "green"):
 		cur_DMG = int(cur_DMG * green_res)
-		get_node("Particles2D").self_modulate = Color8(0, 255, 0)
 	if (type == "blue"):
 		cur_DMG = int(cur_DMG * blue_res)
-		get_node("Particles2D").self_modulate = Color8(0, 0, 255)
 	if (type == "purple"):
 		cur_DMG = int(cur_DMG * purple_res)
-		get_node("Particles2D").self_modulate = Color8(167, 0, 199)
-	if (type == "phys"):
-		get_node("Particles2D").self_modulate = Color8(255, 255, 255)
 	SpawnDamage(cur_DMG, false)
 	if on_attack == true:
 		get_node("AnimationPlayer").play("TakingDamage")
@@ -458,26 +456,18 @@ func Taking_Damage(attack, mod, type, crit_mod, DMG_bonus):
 		cur_DMG += int(cur_DMG * 0.6)
 	match type:
 		"red":
-			get_node("Particles2D").self_modulate = Color8(255, 0, 0)
 			cur_DMG = CheckRes(red_res, cur_DMG)
 		"orange":
-			get_node("Particles2D").self_modulate = Color8(255, 117, 0)
 			cur_DMG = CheckRes(orange_res, cur_DMG)
 		"yellow":
-			get_node("Particles2D").self_modulate = Color8(255, 255, 0)
 			cur_DMG = CheckRes(yellow_res, cur_DMG)
 		"green":
 			crit_mod += spread
-			get_node("Particles2D").self_modulate = Color8(0, 255, 0)
 			cur_DMG = CheckRes(green_res, cur_DMG)
 		"blue":
-			get_node("Particles2D").self_modulate = Color8(0, 0, 255)
 			cur_DMG = CheckRes(blue_res, cur_DMG)
 		"purple":
-			get_node("Particles2D").self_modulate = Color8(167, 0, 199)
 			cur_DMG = CheckRes(purple_res, cur_DMG)
-		"phys":
-			get_node("Particles2D").self_modulate = Color8(255, 255, 255)
 	if (crit <= crit_mod):
 		player.hit_critical = true
 		cur_DMG += cur_DMG
@@ -501,6 +491,7 @@ func Taking_Damage(attack, mod, type, crit_mod, DMG_bonus):
 func GrowingPain(attack, mod, crit_mod, DMG_bonus):
 	$EffectsSpecial.visible = true
 	$EffectsSpecial.animation = "Poison Claw"
+	$EffectsSpecial.modulate = Color8(255, 255, 255)
 	$EffectsSpecial.frame = 1
 	var cur_DMG = int(((attack + 1.0) * 40.0 / (10.0 + DEF)) * mod) + DMG_bonus
 	var crit_success = false
@@ -532,6 +523,7 @@ func IdleSetter():
 
 func Status_Effects(status, num, time):
 	if gen.randi_range(1, 100) > RES:
+		$EffectsAnimator.play("Debuff")
 		match status:
 			"growing_fracture":
 				growing_fracture = num
@@ -697,6 +689,7 @@ func RegressionOff():
 	regression_color = null
 
 func Regression(type, lvl):
+	$EffectsAnimator.play("Debuff")
 	regression_duration = 3
 	RegressionOff()
 	

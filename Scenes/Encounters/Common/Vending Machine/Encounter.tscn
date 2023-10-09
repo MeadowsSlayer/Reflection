@@ -6,7 +6,7 @@
 [ext_resource path="res://Scenes/Encounters/Common/Vending Machine/EncounterVendingMachine.gd" type="Script" id=4]
 [ext_resource path="res://Scenes/Encounters/AfterEncounter.gd" type="Script" id=5]
 [ext_resource path="res://Prefabs/UI/AfterFight/RoomChoosing.gd" type="Script" id=6]
-[ext_resource path="res://Sprites/UI/Encounter/ScreenEncounterMini.png" type="Texture" id=7]
+[ext_resource path="res://Sprites/UI/Encounters/ScreenEncounterMini.png" type="Texture" id=7]
 [ext_resource path="res://Sprites/UI/Battle UI/Icons/Stickers.png" type="Texture" id=8]
 [ext_resource path="res://Sprites/Backround/First Floor/BackgroundFirstFloor.png" type="Texture" id=9]
 [ext_resource path="res://Resources/Fonts/PixelText.tres" type="DynamicFont" id=10]

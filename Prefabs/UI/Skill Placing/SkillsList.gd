@@ -9,7 +9,7 @@ func _ready():
 	for i in $ScrollContainer/VBoxContainer.get_children():
 		var check = false
 		for c in run.get("skills"):
-			if i.name == c:
+			if i.name == c || i.name == "No_Skill":
 				check = true
 		if check == false:
 			i.SelfDestruct()
@@ -43,6 +43,5 @@ func _on_Choose_pressed():
 	var skill = str("../Skill", skill_num)
 	if skill_num == 7:
 		skill = "../Ult"
-	if skill_name != "":
-		get_node(skill).ChangeIcon(skill_icon, skill_name)
+	get_node(skill).ChangeIcon(skill_icon, skill_name)
 	self.visible = false

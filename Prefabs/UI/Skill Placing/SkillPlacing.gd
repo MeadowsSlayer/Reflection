@@ -80,8 +80,6 @@ func _on_PassiveSkills_pressed():
 	$PassiveSkillBox.visible = true
 	$ItemsBox.visible = false
 	turnActive(false)
-	if passives == 0:
-		$PassiveSkillBox/NoPassives.visible = true
 
 func _on_Items_pressed():
 	$PassiveSkillBox.visible = false

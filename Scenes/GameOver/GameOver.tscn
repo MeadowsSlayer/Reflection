@@ -40,6 +40,7 @@ text = "Sometimes you just have to try again. It's OK!
 I know you can do it!"
 align = 1
 valign = 1
+autowrap = true
 
 [node name="DefeatBlack" type="TextureRect" parent="."]
 modulate = Color( 0, 0, 0, 1 )

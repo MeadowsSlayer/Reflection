@@ -57,79 +57,75 @@ func Start():
 			$RoomName.text = "Reward: Yellow Skill"
 		"white":
 			$RoomIcon.texture = load("res://Sprites/UI/Skills/EmptySkills/EmptySkillRainbow.png")
-			$RoomName.text = "Rewards: White and Random Color Skill"
+			$RoomName.text = "Rewards: White and Random Color Skills"
 			$RoomDescription.text = "DIFFICULT_BATTLE_DESCRIPTION"
 		"shop":
-			$RoomIcon.texture = load("res://Sprites/UI/Battle UI/Icons/Stickers.png")
+			$RoomIcon.texture = load("res://Sprites/UI/Shop UI/ShopIcon.png")
 			$RoomName.text = "Destination: Shop"
 			$RoomDescription.text = "SHOP_DESCRIPTION"
 		"memento":
-			#$RoomIcon.texture = load("res://Sprites/UI/Items/3. Rare/Coffee.png")
+			$RoomIcon.texture = load("res://Sprites/UI/Encounters/EncounterIcon.png")
 			$RoomName.text = "Destination: Encounter"
 			$RoomDescription.text = "ENCOUNTER_DESCRIPTION"
-		"tapes":
-			#$RoomIcon.texture = load("res://Sprites/UI/Items/3. Rare/Coffee.png")
-			$RoomName.text = "Reward: Tapes"
-			$RoomDescription.text = "TAPES_DESCRIPTION"
 		"red/orange","orange/red":
-			$RoomIcon.texture = load("res://Sprites/UI/Skills/NoSkill.png")
-			$RoomName.text = "Reward: Orange And Red Skills"
+			$RoomIcon.texture = load("res://Sprites/UI/Skills/EmptySkills/EmptySkillRedOrange.png")
+			$RoomName.text = "Rewards: Orange And Red Skills"
 			$RoomDescription.text = "DIFFICULT_BATTLE_DESCRIPTION"
 		"red/green","green/red":
-			$RoomIcon.texture = load("res://Sprites/UI/Skills/NoSkill.png")
-			$RoomName.text = "Reward: Green And Red Skills"
+			$RoomIcon.texture = load("res://Sprites/UI/Skills/EmptySkills/EmptySkillRedGreen.png")
+			$RoomName.text = "Rewards: Green And Red Skills"
 			$RoomDescription.text = "DIFFICULT_BATTLE_DESCRIPTION"
 		"red/yellow","yellow/red":
-			$RoomIcon.texture = load("res://Sprites/UI/Skills/NoSkill.png")
-			$RoomName.text = "Reward: Yellow And Red Skills"
+			$RoomIcon.texture = load("res://Sprites/UI/Skills/EmptySkills/EmptySkillRedYellow.png")
+			$RoomName.text = "Rewards: Yellow And Red Skills"
 			$RoomDescription.text = "DIFFICULT_BATTLE_DESCRIPTION"
 		"red/blue","blue/red":
-			$RoomIcon.texture = load("res://Sprites/UI/Skills/NoSkill.png")
-			$RoomName.text = "Reward: Blue And Red Skills"
+			$RoomIcon.texture = load("res://Sprites/UI/Skills/EmptySkills/EmptySkillBlueRed.png")
+			$RoomName.text = "Rewards: Blue And Red Skills"
 			$RoomDescription.text = "DIFFICULT_BATTLE_DESCRIPTION"
 		"red/purple","purple/red":
-			$RoomIcon.texture = load("res://Sprites/UI/Skills/NoSkill.png")
-			$RoomName.text = "Reward: Purple And Red Skills"
+			$RoomIcon.texture = load("res://Sprites/UI/Skills/EmptySkills/EmptySkillRedPurple.png")
+			$RoomName.text = "Rewards: Purple And Red Skills"
 			$RoomDescription.text = "DIFFICULT_BATTLE_DESCRIPTION"
 		"orange/green","green/orange":
-			$RoomIcon.texture = load("res://Sprites/UI/Skills/NoSkill.png")
-			$RoomName.text = "Reward: Orange And Green Skills"
+			$RoomIcon.texture = load("res://Sprites/UI/Skills/EmptySkills/EmptySkillOrangeGreen.png")
+			$RoomName.text = "Rewards: Orange And Green Skills"
 			$RoomDescription.text = "DIFFICULT_BATTLE_DESCRIPTION"
 		"orange/yellow","yellow/orange":
-			$RoomIcon.texture = load("res://Sprites/UI/Skills/NoSkill.png")
-			$RoomName.text = "Reward: Orange And Yellow Skills"
+			$RoomIcon.texture = load("res://Sprites/UI/Skills/EmptySkills/EmptySkillYellowOrange.png")
+			$RoomName.text = "Rewards: Orange And Yellow Skills"
 			$RoomDescription.text = "DIFFICULT_BATTLE_DESCRIPTION"
 		"orange/blue","blue/orange":
-			$RoomIcon.texture = load("res://Sprites/UI/Skills/NoSkill.png")
-			$RoomName.text = "Reward: Orange And Blue Skills"
+			$RoomIcon.texture = load("res://Sprites/UI/Skills/EmptySkills/EmptySkillBlueOrange.png")
+			$RoomName.text = "Rewards: Orange And Blue Skills"
 			$RoomDescription.text = "DIFFICULT_BATTLE_DESCRIPTION"
 		"orange/purple","purple/orange":
-			$RoomIcon.texture = load("res://Sprites/UI/Skills/NoSkill.png")
-			$RoomName.text = "Reward: Orange And Purple Skills"
+			$RoomIcon.texture = load("res://Sprites/UI/Skills/EmptySkills/EmptySkillPurpleOrange.png")
+			$RoomName.text = "Rewards: Orange And Purple Skills"
 			$RoomDescription.text = "DIFFICULT_BATTLE_DESCRIPTION"
 		"green/yellow","yellow/green":
-			$RoomIcon.texture = load("res://Sprites/UI/Skills/NoSkill.png")
-			$RoomName.text = "Reward: Green And Yellow Skills"
+			$RoomIcon.texture = load("res://Sprites/UI/Skills/EmptySkills/EmptySkillYellowGreen.png")
+			$RoomName.text = "Rewards: Green And Yellow Skills"
 			$RoomDescription.text = "DIFFICULT_BATTLE_DESCRIPTION"
 		"green/blue","blue/green":
-			$RoomIcon.texture = load("res://Sprites/UI/Skills/NoSkill.png")
-			$RoomName.text = "Reward: Green And Blue Skills"
+			$RoomIcon.texture = load("res://Sprites/UI/Skills/EmptySkills/EmptySkillBlueGreen.png")
+			$RoomName.text = "Rewards: Green And Blue Skills"
 			$RoomDescription.text = "DIFFICULT_BATTLE_DESCRIPTION"
 		"green/purple","purple/green":
-			$RoomIcon.texture = load("res://Sprites/UI/Skills/NoSkill.png")
-			$RoomName.text = "Reward: Green And Purple Skills"
+			$RoomIcon.texture = load("res://Sprites/UI/Skills/EmptySkills/EmptySkillPurpleGreen.png")
+			$RoomName.text = "Rewards: Green And Purple Skills"
 			$RoomDescription.text = "DIFFICULT_BATTLE_DESCRIPTION"
 		"blue/yellow","yellow/blue":
-			$RoomIcon.texture = load("res://Sprites/UI/Skills/NoSkill.png")
-			$RoomName.text = "Reward: Blue And Yellow Skills"
+			$RoomIcon.texture = load("res://Sprites/UI/Skills/EmptySkills/EmptySkillBlueYellow.png")
+			$RoomName.text = "Rewards: Blue And Yellow Skills"
 			$RoomDescription.text = "DIFFICULT_BATTLE_DESCRIPTION"
 		"purple/yellow","yellow/purple":
-			$RoomIcon.texture = load("res://Sprites/UI/Skills/NoSkill.png")
-			$RoomName.text = "Reward: Purple And Yellow Skills"
+			$RoomIcon.texture = load("res://Sprites/UI/Skills/EmptySkills/EmptySkillYellowPurple.png")
+			$RoomName.text = "Rewards: Purple And Yellow Skills"
 			$RoomDescription.text = "DIFFICULT_BATTLE_DESCRIPTION"
 		"blue/purple","purple/blue":
-			$RoomIcon.texture = load("res://Sprites/UI/Skills/NoSkill.png")
-			$RoomName.text = "Reward: Blue And Purple Skills"
+			$RoomIcon.texture = load("res://Sprites/UI/Skills/EmptySkills/EmptySkillBluePurple.png")
+			$RoomName.text = "Rewards: Blue And Purple Skills"
 			$RoomDescription.text = "DIFFICULT_BATTLE_DESCRIPTION"
 
 func SetBossRoom():

@@ -48,6 +48,7 @@ func _on_UltTimer_timeout():
 		enemy.WakeUp()
 	enemy.Taking_Damage(attack, DMG_Mod, "blue", CRIT, DMG_add)
 	enemy.get_node("EffectsSpecial").animation = "Barrier"
+	enemy.get_node("EffectsSpecial").modulate = Color8(255, 255, 255)
 	enemy.Status_Effects("fragile", fragile, duration)
 	enemy.Status_Effects("growing_fracture", (5 + skill_lvl) / 100, duration)
 	status_effects.WarningStrike_OFF()

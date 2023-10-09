@@ -2149,6 +2149,7 @@ text = "Enemy Intel"
 margin_left = 570.0
 margin_right = 771.76
 margin_bottom = 96.0
+disabled = true
 text = "Notes"
 
 [node name="Back" type="Button" parent="."]

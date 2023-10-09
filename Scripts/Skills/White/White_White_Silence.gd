@@ -38,15 +38,19 @@ func Action():
 		"orange":
 			DMG_Mod += get_parent().status_effects.ORANGE_DMG_MOD()
 			$"../EffectsSpecial".animation = "FireCast"
+			$"../EffectsSpecial".modulate = Color8(255, 255, 255)
 		"yellow":
 			DMG_Mod += get_parent().status_effects.YELLOW_DMG_MOD()
 			$"../EffectsSpecial".animation = "Star"
+			$"../EffectsSpecial".modulate = Color8(255, 255, 255)
 		"green":
 			DMG_Mod += get_parent().status_effects.GREEN_DMG_MOD()
 			$"../EffectsSpecial".animation = "Poison Claw"
+			$"../EffectsSpecial".modulate = Color8(255, 255, 255)
 		"blue":
 			DMG_Mod += get_parent().status_effects.BLUE_DMG_MOD()
 			$"../EffectsSpecial".animation = "Ice Cast"
+			$"../EffectsSpecial".modulate = Color8(255, 255, 255)
 		"purple":
 			DMG_Mod += get_parent().status_effects.PURPLE_DMG_MOD()
 			$"../EffectsSpecial".animation = "Ice Shatter"

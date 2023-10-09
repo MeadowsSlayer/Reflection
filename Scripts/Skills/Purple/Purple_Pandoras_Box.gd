@@ -53,6 +53,7 @@ func _on_UltTimer_timeout():
 				enemy.WakeUp()
 			enemy.Taking_Damage(attack, DMG_Mod, "purple", CRIT, DMG_add)
 			enemy.get_node("EffectsSpecial").animation = "Barrier"
+			enemy.get_node("EffectsSpecial").modulate = Color8(217, 10, 240)
 			enemy.Status_Effects("miasma", blind_power, duration)
 			match status:
 				"closure":

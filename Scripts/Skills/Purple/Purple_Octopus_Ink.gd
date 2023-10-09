@@ -28,6 +28,8 @@ func Action():
 			if enemy.sleep_duration != 0:
 				enemy.WakeUp()
 			enemy.Taking_Damage(attack, DMG_Mod, "purple", CRIT, DMG_add)
+			enemy.get_node("EffectsSpecial").animation = "Reverse Ice"
+			enemy.get_node("EffectsSpecial").modulate = Color8(217, 10, 240)
 			enemy.Status_Effects("blind", 15 + 5 * skill_lvl, 2)
 	
 	get_parent().status_effects.WaitingGameNULL()

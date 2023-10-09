@@ -188,7 +188,7 @@ tracks/8/keys = {
 "times": PoolRealArray( 0 ),
 "transitions": PoolRealArray( 1 ),
 "update": 0,
-"values": [ Vector2( 1520, 928 ) ]
+"values": [ Vector2( 1368, 928 ) ]
 }
 tracks/9/type = "value"
 tracks/9/path = NodePath("Rewards/ScrollContainer:rect_position")
@@ -312,7 +312,7 @@ tracks/8/keys = {
 "times": PoolRealArray( 0.5, 1 ),
 "transitions": PoolRealArray( 1, 1 ),
 "update": 0,
-"values": [ Vector2( 1168, 928 ), Vector2( 1520, 928 ) ]
+"values": [ Vector2( 1168, 928 ), Vector2( 1368, 928 ) ]
 }
 tracks/9/type = "value"
 tracks/9/path = NodePath("Rewards/ScrollContainer:rect_position")
@@ -338,6 +338,20 @@ tracks/10/keys = {
 "values": [ {
 "args": [  ],
 "method": "GetTapes"
+} ]
+}
+tracks/11/type = "method"
+tracks/11/path = NodePath("Rewards/Stickers")
+tracks/11/interp = 1
+tracks/11/loop_wrap = true
+tracks/11/imported = false
+tracks/11/enabled = true
+tracks/11/keys = {
+"times": PoolRealArray( 0.5 ),
+"transitions": PoolRealArray( 1 ),
+"values": [ {
+"args": [  ],
+"method": "RandomizeMoney"
 } ]
 }
 
@@ -885,9 +899,9 @@ text = "(+10)"
 valign = 2
 
 [node name="Go" type="Button" parent="Rewards"]
-margin_left = 1520.0
+margin_left = 1368.0
 margin_top = 928.0
-margin_right = 1889.76
+margin_right = 1888.0
 margin_bottom = 1048.0
 text = "Go to next room"
 
@@ -1043,9 +1057,9 @@ margin_bottom = 1080.0
 color = Color( 0.133333, 0.12549, 0.203922, 1 )
 
 [node name="ColorRect" type="NinePatchRect" parent="SkillChoosing"]
-margin_left = 64.0
+margin_left = 24.0
 margin_top = 40.0
-margin_right = 866.0
+margin_right = 826.0
 margin_bottom = 1031.0
 texture = ExtResource( 11 )
 patch_margin_left = 15
@@ -1054,9 +1068,9 @@ patch_margin_right = 15
 patch_margin_bottom = 15
 
 [node name="ScrollContainer" type="ScrollContainer" parent="SkillChoosing"]
-margin_left = 91.0
+margin_left = 51.0
 margin_top = 216.0
-margin_right = 848.0
+margin_right = 808.0
 margin_bottom = 1002.0
 
 [node name="VBoxContainer" type="VBoxContainer" parent="SkillChoosing/ScrollContainer"]
@@ -4315,17 +4329,17 @@ custom_fonts/font = SubResource( 14 )
 text = "NEW!"
 
 [node name="Choose" type="Button" parent="SkillChoosing"]
-margin_left = 1672.0
+margin_left = 1632.0
 margin_top = 936.0
-margin_right = 1894.0
+margin_right = 1896.0
 margin_bottom = 1031.0
 disabled = true
 text = "Choose"
 
 [node name="Label" type="Label" parent="SkillChoosing"]
-margin_left = 64.0
+margin_left = 24.0
 margin_top = 40.0
-margin_right = 866.0
+margin_right = 826.0
 margin_bottom = 197.0
 custom_fonts/font = ExtResource( 3 )
 text = "Choose One New Skill From These"
@@ -4337,9 +4351,9 @@ anims/RESET = SubResource( 15 )
 anims/Start = SubResource( 16 )
 
 [node name="ColorRect3" type="NinePatchRect" parent="SkillChoosing"]
-margin_left = 864.0
+margin_left = 824.0
 margin_top = 40.0
-margin_right = 1666.0
+margin_right = 1626.0
 margin_bottom = 1031.0
 texture = ExtResource( 11 )
 patch_margin_left = 15
@@ -4348,9 +4362,9 @@ patch_margin_right = 15
 patch_margin_bottom = 15
 
 [node name="Label4" type="Label" parent="SkillChoosing"]
-margin_left = 864.0
+margin_left = 824.0
 margin_top = 240.0
-margin_right = 1666.0
+margin_right = 1626.0
 margin_bottom = 397.0
 custom_fonts/font = ExtResource( 3 )
 text = "No Skills?"
@@ -4359,9 +4373,9 @@ valign = 1
 
 [node name="Updrages" type="ScrollContainer" parent="SkillChoosing"]
 modulate = Color( 1, 1, 1, 0 )
-margin_left = 891.0
+margin_left = 851.0
 margin_top = 216.0
-margin_right = 1648.0
+margin_right = 1608.0
 margin_bottom = 1002.0
 
 [node name="VBoxContainer" type="VBoxContainer" parent="SkillChoosing/Updrages"]
@@ -7068,9 +7082,9 @@ CD: 6"
 autowrap = true
 
 [node name="Label2" type="Label" parent="SkillChoosing"]
-margin_left = 872.0
+margin_left = 832.0
 margin_top = 40.0
-margin_right = 1674.0
+margin_right = 1634.0
 margin_bottom = 197.0
 custom_fonts/font = ExtResource( 3 )
 text = "Upgrade One Skill Of This Color"
@@ -7078,9 +7092,9 @@ align = 1
 valign = 1
 
 [node name="Label3" type="Label" parent="SkillChoosing"]
-margin_left = 776.0
+margin_left = 736.0
 margin_top = 56.0
-margin_right = 968.0
+margin_right = 928.0
 margin_bottom = 184.0
 custom_fonts/font = SubResource( 21 )
 text = "OR"
@@ -7088,9 +7102,9 @@ align = 1
 valign = 1
 
 [node name="Reroll" type="Button" parent="SkillChoosing"]
-margin_left = 768.0
+margin_left = 728.0
 margin_top = 1000.0
-margin_right = 960.0
+margin_right = 920.0
 margin_bottom = 1063.0
 custom_fonts/font = ExtResource( 4 )
 text = "Reroll (x0)"

@@ -26,11 +26,13 @@ var global_save = load("res://Prefabs/ScriptableObjects/Global.tres")
 func Open():
 	self.visible = true
 	get_node("../CenterContainer").visible = false
+	$"../Label".visible = false
 	load_global_data()
 
 func Close():
 	self.visible = false
 	get_node("../CenterContainer").visible = true
+	$"../Label".visible = true
 
 func save_data():
 	global_save.set("language", cur_lang)

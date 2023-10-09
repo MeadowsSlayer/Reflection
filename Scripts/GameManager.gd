@@ -24,10 +24,10 @@ func _ready():
 	if max_waves >= 3:
 		max_waves = 2
 	wave = 1
-	$CanvasLayer/Control/TextUp/Waves.text = str("Waves: ", wave, "/", max_waves)
+	$CanvasLayer/Control/TextUp/Waves.text = str(tr("Waves: "), wave, "/", max_waves)
 	$CanvasLayer/Animations.play("Start")
 	enemies = gen.randi_range(1, 10)
-	$CanvasLayer/Control/TextUp/Room.text = str("Room ", run.get("room"))
+	$CanvasLayer/Control/TextUp/Room.text = str(tr("Room "), run.get("room"))
 	$CanvasLayer/Control/TextUp/StickersNum.text = str(run.get("stickers"))
 	if (enemies == 1):
 		get_node("BattleOrder/Enemy2").active = false
@@ -91,7 +91,7 @@ func EnemyMinus():
 		get_node("BattleOrder/Player/StatusEffects").ItemsMultATKMod_OFF()
 
 func NewWave():
-	$CanvasLayer/Control/TextUp/Waves.text = str("Waves: ", wave, "/", max_waves)
+	$CanvasLayer/Control/TextUp/Waves.text = str(tr("Waves: "), wave, "/", max_waves)
 	get_node("BattleOrder").Start()
 	enemies = gen.randi_range(1, 10)
 	if (enemies == 1):

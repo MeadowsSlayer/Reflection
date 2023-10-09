@@ -83,6 +83,8 @@ func Action():
 		if types.size() >= 1:
 			type = types[gen.randi_range(0, types.size() - 1)]
 		
+		enemy.get_node("EffectsSpecial").modulate = Color8(255, 255, 255)
+		enemy.get_node("EffectsSpecial").animation = "None"
 		enemy.Taking_Damage(attack, DMG_Mod, type, CRIT, DMG_add)
 		
 		match type:

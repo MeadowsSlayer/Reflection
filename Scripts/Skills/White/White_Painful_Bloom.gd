@@ -58,8 +58,10 @@ func Action():
 			match type:
 				"green":
 					enemy.get_node("EffectsSpecial").animation = "Poison Claw"
+					enemy.get_node("EffectsSpecial").modulate = Color8(255, 255, 255)
 				"purple":
 					enemy.get_node("EffectsSpecial").animation = "Ice Shatter"
+					enemy.get_node("EffectsSpecial").modulate = Color8(217, 10, 240)
 			enemy.spread = 0
 			enemy.miasma = 0
 			enemy.spread_duration = 0

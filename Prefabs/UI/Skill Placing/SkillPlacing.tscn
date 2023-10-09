@@ -165,9 +165,9 @@ anchor_bottom = 1.0
 script = ExtResource( 14 )
 
 [node name="Background" type="ColorRect" parent="."]
-margin_left = 26.0
+margin_left = 24.0
 margin_top = 38.0
-margin_right = 1888.0
+margin_right = 1896.0
 margin_bottom = 1060.0
 color = Color( 0.388235, 0.607843, 1, 1 )
 __meta__ = {
@@ -211,7 +211,7 @@ margin_top = 96.0
 margin_right = 784.0
 margin_bottom = 192.0
 custom_fonts/font = ExtResource( 2 )
-text = "Choose The Skills"
+text = "Choose Skills"
 align = 1
 valign = 1
 
@@ -356,11 +356,46 @@ margin_bottom = 960.0
 
 [node name="VBoxContainer" type="VBoxContainer" parent="Skills/ScrollContainer"]
 margin_right = 745.0
-margin_bottom = 12476.0
+margin_bottom = 12736.0
 
-[node name="Red_Warning_Strike" type="Button" parent="Skills/ScrollContainer/VBoxContainer" groups=["Not-Ult", "Red"]]
+[node name="No_Skill" type="Button" parent="Skills/ScrollContainer/VBoxContainer" groups=["Not-Ult"]]
 margin_right = 745.0
 margin_bottom = 256.0
+rect_min_size = Vector2( 745, 256 )
+script = ExtResource( 22 )
+color = "None"
+
+[node name="SkillName" type="Label" parent="Skills/ScrollContainer/VBoxContainer/No_Skill"]
+margin_left = 136.0
+margin_top = 16.0
+margin_right = 675.0
+margin_bottom = 62.0
+custom_fonts/font = ExtResource( 4 )
+text = "No Skill"
+valign = 1
+
+[node name="SkillName2" type="Label" parent="Skills/ScrollContainer/VBoxContainer/No_Skill"]
+margin_left = 136.0
+margin_top = 64.0
+margin_right = 728.0
+margin_bottom = 240.0
+custom_fonts/font = ExtResource( 3 )
+text = "Remove skill from this slot."
+autowrap = true
+clip_text = true
+
+[node name="TextureRect" type="TextureRect" parent="Skills/ScrollContainer/VBoxContainer/No_Skill"]
+margin_left = 16.0
+margin_top = 16.0
+margin_right = 123.0
+margin_bottom = 123.0
+texture = ExtResource( 13 )
+expand = true
+
+[node name="Red_Warning_Strike" type="Button" parent="Skills/ScrollContainer/VBoxContainer" groups=["Not-Ult", "Red"]]
+margin_top = 260.0
+margin_right = 745.0
+margin_bottom = 516.0
 rect_min_size = Vector2( 745, 256 )
 script = ExtResource( 22 )
 color = "Red"
@@ -404,9 +439,9 @@ CD: 1"
 autowrap = true
 
 [node name="Red_Dirty_Trick" type="Button" parent="Skills/ScrollContainer/VBoxContainer" groups=["Not-Ult", "Red"]]
-margin_top = 260.0
+margin_top = 520.0
 margin_right = 745.0
-margin_bottom = 516.0
+margin_bottom = 776.0
 rect_min_size = Vector2( 745, 256 )
 script = ExtResource( 22 )
 color = "Red"
@@ -450,9 +485,9 @@ CD: 3"
 autowrap = true
 
 [node name="Red_Blood_Exchange" type="Button" parent="Skills/ScrollContainer/VBoxContainer" groups=["Not-Ult", "Red"]]
-margin_top = 520.0
+margin_top = 780.0
 margin_right = 745.0
-margin_bottom = 776.0
+margin_bottom = 1036.0
 rect_min_size = Vector2( 745, 256 )
 script = ExtResource( 22 )
 color = "Red"
@@ -496,9 +531,9 @@ CD: 6"
 autowrap = true
 
 [node name="Red_Crimson_Whirl" type="Button" parent="Skills/ScrollContainer/VBoxContainer" groups=["Not-Ult", "Red"]]
-margin_top = 780.0
+margin_top = 1040.0
 margin_right = 745.0
-margin_bottom = 1036.0
+margin_bottom = 1296.0
 rect_min_size = Vector2( 745, 256 )
 script = ExtResource( 22 )
 color = "Red"
@@ -542,9 +577,9 @@ CD: 6"
 autowrap = true
 
 [node name="Red_Adrenalin_Rush" type="Button" parent="Skills/ScrollContainer/VBoxContainer" groups=["Not-Ult", "Red"]]
-margin_top = 1040.0
+margin_top = 1300.0
 margin_right = 745.0
-margin_bottom = 1296.0
+margin_bottom = 1556.0
 rect_min_size = Vector2( 745, 256 )
 script = ExtResource( 22 )
 color = "Red"
@@ -588,9 +623,9 @@ CD: 6"
 autowrap = true
 
 [node name="Red_Dance_Of_Death" type="Button" parent="Skills/ScrollContainer/VBoxContainer" groups=["Red", "Ult"]]
-margin_top = 1300.0
+margin_top = 1560.0
 margin_right = 745.0
-margin_bottom = 1556.0
+margin_bottom = 1816.0
 rect_min_size = Vector2( 745, 256 )
 script = ExtResource( 22 )
 color = "Red"
@@ -633,9 +668,9 @@ CD: 6"
 autowrap = true
 
 [node name="Red_Blood_Moon" type="Button" parent="Skills/ScrollContainer/VBoxContainer" groups=["Red", "Ult"]]
-margin_top = 1560.0
+margin_top = 1820.0
 margin_right = 745.0
-margin_bottom = 1816.0
+margin_bottom = 2076.0
 rect_min_size = Vector2( 745, 256 )
 script = ExtResource( 22 )
 color = "Red"
@@ -678,9 +713,9 @@ CD: 6"
 autowrap = true
 
 [node name="Orange_Break_In_Defense" type="Button" parent="Skills/ScrollContainer/VBoxContainer" groups=["Not-Ult", "Orange"]]
-margin_top = 1820.0
+margin_top = 2080.0
 margin_right = 745.0
-margin_bottom = 2076.0
+margin_bottom = 2336.0
 rect_min_size = Vector2( 745, 256 )
 script = ExtResource( 22 )
 color = "Orange"
@@ -724,9 +759,9 @@ CD: 1"
 autowrap = true
 
 [node name="Orange_Spiked_Shield" type="Button" parent="Skills/ScrollContainer/VBoxContainer" groups=["Not-Ult", "Orange"]]
-margin_top = 2080.0
+margin_top = 2340.0
 margin_right = 745.0
-margin_bottom = 2336.0
+margin_bottom = 2596.0
 rect_min_size = Vector2( 745, 256 )
 script = ExtResource( 22 )
 color = "Orange"
@@ -770,9 +805,9 @@ CD: 5"
 autowrap = true
 
 [node name="Orange_Stone_Shield" type="Button" parent="Skills/ScrollContainer/VBoxContainer" groups=["Not-Ult", "Orange"]]
-margin_top = 2340.0
+margin_top = 2600.0
 margin_right = 745.0
-margin_bottom = 2596.0
+margin_bottom = 2856.0
 rect_min_size = Vector2( 745, 256 )
 rect_pivot_offset = Vector2( 104, 40 )
 script = ExtResource( 22 )
@@ -817,9 +852,9 @@ CD: 6"
 autowrap = true
 
 [node name="Orange_Cleansing" type="Button" parent="Skills/ScrollContainer/VBoxContainer" groups=["Not-Ult", "Orange"]]
-margin_top = 2600.0
+margin_top = 2860.0
 margin_right = 745.0
-margin_bottom = 2856.0
+margin_bottom = 3116.0
 rect_min_size = Vector2( 745, 256 )
 rect_pivot_offset = Vector2( 104, 40 )
 script = ExtResource( 22 )
@@ -864,9 +899,9 @@ CD: 4"
 autowrap = true
 
 [node name="Orange_Stun" type="Button" parent="Skills/ScrollContainer/VBoxContainer" groups=["Not-Ult", "Orange"]]
-margin_top = 2860.0
+margin_top = 3120.0
 margin_right = 745.0
-margin_bottom = 3116.0
+margin_bottom = 3376.0
 rect_min_size = Vector2( 745, 256 )
 rect_pivot_offset = Vector2( 104, 40 )
 script = ExtResource( 22 )
@@ -911,9 +946,9 @@ CD: 6"
 autowrap = true
 
 [node name="Orange_Adaptation" type="Button" parent="Skills/ScrollContainer/VBoxContainer" groups=["Orange", "Ult"]]
-margin_top = 3120.0
+margin_top = 3380.0
 margin_right = 745.0
-margin_bottom = 3376.0
+margin_bottom = 3636.0
 rect_min_size = Vector2( 745, 256 )
 rect_pivot_offset = Vector2( 104, 40 )
 script = ExtResource( 22 )
@@ -957,9 +992,9 @@ CD: 6"
 autowrap = true
 
 [node name="Orange_Stone_Cocoon" type="Button" parent="Skills/ScrollContainer/VBoxContainer" groups=["Orange", "Ult"]]
-margin_top = 3380.0
+margin_top = 3640.0
 margin_right = 745.0
-margin_bottom = 3636.0
+margin_bottom = 3896.0
 rect_min_size = Vector2( 745, 256 )
 rect_pivot_offset = Vector2( 104, 40 )
 script = ExtResource( 22 )
@@ -1003,9 +1038,9 @@ CD: 6"
 autowrap = true
 
 [node name="Yellow_Lightning_Strike" type="Button" parent="Skills/ScrollContainer/VBoxContainer" groups=["Not-Ult", "Yellow"]]
-margin_top = 3640.0
+margin_top = 3900.0
 margin_right = 745.0
-margin_bottom = 3896.0
+margin_bottom = 4156.0
 rect_min_size = Vector2( 745, 256 )
 rect_pivot_offset = Vector2( 104, 40 )
 script = ExtResource( 22 )
@@ -1050,9 +1085,9 @@ CD: 1"
 autowrap = true
 
 [node name="Yellow_Zig_Zag" type="Button" parent="Skills/ScrollContainer/VBoxContainer" groups=["Not-Ult", "Yellow"]]
-margin_top = 3900.0
+margin_top = 4160.0
 margin_right = 745.0
-margin_bottom = 4156.0
+margin_bottom = 4416.0
 rect_min_size = Vector2( 745, 256 )
 rect_pivot_offset = Vector2( 104, 40 )
 script = ExtResource( 22 )
@@ -1097,9 +1132,9 @@ CD: 4"
 autowrap = true
 
 [node name="Yellow_Thunder_Pulse" type="Button" parent="Skills/ScrollContainer/VBoxContainer" groups=["Not-Ult", "Yellow"]]
-margin_top = 4160.0
+margin_top = 4420.0
 margin_right = 745.0
-margin_bottom = 4416.0
+margin_bottom = 4676.0
 rect_min_size = Vector2( 745, 256 )
 rect_pivot_offset = Vector2( 104, 40 )
 script = ExtResource( 22 )
@@ -1144,9 +1179,9 @@ CD: 4"
 autowrap = true
 
 [node name="Yellow_Flash_Of_Light" type="Button" parent="Skills/ScrollContainer/VBoxContainer" groups=["Not-Ult", "Yellow"]]
-margin_top = 4420.0
+margin_top = 4680.0
 margin_right = 745.0
-margin_bottom = 4676.0
+margin_bottom = 4936.0
 rect_min_size = Vector2( 745, 256 )
 rect_pivot_offset = Vector2( 104, 40 )
 script = ExtResource( 22 )
@@ -1191,9 +1226,9 @@ CD: 4"
 autowrap = true
 
 [node name="Yellow_Thunderstorm" type="Button" parent="Skills/ScrollContainer/VBoxContainer" groups=["Not-Ult", "Yellow"]]
-margin_top = 4680.0
+margin_top = 4940.0
 margin_right = 745.0
-margin_bottom = 4936.0
+margin_bottom = 5196.0
 rect_min_size = Vector2( 745, 256 )
 rect_pivot_offset = Vector2( 104, 40 )
 script = ExtResource( 22 )
@@ -1238,9 +1273,9 @@ CD: 6"
 autowrap = true
 
 [node name="Yellow_Balanced_Instability" type="Button" parent="Skills/ScrollContainer/VBoxContainer" groups=["Ult", "Yellow"]]
-margin_top = 4940.0
+margin_top = 5200.0
 margin_right = 745.0
-margin_bottom = 5196.0
+margin_bottom = 5456.0
 rect_min_size = Vector2( 745, 256 )
 rect_pivot_offset = Vector2( 104, 40 )
 script = ExtResource( 22 )
@@ -1284,9 +1319,9 @@ CD: 6"
 autowrap = true
 
 [node name="Yellow_Time_Warp" type="Button" parent="Skills/ScrollContainer/VBoxContainer" groups=["Ult", "Yellow"]]
-margin_top = 5200.0
+margin_top = 5460.0
 margin_right = 745.0
-margin_bottom = 5456.0
+margin_bottom = 5716.0
 rect_min_size = Vector2( 745, 256 )
 rect_pivot_offset = Vector2( 104, 40 )
 script = ExtResource( 22 )
@@ -1330,9 +1365,9 @@ CD: 6"
 autowrap = true
 
 [node name="Green_Spread" type="Button" parent="Skills/ScrollContainer/VBoxContainer" groups=["Green", "Not-Ult"]]
-margin_top = 5460.0
+margin_top = 5720.0
 margin_right = 745.0
-margin_bottom = 5716.0
+margin_bottom = 5976.0
 rect_min_size = Vector2( 745, 256 )
 script = ExtResource( 22 )
 
@@ -1375,9 +1410,9 @@ CD: 1"
 autowrap = true
 
 [node name="Green_Healing" type="Button" parent="Skills/ScrollContainer/VBoxContainer" groups=["Green", "Not-Ult"]]
-margin_top = 5720.0
+margin_top = 5980.0
 margin_right = 745.0
-margin_bottom = 5976.0
+margin_bottom = 6236.0
 rect_min_size = Vector2( 745, 256 )
 script = ExtResource( 22 )
 
@@ -1420,9 +1455,9 @@ CD: 2"
 autowrap = true
 
 [node name="Green_Life_Circulation" type="Button" parent="Skills/ScrollContainer/VBoxContainer" groups=["Green", "Not-Ult"]]
-margin_top = 5980.0
+margin_top = 6240.0
 margin_right = 745.0
-margin_bottom = 6236.0
+margin_bottom = 6496.0
 rect_min_size = Vector2( 745, 256 )
 script = ExtResource( 22 )
 
@@ -1465,9 +1500,9 @@ CD: 6"
 autowrap = true
 
 [node name="Green_Studying" type="Button" parent="Skills/ScrollContainer/VBoxContainer" groups=["Green", "Not-Ult"]]
-margin_top = 6240.0
+margin_top = 6500.0
 margin_right = 745.0
-margin_bottom = 6496.0
+margin_bottom = 6756.0
 rect_min_size = Vector2( 745, 256 )
 script = ExtResource( 22 )
 
@@ -1510,9 +1545,9 @@ CD: 6"
 autowrap = true
 
 [node name="Green_Bloom" type="Button" parent="Skills/ScrollContainer/VBoxContainer" groups=["Green", "Not-Ult"]]
-margin_top = 6500.0
+margin_top = 6760.0
 margin_right = 745.0
-margin_bottom = 6756.0
+margin_bottom = 7016.0
 rect_min_size = Vector2( 745, 256 )
 script = ExtResource( 22 )
 
@@ -1555,9 +1590,9 @@ CD: 6"
 autowrap = true
 
 [node name="Green_Growing_Pain" type="Button" parent="Skills/ScrollContainer/VBoxContainer" groups=["Green", "Ult"]]
-margin_top = 6760.0
+margin_top = 7020.0
 margin_right = 745.0
-margin_bottom = 7016.0
+margin_bottom = 7276.0
 rect_min_size = Vector2( 745, 256 )
 script = ExtResource( 22 )
 
@@ -1599,9 +1634,9 @@ CD: 6"
 autowrap = true
 
 [node name="Green_Beatiful_Garden" type="Button" parent="Skills/ScrollContainer/VBoxContainer" groups=["Green", "Ult"]]
-margin_top = 7020.0
+margin_top = 7280.0
 margin_right = 745.0
-margin_bottom = 7276.0
+margin_bottom = 7536.0
 rect_min_size = Vector2( 745, 256 )
 script = ExtResource( 22 )
 
@@ -1643,9 +1678,9 @@ CD: 6"
 autowrap = true
 
 [node name="Blue_Energy_Vampire" type="Button" parent="Skills/ScrollContainer/VBoxContainer" groups=["Blue", "Not-Ult"]]
-margin_top = 7280.0
+margin_top = 7540.0
 margin_right = 745.0
-margin_bottom = 7536.0
+margin_bottom = 7796.0
 rect_min_size = Vector2( 745, 256 )
 script = ExtResource( 22 )
 color = "Blue"
@@ -1689,9 +1724,9 @@ CD: 1"
 autowrap = true
 
 [node name="Blue_Comatosis" type="Button" parent="Skills/ScrollContainer/VBoxContainer" groups=["Blue", "Not-Ult"]]
-margin_top = 7540.0
+margin_top = 7800.0
 margin_right = 745.0
-margin_bottom = 7796.0
+margin_bottom = 8056.0
 rect_min_size = Vector2( 745, 256 )
 script = ExtResource( 22 )
 color = "Blue"
@@ -1735,9 +1770,9 @@ CD: 4"
 autowrap = true
 
 [node name="Blue_Nervous_Exhaustion" type="Button" parent="Skills/ScrollContainer/VBoxContainer" groups=["Blue", "Not-Ult"]]
-margin_top = 7800.0
+margin_top = 8060.0
 margin_right = 745.0
-margin_bottom = 8056.0
+margin_bottom = 8316.0
 rect_min_size = Vector2( 745, 256 )
 script = ExtResource( 22 )
 color = "Blue"
@@ -1781,9 +1816,9 @@ CD: 4"
 autowrap = true
 
 [node name="Blue_Soundproofing" type="Button" parent="Skills/ScrollContainer/VBoxContainer" groups=["Blue", "Not-Ult"]]
-margin_top = 8060.0
+margin_top = 8320.0
 margin_right = 745.0
-margin_bottom = 8316.0
+margin_bottom = 8576.0
 rect_min_size = Vector2( 745, 256 )
 script = ExtResource( 22 )
 color = "Blue"
@@ -1827,9 +1862,9 @@ CD: 4"
 autowrap = true
 
 [node name="Blue_Mental_Shield" type="Button" parent="Skills/ScrollContainer/VBoxContainer" groups=["Blue", "Not-Ult"]]
-margin_top = 8320.0
+margin_top = 8580.0
 margin_right = 745.0
-margin_bottom = 8576.0
+margin_bottom = 8836.0
 rect_min_size = Vector2( 745, 256 )
 script = ExtResource( 22 )
 color = "Blue"
@@ -1873,9 +1908,9 @@ CD: 6"
 autowrap = true
 
 [node name="Blue_Mental_Spiral" type="Button" parent="Skills/ScrollContainer/VBoxContainer" groups=["Blue", "Ult"]]
-margin_top = 8580.0
+margin_top = 8840.0
 margin_right = 745.0
-margin_bottom = 8836.0
+margin_bottom = 9096.0
 rect_min_size = Vector2( 745, 256 )
 script = ExtResource( 22 )
 color = "Blue"
@@ -1918,9 +1953,9 @@ CD: 6"
 autowrap = true
 
 [node name="Blue_Cycle_Of_Sadness" type="Button" parent="Skills/ScrollContainer/VBoxContainer" groups=["Blue", "Ult"]]
-margin_top = 8840.0
+margin_top = 9100.0
 margin_right = 745.0
-margin_bottom = 9096.0
+margin_bottom = 9356.0
 rect_min_size = Vector2( 745, 256 )
 script = ExtResource( 22 )
 color = "Blue"
@@ -1963,9 +1998,9 @@ CD: 6"
 autowrap = true
 
 [node name="Purple_Miasma" type="Button" parent="Skills/ScrollContainer/VBoxContainer" groups=["Not-Ult", "Purple"]]
-margin_top = 9100.0
+margin_top = 9360.0
 margin_right = 745.0
-margin_bottom = 9356.0
+margin_bottom = 9616.0
 rect_min_size = Vector2( 745, 256 )
 script = ExtResource( 22 )
 color = "Purple"
@@ -2009,9 +2044,9 @@ CD: 1"
 autowrap = true
 
 [node name="Purple_Curse" type="Button" parent="Skills/ScrollContainer/VBoxContainer" groups=["Not-Ult", "Purple"]]
-margin_top = 9360.0
+margin_top = 9620.0
 margin_right = 745.0
-margin_bottom = 9616.0
+margin_bottom = 9876.0
 rect_min_size = Vector2( 745, 256 )
 script = ExtResource( 22 )
 color = "Purple"
@@ -2055,9 +2090,9 @@ CD: 5"
 autowrap = true
 
 [node name="Purple_Weak_Body" type="Button" parent="Skills/ScrollContainer/VBoxContainer" groups=["Not-Ult", "Purple"]]
-margin_top = 9620.0
+margin_top = 9880.0
 margin_right = 745.0
-margin_bottom = 9876.0
+margin_bottom = 10136.0
 rect_min_size = Vector2( 745, 256 )
 script = ExtResource( 22 )
 color = "Purple"
@@ -2101,9 +2136,9 @@ CD: 5"
 autowrap = true
 
 [node name="Purple_Sweet_Dreams" type="Button" parent="Skills/ScrollContainer/VBoxContainer" groups=["Not-Ult", "Purple"]]
-margin_top = 9880.0
+margin_top = 10140.0
 margin_right = 745.0
-margin_bottom = 10136.0
+margin_bottom = 10396.0
 rect_min_size = Vector2( 745, 256 )
 script = ExtResource( 22 )
 color = "Purple"
@@ -2147,9 +2182,9 @@ CD: 4"
 autowrap = true
 
 [node name="Purple_Octopus_Ink" type="Button" parent="Skills/ScrollContainer/VBoxContainer" groups=["Not-Ult", "Purple"]]
-margin_top = 10140.0
+margin_top = 10400.0
 margin_right = 745.0
-margin_bottom = 10396.0
+margin_bottom = 10656.0
 rect_min_size = Vector2( 745, 256 )
 script = ExtResource( 22 )
 color = "Purple"
@@ -2193,9 +2228,9 @@ CD: 5"
 autowrap = true
 
 [node name="Purple_Pandoras_Box" type="Button" parent="Skills/ScrollContainer/VBoxContainer" groups=["Purple", "Ult"]]
-margin_top = 10400.0
+margin_top = 10660.0
 margin_right = 745.0
-margin_bottom = 10656.0
+margin_bottom = 10916.0
 rect_min_size = Vector2( 745, 256 )
 script = ExtResource( 22 )
 color = "Purple"
@@ -2238,9 +2273,9 @@ CD: 5"
 autowrap = true
 
 [node name="Purple_Growing_Fracture" type="Button" parent="Skills/ScrollContainer/VBoxContainer" groups=["Purple", "Ult"]]
-margin_top = 10660.0
+margin_top = 10920.0
 margin_right = 745.0
-margin_bottom = 10916.0
+margin_bottom = 11176.0
 rect_min_size = Vector2( 745, 256 )
 script = ExtResource( 22 )
 color = "Purple"
@@ -2283,9 +2318,9 @@ CD: 5"
 autowrap = true
 
 [node name="White_Colorful_Splash" type="Button" parent="Skills/ScrollContainer/VBoxContainer" groups=["Not-Ult", "White"]]
-margin_top = 10920.0
+margin_top = 11180.0
 margin_right = 745.0
-margin_bottom = 11176.0
+margin_bottom = 11436.0
 rect_min_size = Vector2( 745, 256 )
 script = ExtResource( 22 )
 color = "White"
@@ -2329,9 +2364,9 @@ CD: 2"
 autowrap = true
 
 [node name="White_Painful_Bloom" type="Button" parent="Skills/ScrollContainer/VBoxContainer" groups=["Not-Ult", "White"]]
-margin_top = 11180.0
+margin_top = 11440.0
 margin_right = 745.0
-margin_bottom = 11436.0
+margin_bottom = 11696.0
 rect_min_size = Vector2( 745, 256 )
 script = ExtResource( 22 )
 color = "White"
@@ -2375,9 +2410,9 @@ CD: 6"
 autowrap = true
 
 [node name="White_Absolute_Defense" type="Button" parent="Skills/ScrollContainer/VBoxContainer" groups=["Not-Ult", "White"]]
-margin_top = 11440.0
+margin_top = 11700.0
 margin_right = 745.0
-margin_bottom = 11696.0
+margin_bottom = 11956.0
 rect_min_size = Vector2( 745, 256 )
 script = ExtResource( 22 )
 color = "White"
@@ -2421,9 +2456,9 @@ CD: 8"
 autowrap = true
 
 [node name="White_Empty_Well" type="Button" parent="Skills/ScrollContainer/VBoxContainer" groups=["Not-Ult", "White"]]
-margin_top = 11700.0
+margin_top = 11960.0
 margin_right = 745.0
-margin_bottom = 11956.0
+margin_bottom = 12216.0
 rect_min_size = Vector2( 745, 256 )
 script = ExtResource( 22 )
 color = "White"
@@ -2467,9 +2502,9 @@ CD: 12"
 autowrap = true
 
 [node name="White_White_Silence" type="Button" parent="Skills/ScrollContainer/VBoxContainer" groups=["Ult", "White"]]
-margin_top = 11960.0
+margin_top = 12220.0
 margin_right = 745.0
-margin_bottom = 12216.0
+margin_bottom = 12476.0
 rect_min_size = Vector2( 745, 256 )
 script = ExtResource( 22 )
 color = "White"
@@ -2512,9 +2547,9 @@ CD: 5"
 autowrap = true
 
 [node name="White_Regression" type="Button" parent="Skills/ScrollContainer/VBoxContainer" groups=["Ult", "White"]]
-margin_top = 12220.0
+margin_top = 12480.0
 margin_right = 745.0
-margin_bottom = 12476.0
+margin_bottom = 12736.0
 rect_min_size = Vector2( 745, 256 )
 script = ExtResource( 22 )
 color = "White"
@@ -2634,7 +2669,7 @@ margin_left = 192.0
 margin_top = 80.0
 margin_right = 728.0
 margin_bottom = 240.0
-custom_fonts/font = ExtResource( 4 )
+custom_fonts/font = ExtResource( 3 )
 text = "Red_Fury_1"
 autowrap = true
 
@@ -2671,7 +2706,7 @@ margin_left = 192.0
 margin_top = 80.0
 margin_right = 728.0
 margin_bottom = 240.0
-custom_fonts/font = ExtResource( 4 )
+custom_fonts/font = ExtResource( 3 )
 text = "Red_Crititcal_Line_1"
 autowrap = true
 
@@ -2708,7 +2743,7 @@ margin_left = 192.0
 margin_top = 80.0
 margin_right = 728.0
 margin_bottom = 240.0
-custom_fonts/font = ExtResource( 4 )
+custom_fonts/font = ExtResource( 3 )
 text = "Orange_BDIGO_1"
 autowrap = true
 
@@ -2746,7 +2781,7 @@ margin_left = 192.0
 margin_top = 80.0
 margin_right = 728.0
 margin_bottom = 240.0
-custom_fonts/font = ExtResource( 4 )
+custom_fonts/font = ExtResource( 3 )
 text = "Orange_Recoil_1"
 autowrap = true
 
@@ -2783,7 +2818,7 @@ margin_left = 192.0
 margin_top = 80.0
 margin_right = 728.0
 margin_bottom = 240.0
-custom_fonts/font = ExtResource( 4 )
+custom_fonts/font = ExtResource( 3 )
 text = "Yellow_Lightning_Break_1"
 autowrap = true
 
@@ -2821,7 +2856,7 @@ margin_left = 192.0
 margin_top = 80.0
 margin_right = 728.0
 margin_bottom = 240.0
-custom_fonts/font = ExtResource( 4 )
+custom_fonts/font = ExtResource( 3 )
 text = "Yellow_Fast_Reaction"
 autowrap = true
 
@@ -2858,7 +2893,7 @@ margin_left = 192.0
 margin_top = 80.0
 margin_right = 728.0
 margin_bottom = 240.0
-custom_fonts/font = ExtResource( 4 )
+custom_fonts/font = ExtResource( 3 )
 text = "Green_Waiting_Game_1"
 autowrap = true
 
@@ -2896,7 +2931,7 @@ margin_left = 192.0
 margin_top = 80.0
 margin_right = 728.0
 margin_bottom = 240.0
-custom_fonts/font = ExtResource( 4 )
+custom_fonts/font = ExtResource( 3 )
 text = "Green_Sprouting_From_Within_1"
 autowrap = true
 
@@ -2933,7 +2968,7 @@ margin_left = 192.0
 margin_top = 80.0
 margin_right = 728.0
 margin_bottom = 240.0
-custom_fonts/font = ExtResource( 4 )
+custom_fonts/font = ExtResource( 3 )
 text = "Blue_Mental_Abuse_1"
 autowrap = true
 
@@ -2971,7 +3006,7 @@ margin_left = 192.0
 margin_top = 80.0
 margin_right = 728.0
 margin_bottom = 240.0
-custom_fonts/font = ExtResource( 4 )
+custom_fonts/font = ExtResource( 3 )
 text = "Blue_Peace_Of_Mind_1"
 autowrap = true
 
@@ -3008,7 +3043,7 @@ margin_left = 192.0
 margin_top = 80.0
 margin_right = 728.0
 margin_bottom = 240.0
-custom_fonts/font = ExtResource( 4 )
+custom_fonts/font = ExtResource( 3 )
 text = "Purple_One_Foot_In_Grave"
 autowrap = true
 
@@ -3046,7 +3081,7 @@ margin_left = 192.0
 margin_top = 80.0
 margin_right = 728.0
 margin_bottom = 240.0
-custom_fonts/font = ExtResource( 4 )
+custom_fonts/font = ExtResource( 3 )
 text = "Purple_Unfair_Game_1"
 autowrap = true
 
@@ -3083,7 +3118,7 @@ margin_left = 192.0
 margin_top = 80.0
 margin_right = 728.0
 margin_bottom = 240.0
-custom_fonts/font = ExtResource( 4 )
+custom_fonts/font = ExtResource( 3 )
 text = "White_Changing_Mood_1"
 autowrap = true
 
@@ -3121,7 +3156,7 @@ margin_left = 192.0
 margin_top = 80.0
 margin_right = 728.0
 margin_bottom = 240.0
-custom_fonts/font = ExtResource( 4 )
+custom_fonts/font = ExtResource( 3 )
 text = "White_Iterative_Process_1"
 autowrap = true
 
@@ -6641,28 +6676,28 @@ autowrap = true
 [node name="ActiveSkills" type="Button" parent="."]
 margin_left = 1592.0
 margin_top = 64.0
-margin_right = 1872.0
+margin_right = 1888.0
 margin_bottom = 159.0
 text = "Skills"
 
 [node name="PassiveSkills" type="Button" parent="."]
 margin_left = 1592.0
 margin_top = 160.0
-margin_right = 1872.0
+margin_right = 1888.0
 margin_bottom = 255.0
 text = "Passives"
 
 [node name="Items" type="Button" parent="."]
 margin_left = 1592.0
 margin_top = 256.0
-margin_right = 1872.0
+margin_right = 1888.0
 margin_bottom = 351.0
 text = "Items"
 
 [node name="StartBattle" type="Button" parent="."]
-margin_left = 1608.0
+margin_left = 1592.0
 margin_top = 944.0
-margin_right = 1872.0
+margin_right = 1888.0
 margin_bottom = 1048.0
 text = "Start"
 
@@ -6673,6 +6708,7 @@ text = "Start"
 [connection signal="pressed" from="Skill5" to="." method="_on_Skill5_pressed"]
 [connection signal="pressed" from="Skill6" to="." method="_on_Skill6_pressed"]
 [connection signal="pressed" from="Ult" to="." method="_on_Ult_pressed"]
+[connection signal="pressed" from="Skills/ScrollContainer/VBoxContainer/No_Skill" to="Skills/ScrollContainer/VBoxContainer/No_Skill" method="_on_self_pressed"]
 [connection signal="pressed" from="Skills/ScrollContainer/VBoxContainer/Red_Warning_Strike" to="Skills/ScrollContainer/VBoxContainer/Red_Warning_Strike" method="_on_self_pressed"]
 [connection signal="pressed" from="Skills/ScrollContainer/VBoxContainer/Red_Dirty_Trick" to="Skills/ScrollContainer/VBoxContainer/Red_Dirty_Trick" method="_on_self_pressed"]
 [connection signal="pressed" from="Skills/ScrollContainer/VBoxContainer/Red_Blood_Exchange" to="Skills/ScrollContainer/VBoxContainer/Red_Blood_Exchange" method="_on_self_pressed"]

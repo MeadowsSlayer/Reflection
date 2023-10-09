@@ -46,6 +46,7 @@ func _on_UltTimer_timeout():
 			enemy.Taking_Damage(attack, DMG_Mod, "green", CRIT, DMG_add)
 			enemy.Status_Effects("bind", bind, duration)
 			enemy.get_node("EffectsSpecial").animation = "None"
+			enemy.get_node("EffectsSpecial").modulate = Color8(255, 255, 255)
 	get_parent().status_effects.WarningStrike_OFF()
 	get_parent().status_effects.WaitingGameNULL()
 	

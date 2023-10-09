@@ -58,6 +58,7 @@ onready var bdigo = $BaseInfo/StatusEffects/VBoxContainer/BDIGO
 onready var waiting_game = $BaseInfo/StatusEffects/VBoxContainer/WaitingGame
 onready var studying = $BaseInfo/StatusEffects/VBoxContainer/Studying
 onready var fury = $BaseInfo/StatusEffects/VBoxContainer/Fury
+onready var blood_exchange = $BaseInfo/StatusEffects/VBoxContainer/BloodExchange
 onready var ult__dance__of__death = $BaseInfo/StatusEffects/VBoxContainer/ULT_Dance_Of_Death
 onready var ult__blood__moon = $BaseInfo/StatusEffects/VBoxContainer/ULT_Blood_Moon
 onready var ult__adaptation = $BaseInfo/StatusEffects/VBoxContainer/ULT_Adaptation
@@ -263,6 +264,7 @@ func EnemyStatuses():
 	if character.exhaustion != 0:
 		exhaustion.visible = true
 		exhaustion.get_node("StatusText").text = str("At the start of each turn lose ", character.exhaustion, " EN and take ", character.exhaustion * (5 + character.exhaustion_plus), " blue damage.")
+		exhaustion.get_node("Stacks").text = str(tr("Stacks: "), character.exhaustion)
 	else:
 		exhaustion.visible = false
 	
@@ -362,6 +364,7 @@ func PlayerStatuses():
 	if status_effects.exhaustion != 0:
 		exhaustion.visible = true
 		exhaustion.get_node("StatusText").text = str("At the start of each turn lose ", status_effects.exhaustion, " EN and take ", status_effects.exhaustion * 5, " blue damage.")
+		exhaustion.get_node("Stacks").text = str(tr("Stacks: "), status_effects.exhaustion)
 	else:
 		exhaustion.visible = false
 	
@@ -383,7 +386,6 @@ func PlayerStatuses():
 		spiked_shield.visible = false
 	if status_effects.WarningStrike_Duration != 0:
 		warning_strike.visible = true
-		warning_strike.get_node("Duration").text = str("DURATION_", character.WarningStrike_Duration)
 		warning_strike.get_node("StatusText").text = str("Next attack deals ", status_effects.WarningStrike_Mod * 100, "% more damage.")
 	else:
 		warning_strike.visible = false
@@ -410,8 +412,13 @@ func PlayerStatuses():
 	if status_effects.fury != 0:
 		fury.visible = true
 		fury.get_node("StatusText").text = str("ATK +", status_effects.fury, ".")
+		fury.get_node("Stacks").text = str(tr("Stacks: "), status_effects.fury / status_effects.fury_gain)
 	else:
 		fury.visible = false
+	if status_effects.BloodExchange_Duration != 0:
+		blood_exchange.visible = true
+		blood_exchange.get_node("Duration").text = str("DURATION_", status_effects.BloodExchange_Duration)
+		blood_exchange.get_node("StatusText").text = str(tr("You gain "), status_effects.BloodExchange_Mod * 100, tr("% Empowerment."))
 	
 	# Ultimates
 	if status_effects.DanceOfDeath_Duration != 0:

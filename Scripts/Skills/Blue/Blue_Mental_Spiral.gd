@@ -53,6 +53,7 @@ func _on_UltTimer_timeout():
 	enemy.Taking_Damage(attack, DMG_Mod, "blue", CRIT, DMG_add)
 	enemy.Status_Effects("exhaustion", status, duration)
 	enemy.get_node("EffectsSpecial").animation = "Ice Cast"
+	enemy.get_node("EffectsSpecial").modulate = Color8(255, 255, 255)
 	status_effects.WarningStrike_OFF()
 	
 	get_parent().status_effects.WaitingGameNULL()

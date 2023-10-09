@@ -66,6 +66,7 @@ func Action():
 		attack_num += 1
 		get_parent().get_node(str("../Enemy", target)).get_child(1).Taking_Damage(attack, DMG_Mod, type, CRIT, DMG_add)
 		get_parent().get_node(str("../Enemy", target)).get_child(1).get_node("EffectsSpecial").animation = effect_type
+		get_parent().get_node(str("../Enemy", target)).get_child(1).get_node("EffectsSpecial").modulate = Color8(255, 255, 255)
 	else:
 		get_parent().sound_type = "Miss"
 		get_parent().get_node(str("../Enemy", target)).get_child(1).Dodge()

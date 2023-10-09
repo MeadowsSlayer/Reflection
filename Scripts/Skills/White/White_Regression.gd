@@ -39,18 +39,22 @@ func Action():
 		"Orange":
 			DMG_Mod += get_parent().status_effects.ORANGE_DMG_MOD()
 			enemy.get_node("EffectsSpecial").animation = "FireCast"
+			enemy.get_node("EffectsSpecial").modulate = Color8(255, 255, 255)
 			type = "orange"
 		"Yellow":
 			DMG_Mod += get_parent().status_effects.YELLOW_DMG_MOD()
 			enemy.get_node("EffectsSpecial").animation = "Star"
+			enemy.get_node("EffectsSpecial").modulate = Color8(255, 255, 255)
 			type = "yellow"
 		"Green":
 			DMG_Mod += get_parent().status_effects.GREEN_DMG_MOD()
 			enemy.get_node("EffectsSpecial").animation = "Poison Claw"
+			enemy.get_node("EffectsSpecial").modulate = Color8(255, 255, 255)
 			type = "green"
 		"Blue":
 			DMG_Mod += get_parent().status_effects.BLUE_DMG_MOD()
 			enemy.get_node("EffectsSpecial").animation = "Ice Cast"
+			enemy.get_node("EffectsSpecial").modulate = Color8(255, 255, 255)
 			type = "blue"
 		"Purple":
 			DMG_Mod += get_parent().status_effects.PURPLE_DMG_MOD()

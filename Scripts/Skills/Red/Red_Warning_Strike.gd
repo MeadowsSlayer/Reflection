@@ -32,7 +32,8 @@ func Action():
 		if enemy.sleep_duration != 0:
 			enemy.WakeUp()
 		enemy.Taking_Damage(attack, DMG_Mod, "red", CRIT, DMG_add)
-		enemy.get_node("EffectsSpecial").animation = "None"
+		enemy.get_node("EffectsSpecial").animation = "Poison Claw"
+		enemy.get_node("EffectsSpecial").modulate = Color8(163, 44, 35)
 		
 		get_parent().EN_Plus(2)
 		status_effects.WarningStrike_OFF()

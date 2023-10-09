@@ -38,6 +38,7 @@ func Action():
 		enemy.Taking_Damage(attack, DMG_Mod, "green", CRIT, DMG_add)
 		enemy.Status_Effects("spread", 15 + 5 * skill_lvl, duration)
 		enemy.get_node("EffectsSpecial").animation = "Poison"
+		enemy.get_node("EffectsSpecial").modulate = Color8(255, 255, 255)
 		get_parent().EN_Plus(2)
 		status_effects.WarningStrike_OFF()
 		status_effects.WaitingGameNULL()

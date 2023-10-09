@@ -1,11 +1,13 @@
 extends Control
 
-func Pause():
+func Pause(battle=true):
 	$Back.visible = true
 	self.visible = true
 	get_tree().paused = true
 	$Settings.Close()
 	$Data._on_Back_pressed()
+	if battle == false:
+		$CenterContainer/VBoxContainer/Abandon.visible = false
 
 func Unpause():
 	$Back.visible = false

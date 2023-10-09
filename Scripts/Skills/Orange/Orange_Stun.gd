@@ -37,9 +37,10 @@ func Action():
 			enemy = get_parent().get_node(str("../Enemy", (i + 1))).get_child(1)
 			if enemy.sleep_duration != 0:
 				enemy.WakeUp()
+			enemy.get_node("EffectsSpecial").modulate = Color8(255, 255, 255)
+			enemy.get_node("EffectsSpecial").animation = "Explosion"
 			enemy.Taking_Damage(attack, DMG_Mod, "orange", CRIT, DMG_add)
 			enemy.Status_Effects("silence", 0, duration)
-			enemy.get_node("EffectsSpecial").animation = "Explosion"
 	get_parent().status_effects.WarningStrike_OFF()
 	get_parent().status_effects.WaitingGameNULL()
 	

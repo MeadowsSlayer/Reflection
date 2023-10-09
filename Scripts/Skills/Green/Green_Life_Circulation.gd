@@ -25,6 +25,7 @@ func Action():
 		var attack = int(ATK * (0.15 + 0.5 * skill_lvl)) * spread_stacks
 		enemy.Taking_Damage(attack, 1, "green", 0, 0)
 		enemy.get_node("EffectsSpecial").animation = "Poison Claw"
+		enemy.get_node("EffectsSpecial").modulate = Color8(255, 255, 255)
 		enemy.spread_status = 0
 		enemy.spread_duration = 0
 		enemy.get_node("Control/StatusEffects/HBoxContainer/Spread").visible = false

@@ -1,4 +1,4 @@
-[gd_scene load_steps=66 format=2]
+[gd_scene load_steps=61 format=2]
 
 [ext_resource path="res://Sprites/UI/Longe/Room/Salim/SalimSits/SalimSitsFocused1.png" type="Texture" id=1]
 [ext_resource path="res://Sprites/UI/Longe/Room/ChestNormal.png" type="Texture" id=2]
@@ -32,10 +32,7 @@
 [ext_resource path="res://Resources/Themes/Styles/ButtonDisabled.tres" type="StyleBox" id=30]
 [ext_resource path="res://Resources/Themes/Styles/ButtonFocused.tres" type="StyleBox" id=31]
 [ext_resource path="res://Scenes/Longe/Longe/Chest.gd" type="Script" id=32]
-[ext_resource path="res://Resources/Themes/PixelTheme.tres" type="Theme" id=33]
-[ext_resource path="res://Resources/Fonts/PixelText.tres" type="DynamicFont" id=34]
-[ext_resource path="res://Prefabs/UI/TV.tscn" type="PackedScene" id=35]
-[ext_resource path="res://Resources/Shaders/TV.gdshader" type="Shader" id=36]
+[ext_resource path="res://Prefabs/UI/Pause/Pause.tscn" type="PackedScene" id=33]
 [ext_resource path="res://Scenes/Longe/Longe/SalimSits.gd" type="Script" id=37]
 [ext_resource path="res://Sprites/UI/Battle UI/Icons/Tape.png" type="Texture" id=38]
 [ext_resource path="res://Sprites/UI/Longe/Upgrades/Tough.png" type="Texture" id=39]
@@ -204,36 +201,6 @@ outline_size = 3
 outline_color = Color( 0.0941176, 0.0941176, 0.0941176, 1 )
 font_data = ExtResource( 18 )
 
-[sub_resource type="ShaderMaterial" id=7]
-resource_local_to_scene = true
-shader = ExtResource( 36 )
-shader_param/overlay = true
-shader_param/scanlines_opacity = 0.182
-shader_param/scanlines_width = 0.165
-shader_param/grille_opacity = 0.102
-shader_param/resolution = Vector2( 640, 480 )
-shader_param/pixelate = false
-shader_param/roll = true
-shader_param/roll_speed = 1.0
-shader_param/roll_size = 11.062
-shader_param/roll_variation = 3.401
-shader_param/distort_intensity = 0.004
-shader_param/noise_opacity = 0.05
-shader_param/noise_speed = 5.0
-shader_param/static_noise_intensity = 0.088
-shader_param/aberration = 0.025
-shader_param/brightness = 1.3
-shader_param/discolor = true
-shader_param/warp_amount = 0.083
-shader_param/clip_warp = false
-shader_param/vignette_intensity = 0.116
-shader_param/vignette_opacity = 0.555
-
-[sub_resource type="StreamTexture" id=8]
-resource_local_to_scene = true
-flags = 4
-load_path = "res://.import/white.png-172320972487b8ed97b97b7f6da8b413.stex"
-
 [node name="Longe" type="Control"]
 anchor_right = 1.0
 anchor_bottom = 1.0
@@ -266,8 +233,8 @@ texture_focused = ExtResource( 26 )
 [node name="Label" type="NinePatchRect" parent="MainRoom/Door"]
 self_modulate = Color( 1, 1, 1, 0.847059 )
 margin_left = 68.0
-margin_top = 44.0
-margin_right = 192.0
+margin_top = 48.0
+margin_right = 204.0
 margin_bottom = 84.0
 texture = ExtResource( 28 )
 patch_margin_left = 15
@@ -277,9 +244,9 @@ patch_margin_bottom = 15
 
 [node name="Name" type="Label" parent="MainRoom/Door"]
 margin_left = 76.0
-margin_top = 44.0
-margin_right = 118.0
-margin_bottom = 60.0
+margin_top = 48.0
+margin_right = 131.0
+margin_bottom = 64.0
 rect_scale = Vector2( 2, 2 )
 custom_fonts/font = ExtResource( 29 )
 text = "Begin Escape"
@@ -299,7 +266,7 @@ texture_focused = ExtResource( 23 )
 self_modulate = Color( 1, 1, 1, 0.847059 )
 margin_left = 27.0
 margin_top = 88.0
-margin_right = 135.0
+margin_right = 139.0
 margin_bottom = 128.0
 texture = ExtResource( 28 )
 patch_margin_left = 15
@@ -308,10 +275,10 @@ patch_margin_right = 15
 patch_margin_bottom = 15
 
 [node name="Name" type="Label" parent="MainRoom/TV"]
-margin_left = 34.0
-margin_top = 88.0
-margin_right = 78.0
-margin_bottom = 104.0
+margin_left = 34.5
+margin_top = 92.0
+margin_right = 78.5
+margin_bottom = 108.0
 rect_scale = Vector2( 2, 2 )
 custom_fonts/font = ExtResource( 29 )
 text = "Upgrades"
@@ -329,10 +296,10 @@ texture_focused = ExtResource( 21 )
 
 [node name="Label" type="NinePatchRect" parent="MainRoom/Chest"]
 self_modulate = Color( 1, 1, 1, 0.847059 )
-margin_left = 72.0
+margin_left = 68.0
 margin_top = 40.0
-margin_right = 208.0
-margin_bottom = 80.0
+margin_right = 192.0
+margin_bottom = 76.0
 texture = ExtResource( 28 )
 patch_margin_left = 15
 patch_margin_top = 15
@@ -342,7 +309,7 @@ patch_margin_bottom = 15
 [node name="Name" type="Label" parent="MainRoom/Chest"]
 margin_left = 80.0
 margin_top = 40.0
-margin_right = 138.0
+margin_right = 134.0
 margin_bottom = 56.0
 rect_scale = Vector2( 2, 2 )
 custom_fonts/font = ExtResource( 29 )
@@ -367,9 +334,9 @@ anims/RESET = SubResource( 4 )
 [node name="Label" type="NinePatchRect" parent="MainRoom/SalimSits"]
 self_modulate = Color( 1, 1, 1, 0.847059 )
 margin_left = 86.0
-margin_top = 63.0
-margin_right = 164.0
-margin_bottom = 103.0
+margin_top = 69.0
+margin_right = 166.0
+margin_bottom = 99.0
 texture = ExtResource( 28 )
 patch_margin_left = 15
 patch_margin_top = 15
@@ -378,9 +345,9 @@ patch_margin_bottom = 15
 
 [node name="Name" type="Label" parent="MainRoom/SalimSits"]
 margin_left = 94.0
-margin_top = 63.0
+margin_top = 67.0
 margin_right = 119.0
-margin_bottom = 79.0
+margin_bottom = 83.0
 rect_scale = Vector2( 2, 2 )
 custom_fonts/font = ExtResource( 29 )
 text = "Think"
@@ -1287,6 +1254,7 @@ margin_bottom = 192.0
 text = "Reach Upgrades LVL 10 to unlock"
 align = 1
 valign = 1
+autowrap = true
 
 [node name="ThirdStepCover" type="NinePatchRect" parent="Upgrades"]
 visible = false
@@ -1303,7 +1271,7 @@ patch_margin_bottom = 15
 [node name="Label" type="Label" parent="Upgrades/ThirdStepCover"]
 margin_left = 33.0
 margin_top = 32.0
-margin_right = 921.0
+margin_right = 929.0
 margin_bottom = 216.0
 text = "Reach Upgrades LVL 25 to unlock"
 align = 1
@@ -1405,86 +1373,15 @@ margin_bottom = 40.0
 
 [node name="Skip" type="Button" parent="CanvasLayer"]
 visible = false
-margin_left = 1768.0
+margin_left = 1696.0
 margin_top = 16.0
 margin_right = 1904.0
 margin_bottom = 79.0
 custom_fonts/font = ExtResource( 6 )
 text = "Skip"
 
-[node name="Pause" type="Control" parent="CanvasLayer"]
-pause_mode = 2
+[node name="Pause" parent="CanvasLayer" instance=ExtResource( 33 )]
 visible = false
-margin_right = 1920.0
-margin_bottom = 1080.0
-
-[node name="ColorRect" type="ColorRect" parent="CanvasLayer/Pause"]
-margin_right = 1919.0
-margin_bottom = 1080.0
-color = Color( 0.235294, 0.258824, 0.768627, 0.705882 )
-
-[node name="TV" parent="CanvasLayer/Pause" instance=ExtResource( 35 )]
-material = SubResource( 7 )
-margin_right = 1922.0
-texture = SubResource( 8 )
-
-[node name="CenterContainer" type="CenterContainer" parent="CanvasLayer/Pause"]
-margin_right = 1919.0
-margin_bottom = 912.0
-
-[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer/Pause/CenterContainer"]
-margin_left = 795.0
-margin_top = 196.0
-margin_right = 1123.0
-margin_bottom = 715.0
-
-[node name="Label" type="Label" parent="CanvasLayer/Pause/CenterContainer/VBoxContainer"]
-margin_right = 328.0
-margin_bottom = 64.0
-theme = ExtResource( 33 )
-text = "STAY_TUNED"
-align = 1
-
-[node name="Label2" type="Label" parent="CanvasLayer/Pause/CenterContainer/VBoxContainer"]
-margin_top = 68.0
-margin_right = 328.0
-margin_bottom = 114.0
-theme = ExtResource( 33 )
-custom_fonts/font = ExtResource( 3 )
-align = 1
-
-[node name="Continue" type="Button" parent="CanvasLayer/Pause/CenterContainer/VBoxContainer"]
-margin_top = 118.0
-margin_right = 328.76
-margin_bottom = 249.649
-theme = ExtResource( 33 )
-custom_colors/font_color_hover = Color( 0.0431373, 0.682353, 0.992157, 1 )
-custom_colors/font_color_pressed = Color( 0.0431373, 0.682353, 0.992157, 1 )
-custom_fonts/font = ExtResource( 34 )
-text = "Continue"
-flat = true
-
-[node name="Settings" type="Button" parent="CanvasLayer/Pause/CenterContainer/VBoxContainer"]
-margin_top = 253.0
-margin_right = 328.0
-margin_bottom = 384.649
-theme = ExtResource( 33 )
-custom_colors/font_color_hover = Color( 0.0431373, 0.682353, 0.992157, 1 )
-custom_colors/font_color_pressed = Color( 0.0431373, 0.682353, 0.992157, 1 )
-custom_fonts/font = ExtResource( 34 )
-text = "Settings"
-flat = true
-
-[node name="Exit" type="Button" parent="CanvasLayer/Pause/CenterContainer/VBoxContainer"]
-margin_top = 388.0
-margin_right = 328.0
-margin_bottom = 519.649
-theme = ExtResource( 33 )
-custom_colors/font_color_hover = Color( 0.0431373, 0.682353, 0.992157, 1 )
-custom_colors/font_color_pressed = Color( 0.0431373, 0.682353, 0.992157, 1 )
-custom_fonts/font = ExtResource( 34 )
-text = "Exit"
-flat = true
 
 [connection signal="pressed" from="MainRoom/Door" to="MainRoom" method="_on_Door_pressed"]
 [connection signal="pressed" from="MainRoom/TV" to="MainRoom" method="_on_TV_pressed"]
@@ -1520,5 +1417,3 @@ flat = true
 [connection signal="pressed" from="Upgrades/Description/Upgrade" to="Upgrades/Description" method="_on_Upgrade_pressed"]
 [connection signal="pressed" from="Upgrades/Description/Close" to="Upgrades/Description" method="_on_Close_pressed"]
 [connection signal="pressed" from="CanvasLayer/Skip" to="MainRoom/SalimSits" method="Finish"]
-[connection signal="pressed" from="CanvasLayer/Pause/CenterContainer/VBoxContainer/Continue" to="MainRoom" method="_on_Continue_pressed"]
-[connection signal="pressed" from="CanvasLayer/Pause/CenterContainer/VBoxContainer/Exit" to="MainRoom" method="_on_Exit_pressed"]

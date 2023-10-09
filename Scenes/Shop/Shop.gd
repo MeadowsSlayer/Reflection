@@ -33,7 +33,7 @@ func _ready():
 	doors_num = gen.randi_range(1,4)
 	if (doors_num == 4):
 		doors_num = 2
-	$Background/Label.text = str("Floor ", run_data.get("floor_num"), " Room ", run_data.get("room"), ": Shop")
+	$Background/Label.text = str(tr("Floor "), run_data.get("floor_num"), tr(" Room "), run_data.get("room"), ": Shop")
 	
 	if run_data.get("couponforhugs") == true:
 		price_modifier = 0.5

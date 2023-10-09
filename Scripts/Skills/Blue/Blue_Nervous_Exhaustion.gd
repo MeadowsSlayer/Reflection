@@ -41,6 +41,7 @@ func Action():
 		enemy.Taking_Damage(attack, DMG_Mod, "blue", CRIT, DMG_add)
 		enemy.Status_Effects("exhaustion", status, 0)
 		enemy.get_node("EffectsSpecial").animation = "Reverse Ice"
+		enemy.get_node("EffectsSpecial").modulate = Color8(255, 255, 255)
 		get_parent().EN_Plus(4 + get_parent().blue_skills_en_boost)
 		status_effects.WarningStrike_OFF()
 		status_effects.WaitingGameNULL()

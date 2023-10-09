@@ -11,12 +11,22 @@ Language,Language,Язык
 Back,Back,Назад
 Delete,Delete,Удалить
 Start Game,Start Game,Начать Игру
-Credits,Credits,Создатели
+Credits,Credits,О разработке
+SOCIALS_TEXT,"My Socials:\n\n\nIf you want to donate to me:","Мои соц. сети:\n\n\nЕсли хотите поддержать:"
+ASSETS_TEXT_LINKS,"Visual Effects:\nMusic:\nFont:","Визуальные эффекты:\nМузыка:\nШрифт:"
+-About me-,-About me-,-Обо мне-
+-Assets-,-Assets-,-Ресурсы-
 Confirm,Confirm,Подтвердить
+Continue,Continue,Продолжить
+Abandon Run,Abandon Run,Сдаться
+Index,Index,Указатель
 Difficulty,Difficuty,Сложность
 Easy,Easy,Легкая
+easy,easy,легкая
 Normal,Normal,Средняя
+normal,normal,средняя
 Hard,Hard,Сложная
+hard,hard,сложная
 Start,Start,Начать
 (Empty Save Slot),(Empty Save Slot),(Пустой Слот Сохранения)
 Save Slots,Save Slots,Слоты Сохранения
@@ -24,11 +34,28 @@ Save Slots,Save Slots,Слоты Сохранения
 Slot 1,Slot 1,Слот 1
 Slot 2,Slot 2,Слот 2
 Slot 3,Slot 3,Слот 3
+Global Volume,Global Volume,Общая Громкость
+Sound Effects Volume,Sound Effects Volume,Громкость Эффектов
+Music Volume,Music Volume,Громкость Музыки
+Glitches:,Glitches:,Гличи:
+"Difficulty: ","Difficulty: ","Сложность: "
+"Runs: ","Runs: ","Забеги: "
+"Tapes: ","Tapes: ","Кинолента: "
+"Press Space to continue","Press Space to continue","Нажмите Пробел, чтобы продолжить"
+DISCLAIMER,DISCLAIMER,ДИСКЛЕЙМЕР
+DISCLAIMER_TEXT,"This game contains flashing imagery and visual effects like glitches. If you are sensitive for exposure to this effects, you may turn glitches off in settings.\nIf you don't feel yourself good while playing, stop.\n\nAlso while playing don't forget to stay hydrated!","Данная игра содержит мигающией яркие изображения и визуальные эффекты, такие как гличи. Если вы восприимчивы к ним, вы можете отключить гличи в настройках.\nЕсли вы чувствуете себя плохо во время игры, то остановитесь.\n\nПомимо того, не забывайте пить воду во время игры!"
 Cancel,Cancel,Отмена
+Close,Close,Закрыть
 Target,Target,Прицеливание
 Info,Info,Подробнее
 Accept,Accept,Принять
 Choose,Choose,Выбрать
+Choose This Item,Choose This Item,Выбрать Этот Предмет
+Skip,Skip,Пропустить
+History,History,История
+Think,Think,Мысли
+Start Items,Start Items,Предметы
+Begin Escape,Begin Escape,Начать Побег
 Salim,Salim,Салим
 Asiyat,Asiyat,Асият
 Maksud,Maksud,Максуд
@@ -36,14 +63,84 @@ Observer,Observer,Наблюдатель
 Host,Host,Заведующий
 Guard,Guard,Страж
 Gatekeeper,Gatekeeper,Привратник
-Orange,Orange,Оранжевые
-Green,Green,Зеленые
-Red,Red,Красные
-Blue,Blue,Синие
-Purple,Purple,Фиолетовые
-Yellow,Yellow,Желтые
-All,All,Все
-White,White,Белые
+Orange,Orange,Оранжевый
+Green,Green,Зеленый
+Red,Red,Красный
+Blue,Blue,Синий
+Purple,Purple,Фиолетовый
+PurpSk,Purple,Фиол.
+Yellow,Yellow,Желтый
+Orange Skill,Orange Skill,Оранжевый Навык
+Green Skill,Green Skill,Зеленый Навык
+Red Skill,Red Skill,Красный Навык
+Blue Skill,Blue Skill,Синий Навык
+Purple Skill,Purple Skill,Фиолетовый Навык
+Yellow Skill,Yellow Skill,Желтый Навык
+White Skill,White Skill,Белый Навык
+Get Prepared,Get Prepared,Приготовьтесь
+Start Run,Start Run,Начать
+Choose Skills,Choose Skills,Выберите Навыки
+Skill Name,Skill Name,Имя Навыка
+Skill Description,Skill Description,Описание Навыка
+No Skills Avialable,No Skills Avialable,Нет Доступных Навыков
+No Skill,No Skill,Без Навыка
+Remove skill from this slot.,Remove skill from this slot.,Убрать навык из данного слота.
+Skills,Skills,Навыки
+Passives,Passives,Пассивные
+Items,Items,Предметы
+Passive Skills,Passive Skills,Пассивные Навыки
+You currently don't have passives,You currently don't have passives,У вас сейчас нет пассивных навыков
+End Turn,End Turn,Закончить Ход
+Waves:,Waves:,Волны:
+AP:,AP:,ОД:
+AP x2,AP x2,ОД x2
+Base Info,Base Info,Общая Информация
+"Stacks: ","Stacks: ","Количество: "
+Abilities,Abilities,Способности
+Immune: ,Immune: ,Иммунитет: 
+Resist: ,Resist: ,Сопротивление: 
+Weak: ,Weak: ,Слабость: 
+Fatal: ,Fatal: ,Смертельно: 
+Resistance:,Resistance:,Сопротивление:
+Weakness:,Weakness:,Слабость:
+Claim Rewards,Claim Rewards,Соберите Награды
+Go to next room,Go to next room,В следующую комнату
+"You get to pick one out of three skills or upgrade any skill of the named color to use it in future.","You get to pick one out of three skills or upgrade any skill of the named color to use it in future.","Вы можете выбрать один навык из трех или улучшить один навык этого цвета, для будущего пользования."
+Reward: Orange Skill,Reward: Orange Skill,Награда: Оранжевый Навык
+Reward: Green Skill,Reward: Green Skill,Награда: Зеленый Навык
+Reward: Red Skill,Reward: Red Skill,Награда: Красный Навык
+Reward: Blue Skill,Reward: Blue Skill,Награда: Синий Навык
+Reward: Purple Skill,Reward: Purple Skill,Награда: Фиолетовый Навык
+Reward: Yellow Skill,Reward: Yellow Skill,Награда: Желтый Навык
+"Rewards: White and Random Color Skills","Rewards: White and Random Color Skills","Награды: Белый и Цветной Навыки"
+"Rewards: Orange And Red Skills","Rewards: Orange And Red Skills","Награды: Красный и Оранжевый Навыки"
+"Rewards: Green And Red Skills","Rewards: Green And Red Skills","Награды: Красный и Зеленый Навыки"
+"Rewards: Yellow And Red Skills","Rewards: Yellow And Red Skills","Награды: Красный и Желтый Навыки"
+"Rewards: Blue And Red Skills","Rewards: Blue And Red Skills","Награды: Красный и Синий Навыки"
+"Rewards: Purple And Red Skills","Rewards: Purple And Red Skills","Награды: Красный и Фиолетовый Навыки"
+"Rewards: Orange And Green Skills","Rewards: Orange And Green Skills","Награды: Оранжевый и Зеленый Навыки"
+"Rewards: Orange And Yellow Skills","Rewards: Orange And Yellow Skills","Награды: Оранжевый и Желтый Навыки"
+"Rewards: Orange And Blue Skills","Rewards: Orange And Blue Skills","Награды: Оранжевый и Синий Навыки"
+"Rewards: Orange And Purple Skills","Rewards: Orange And Purple Skills","Награды: Оранжевый и Фиолетовый Навыки"
+"Rewards: Green And Yellow Skills","Rewards: Green And Yellow Skills","Награды: Зеленый и Желтый Навыки"
+"Rewards: Green And Blue Skills","Rewards: Green And Blue Skills","Награды: Зеленый и Синий Навыки"
+"Rewards: Green And Purple Skills","Rewards: Green And Purple Skills","Награды: Зеленый и Фиолетовый Навыки"
+"Rewards: Blue And Yellow Skills","Rewards: Blue And Yellow Skills","Награды: Синий и Желтый Навыки"
+"Rewards: Purple And Yellow Skills","Rewards: Purple And Yellow Skills","Награды: Фиолетовый Навыки"
+"Rewards: Blue And Purple Skills","Rewards: Blue And Purple Skills","Награды: Синий и Фиолетовый Навыки"
+"Destination: Shop","Destination: Shop","Направление: Магазин"
+"Destination: Encounter","Destination: Encounter","Направление: Событие"
+NORMAL_BATTLE_DESCRIPTION,"Defeat enemies in a battle to obtain a reward.","Победите врагов в схватке, чтобы получить награду."
+DIFFICULT_BATTLE_DESCRIPTION,"Defeat enemies in a dangerous battle to obtain more rewards.","Победите врагов в опасной схватке, чтобы получить больше наград."
+SHOP_DESCRIPTION,"Sell and buy Items and Skills using Stickers as currency.","Покупайте и продавайте Предметы и Навыки, используя Наклейки как валюту."
+ENCOUNTER_DESCRIPTION,"Encounter various events that may help you on your journey.","Проживите разные события, которые могут помочь вам на вашем пути."
+"Reroll ","Reroll","Перебросить"
+Where To Head Next?,Where To Head Next?,Куда Дальше?
+Choose One New Skill From These,Choose One New Skill From These,Выберите Новый Навык Из Этих
+OR,OR,ИЛИ
+Upgrade One Skill Of This Color,Upgrade One Skill Of This Color,Улучшите Один Навык Этого Цвета
+No Skills?,No Skills?,Нет Навыков?
+Change Target,Change Target,Сменить Цель
 Orange Skill,Orange Skill,Оранжевый Навык
 Green Skill,Green Skill,Зеленый Навык
 Red Skill,Red Skill,Красный Навык
@@ -52,8 +149,17 @@ Purple Skill,Purple Skill,Фиолетовый Навык
 Yellow Skill,Yellow Skill,Желтый Навык
 White Skill,White Skill,Белый Навык
 " turns"," turns"," ходов"
+"Floor ","Floor ","Этаж "
+" Room "," Room "," Комната "
+"Room ","Room ","Комната "
+"Waves: ","Waves: ","Волны: "
+Return To Longe,Return To Lounge,Вернуться в Холл
+Regenerate 30% Max HP,Regenerate 30% Max HP,Восстановите 30% Макс HP
+///////////////////////////INFO////////////////////////////////,.,.
+List,List,Список
+Enemy Intel,Enemy Intel,Враги
 ///////////////////////////STATUS EFFECTS////////////////////////////////,.,.
-Status Effects,Status Effects,Эффекты Статуса
+Status Effects,Status Effects,Состояния
 Fragile,Fragile,Уязвимость
 Spread,Spread,Разрастание
 Weakness Coverage,Weakness Coverage,Прикрытие Слабостей
@@ -84,6 +190,8 @@ BLOOD_MOON_STATUS_2,"Salim can't miss and his attacks ignore 20% DEF.","Сали
 BLOOD_MOON_STATUS_3,"Salim can't miss and his attacks ignore 30% DEF.","Салим не может промахнуться и его атаки игнорируют 30% DEF."
 BLOOD_MOON_STATUS_4,"Salim can't miss and his attacks ignore 40% DEF.","Салим не может промахнуться и его атаки игнорируют 40% DEF."
 BLOOD_MOON_STATUS_5,"Salim can't miss and his attacks ignore 50% DEF.","Салим не может промахнуться и его атаки игнорируют 50% DEF."
+"You gain ","You gain ","Вы получаете "
+"% Empowerment.","% Empowerment.","% Усиление."
 DURATION_1,"Duration: 1 turn","Длительность: 1 ход"
 DURATION_2,"Duration: 2 turns","Длительность: 2 хода"
 DURATION_3,"Duration: 3 turns","Длительность: 3 хода"
@@ -101,8 +209,8 @@ DURATION_14,"Duration: 14 turns","Длительность: 14 ходов"
 DURATION_15,"Duration: 15 turns","Длительность: 15 ходов"
 ///////////////////////////UPGRADES////////////////////////////////,.,.
 Upgrades,Upgrades,Улучшения
-Reach Upgrades LVL 10 to unlock,Reach Upgrades LVL 10 to unlock,"Достигните 10го уровня Улучшений, чтобы раскрыть"
-Reach Upgrades LVL 25 to unlock,Reach Upgrades LVL 25 to unlock,"Достигните 25го уровня Улучшений, чтобы раскрыть"
+Reach Upgrades LVL 10 to unlock,Reach Upgrades LVL 10 to unlock,"Требуется 10 уровень Улучшений"
+Reach Upgrades LVL 25 to unlock,Reach Upgrades LVL 25 to unlock,"Требуется 25 уровень Улучшений"
 Sleep With A Baseball Bat,Sleep With A Baseball Bat,Sleep With A Baseball Bat
 SWABB_DESCRIPTION,"Normal attacks deal +10% damage.","Обычные атаки наносят на 10% больше урона."
 Health Insurance,Health Insurance,Медицинская Страховка
@@ -124,72 +232,87 @@ NAVIGATOR_DESCRIPTION,"You can reroll room rewards 1 more time.","Вы може�
 Tough,Tough,Крепкий
 TOUGH_DESCRIPTION,"Number of Resistances +1.","Количество Сопротивлений +1."
 ///////////////////////////START ITEMS////////////////////////////////,.,.
+Thorns,Thorns,Шипы
 thorns_NAME,Thorns,Шипы
 thorns_DESCRIPTION,"ATK +5","ATK +5"
 THORNS_DESCRIPTION,"ATK +5","ATK +5"
-thorns_LORE,"A spiked wire looking like thorns, left here by someone. Looks like it was made in hurry. Great for wrapping around a bat, although it doesn't look very safe for the user.","Проволока с шипами, оставленная здесь кем-то. Судя по всему была создана на коленке из частей местной техники. Отлично подходит для обматывания вокруг биты, хотя ощущается не очень безопасной для пользования."
+thorns_LORE,"...","..."
+Favorite Shirt,Favorite Shirt,Любимая Рубашка
 favoriteshirt_NAME,Favorite Shirt,Любимая Рубашка
 favoriteshirt_DESCRIPTION,"END +5","END +5"
 FAVORITE_SHIRT_DESCRIPTION,"END +5","END +5"
-favoriteshirt_LORE,"'Mom, what's the package on my bed?'\n'It's our gift for you, look!'\nInside there was just one T-shirt, that looked silly and old-fashioned, with the words 'BEST SON' written on it. After looking at it kid happily ran to hug his parents.\n'I'm gonna wear it always-always!'\n---\n'How did it get here?'","'Мам, что у меня на кровати за пакет?'\n'Это наш подарок для тебя, посмотри!'\nВнутри была лишь одна футболка, что выглядела очень старомодной и глупой, с надписью 'ЛУЧШИЙ СЫН'. Рассмотрев ее, мальчик обрадовался и подбежал обнять своих родителей.\n'Я буду всегда-всегда носить ее!'\n---\n'Как она оказалась здесь?'"
+favoriteshirt_LORE,"...","..."
+Comfortable Shoes,Comfortable Shoes,Удобные Ботинки
 comfortableshoes_NAME,Comfortable Shoes,Удобные Ботинки
 comfortableshoes_DESCRIPTION,"SPD +10","SPD +10"
 COMFORTABLE_SHOES_DESCRIPTION,"SPD +10","SPD +10"
-comfortableshoes_LORE,"These sneakers are very comfortable and fit perfectly on the wearer's foot.\n---\n'Can I wear them?'\n'For Musa's wedding? No, wear proper shoes.'\n---\n'I'm going to wear these shoes.'\n'To prom? Not that I really mind...'\n---\n'I think it's time for you to change your shoes, these are already old and it's winter...'\n'But I'm comfortable in them! I can walk in them for another year!'\n'Just yesterday you slipped because of their soles...'\n---\nUnfortunately, we often have to sacrifice the comfort of shoes for the sake of the situation...","Эти кроссовки очень удобные и идеально подходят на ногу своего владельца.\n---\n'Можно я надену их?'\n'На свадьбу Мусы? Нет, надень нормальные ботинки.'\n---\n'Я собираюсь пойти в этих кроссовках.'\n'На выпускной? Не то чтобы я сильно против...'\n---\n'Мне кажется тебе пора сменить обувь, эта уже старая и сейчас зима...'\n'Но мне удобно в них! Я могу проходить в них еще год!'\n'Ты буквально вчера подскользнулся из-за подошвы у них...'\n---\nК сожалению, нам часто приходится жертвовать удобством обуви в угоду ситуации..."
+comfortableshoes_LORE,"...","..."
+Helmet,Helmet,Каска
 helmet_NAME,Helmet,Каска
 helmet_DESCRIPTION_UNLOCK,"How to obtain: Create 3 shields in one battle.","Как получить: Создайте 3 щита в одном бою."
 helmet_DESCRIPTION,"DEF +10","DEF +10"
 HELMET_DESCRIPTION,"DEF +10","DEF +10"
-helmet_LORE,"Ordinary helmet for motorcyclists. There are no secrets around it, it has no history. At least it protects the head from blows.","Обычный шлем для мотоциклистов. Вокруг него нет тайн, у него нет истории. По крайней мере он защищает голову от ударов."
+helmet_LORE,"...","..."
+Glasses,Glasses,Очки
 glasses_NAME,Glasses,Очки
 glasses_DESCRIPTION_UNLOCK,"How to obtain: Score 3 critical hits in one battle.","Способ получения: Нанесите 3 критических удара за один бой."
 glasses_DESCRIPTION,"SEN +10","SEN +10"
 GLASSES_DESCRIPTION,"SEN +10","SEN +10"
-glasses_LORE,"For the bullies it's easier to choose the weak as targets. Especially if you can take off their glasses - they won't even see you. When they learned about it, two guys decided to wear fake glasses to school as a solidarity with their friend.\nIn the end to stop the bullying they had to choose more violent methods, but at the very least their friend was happy with a support. The fake glasses remained as another token of their friendship.","Для задир удобн выбирать целью тех, кто не может ответить им. Особенно, если забрать их очки - они не увидят тебя. Узнав об этом, в знак солидарности со своей подругой, два парня начали ходить в школу в очках с обычными стеклами.\nВ конечном итоге им все равно пришлось прибегнуть к насилию для прекращения буллинга, но по крайней мере их подруга была рада их поддержке. Очки так и остались как еще один знак их дружбы."
+glasses_LORE,"...","..."
+Cup,Cup,Кубок
 cup_NAME,Cup,Кубок
 cup_DESCRIPTION_UNLOCK,"How to obtain: Use 3 ultimates in one battle.","Способ получения: Используйте 3 ультимейта за один бой."
 cup_DESCRIPTION,"ENR +10","ENR +10"
 CUP_DESCRIPTION,"ENR +10","ENR +10"
-cup_LORE,"One guy very much loved going to exhibitions with his friends and looking at relics of the past. Only one listed relic was not brought to the exhibition - the old Grail, bought more than a thousand years ago by one of the khans.\nThe guy never saw that cup in person, so his friends made a replica of the cup from papier-mâché. Although the paper does not shine, and the cup is not a thousand years old, he carefully keeps it to this day and treasures it above all of his treasures.","Один парень очень любил ходить по выставкам со своими друзьями и рассматривать реликвии прошлого. Лишь одну обещанную реликвию не привезли на выставку - старый Грааль, выкупленный более тысячи лет назад одним из ханов.\nПарень так никогда и не увидел тот кубок вживую, поэтому его друзья сделали реплику кубка из папье-маше. Пускай бумага не сияет, и кубку не тысяча лет, он по сей день бережно хранит его и ценит больше всех сокровищ."
+cup_LORE,"...","..."
+Notebook,Notebook,Блокнот
 notebook_NAME,Notebook,Блокнот
 notebook_DESCRIPTION_UNLOCK,"How to obtain: Spend a total of 300 stickers among runs.","Способ получения: Потратьте в общем 300 стикеров во время забегов."
 notebook_DESCRIPTION,"Number of stickers at the start of the run +100.","Стартовое число стикеров при начале забега +100."
 NOTEBOOK_DESCRIPTION,"Number of stickers at the start of the run +100.","Стартовое число стикеров при начале забега +100."
-notebook_LORE,"The young man carefully sews the sheets together, straightens them and checks the thread. For two days now, he has been working on this notebook, slowly working through each step of its creation to make it perfect. In the end, the notebook, hand-made from the cover to the sheets, was ready. Although the guy wasn't happy with the result, the deadline had already come up.\n'I'm not sure how good it is, but... Happy Birthday!'\n'Thanks! I really like it, don't be too harsh on yourself!'\nThe birthday girl took the notebook and stick one of her stickers to it.\nEven after all those years he couldn't forget the result of his suffering.","Молодой человек аккуратно сшивает листы вместе, выпрямляет их и проверяет ход нити. Уже два дня, он работает над этим блокнотом, медленно выполняя каждый шаг его создания, чтобы он получился идеальным. В конце концов, блокнот, сделанный на коленке от обложки до листов, был готов. Хоть парень и не был доволен результатом, крайний срок уже подошел.\n'Я не уверен, насколько он хорошо вышел, но... С днем рождения!'\n'Спасибо! Мне очень нравится, не наговаривай на себя!'\nИменинница взяла блокнот и налепила туда подаренный ей стикер.\nДаже спустя столько лет, он не смог забыть результат своих страданий."
+notebook_LORE,"...","..."
+Bottle Of Blood,Bottle Of Blood,Бутылек Крови
 bottleofblood_NAME,Bottle Of Blood,Бутылек Крови
 bottleofblood_DESCRIPTION_UNLOCK,"How to obtain: Learn all red skills.","Способ получения: Выучите все красные навыки."
 bottleofblood_DESCRIPTION,"Chance of rooms with red skills appearing increses.\nWhen getting a red skill, its starting level is 2.","Шанс появления комнат с красными навыками увеличен.\nКогда вы получаете красные навыки, они изначально второго уровня."
 BOTTLE_OF_BLOOD_DESCRIPTION,"Chance of rooms with red skills appearing increses.\nWhen getting a red skill, its starting level is 2.","Шанс появления комнат с красными навыками увеличен.\nКогда вы получаете красные навыки, они изначально второго уровня."
-bottleofblood_LORE,"'Come on, it's just a blood test. Don't be afraid.'\n'But they'll suck all my blood!'\n'No, they'll only take a little, it won't hurt.'\n'You say that because they hypnotized you, I saw it on TV , vampires can do that!'\n'...'\nFor the next half hour, the poor woman had to explain to her little son that there were definitely no vampires at the local clinic.","'Ну же, это просто сдача крови для анализов. Не бойся.'\n'Но они высосут всю мою кровь!'\n'Нет, они возьмут совсем чуть-чуть, это не будет больно.'\n'Ты так говоришь, потому что они загипнотизировали тебя, я видел по телевизору, вампиры могут так делать!'\n'...'\nВ течение следующего получаса, бедной женщине пришлось объяснять своему маленькому сыну, что в местной поликлинике точно нет вампиров."
+bottleofblood_LORE,"...","..."
+Piece Of Shield,Piece Of Shield,Обломок Щита
 pieceofshield_NAME,Piece Of Shield,Обломок Щита
-pieceofsield_DESCRIPTION_UNLOCK,"How to obtain: Learn all orange skills.","Способ получения: Выучите все оранжевые навыки."
-pieceofsield_DESCRIPTION,"Chance of rooms with orange skills appearing increses.\nWhen getting a orange skill, its starting level is 2.","Шанс появления комнат с оранжевыми навыками увеличен.\nКогда вы получаете оранжевые навыки, они изначально второго уровня."
+pieceofshield_DESCRIPTION_UNLOCK,"How to obtain: Learn all orange skills.","Способ получения: Выучите все оранжевые навыки."
+pieceofshield_DESCRIPTION,"Chance of rooms with orange skills appearing increses.\nWhen getting a orange skill, its starting level is 2.","Шанс появления комнат с оранжевыми навыками увеличен.\nКогда вы получаете оранжевые навыки, они изначально второго уровня."
 PIECE_OF_SHIELD_DESCRIPTION,"Chance of rooms with orange skills appearing increses.\nWhen getting a orange skill, its starting level is 2.","Шанс появления комнат с оранжевыми навыками увеличен.\nКогда вы получаете оранжевые навыки, они изначально второго уровня."
-pieceofsield_LORE,"A piece of an old broken shield. The ornament on it vaguely recalls the story of the ancient king and his knights, which one boy liked so much in the past. He even had a toy that looked like a shield...\n...\nIt turns out that if you take this shard in your hands, you can understand that it is made of plastic...","Кусок от старинного сломанного щита. Орнамент на нем смутно напоминает об истории про древнего короля и его рыцарей, которые так нравились одному мальчику в прошлом. У него даже была игрушка, похожая на щит...\n...\nОказывается, если взять этот осколок в руки, можно понять, что он из пластика..."
+pieceofsield_LORE,"...","..."
+Bottled Lightnings,Bottled Lightnings,Бутылированные Молнии
 bottledlightnings_NAME,Bottled Lightnings,Бутылированные Молнии
 bottledlightnings_DESCRIPTION_UNLOCK,"How to obtain: Learn all yellow skills.","Способ получения: Выучите все желтые навыки."
 bottledlightnings_DESCRIPTION,"Chance of rooms with yellow skills appearing increses.\nWhen getting a yellow skill, its starting level is 2.","Шанс появления комнат с красными навыками увеличен.\nКогда вы получаете красные навыки, они изначально второго уровня."
 BOTTLED_LIGHTNINGS_DESCRIPTION,"Chance of rooms with yellow skills appearing increses.\nWhen getting a yellow skill, its starting level is 2.","Шанс появления комнат с красными навыками увеличен.\nКогда вы получаете красные навыки, они изначально второго уровня."
-bottledlightnings_LORE,"Legends tell a lot about gods who could call lightning. Makes you wonder if they lived now, would they collect bottled lightning like the ships they sank?","Легенды рассказывают много о богах, которые могли призывать молнии. Интересно, если бы они жили сейчас, коллекционировали бы они молнии в бутылках подобно кораблям, что они топили?"
+bottledlightnings_LORE,"...","..."
+Sprout,Sprout,Росток
 sprout_NAME,Sprout,Росток
 sprout_DESCRIPTION_UNLOCK,"How to obtain: Learn all green skills.","Способ получения: Выучите все зеленые навыки."
 sprout_DESCRIPTION,"Chance of rooms with green skills appearing increses.\nWhen getting a green skill, its starting level is 2.","Шанс появления комнат с зелеными навыками увеличен.\nКогда вы получаете зеленые навыки, они изначально второго уровня."
 SPROUT_DESCRIPTION,"Chance of rooms with green skills appearing increses.\nWhen getting a green skill, its starting level is 2.","Шанс появления комнат с зелеными навыками увеличен.\nКогда вы получаете зеленые навыки, они изначально второго уровня."
-sprout_LORE,"The young guy had a burning desire to grow flowers. A noble undertaking, which, unfortunately, did not guarantee success. He took an orchid home to test himself. Unfortunately, the orchid never bloomed, dying two weeks later. Since then, the young man has kept only one cactus in his room.","Молодой парень загорелся желанием разводить цветы. Благородная затея, которая, к сожалению, не гарантировала успешность. Он взял на дом орхидею дабы испытать себя. К сожалению, орхидея так и не зацвела, погибнув спустя две недели. С тех самых пор молодой человек держит у себя в комнате только один кактус."
+sprout_LORE,"...","..."
+Umbrella,Umbrella,Зонт
+umbrella_NAME,Umbrella,Зонт
 umbrella_DESCRIPTION_UNLOCK,"How to obtain: Learn all blue skills.","Способ получения: Выучите все синие навыки."
 umbrella_DESCRIPTION,"Chance of rooms with blue skills appearing increses.\nWhen getting a blue skill, its starting level is 2.","Шанс появления комнат с синими навыками увеличен.\nКогда вы получаете синие навыки, они изначально второго уровня."
 UMBRELLA_DESCRIPTION,"Chance of rooms with blue skills appearing increses.\nWhen getting a blue skill, its starting level is 2.","Шанс появления комнат с синими навыками увеличен.\nКогда вы получаете синие навыки, они изначально второго уровня."
-umbrella_LORE,"'Do you have an umbrella?'\n'Of course I have an umbrella, how else am I going to walk in the rain?'\n'But an umbrella is not manly! That's what my parents tell me...'\n'And you think I'm less manly because I carry an umbrella?'\n'...no...'\n'Don't be silly then... Oh, it started to rain like according to the forecast. Hold on, it takes longer for you to get home.'\n'But it's yours...'\n'Yes, so I'm giving it to you. So you will have at least one umbrella! Or do you want me to walk you home with him?'\n'N-No! Thank you Maksud...'\n'Hehe~ You're welcome!'","'У тебя есть зонт?'\n'Конечно у меня есть зонт, как иначе я буду ходить в дождь?'\n'Но зонт это не мужественно! Мне так родители говорят...'\n'И ты считаешь меня менее мужественным потому что я хожу с зонтом?'\n'...нет...'\n'Тогда не глупи... О, дождь начался как по прогнозу. Держи, тебе дольше идти до дома.'\n'Но он твой...'\n'Да, поэтому я отдаю его тебе. Так у тебя будет хоть один зонт! Или хочешь, чтобы я проводил тебя до дома с ним?'\n'Д-Нет! Спасибо, Максуд...'\n'Хе-хе~ Всегда пожалуйста!'"
+umbrella_LORE,"...","..."
+Violet,Violet,Фиалка
 violet_NAME,Violet,Фиалка
 violet_DESCRIPTION_UNLOCK,"How to obtain: Learn all purple skills.","Способ получения: Выучите все фиолетовые навыки."
 violet_DESCRIPTION,"Chance of rooms with purple skills appearing increses.\nWhen getting a purple skill, its starting level is 2.","Шанс появления комнат с фиолетовыми навыками увеличен.\nКогда вы получаете фиолетовые навыки, они изначально второго уровня."
 VIOLET_DESCRIPTION,"Chance of rooms with purple skills appearing increses.\nWhen getting a purple skill, its starting level is 2.","Шанс появления комнат с фиолетовыми навыками увеличен.\nКогда вы получаете фиолетовые навыки, они изначально второго уровня."
-violet_LORE,"Roses are red,\nViolets are blue,\nThis flower is whole,\nAnd so will be you.","Красный - цвет роз,\nСиний - фиалок.\nБудешь ты цельным,\nСловно сей цветок."
+violet_LORE,"...","..."
+Photographic Film,Photographic Film,Фотопленка
 photographicfilm_NAME,Photographic Film,Фотопленка
 photographicfilm_DESCRIPTION_UNLOCK,"How to obtain: Use a total of 100 actions among runs.","Способ получения: Используйте в общем 100 действий во время забегов."
 photographicfilm_DESCRIPTION,"Number of actions per turn +2.","Количество действий в ход +2."
 PHOTOGRAPHIC_FILM_DESCRIPTION,"Number of actions per turn +2.","Количество действий в ход +2."
-photographicfilm_LORE,"It looks like an ordinary film, but if you look closely, you can see that something is wrong. Each next frame on it is more and more different from the previous one. With each frame, the face of one guy in the photo becomes more and more blurred until it turns into an incomprehensible mass of colors. And then it becomes empty. Like the film itself, on which only he remains, looking into nowhere and at the same time seeing everything.","С виду обычная фотопленка, но если присмотреться, то можно заметить, что что-то не так. Каждый следующий кадр на ней все сильнее отличается от предыдущего. С каждым кадром, лицо одного парня на фото становится все более и более размытым, пока не превращается в непонятную массу красок. И после, оно становится пустым. Как и сама пленка, на которой остается только он, смотрящий вникуда и одновременно видящий все."
+photographicfilm_LORE,"...","..."
 ///////////////////////////ITEMS////////////////////////////////,.,.
 Common Items,Common Items,Обычные Предметы
 Stationery Knife,Stationery Knife,Канцелярский Ножик
@@ -315,11 +438,11 @@ NORMAL_ATTACK,"Salim attacks one enemy dealing physical damage(100% ATK).","Са
 Normal Attack,Normal Attack,Обычная Атака
 Normal_Attack,Normal Attack,Обычная Атака
 "Find this skill to unlock it.","Find this skill to unlock it.","Найдите данный навык, чтобы разблокировать его."
-RED_WARNING_STRIKE_1,"On hit deal red damage(100% ATK) to one enemy and the next attack within 2 turns gains Empowerment(30%).","При попадании нанесите красный урон(100% АТК) одному врагу и следующая атака сделанная в течение 2 ходов получает Усиление(30%)."
-RED_WARNING_STRIKE_2,"On hit deal red damage(120% ATK) to one enemy and the next attack within 2 turns gains Empowerment(35%).","При попадании нанесите красный урон(120% АТК) одному врагу и следующая атака сделанная в течение 2 ходов получает Усиление(35%)."
-RED_WARNING_STRIKE_3,"On hit deal red damage(140% ATK) to one enemy and the next attack within 2 turns gains Empowerment(40%).","При попадании нанесите красный урон(140% АТК) одному врагу и следующая атака сделанная в течение 2 ходов получает Усиление(40%)."
-RED_WARNING_STRIKE_4,"On hit deal red damage(160% ATK) to one enemy and the next attack within 2 turns gains Empowerment(50%).","При попадании нанесите красный урон(160% АТК) одному врагу и следующая атака сделанная в течение 2 ходов получает Усиление(50%)."
-RED_WARNING_STRIKE_5,"On hit deal red damage(200% ATK) to one enemy and the next attack within 2 turns gains Empowerment(60%).","При попадании нанесите красный урон(200% АТК) одному врагу и следующая атака сделанная в течение 2 ходов получает Усиление(60%)."
+RED_WARNING_STRIKE_1,"On hit deal red damage(100% ATK) to one enemy and the next attack gains Empowerment(30%).","При попадании нанесите красный урон(100% АТК) одному врагу и следующая атака получает Усиление(30%)."
+RED_WARNING_STRIKE_2,"On hit deal red damage(120% ATK) to one enemy and the next attack gains Empowerment(35%).","При попадании нанесите красный урон(120% АТК) одному врагу и следующая атака получает Усиление(35%)."
+RED_WARNING_STRIKE_3,"On hit deal red damage(140% ATK) to one enemy and the next attack gains Empowerment(40%).","При попадании нанесите красный урон(140% АТК) одному врагу и следующая атака получает Усиление(40%)."
+RED_WARNING_STRIKE_4,"On hit deal red damage(160% ATK) to one enemy and the next attack gains Empowerment(50%).","При попадании нанесите красный урон(160% АТК) одному врагу и следующая атака получает Усиление(50%)."
+RED_WARNING_STRIKE_5,"On hit deal red damage(200% ATK) to one enemy and the next attack gains Empowerment(60%).","При попадании нанесите красный урон(200% АТК) одному врагу и следующая атака получает Усиление(60%)."
 Warning Strike,Warning Strike,Предупреждающий Удар
 Red_Warning_Strike,Warning Strike,Предупреждающий Удар
 RED_DIRTY_TRICK_1,"On hit deal red damage(100% ATK) to one enemy and inflict Blindness(20%) for 2 turns.","При попадании нанесите красный урон(100% АТК) одному врагу и наложите на него Слепоту(20%) на 2 хода."
@@ -514,11 +637,11 @@ Ultimate: Balanced Instability,Ultimate: Balanced Instability,Ультимейт
 Balanced Instability,Balanced Instability,Сбалансированная Нестабильность
 Yellow_Balanced_Instability,Balanced Instability,Сбалансированная Нестабильность
 "Time to change the pacing!","Time to change the pacing!","Время сменить темп!"
-YELLOW_TIME_WARP_1,"SEN and SPD +6 for 3 turns.\nDeal yellow damage(100% ATK) to all enemies. CD of all other skills is nullified and their cost is reduced for this turn by 1(can't go lower than 1).","SEN и SPD +6 на 3 хода.n\Нанесите желтый урон(100% ATK) всем врагам. CD всех остальных навыков обнуляется и их стоимость понижается на 1 на этот ход(не ниже 1)."
-YELLOW_TIME_WARP_2,"SEN and SPD +8 for 3 turns.\nDeal yellow damage(120% ATK) to all enemies. CD of all other skills is nullified and their cost is reduced for this turn by 1(can't go lower than 1).","SEN и SPD +8 на 3 хода.n\Нанесите желтый урон(120% ATK) всем врагам. CD всех остальных навыков обнуляется и их стоимость понижается на 1 на этот ход(не ниже 1)."
-YELLOW_TIME_WARP_3,"SEN and SPD +11 for 4 turns.\nDeal yellow damage(140% ATK) to all enemies. CD of all other skills is nullified and their cost is reduced for this turn by 2(can't go lower than 1).","SEN и SPD +11 на 4 хода.n\Нанесите желтый урон(140% ATK) всем врагам. CD всех остальных навыков обнуляется и их стоимость понижается на 2 на этот ход(не ниже 1)."
-YELLOW_TIME_WARP_4,"SEN and SPD +15 for 4 turns.\nDeal yellow damage(160% ATK) to all enemies. CD of all other skills is nullified and their cost is reduced for this turn by 2(can't go lower than 1).","SEN и SPD +15 на 4 хода.n\Нанесите желтый урон(160% ATK) всем врагам. CD всех остальных навыков обнуляется и их стоимость понижается на 2 на этот ход(не ниже 1)."
-YELLOW_TIME_WARP_5,"SEN and SPD +20 for 5 turns.\nDeal yellow damage(200% ATK) to all enemies. CD of all other skills is nullified and their cost is reduced for this turn by 3(can't go lower than 1).","SEN и SPD +20 на 5 хода.n\Нанесите желтый урон(200% ATK) всем врагам. CD всех остальных навыков обнуляется и их стоимость понижается на 3 на этот ход(не ниже 1)."
+YELLOW_TIME_WARP_1,"SEN and SPD +6 for 3 turns.\nDeal yellow damage(100% ATK) to all enemies. CD of all other skills is nullified and their cost is reduced for this turn by 1(can't go lower than 1).","SEN и SPD +6 на 3 хода.\nНанесите желтый урон(100% ATK) всем врагам. CD всех остальных навыков обнуляется и их стоимость понижается на 1 на этот ход(не ниже 1)."
+YELLOW_TIME_WARP_2,"SEN and SPD +8 for 3 turns.\nDeal yellow damage(120% ATK) to all enemies. CD of all other skills is nullified and their cost is reduced for this turn by 1(can't go lower than 1).","SEN и SPD +8 на 3 хода.\nНанесите желтый урон(120% ATK) всем врагам. CD всех остальных навыков обнуляется и их стоимость понижается на 1 на этот ход(не ниже 1)."
+YELLOW_TIME_WARP_3,"SEN and SPD +11 for 4 turns.\nDeal yellow damage(140% ATK) to all enemies. CD of all other skills is nullified and their cost is reduced for this turn by 2(can't go lower than 1).","SEN и SPD +11 на 4 хода.\nНанесите желтый урон(140% ATK) всем врагам. CD всех остальных навыков обнуляется и их стоимость понижается на 2 на этот ход(не ниже 1)."
+YELLOW_TIME_WARP_4,"SEN and SPD +15 for 4 turns.\nDeal yellow damage(160% ATK) to all enemies. CD of all other skills is nullified and their cost is reduced for this turn by 2(can't go lower than 1).","SEN и SPD +15 на 4 хода.\nНанесите желтый урон(160% ATK) всем врагам. CD всех остальных навыков обнуляется и их стоимость понижается на 2 на этот ход(не ниже 1)."
+YELLOW_TIME_WARP_5,"SEN and SPD +20 for 5 turns.\nDeal yellow damage(200% ATK) to all enemies. CD of all other skills is nullified and their cost is reduced for this turn by 3(can't go lower than 1).","SEN и SPD +20 на 5 хода.\nНанесите желтый урон(200% ATK) всем врагам. CD всех остальных навыков обнуляется и их стоимость понижается на 3 на этот ход(не ниже 1)."
 Ultimate: Time Warp,Ultimate: Time Warp,Ультимейт: Искривление Времени
 Time Warp,Time Warp,Искривление Времени
 Yellow_Time_Warp,Time Warp,Искривление Времени

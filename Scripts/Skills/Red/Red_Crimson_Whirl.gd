@@ -50,3 +50,5 @@ func _on_Timer_timeout():
 			if get_parent().get_node(str("../Enemy", (i + 1))).get_child(1).curHP <= 0:
 				get_parent().curHP += HEAL
 				get_parent().SpawnHeal(HEAL)
+				get_parent().get_node("../../CanvasLayer/Control/CharStats/CharHP/HP").text = str(get_parent().curHP, "/", get_parent().maxHP)
+				get_parent().get_parent().get_parent().get_node("CanvasLayer/Control/CharStats/CharHP").value = get_parent().curHP

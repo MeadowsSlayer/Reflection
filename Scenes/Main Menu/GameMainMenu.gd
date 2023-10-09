@@ -55,6 +55,7 @@ func _ready():
 	if save_1_taken == false:
 		get_node(delete).disabled = true
 	get_node(dif_text).set("text", normal_text)
+	cur_lang = TranslationServer.get_locale()
 	$MainScreen/CenterContainer/VBoxContainer/StartGame.grab_focus()
 
 func ColorOfBG():
@@ -66,15 +67,15 @@ func save_slots_description():
 	var slot
 	if save_1_taken == true:
 		slot = load("res://Saves/Save1.tres")
-		text_slot = str("Difficulty: ",slot.get("difficulty"),"\nRuns: ",slot.get("runs"), "\nTapes: ",slot.get("tapes_all"))
+		text_slot = str(tr("Difficulty: "),tr(slot.get("difficulty")),"\n", tr("Runs: "),slot.get("runs"), "\n", tr("Tapes: "),slot.get("tapes_all"))
 		$StartGame/CenterContainer/VBoxContainer/GridContainer/SaveSlot1/SlotInfo.text = text_slot
 	if save_2_taken == true:
 		slot = load("res://Saves/Save2.tres")
-		text_slot = str("Difficulty: ",slot.get("difficulty"),"\nRuns: ",slot.get("runs"), "\nTapes: ",slot.get("tapes_all"))
+		text_slot = str(tr("Difficulty: "),tr(slot.get("difficulty")),"\n", tr("Runs: "),slot.get("runs"), "\n", tr("Tapes: "),slot.get("tapes_all"))
 		$StartGame/CenterContainer/VBoxContainer/GridContainer/SaveSlot2/SlotInfo.text = text_slot
 	if save_3_taken == true:
 		slot = load("res://Saves/Save3.tres")
-		text_slot = str("Difficulty: ",slot.get("difficulty"),"\nRuns: ",slot.get("runs"), "\nTapes: ",slot.get("tapes_all"))
+		text_slot = str(tr("Difficulty: "),tr(slot.get("difficulty")),"\n", tr("Runs: "),slot.get("runs"), "\n", tr("Tapes: "),slot.get("tapes_all"))
 		$StartGame/CenterContainer/VBoxContainer/GridContainer/SaveSlot3/SlotInfo.text = text_slot
 
 func save_data():
@@ -119,6 +120,7 @@ func _on_Confirm_button_down():
 	global_settings.se = get_node(se_slider).value
 	global_settings.lang = cur_lang
 	save_data()
+	save_slots_description()
 	$MainScreen/CenterContainer/VBoxContainer/StartGame.grab_focus()
 	emit_signal("settings", "main menu")
 

@@ -36,7 +36,8 @@ func Action():
 		if enemy.sleep_duration != 0:
 			enemy.WakeUp()
 		enemy.Taking_Damage(attack, DMG_Mod, "blue", CRIT, DMG_add)
-		enemy.get_node("EffectsSpecial").animation = "Ice Shatter"
+		enemy.get_node("EffectsSpecial").animation = "Poison Claw"
+		enemy.get_node("EffectsSpecial").modulate = Color8(16, 61, 213)
 		
 		if enemy.curEN > 0:
 			if enemy.curEN < energy:

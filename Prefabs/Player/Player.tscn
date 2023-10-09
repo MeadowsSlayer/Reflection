@@ -1,10 +1,9 @@
 [gd_scene load_steps=54 format=2]
 
 [ext_resource path="res://Sprites/Salim/Salim.png" type="Texture" id=1]
-[ext_resource path="res://Resources/Particles/Damage.tres" type="Material" id=2]
 [ext_resource path="res://Resources/Particles/Effects.tres" type="Material" id=3]
 [ext_resource path="res://Resources/Fonts/EncounterSmallText.tres" type="DynamicFont" id=4]
-[ext_resource path="res://Resources/Images/white.png" type="Texture" id=6]
+[ext_resource path="res://Sprites/Particles/Plus.png" type="Texture" id=5]
 [ext_resource path="res://Scripts/StatusEffects.gd" type="Script" id=7]
 [ext_resource path="res://Prefabs/Player/Player.gd" type="Script" id=8]
 [ext_resource path="res://Sprites/Salim/SalimAttack.png" type="Texture" id=9]
@@ -12,6 +11,7 @@
 [ext_resource path="res://Sprites/Salim/SalimIdle2.png" type="Texture" id=11]
 [ext_resource path="res://Sprites/Shadow.png" type="Texture" id=12]
 [ext_resource path="res://Sprites/GameFXexport/SPRITESHEET_Files/Effects.tres" type="SpriteFrames" id=13]
+[ext_resource path="res://Sprites/Particles/Shield.png" type="Texture" id=14]
 [ext_resource path="res://Sprites/Salim/SalimTakingDamage.png" type="Texture" id=15]
 [ext_resource path="res://Sprites/Salim/SalimDodge.png" type="Texture" id=16]
 [ext_resource path="res://Sprites/Salim/SalimSecondAttack_1.png" type="Texture" id=17]
@@ -248,6 +248,18 @@ tracks/6/keys = {
 "update": 1,
 "values": [ ExtResource( 17 ), ExtResource( 18 ), ExtResource( 11 ), ExtResource( 1 ), ExtResource( 11 ) ]
 }
+tracks/7/type = "value"
+tracks/7/path = NodePath("EffectsCharge:texture")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ ExtResource( 5 ) ]
+}
 
 [sub_resource type="Animation" id=16]
 resource_name = "Idle"
@@ -293,7 +305,7 @@ tracks/1/keys = {
 "values": [ false ]
 }
 tracks/2/type = "value"
-tracks/2/path = NodePath("Particles2D:emitting")
+tracks/2/path = NodePath("EffectsCharge:emitting")
 tracks/2/interp = 1
 tracks/2/loop_wrap = true
 tracks/2/imported = false
@@ -305,7 +317,7 @@ tracks/2/keys = {
 "values": [ false ]
 }
 tracks/3/type = "value"
-tracks/3/path = NodePath("EffectsCharge:emitting")
+tracks/3/path = NodePath("EffectsCharge:process_material:color")
 tracks/3/interp = 1
 tracks/3/loop_wrap = true
 tracks/3/imported = false
@@ -314,10 +326,10 @@ tracks/3/keys = {
 "times": PoolRealArray( 0 ),
 "transitions": PoolRealArray( 1 ),
 "update": 0,
-"values": [ false ]
+"values": [ Color( 0, 1, 0.486275, 1 ) ]
 }
 tracks/4/type = "value"
-tracks/4/path = NodePath("EffectsCharge:process_material:color")
+tracks/4/path = NodePath("Label:visible")
 tracks/4/interp = 1
 tracks/4/loop_wrap = true
 tracks/4/imported = false
@@ -326,10 +338,10 @@ tracks/4/keys = {
 "times": PoolRealArray( 0 ),
 "transitions": PoolRealArray( 1 ),
 "update": 0,
-"values": [ Color( 0, 1, 0.486275, 1 ) ]
+"values": [ true ]
 }
 tracks/5/type = "value"
-tracks/5/path = NodePath("Particles2D:process_material:direction")
+tracks/5/path = NodePath("Label:rect_position")
 tracks/5/interp = 1
 tracks/5/loop_wrap = true
 tracks/5/imported = false
@@ -338,10 +350,10 @@ tracks/5/keys = {
 "times": PoolRealArray( 0 ),
 "transitions": PoolRealArray( 1 ),
 "update": 0,
-"values": [ Vector3( -10, -5, 0 ) ]
+"values": [ Vector2( -41.25, -52.25 ) ]
 }
 tracks/6/type = "value"
-tracks/6/path = NodePath("Particles2D:process_material:gravity")
+tracks/6/path = NodePath("Label:rect_size")
 tracks/6/interp = 1
 tracks/6/loop_wrap = true
 tracks/6/imported = false
@@ -350,10 +362,10 @@ tracks/6/keys = {
 "times": PoolRealArray( 0 ),
 "transitions": PoolRealArray( 1 ),
 "update": 0,
-"values": [ Vector3( -100, 0, 0 ) ]
+"values": [ Vector2( 76, 32 ) ]
 }
 tracks/7/type = "value"
-tracks/7/path = NodePath("Label:visible")
+tracks/7/path = NodePath("Label:rect_scale")
 tracks/7/interp = 1
 tracks/7/loop_wrap = true
 tracks/7/imported = false
@@ -362,10 +374,10 @@ tracks/7/keys = {
 "times": PoolRealArray( 0 ),
 "transitions": PoolRealArray( 1 ),
 "update": 0,
-"values": [ true ]
+"values": [ Vector2( 0.5, 0.5 ) ]
 }
 tracks/8/type = "value"
-tracks/8/path = NodePath("Label:rect_position")
+tracks/8/path = NodePath("Label:self_modulate")
 tracks/8/interp = 1
 tracks/8/loop_wrap = true
 tracks/8/imported = false
@@ -374,10 +386,10 @@ tracks/8/keys = {
 "times": PoolRealArray( 0 ),
 "transitions": PoolRealArray( 1 ),
 "update": 0,
-"values": [ Vector2( -41.25, -52.25 ) ]
+"values": [ Color( 1, 1, 1, 0 ) ]
 }
 tracks/9/type = "value"
-tracks/9/path = NodePath("Label:rect_size")
+tracks/9/path = NodePath(".:texture")
 tracks/9/interp = 1
 tracks/9/loop_wrap = true
 tracks/9/imported = false
@@ -386,10 +398,10 @@ tracks/9/keys = {
 "times": PoolRealArray( 0 ),
 "transitions": PoolRealArray( 1 ),
 "update": 0,
-"values": [ Vector2( 76, 32 ) ]
+"values": [ ExtResource( 1 ) ]
 }
 tracks/10/type = "value"
-tracks/10/path = NodePath("Label:rect_scale")
+tracks/10/path = NodePath("EffectsSelf:animation")
 tracks/10/interp = 1
 tracks/10/loop_wrap = true
 tracks/10/imported = false
@@ -398,10 +410,10 @@ tracks/10/keys = {
 "times": PoolRealArray( 0 ),
 "transitions": PoolRealArray( 1 ),
 "update": 0,
-"values": [ Vector2( 0.5, 0.5 ) ]
+"values": [ "Shield" ]
 }
 tracks/11/type = "value"
-tracks/11/path = NodePath("Label:self_modulate")
+tracks/11/path = NodePath("EffectsSelf:playing")
 tracks/11/interp = 1
 tracks/11/loop_wrap = true
 tracks/11/imported = false
@@ -410,10 +422,10 @@ tracks/11/keys = {
 "times": PoolRealArray( 0 ),
 "transitions": PoolRealArray( 1 ),
 "update": 0,
-"values": [ Color( 1, 1, 1, 0 ) ]
+"values": [ false ]
 }
 tracks/12/type = "value"
-tracks/12/path = NodePath(".:texture")
+tracks/12/path = NodePath("EffectsSelf:frame")
 tracks/12/interp = 1
 tracks/12/loop_wrap = true
 tracks/12/imported = false
@@ -422,10 +434,10 @@ tracks/12/keys = {
 "times": PoolRealArray( 0 ),
 "transitions": PoolRealArray( 1 ),
 "update": 0,
-"values": [ ExtResource( 1 ) ]
+"values": [ 0 ]
 }
 tracks/13/type = "value"
-tracks/13/path = NodePath("EffectsSelf:animation")
+tracks/13/path = NodePath("EffectsSelf:visible")
 tracks/13/interp = 1
 tracks/13/loop_wrap = true
 tracks/13/imported = false
@@ -433,11 +445,11 @@ tracks/13/enabled = true
 tracks/13/keys = {
 "times": PoolRealArray( 0 ),
 "transitions": PoolRealArray( 1 ),
-"update": 0,
-"values": [ "Shield" ]
+"update": 1,
+"values": [ false ]
 }
 tracks/14/type = "value"
-tracks/14/path = NodePath("EffectsSelf:playing")
+tracks/14/path = NodePath("EffectsSpecial:visible")
 tracks/14/interp = 1
 tracks/14/loop_wrap = true
 tracks/14/imported = false
@@ -449,48 +461,12 @@ tracks/14/keys = {
 "values": [ false ]
 }
 tracks/15/type = "value"
-tracks/15/path = NodePath("EffectsSelf:frame")
+tracks/15/path = NodePath("Damage:visible")
 tracks/15/interp = 1
 tracks/15/loop_wrap = true
 tracks/15/imported = false
 tracks/15/enabled = true
 tracks/15/keys = {
-"times": PoolRealArray( 0 ),
-"transitions": PoolRealArray( 1 ),
-"update": 0,
-"values": [ 0 ]
-}
-tracks/16/type = "value"
-tracks/16/path = NodePath("EffectsSelf:visible")
-tracks/16/interp = 1
-tracks/16/loop_wrap = true
-tracks/16/imported = false
-tracks/16/enabled = true
-tracks/16/keys = {
-"times": PoolRealArray( 0 ),
-"transitions": PoolRealArray( 1 ),
-"update": 1,
-"values": [ false ]
-}
-tracks/17/type = "value"
-tracks/17/path = NodePath("EffectsSpecial:visible")
-tracks/17/interp = 1
-tracks/17/loop_wrap = true
-tracks/17/imported = false
-tracks/17/enabled = true
-tracks/17/keys = {
-"times": PoolRealArray( 0 ),
-"transitions": PoolRealArray( 1 ),
-"update": 0,
-"values": [ false ]
-}
-tracks/18/type = "value"
-tracks/18/path = NodePath("Damage:visible")
-tracks/18/interp = 1
-tracks/18/loop_wrap = true
-tracks/18/imported = false
-tracks/18/enabled = true
-tracks/18/keys = {
 "times": PoolRealArray( 0 ),
 "transitions": PoolRealArray( 1 ),
 "update": 0,
@@ -661,49 +637,13 @@ tracks/0/keys = {
 "update": 1,
 "values": [ true, false ]
 }
-tracks/1/type = "value"
-tracks/1/path = NodePath("Particles2D:emitting")
+tracks/1/type = "method"
+tracks/1/path = NodePath(".")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/imported = false
 tracks/1/enabled = true
 tracks/1/keys = {
-"times": PoolRealArray( 0.1, 0.5 ),
-"transitions": PoolRealArray( 1, 1 ),
-"update": 1,
-"values": [ true, false ]
-}
-tracks/2/type = "value"
-tracks/2/path = NodePath("Particles2D:process_material:direction")
-tracks/2/interp = 1
-tracks/2/loop_wrap = true
-tracks/2/imported = false
-tracks/2/enabled = true
-tracks/2/keys = {
-"times": PoolRealArray( 0.1 ),
-"transitions": PoolRealArray( 1 ),
-"update": 0,
-"values": [ Vector3( -10, -5, 0 ) ]
-}
-tracks/3/type = "value"
-tracks/3/path = NodePath("Particles2D:process_material:gravity")
-tracks/3/interp = 1
-tracks/3/loop_wrap = true
-tracks/3/imported = false
-tracks/3/enabled = true
-tracks/3/keys = {
-"times": PoolRealArray( 0.1 ),
-"transitions": PoolRealArray( 1 ),
-"update": 0,
-"values": [ Vector3( -100, 0, 0 ) ]
-}
-tracks/4/type = "method"
-tracks/4/path = NodePath(".")
-tracks/4/interp = 1
-tracks/4/loop_wrap = true
-tracks/4/imported = false
-tracks/4/enabled = true
-tracks/4/keys = {
 "times": PoolRealArray( 1 ),
 "transitions": PoolRealArray( 1 ),
 "values": [ {
@@ -711,13 +651,13 @@ tracks/4/keys = {
 "method": "CheckHealth"
 } ]
 }
-tracks/5/type = "method"
-tracks/5/path = NodePath(".")
-tracks/5/interp = 1
-tracks/5/loop_wrap = true
-tracks/5/imported = false
-tracks/5/enabled = true
-tracks/5/keys = {
+tracks/2/type = "method"
+tracks/2/path = NodePath(".")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
 "times": PoolRealArray( 0.1 ),
 "transitions": PoolRealArray( 1 ),
 "values": [ {
@@ -725,25 +665,25 @@ tracks/5/keys = {
 "method": "DamageSound"
 } ]
 }
-tracks/6/type = "value"
-tracks/6/path = NodePath(".:texture")
-tracks/6/interp = 1
-tracks/6/loop_wrap = true
-tracks/6/imported = false
-tracks/6/enabled = true
-tracks/6/keys = {
+tracks/3/type = "value"
+tracks/3/path = NodePath(".:texture")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
 "times": PoolRealArray( 0, 0.2, 0.8, 1 ),
 "transitions": PoolRealArray( 1, 1, 1, 1 ),
 "update": 1,
 "values": [ ExtResource( 1 ), ExtResource( 15 ), ExtResource( 11 ), ExtResource( 1 ) ]
 }
-tracks/7/type = "value"
-tracks/7/path = NodePath("Damage:visible")
-tracks/7/interp = 1
-tracks/7/loop_wrap = true
-tracks/7/imported = false
-tracks/7/enabled = true
-tracks/7/keys = {
+tracks/4/type = "value"
+tracks/4/path = NodePath("Damage:visible")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
 "times": PoolRealArray( 0, 0.2, 0.7 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
 "update": 1,
@@ -850,6 +790,18 @@ tracks/7/keys = {
 "update": 0,
 "values": [ Color( 0.423529, 0.541176, 1, 1 ) ]
 }
+tracks/8/type = "value"
+tracks/8/path = NodePath("EffectsCharge:texture")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ ExtResource( 14 ) ]
+}
 
 [sub_resource type="Animation" id=18]
 resource_name = "Healing"
@@ -876,6 +828,18 @@ tracks/1/keys = {
 "transitions": PoolRealArray( 1 ),
 "update": 0,
 "values": [ Color( 0, 1, 0.486275, 1 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("EffectsCharge:texture")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ ExtResource( 5 ) ]
 }
 
 [sub_resource type="Animation" id=19]
@@ -964,6 +928,18 @@ tracks/6/keys = {
 "update": 0,
 "values": [ Color( 0.945098, 0.54902, 0.12549, 1 ) ]
 }
+tracks/7/type = "value"
+tracks/7/path = NodePath("EffectsCharge:texture")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ ExtResource( 14 ) ]
+}
 
 [sub_resource type="Animation" id=20]
 length = 0.001
@@ -992,7 +968,7 @@ tracks/1/keys = {
 "values": [ false ]
 }
 tracks/2/type = "value"
-tracks/2/path = NodePath("Particles2D:emitting")
+tracks/2/path = NodePath("EffectsCharge:emitting")
 tracks/2/interp = 1
 tracks/2/loop_wrap = true
 tracks/2/imported = false
@@ -1004,7 +980,7 @@ tracks/2/keys = {
 "values": [ false ]
 }
 tracks/3/type = "value"
-tracks/3/path = NodePath("EffectsCharge:emitting")
+tracks/3/path = NodePath("EffectsCharge:process_material:color")
 tracks/3/interp = 1
 tracks/3/loop_wrap = true
 tracks/3/imported = false
@@ -1013,10 +989,10 @@ tracks/3/keys = {
 "times": PoolRealArray( 0 ),
 "transitions": PoolRealArray( 1 ),
 "update": 0,
-"values": [ false ]
+"values": [ Color( 0, 1, 0.486275, 1 ) ]
 }
 tracks/4/type = "value"
-tracks/4/path = NodePath("EffectsCharge:process_material:color")
+tracks/4/path = NodePath("Label:visible")
 tracks/4/interp = 1
 tracks/4/loop_wrap = true
 tracks/4/imported = false
@@ -1025,10 +1001,10 @@ tracks/4/keys = {
 "times": PoolRealArray( 0 ),
 "transitions": PoolRealArray( 1 ),
 "update": 0,
-"values": [ Color( 0, 1, 0.486275, 1 ) ]
+"values": [ true ]
 }
 tracks/5/type = "value"
-tracks/5/path = NodePath("Particles2D:process_material:direction")
+tracks/5/path = NodePath("Label:rect_position")
 tracks/5/interp = 1
 tracks/5/loop_wrap = true
 tracks/5/imported = false
@@ -1037,10 +1013,10 @@ tracks/5/keys = {
 "times": PoolRealArray( 0 ),
 "transitions": PoolRealArray( 1 ),
 "update": 0,
-"values": [ Vector3( -10, -5, 0 ) ]
+"values": [ Vector2( -41.25, -52.25 ) ]
 }
 tracks/6/type = "value"
-tracks/6/path = NodePath("Particles2D:process_material:gravity")
+tracks/6/path = NodePath("Label:rect_size")
 tracks/6/interp = 1
 tracks/6/loop_wrap = true
 tracks/6/imported = false
@@ -1049,10 +1025,10 @@ tracks/6/keys = {
 "times": PoolRealArray( 0 ),
 "transitions": PoolRealArray( 1 ),
 "update": 0,
-"values": [ Vector3( -100, 0, 0 ) ]
+"values": [ Vector2( 76, 32 ) ]
 }
 tracks/7/type = "value"
-tracks/7/path = NodePath("Label:visible")
+tracks/7/path = NodePath("Label:rect_scale")
 tracks/7/interp = 1
 tracks/7/loop_wrap = true
 tracks/7/imported = false
@@ -1061,10 +1037,10 @@ tracks/7/keys = {
 "times": PoolRealArray( 0 ),
 "transitions": PoolRealArray( 1 ),
 "update": 0,
-"values": [ true ]
+"values": [ Vector2( 0.5, 0.5 ) ]
 }
 tracks/8/type = "value"
-tracks/8/path = NodePath("Label:rect_position")
+tracks/8/path = NodePath("Label:self_modulate")
 tracks/8/interp = 1
 tracks/8/loop_wrap = true
 tracks/8/imported = false
@@ -1073,10 +1049,10 @@ tracks/8/keys = {
 "times": PoolRealArray( 0 ),
 "transitions": PoolRealArray( 1 ),
 "update": 0,
-"values": [ Vector2( -41.25, -52.25 ) ]
+"values": [ Color( 1, 1, 1, 0 ) ]
 }
 tracks/9/type = "value"
-tracks/9/path = NodePath("Label:rect_size")
+tracks/9/path = NodePath(".:texture")
 tracks/9/interp = 1
 tracks/9/loop_wrap = true
 tracks/9/imported = false
@@ -1085,10 +1061,10 @@ tracks/9/keys = {
 "times": PoolRealArray( 0 ),
 "transitions": PoolRealArray( 1 ),
 "update": 0,
-"values": [ Vector2( 76, 32 ) ]
+"values": [ ExtResource( 1 ) ]
 }
 tracks/10/type = "value"
-tracks/10/path = NodePath("Label:rect_scale")
+tracks/10/path = NodePath("EffectsSelf:animation")
 tracks/10/interp = 1
 tracks/10/loop_wrap = true
 tracks/10/imported = false
@@ -1097,10 +1073,10 @@ tracks/10/keys = {
 "times": PoolRealArray( 0 ),
 "transitions": PoolRealArray( 1 ),
 "update": 0,
-"values": [ Vector2( 0.5, 0.5 ) ]
+"values": [ "Shield" ]
 }
 tracks/11/type = "value"
-tracks/11/path = NodePath("Label:self_modulate")
+tracks/11/path = NodePath("EffectsSelf:playing")
 tracks/11/interp = 1
 tracks/11/loop_wrap = true
 tracks/11/imported = false
@@ -1109,10 +1085,10 @@ tracks/11/keys = {
 "times": PoolRealArray( 0 ),
 "transitions": PoolRealArray( 1 ),
 "update": 0,
-"values": [ Color( 1, 1, 1, 0 ) ]
+"values": [ false ]
 }
 tracks/12/type = "value"
-tracks/12/path = NodePath(".:texture")
+tracks/12/path = NodePath("EffectsSelf:frame")
 tracks/12/interp = 1
 tracks/12/loop_wrap = true
 tracks/12/imported = false
@@ -1121,10 +1097,10 @@ tracks/12/keys = {
 "times": PoolRealArray( 0 ),
 "transitions": PoolRealArray( 1 ),
 "update": 0,
-"values": [ ExtResource( 1 ) ]
+"values": [ 0 ]
 }
 tracks/13/type = "value"
-tracks/13/path = NodePath("EffectsSelf:animation")
+tracks/13/path = NodePath("EffectsSelf:visible")
 tracks/13/interp = 1
 tracks/13/loop_wrap = true
 tracks/13/imported = false
@@ -1132,52 +1108,16 @@ tracks/13/enabled = true
 tracks/13/keys = {
 "times": PoolRealArray( 0 ),
 "transitions": PoolRealArray( 1 ),
-"update": 0,
-"values": [ "Shield" ]
+"update": 1,
+"values": [ false ]
 }
 tracks/14/type = "value"
-tracks/14/path = NodePath("EffectsSelf:playing")
+tracks/14/path = NodePath("EffectsSelf:modulate")
 tracks/14/interp = 1
 tracks/14/loop_wrap = true
 tracks/14/imported = false
 tracks/14/enabled = true
 tracks/14/keys = {
-"times": PoolRealArray( 0 ),
-"transitions": PoolRealArray( 1 ),
-"update": 0,
-"values": [ false ]
-}
-tracks/15/type = "value"
-tracks/15/path = NodePath("EffectsSelf:frame")
-tracks/15/interp = 1
-tracks/15/loop_wrap = true
-tracks/15/imported = false
-tracks/15/enabled = true
-tracks/15/keys = {
-"times": PoolRealArray( 0 ),
-"transitions": PoolRealArray( 1 ),
-"update": 0,
-"values": [ 0 ]
-}
-tracks/16/type = "value"
-tracks/16/path = NodePath("EffectsSelf:visible")
-tracks/16/interp = 1
-tracks/16/loop_wrap = true
-tracks/16/imported = false
-tracks/16/enabled = true
-tracks/16/keys = {
-"times": PoolRealArray( 0 ),
-"transitions": PoolRealArray( 1 ),
-"update": 1,
-"values": [ false ]
-}
-tracks/17/type = "value"
-tracks/17/path = NodePath("EffectsSelf:modulate")
-tracks/17/interp = 1
-tracks/17/loop_wrap = true
-tracks/17/imported = false
-tracks/17/enabled = true
-tracks/17/keys = {
 "times": PoolRealArray( 0 ),
 "transitions": PoolRealArray( 1 ),
 "update": 0,
@@ -1284,6 +1224,18 @@ tracks/7/keys = {
 "update": 0,
 "values": [ Color( 0.945098, 0.54902, 0.12549, 1 ) ]
 }
+tracks/8/type = "value"
+tracks/8/path = NodePath("EffectsCharge:texture")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ ExtResource( 14 ) ]
+}
 
 [sub_resource type="Animation" id=39]
 resource_name = "WhiteBlocks"
@@ -1385,6 +1337,18 @@ tracks/7/keys = {
 "update": 0,
 "values": [ Color( 1, 1, 1, 1 ) ]
 }
+tracks/8/type = "value"
+tracks/8/path = NodePath("EffectsCharge:texture")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ ExtResource( 14 ) ]
+}
 
 [sub_resource type="Animation" id=14]
 resource_name = "Move"
@@ -1442,7 +1406,7 @@ tracks/1/keys = {
 "values": [ false ]
 }
 tracks/2/type = "value"
-tracks/2/path = NodePath("Particles2D:emitting")
+tracks/2/path = NodePath("EffectsCharge:emitting")
 tracks/2/interp = 1
 tracks/2/loop_wrap = true
 tracks/2/imported = false
@@ -1454,7 +1418,7 @@ tracks/2/keys = {
 "values": [ false ]
 }
 tracks/3/type = "value"
-tracks/3/path = NodePath("EffectsCharge:emitting")
+tracks/3/path = NodePath("EffectsCharge:process_material:color")
 tracks/3/interp = 1
 tracks/3/loop_wrap = true
 tracks/3/imported = false
@@ -1463,10 +1427,10 @@ tracks/3/keys = {
 "times": PoolRealArray( 0 ),
 "transitions": PoolRealArray( 1 ),
 "update": 0,
-"values": [ false ]
+"values": [ Color( 0, 1, 0.486275, 1 ) ]
 }
 tracks/4/type = "value"
-tracks/4/path = NodePath("EffectsCharge:process_material:color")
+tracks/4/path = NodePath("Label:visible")
 tracks/4/interp = 1
 tracks/4/loop_wrap = true
 tracks/4/imported = false
@@ -1475,10 +1439,10 @@ tracks/4/keys = {
 "times": PoolRealArray( 0 ),
 "transitions": PoolRealArray( 1 ),
 "update": 0,
-"values": [ Color( 0, 1, 0.486275, 1 ) ]
+"values": [ true ]
 }
 tracks/5/type = "value"
-tracks/5/path = NodePath("Particles2D:process_material:direction")
+tracks/5/path = NodePath("Label:rect_position")
 tracks/5/interp = 1
 tracks/5/loop_wrap = true
 tracks/5/imported = false
@@ -1487,10 +1451,10 @@ tracks/5/keys = {
 "times": PoolRealArray( 0 ),
 "transitions": PoolRealArray( 1 ),
 "update": 0,
-"values": [ Vector3( -10, -5, 0 ) ]
+"values": [ Vector2( -41.25, -52.25 ) ]
 }
 tracks/6/type = "value"
-tracks/6/path = NodePath("Particles2D:process_material:gravity")
+tracks/6/path = NodePath("Label:rect_size")
 tracks/6/interp = 1
 tracks/6/loop_wrap = true
 tracks/6/imported = false
@@ -1499,10 +1463,10 @@ tracks/6/keys = {
 "times": PoolRealArray( 0 ),
 "transitions": PoolRealArray( 1 ),
 "update": 0,
-"values": [ Vector3( -100, 0, 0 ) ]
+"values": [ Vector2( 76, 32 ) ]
 }
 tracks/7/type = "value"
-tracks/7/path = NodePath("Label:visible")
+tracks/7/path = NodePath("Label:rect_scale")
 tracks/7/interp = 1
 tracks/7/loop_wrap = true
 tracks/7/imported = false
@@ -1511,51 +1475,15 @@ tracks/7/keys = {
 "times": PoolRealArray( 0 ),
 "transitions": PoolRealArray( 1 ),
 "update": 0,
-"values": [ true ]
+"values": [ Vector2( 0.5, 0.5 ) ]
 }
 tracks/8/type = "value"
-tracks/8/path = NodePath("Label:rect_position")
+tracks/8/path = NodePath("Label:self_modulate")
 tracks/8/interp = 1
 tracks/8/loop_wrap = true
 tracks/8/imported = false
 tracks/8/enabled = false
 tracks/8/keys = {
-"times": PoolRealArray( 0 ),
-"transitions": PoolRealArray( 1 ),
-"update": 0,
-"values": [ Vector2( -41.25, -52.25 ) ]
-}
-tracks/9/type = "value"
-tracks/9/path = NodePath("Label:rect_size")
-tracks/9/interp = 1
-tracks/9/loop_wrap = true
-tracks/9/imported = false
-tracks/9/enabled = false
-tracks/9/keys = {
-"times": PoolRealArray( 0 ),
-"transitions": PoolRealArray( 1 ),
-"update": 0,
-"values": [ Vector2( 76, 32 ) ]
-}
-tracks/10/type = "value"
-tracks/10/path = NodePath("Label:rect_scale")
-tracks/10/interp = 1
-tracks/10/loop_wrap = true
-tracks/10/imported = false
-tracks/10/enabled = false
-tracks/10/keys = {
-"times": PoolRealArray( 0 ),
-"transitions": PoolRealArray( 1 ),
-"update": 0,
-"values": [ Vector2( 0.5, 0.5 ) ]
-}
-tracks/11/type = "value"
-tracks/11/path = NodePath("Label:self_modulate")
-tracks/11/interp = 1
-tracks/11/loop_wrap = true
-tracks/11/imported = false
-tracks/11/enabled = false
-tracks/11/keys = {
 "times": PoolRealArray( 0 ),
 "transitions": PoolRealArray( 1 ),
 "update": 0,
@@ -3092,7 +3020,7 @@ tracks/10/keys = {
 [node name="Player" type="Sprite"]
 position = Vector2( 552, 544 )
 scale = Vector2( 3, 3 )
-texture = ExtResource( 9 )
+texture = ExtResource( 1 )
 script = ExtResource( 8 )
 can_act = true
 
@@ -3164,15 +3092,6 @@ script = ExtResource( 7 )
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
-[node name="Particles2D" type="Particles2D" parent="."]
-position = Vector2( -31.5, -1.5 )
-z_index = 10
-emitting = false
-amount = 20
-speed_scale = 2.0
-process_material = ExtResource( 2 )
-texture = ExtResource( 6 )
-
 [node name="EffectsCharge" type="Particles2D" parent="."]
 position = Vector2( -18.75, 32.75 )
 z_index = 10
@@ -3180,7 +3099,7 @@ emitting = false
 amount = 40
 speed_scale = 2.0
 process_material = ExtResource( 3 )
-texture = ExtResource( 6 )
+texture = ExtResource( 14 )
 
 [node name="Label" type="Label" parent="."]
 self_modulate = Color( 1, 1, 1, 0 )

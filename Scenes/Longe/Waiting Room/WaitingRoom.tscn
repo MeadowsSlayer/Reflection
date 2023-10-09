@@ -75,15 +75,15 @@ custom_constants/separation = 16
 alignment = 1
 
 [node name="RES1" type="Label" parent="SkillChoosing/Resistances/HBoxContainer"]
-margin_left = 496.0
+margin_left = 508.0
 margin_top = 18.0
-margin_right = 700.0
+margin_right = 704.0
 margin_bottom = 82.0
-text = " Resistance:"
+text = "Resistance:"
 
 [node name="Resistance1" type="OptionButton" parent="SkillChoosing/Resistances/HBoxContainer"]
-margin_left = 716.0
-margin_right = 952.0
+margin_left = 720.0
+margin_right = 956.0
 margin_bottom = 100.0
 rect_min_size = Vector2( 236, 100 )
 text = "Red"
@@ -92,16 +92,16 @@ selected = 0
 
 [node name="RES2" type="Label" parent="SkillChoosing/Resistances/HBoxContainer"]
 visible = false
-margin_left = 862.0
+margin_left = 504.0
 margin_top = 18.0
-margin_right = 1058.0
+margin_right = 700.0
 margin_bottom = 82.0
 text = "Resistance:"
 
 [node name="Resistance2" type="OptionButton" parent="SkillChoosing/Resistances/HBoxContainer"]
 visible = false
-margin_left = 948.0
-margin_right = 1184.0
+margin_left = 610.0
+margin_right = 846.0
 margin_bottom = 100.0
 rect_min_size = Vector2( 236, 100 )
 text = "Red"
@@ -110,16 +110,16 @@ selected = 0
 
 [node name="RES3" type="Label" parent="SkillChoosing/Resistances/HBoxContainer"]
 visible = false
-margin_left = 862.0
+margin_left = 736.0
 margin_top = 18.0
-margin_right = 1058.0
+margin_right = 932.0
 margin_bottom = 82.0
 text = "Resistance:"
 
 [node name="Resistance3" type="OptionButton" parent="SkillChoosing/Resistances/HBoxContainer"]
 visible = false
-margin_left = 948.0
-margin_right = 1184.0
+margin_left = 842.0
+margin_right = 1078.0
 margin_bottom = 100.0
 rect_min_size = Vector2( 236, 100 )
 text = "Red"
@@ -127,15 +127,15 @@ items = [ "Red", null, false, 0, null, "Orange", null, false, 1, null, "Yellow",
 selected = 0
 
 [node name="WEK1" type="Label" parent="SkillChoosing/Resistances/HBoxContainer"]
-margin_left = 968.0
+margin_left = 972.0
 margin_top = 18.0
-margin_right = 1172.0
+margin_right = 1160.0
 margin_bottom = 82.0
-text = "  Weakness:"
+text = "Weakness:"
 
 [node name="Weakness" type="OptionButton" parent="SkillChoosing/Resistances/HBoxContainer"]
-margin_left = 1188.0
-margin_right = 1424.0
+margin_left = 1176.0
+margin_right = 1412.0
 margin_bottom = 100.0
 rect_min_size = Vector2( 236, 100 )
 text = "Red"
@@ -304,16 +304,16 @@ margin_right = 1920.0
 margin_bottom = 1080.0
 
 [node name="ColorRect" type="ColorRect" parent="Skills"]
-margin_left = 64.0
+margin_left = 16.0
 margin_top = 24.0
-margin_right = 1624.0
+margin_right = 1576.0
 margin_bottom = 1064.0
 color = Color( 0.101961, 0.101961, 0.105882, 1 )
 
 [node name="ScrollContainer" type="ScrollContainer" parent="Skills"]
-margin_left = 80.0
+margin_left = 32.0
 margin_top = 40.0
-margin_right = 1614.0
+margin_right = 1566.0
 margin_bottom = 1040.0
 follow_focus = true
 scroll_horizontal_enabled = false
@@ -953,7 +953,7 @@ margin_top = 16.0
 margin_right = 675.0
 margin_bottom = 62.0
 custom_fonts/font = ExtResource( 4 )
-text = "Flash of Light"
+text = "Flash Of Light"
 valign = 1
 
 [node name="SkillName2" type="Label" parent="Skills/ScrollContainer/GridContainer/Yellow_Flash_Of_Light"]
@@ -1747,59 +1747,59 @@ CD: 5"
 autowrap = true
 
 [node name="Choose" type="Button" parent="Skills"]
-margin_left = 1632.0
+margin_left = 1584.0
 margin_top = 968.0
-margin_right = 1856.0
+margin_right = 1904.0
 margin_bottom = 1064.0
 text = "Choose"
 
 [node name="VBoxContainer" type="VBoxContainer" parent="Skills"]
-margin_left = 1632.0
+margin_left = 1584.0
 margin_top = 24.0
-margin_right = 1856.0
+margin_right = 1904.0
 margin_bottom = 864.0
 custom_constants/separation = 8
 
 [node name="All" type="Button" parent="Skills/VBoxContainer"]
-margin_right = 224.0
+margin_right = 320.0
 margin_bottom = 94.649
 text = "All"
 
 [node name="Red" type="Button" parent="Skills/VBoxContainer"]
 margin_top = 102.0
-margin_right = 224.0
+margin_right = 320.0
 margin_bottom = 196.649
 text = "Red"
 
 [node name="Orange" type="Button" parent="Skills/VBoxContainer"]
 margin_top = 204.0
-margin_right = 224.0
+margin_right = 320.0
 margin_bottom = 298.649
 text = "Orange"
 
 [node name="Yellow" type="Button" parent="Skills/VBoxContainer"]
 margin_top = 306.0
-margin_right = 224.0
+margin_right = 320.0
 margin_bottom = 400.649
 text = "Yellow"
 
 [node name="Green" type="Button" parent="Skills/VBoxContainer"]
 margin_top = 408.0
-margin_right = 224.0
+margin_right = 320.0
 margin_bottom = 502.649
 text = "Green"
 
 [node name="Blue" type="Button" parent="Skills/VBoxContainer"]
 margin_top = 510.0
-margin_right = 224.0
+margin_right = 320.0
 margin_bottom = 604.649
 text = "Blue"
 
 [node name="Purple" type="Button" parent="Skills/VBoxContainer"]
 margin_top = 612.0
-margin_right = 224.0
+margin_right = 320.0
 margin_bottom = 706.649
-text = "Purple"
+text = "PurpSk"
 
 [node name="TV" parent="." instance=ExtResource( 1 )]
 visible = false

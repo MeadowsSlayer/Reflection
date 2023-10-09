@@ -662,23 +662,23 @@ func EmptyWell(lvl):
 func BloodExchange(lvl):
 	RemoveNegativeStatus()
 	BloodExchange_Duration = 2
-	BloodExchange_Mod = 20
+	BloodExchange_Mod = 0.2
 	match lvl:
 		2:
-			BloodExchange_Mod = 25
+			BloodExchange_Mod = 0.25
 		3:
-			BloodExchange_Mod = 30
+			BloodExchange_Mod = 0.3
 			BloodExchange_Duration = 3
 		4:
-			BloodExchange_Mod = 40
+			BloodExchange_Mod = 0.4
 			BloodExchange_Duration = 3
 		5:
-			BloodExchange_Mod = 50
+			BloodExchange_Mod = 0.5
 			BloodExchange_Duration = 4
 	get_parent().DMG_Mod = DMG_mod()
 	get_parent().get_node("../../CanvasLayer/Control/CharStats/GridContainer/BloodExchange").visible = true
 	get_parent().get_node("../../CanvasLayer/Control/CharStats/GridContainer/BloodExchange/Num").text = str(BloodExchange_Duration)
-	get_parent().get_node("../../CanvasLayer/Control/CharStats/GridContainer/BloodExchange/Potency").text = str(BloodExchange_Mod)
+	get_parent().get_node("../../CanvasLayer/Control/CharStats/GridContainer/BloodExchange/Potency").text = str(BloodExchange_Mod * 100)
 
 func PeaceOfMind(target):
 	var enemyEN = (get_parent().get_node(str("../Enemy", target)).get_child(1).curEN / get_parent().get_node(str("../Enemy", target)).get_child(1).maxEN) * 100
@@ -688,7 +688,7 @@ func PeaceOfMind(target):
 	else:
 		return 0
 
-func WarningStrike_ON(lvl):
+func WarningStrike_ON(lvl=1):
 	WarningStrike_Duration = 2
 	WarningStrike_Mod = 0.25 + 0.05 * lvl
 	if lvl >= 4:
@@ -697,7 +697,6 @@ func WarningStrike_ON(lvl):
 	get_parent().DMG_Mod = DMG_mod()
 	get_parent().get_node("../../CanvasLayer/Control/CharStats/GridContainer/WarningStrike").visible = true
 	get_parent().get_node("../../CanvasLayer/Control/CharStats/GridContainer/WarningStrike/Num").text = str(WarningStrike_Duration)
-	get_parent().get_node("../../CanvasLayer/Control/CharStats/GridContainer/WarningStrike/Potency").text = str(WarningStrike_Mod * 100)
 
 func WarningStrike_OFF():
 	WarningStrike_Duration = 0

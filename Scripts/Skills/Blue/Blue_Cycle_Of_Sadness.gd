@@ -48,6 +48,7 @@ func _on_UltTimer_timeout():
 		enemy.WakeUp()
 	enemy.Taking_Damage(attack, DMG_Mod, "blue", CRIT, DMG_add)
 	enemy.get_node("EffectsSpecial").animation = "Ice Cast"
+	enemy.get_node("EffectsSpecial").modulate = Color8(255, 255, 255)
 	
 	for i in range(3):
 		if (get_parent().get_nodel(str("../Enemy", (i + 1))).active == true):

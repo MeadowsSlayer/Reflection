@@ -663,18 +663,18 @@ align = 2
 valign = 1
 
 [node name="Continue" type="Button" parent="."]
-margin_left = 1584.0
+margin_left = 1512.0
 margin_top = 920.0
-margin_right = 1829.76
+margin_right = 1840.0
 margin_bottom = 1040.0
 focus_mode = 0
 enabled_focus_mode = 0
 text = "Continue"
 
 [node name="Regenerate" type="Button" parent="."]
-margin_left = 1040.0
+margin_left = 888.0
 margin_top = 920.0
-margin_right = 1561.76
+margin_right = 1488.0
 margin_bottom = 1040.0
 focus_mode = 0
 custom_fonts/font = ExtResource( 1 )
@@ -684,7 +684,7 @@ custom_styles/focus = ExtResource( 52 )
 custom_styles/disabled = ExtResource( 51 )
 custom_styles/normal = ExtResource( 13 )
 enabled_focus_mode = 0
-text = "Regenerate 30% max HP"
+text = "Regenerate 30% Max HP"
 
 [node name="Label" type="Label" parent="Regenerate"]
 visible = false

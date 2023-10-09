@@ -41,9 +41,10 @@ func Action():
 		
 		if enemy.sleep_duration != 0:
 			enemy.WakeUp()
+		enemy.get_node("EffectsSpecial").modulate = Color8(255, 255, 255)
+		enemy.get_node("EffectsSpecial").animation = "FireCast"
 		enemy.Taking_Damage(attack, DMG_Mod, "orange", CRIT, DMG_add)
 		enemy.Status_Effects("fragile", fragile, duration)
-		enemy.get_node("EffectsSpecial").animation = "None"
 		status_effects.WarningStrike_OFF()
 		status_effects.WaitingGameNULL()
 		get_parent().IterativeProcessCheck()

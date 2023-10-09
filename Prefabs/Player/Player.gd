@@ -609,7 +609,7 @@ func Skill_Description():
 		get_node("../../CanvasLayer/Control/SkillDescription/SkillName").text = skills[skill_num - 1].skill_name
 		get_node("../../CanvasLayer/Control/SkillDescription/SkillDescription").text = tr(str(skills[skill_num - 1].description, "_", skill_lvl))
 		get_node("../../CanvasLayer/Control/SkillDescription/EnergyGiven").text = str(skills[skill_num - 1].en)
-		get_node("../../CanvasLayer/Control/SkillDescription/CostNum").text = str(skills[skill_num - 1].actions, " action")
+		get_node("../../CanvasLayer/Control/SkillDescription/CostNum").text = str(skills[skill_num - 1].actions)
 		get_node("../../CanvasLayer/Control/SkillDescription/CDNum").text = str(skills[skill_num - 1].CD)
 		get_node("../../CanvasLayer/Control/SkillDescription/SkillIcon").texture = load(skills[skill_num - 1].icon)
 	
@@ -618,7 +618,7 @@ func Skill_Description():
 		get_node("../../CanvasLayer/Control/SkillDescription/SkillName").text = normal_attack.skill_name
 		get_node("../../CanvasLayer/Control/SkillDescription/SkillDescription").text = tr(normal_attack.description)
 		get_node("../../CanvasLayer/Control/SkillDescription/EnergyGiven").text = str(normal_attack.en)
-		get_node("../../CanvasLayer/Control/SkillDescription/CostNum").text = str(normal_attack.actions, " action")
+		get_node("../../CanvasLayer/Control/SkillDescription/CostNum").text = str(normal_attack.actions)
 		get_node("../../CanvasLayer/Control/SkillDescription/CDNum").text = str(normal_attack.CD)
 		get_node("../../CanvasLayer/Control/SkillDescription/SkillIcon").texture = load(normal_attack.icon)
 		
@@ -627,8 +627,8 @@ func Skill_Description():
 		get_node("../../CanvasLayer/Control/SkillDescription").set_position(Vector2(1120, 344))
 		get_node("../../CanvasLayer/Control/SkillDescription/SkillName").text = "End Turn"
 		get_node("../../CanvasLayer/Control/SkillDescription/SkillDescription").text = "END_TURN"
-		get_node("../../CanvasLayer/Control/SkillDescription/EnergyGiven").text = "Action Cost x2"
-		get_node("../../CanvasLayer/Control/SkillDescription/CostNum").text = "All actions"
+		get_node("../../CanvasLayer/Control/SkillDescription/EnergyGiven").text = "AP x2"
+		get_node("../../CanvasLayer/Control/SkillDescription/CostNum").text = "All"
 		get_node("../../CanvasLayer/Control/SkillDescription/CDNum").text = "-"
 		get_node("../../CanvasLayer/Control/SkillDescription/SkillIcon").texture = load("res://Sprites/UI/Skills/NoSkill.png")
 	
@@ -681,10 +681,10 @@ func Skill_Activation():
 		get_node("SkillTimer").start(0.5)
 
 func StartSpecial():
-	get_node("../../CanvasLayer/Animations").play("SpecialStart")
+	get_node("../../CanvasLayer/AnimationsSpecial").play("SpecialStart")
 
 func EndSpecial():
-	get_node("../../CanvasLayer/Animations").play("SpecialEnd")
+	get_node("../../CanvasLayer/AnimationsSpecial").play("SpecialEnd")
 
 func EN_Plus(energy):
 	curEN += int(energy * ENR / 10)
@@ -777,25 +777,17 @@ func Taking_Damage(dmg, type, enemy, crit):
 	match type:
 		"red":
 			dmg = WeaknessCheck(red_res, dmg, enemy.danceofdeath)
-			get_node("Particles2D").self_modulate = Color8(255, 0, 0)
 		"orange":
 			dmg = WeaknessCheck(orange_res, dmg, enemy.danceofdeath)
-			get_node("Particles2D").self_modulate = Color8(255, 117, 0)
 		"yellow":
 			dmg = WeaknessCheck(yellow_res, dmg, enemy.danceofdeath)
-			get_node("Particles2D").self_modulate = Color8(255, 255, 0)
 		"green":
 			crit += status_effects.spread
 			dmg = WeaknessCheck(green_res, dmg, enemy.danceofdeath)
-			get_node("Particles2D").self_modulate = Color8(0, 255, 0)
 		"blue":
 			dmg = WeaknessCheck(blue_res, dmg, enemy.danceofdeath)
-			get_node("Particles2D").self_modulate = Color8(0, 0, 255)
 		"purple":
 			dmg = WeaknessCheck(purple_res, dmg, enemy.danceofdeath)
-			get_node("Particles2D").self_modulate = Color8(167, 0, 199)
-		"phys":
-			get_node("Particles2D").self_modulate = Color8(255, 255, 255)
 	
 	dmg += int(dmg * status_effects.fragile)
 	
@@ -878,7 +870,10 @@ func DeathEvasion():
 	death_evasions -= 1
 	save.set("death_evasions", death_evasions)
 	curHP = maxHP
+	get_node("../../CanvasLayer/Control/CharStats/CharHP/HP").text = str(curHP, "/", maxHP)
+	get_parent().get_parent().get_node("CanvasLayer/Control/CharStats/CharHP").value = curHP
 	SoundPlayer.play_sound("TimeRewind")
+	DeathEvasionCount()
 
 func DeathEvasionCount():
 	for i in range($"../../CanvasLayer/Control/CharStats/DeathEvasions".get_child_count()):
@@ -1039,6 +1034,7 @@ func Healing(HEAL):
 		curHP = maxHP
 	
 	get_node("../../CanvasLayer/Control/CharStats/CharHP/HP").text = str(curHP, "/", maxHP)
+	get_parent().get_parent().get_node("CanvasLayer/Control/CharStats/CharHP").value = curHP
 
 func ClearShield():
 	if status_effects.recoil == true && status_effects.silence_duration == 0:

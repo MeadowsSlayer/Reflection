@@ -36,6 +36,8 @@ func Action():
 		if enemy.sleep_duration != 0:
 			enemy.WakeUp()
 		enemy.Taking_Damage(attack, DMG_Mod, "purple", CRIT, DMG_add)
+		enemy.get_node("EffectsSpecial").animation = "Barrier"
+		enemy.get_node("EffectsSpecial").modulate = Color8(255, 255, 255)
 		enemy.Status_Effects("aches", status, duration)
 		
 		get_parent().sound_type = "Blunt Hit"

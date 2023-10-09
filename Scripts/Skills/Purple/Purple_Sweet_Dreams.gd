@@ -32,6 +32,8 @@ func Action():
 		if enemy.sleep_duration != 0:
 			enemy.WakeUp()
 		enemy.Taking_Damage(attack, DMG_Mod, "purple", CRIT, DMG_add)
+		enemy.get_node("EffectsSpecial").animation = "Reverse Ice"
+		enemy.get_node("EffectsSpecial").modulate = Color8(217, 10, 240)
 		enemy.Status_Effects("sleep", 0, 2)
 		enemy.sleep_waking_damage = int(((attack + 1.0) * 40.0 / (10.0 + enemy.DEF) + DMG_add))
 		
